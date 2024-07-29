@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::mnp::service::impl::RepatriationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service" prot="public" virt="non-virtual">com.sterlite.cal.mnp.service.IRepatriationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a8a0a7bc563532f727d4c8008bdbca376" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.mnp.service.impl.RepatriationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(MNPOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="37" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ab225730de02338365afde15b944015ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.mnp.service.impl.RepatriationService.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="40" column="19" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ab15022180f25b210c35e7cf201490d12" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1validators_1_1_m_n_p_validator" kindref="compound">MNPValidator</ref></type>
+        <definition>MNPValidator com.sterlite.cal.mnp.service.impl.RepatriationService.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="49" column="22" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a94404d4c6765ca344ff07be18c91fe39" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util" kindref="compound">WomCommunicationUtil</ref></type>
+        <definition>WomCommunicationUtil com.sterlite.cal.mnp.service.impl.RepatriationService.womUtil</definition>
+        <argsstring></argsstring>
+        <name>womUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.womUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="52" column="30" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a497c8aaf26a367e042c4af1034db635c" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_receive_rel_repo" kindref="compound">RepatReceiveRelRepo</ref></type>
+        <definition>RepatReceiveRelRepo com.sterlite.cal.mnp.service.impl.RepatriationService.repatReceiveRelRepo</definition>
+        <argsstring></argsstring>
+        <name>repatReceiveRelRepo</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.repatReceiveRelRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="54" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1af6b91457610a4e44909611b19d5626ec" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_return_rel_repo" kindref="compound">RepatReturnRelRepo</ref></type>
+        <definition>RepatReturnRelRepo com.sterlite.cal.mnp.service.impl.RepatriationService.returnRelRepo</definition>
+        <argsstring></argsstring>
+        <name>returnRelRepo</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.returnRelRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="57" column="28" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aa4b298617eafe591486a7efcd9d0d5a9" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client" kindref="compound">MNPSoapClient</ref></type>
+        <definition>MNPSoapClient com.sterlite.cal.mnp.service.impl.RepatriationService.soapClient</definition>
+        <argsstring></argsstring>
+        <name>soapClient</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.soapClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="43" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a7dadf897fc1f86455a9dac82da58d445" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1_m_n_p_util" kindref="compound">MNPUtil</ref></type>
+        <definition>MNPUtil com.sterlite.cal.mnp.service.impl.RepatriationService.mnpUtil</definition>
+        <argsstring></argsstring>
+        <name>mnpUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.mnpUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="46" column="9" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a0cff060d56ff698b7c6cdd83b95708ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscrejectByWOM</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdiscrejectByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscrejectByWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1afcf40d4fd31dd0d883f3539548a61427">npdiscrejectByWOM</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="59" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="59" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ae6f5c0bcce26071246c44f4bfd9d2268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactdoneByWOM</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdeactdoneByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactdoneByWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a7e064af336109515b96e443b2454d77d">npdeactdoneByWOM</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="156" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="156" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1acf1755eb75385ac6fe91e670683977ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npDisconnect</definition>
+        <argsstring>(String request)</argsstring>
+        <name>npDisconnect</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npDisconnect</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a733214587bc9d70044747ebe1fbfe296">npDisconnect</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="305" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="305" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aba244ec42870bfc09a2589321e750ead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdisconnectByWOM</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdisconnectByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdisconnectByWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a6ce0bfe6d5f35eba8e07b6f1de88a85c">npdisconnectByWOM</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="343" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="343" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ae7113c024c08ed7eb984a751fb3a1c50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscacceptedByWOM</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdiscacceptedByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscacceptedByWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a54235b7e03c0f8ff9a5ecf10a7578c58">npdiscacceptedByWOM</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="436" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="436" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a42ef84d3f738c772c10e07a82026aac8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npDeactivatedForRepatReceive</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npDeactivatedForRepatReceive</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npDeactivatedForRepatReceive</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1ada6f11c55772db8c1b60b18167904784">npDeactivatedForRepatReceive</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="533" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="533" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a2ab2e1f7d4704e4aa9b789a994286111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.getTaskID</definition>
+        <argsstring>(String idNumber, String requestType)</argsstring>
+        <name>getTaskID</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.getTaskID</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>idNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="624" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="624" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a413cd5842bf31de1929bcade4ce1459e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.getTaskIDForRepatReturn</definition>
+        <argsstring>(String idNumber, String requestType)</argsstring>
+        <name>getTaskIDForRepatReturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.getTaskIDForRepatReturn</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>idNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="633" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="633" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aefc910ad733ba3737659141886980370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactivatedByWOM</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdeactivatedByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactivatedByWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1ae249751545b6cd92d920f39556c04439">npdeactivatedByWOM</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="657" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="657" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ac5cb73a69842a1bc1f3e99d4be35b7e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdisrejectedreturn</definition>
+        <argsstring>(String request)</argsstring>
+        <name>npdisrejectedreturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdisrejectedreturn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a9432e0636c3606b57599a97977922c5e">npdisrejectedreturn</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="758" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="758" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a4421e19c8b3383a46bc5f14282856d9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactdoneForReturn</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>npdeactdoneForReturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdeactdoneForReturn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1ae0046ee58d274f0ac62f31c65f4a0971">npdeactdoneForReturn</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="804" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="804" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aaec9c85a07cf9c82f7d08255f152577c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscacceptedreturn</definition>
+        <argsstring>(String request)</argsstring>
+        <name>npdiscacceptedreturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.npdiscacceptedreturn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service_1a45d96626cd64307e30200e63473aa012">npdiscacceptedreturn</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="847" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="847" bodyend="886"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a833a099b4e1d56097269cc5397f1a766" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.service.impl.RepatriationService.findIdNumberByTaskIdAndName</definition>
+        <argsstring>(String taskId, String name)</argsstring>
+        <name>findIdNumberByTaskIdAndName</name>
+        <qualifiedname>com.sterlite.cal.mnp.service.impl.RepatriationService.findIdNumberByTaskIdAndName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>taskId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="642" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="642" bodyend="656"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.service.impl.RepatriationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.mnp.service.IRepatriationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.service.impl.RepatriationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>soapClient</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mnpUtil</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.mnp.client.MNPSoapClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOG</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>com.sterlite.cal.mnp.repositories.MNPPortoutRelRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_portout_rel_repo"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.mnp.repositories.MNPPortoutRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_portout_repo"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.mnp.repositories.MNPRelationRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_relation_repo"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.mnp.repositories.MNPRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_repository"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.mnp.repositories.RepatReceiveRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_receive_repo"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.mnp.repositories.RepatReturnRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_return_repo"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.mnp.service.IRepatriationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.mnp.util.MNPUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1_m_n_p_util"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mnpRepo</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>relationRepo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>repatreturnRepo</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>repatreceiveRepo</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mnpPortOutRepo</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mnpRelPortOutRepo</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>JpaRepository&lt; MNPMaster, Long &gt;</label>
+      </node>
+      <node id="15">
+        <label>JpaRepository&lt; MNPPortoutMaster, Long &gt;</label>
+      </node>
+      <node id="17">
+        <label>JpaRepository&lt; MNPPortoutRelation, Long &gt;</label>
+      </node>
+      <node id="9">
+        <label>JpaRepository&lt; MNPRelation, Long &gt;</label>
+      </node>
+      <node id="13">
+        <label>JpaRepository&lt; RepatReceiveMaster, Long &gt;</label>
+      </node>
+      <node id="11">
+        <label>JpaRepository&lt; RepatReturnMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" line="35" column="7" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/service/impl/RepatriationService.java" bodystart="35" bodyend="888"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a833a099b4e1d56097269cc5397f1a766" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>findIdNumberByTaskIdAndName</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a2ab2e1f7d4704e4aa9b789a994286111" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>getTaskID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a413cd5842bf31de1929bcade4ce1459e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>getTaskIDForRepatReturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ab225730de02338365afde15b944015ee" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a8a0a7bc563532f727d4c8008bdbca376" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a7dadf897fc1f86455a9dac82da58d445" prot="package" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>mnpUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ae6f5c0bcce26071246c44f4bfd9d2268" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdeactdoneByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a4421e19c8b3383a46bc5f14282856d9f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdeactdoneForReturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aefc910ad733ba3737659141886980370" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdeactivatedByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a42ef84d3f738c772c10e07a82026aac8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npDeactivatedForRepatReceive</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ae7113c024c08ed7eb984a751fb3a1c50" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdiscacceptedByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aaec9c85a07cf9c82f7d08255f152577c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdiscacceptedreturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1acf1755eb75385ac6fe91e670683977ee" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npDisconnect</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aba244ec42870bfc09a2589321e750ead" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdisconnectByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a0cff060d56ff698b7c6cdd83b95708ca" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdiscrejectByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ac5cb73a69842a1bc1f3e99d4be35b7e3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>npdisrejectedreturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a497c8aaf26a367e042c4af1034db635c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>repatReceiveRelRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1af6b91457610a4e44909611b19d5626ec" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>returnRelRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1aa4b298617eafe591486a7efcd9d0d5a9" prot="package" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>soapClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1ab15022180f25b210c35e7cf201490d12" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>validator</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1impl_1_1_repatriation_service_1a94404d4c6765ca344ff07be18c91fe39" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::service::impl::RepatriationService</scope><name>womUtil</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cache::controller::CacheServiceController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1aa1bc1e0932edfee04a4311aec82160b1" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cache.controller.CacheServiceController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CacheServiceController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="37" column="30" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a7b0e4b2448f3c1552cbde9005b4bd16f" prot="private" static="no" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.cache.controller.CacheServiceController.hazelcastInstance</definition>
+        <argsstring></argsstring>
+        <name>hazelcastInstance</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.hazelcastInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="41" column="27" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a7213a1b9ce1e91136a47bda83373164f" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service" kindref="compound">ICacheService</ref></type>
+        <definition>ICacheService com.sterlite.cal.cache.controller.CacheServiceController.cacheService</definition>
+        <argsstring></argsstring>
+        <name>cacheService</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.cacheService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="44" column="23" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1abe7917346dd3848d2af416d56fa14ae9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cache.controller.CacheServiceController.reloadAllCache</definition>
+        <argsstring>()</argsstring>
+        <name>reloadAllCache</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.reloadAllCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="49" column="24" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="49" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a18de58461b0e3790a88287c98834f147" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cache.controller.CacheServiceController.getStaffDetailInfo</definition>
+        <argsstring>(@RequestParam(name=&quot;username&quot;) String username)</argsstring>
+        <name>getStaffDetailInfo</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.getStaffDetailInfo</qualifiedname>
+        <param>
+          <type>@RequestParam(name=&quot;username&quot;) String</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="91" column="24" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="91" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a615d004926f2ccfcb8cf9eb729c78059" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cache.controller.CacheServiceController.reloadCacheByCacheId</definition>
+        <argsstring>(@RequestParam(name=&quot;cacheId&quot;) String cacheId)</argsstring>
+        <name>reloadCacheByCacheId</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.reloadCacheByCacheId</qualifiedname>
+        <param>
+          <type>@RequestParam(name=&quot;cacheId&quot;) String</type>
+          <declname>cacheId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="124" column="24" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="124" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a681b1a5fb1ad8e41e6efbe7d6449cb86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref>&lt; Object &gt;</type>
+        <definition>CalBaseResponse&lt; Object &gt; com.sterlite.cal.cache.controller.CacheServiceController.getCacheByCacheId</definition>
+        <argsstring>(@RequestParam(name=&quot;cacheId&quot;) String cacheId)</argsstring>
+        <name>getCacheByCacheId</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.CacheServiceController.getCacheByCacheId</qualifiedname>
+        <param>
+          <type>@RequestParam(name=&quot;cacheId&quot;) String</type>
+          <declname>cacheId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="200" column="24" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="200" bodyend="223"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>ankit.patel </para>
+</simplesect>
+<simplesect kind="since"><para>July 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cache.controller.CacheServiceController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cache.controller.CacheServiceController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" line="35" column="7" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/CacheServiceController.java" bodystart="35" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a7213a1b9ce1e91136a47bda83373164f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>cacheService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a681b1a5fb1ad8e41e6efbe7d6449cb86" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>getCacheByCacheId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a18de58461b0e3790a88287c98834f147" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>getStaffDetailInfo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a7b0e4b2448f3c1552cbde9005b4bd16f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>hazelcastInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1aa1bc1e0932edfee04a4311aec82160b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1abe7917346dd3848d2af416d56fa14ae9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>reloadAllCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_cache_service_controller_1a615d004926f2ccfcb8cf9eb729c78059" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>reloadCacheByCacheId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::CacheServiceController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

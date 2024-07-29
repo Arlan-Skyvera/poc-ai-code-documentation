@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1_1_c_r_m_service" prot="private">com::sterlite::cal::crm::core::service::manager::CRMServiceManager::CRMService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a561782e723f7d64120da781336f705e8" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.crm.core.service.manager.CRMServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CRMServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="27" column="30" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1ad7d910dfd8c398e150c7e51d9e7c1acf" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="28" column="23" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1aba6f9f0430f24062566058f674c7fc81" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="29" column="23" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a360619a1f24a944851f19c245ab04e74" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="30" column="23" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a300ba1d686fcd9b0432cae18baaf7625" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="31" column="23" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a16611e0def79a7c31ac5a2bbb544ba65" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.manager.CRMServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="32" column="23" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a92945863e8d53c8bca27cf86a8a04c7d" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.crm.core.service.manager.CRMServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="35" column="28" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a4a3fe9b059e8ca0508c2fc3c6d9c3408" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, CRMService &gt;</type>
+        <definition>Map&lt;String, CRMService&gt; com.sterlite.cal.crm.core.service.manager.CRMServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="37" column="13" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1af2a1ec0de1a174a78bf66572fffdece4" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.crm.core.service.manager.CRMServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="38" column="13" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a15177d8f0141ecb3d37514b99b7edc53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.crm.core.service.manager.CRMServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="41" column="13" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1aa61fc57803cbd724b1ee048fc7f4a1af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.crm.core.service.manager.CRMServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="87" column="18" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="87" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a252fdd05248d234ddfad4e7454bcd345" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="100" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="100" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a63c0d0a000a52b7ba98b131a58863f2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="122" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="122" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a6f6b7ca9f318071e50d190a488734a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="144" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="144" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a4c2d2f73924ec470d55d541fc882545d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="160" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="160" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1af937ddaab5f5ad7bfc1cbe39d6a715d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.crm.core.service.manager.CRMServiceManager.loadCRMService</definition>
+        <argsstring>()</argsstring>
+        <name>loadCRMService</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.loadCRMService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="51" column="14" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="51" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1ac6ffc3898ccd2f00c6fcd643af9d0874" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.crm.core.service.manager.CRMServiceManager.loadCRMServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadCRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.loadCRMServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="74" column="14" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="74" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1abb743b7a0e37f7c691b09657a40b651f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.crm.core.service.manager.CRMServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.manager.CRMServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="218" column="26" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="218" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" line="25" column="7" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/manager/CRMServiceManager.java" bodystart="25" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1af2a1ec0de1a174a78bf66572fffdece4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a92945863e8d53c8bca27cf86a8a04c7d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a63c0d0a000a52b7ba98b131a58863f2c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a6f6b7ca9f318071e50d190a488734a41" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a252fdd05248d234ddfad4e7454bcd345" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a4c2d2f73924ec470d55d541fc882545d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1aa61fc57803cbd724b1ee048fc7f4a1af" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1abb743b7a0e37f7c691b09657a40b651f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1aba6f9f0430f24062566058f674c7fc81" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a360619a1f24a944851f19c245ab04e74" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1ad7d910dfd8c398e150c7e51d9e7c1acf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a300ba1d686fcd9b0432cae18baaf7625" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a15177d8f0141ecb3d37514b99b7edc53" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1af937ddaab5f5ad7bfc1cbe39d6a715d7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>loadCRMService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1ac6ffc3898ccd2f00c6fcd643af9d0874" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>loadCRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a561782e723f7d64120da781336f705e8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a16611e0def79a7c31ac5a2bbb544ba65" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1manager_1_1_c_r_m_service_manager_1a4a3fe9b059e8ca0508c2fc3c6d9c3408" prot="private" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::manager::CRMServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

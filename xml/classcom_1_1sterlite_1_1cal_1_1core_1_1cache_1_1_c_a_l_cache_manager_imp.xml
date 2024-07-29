@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::cache::CALCacheManagerImp</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a75804cc219100f3b0816f65477ee7f63" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.cache.CALCacheManagerImp.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CALCacheManagerImp.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="12" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a9b25cc5f5faffd02d1546a82cc53a583" prot="private" static="yes" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.core.cache.CALCacheManagerImp.hazelcast</definition>
+        <argsstring></argsstring>
+        <name>hazelcast</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.hazelcast</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="14" column="34" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a689f05016111c0db8e8371d84ed96062" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.cache.CALCacheManagerImp.CALCacheManagerImp</definition>
+        <argsstring>()</argsstring>
+        <name>CALCacheManagerImp</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.CALCacheManagerImp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="16" column="9" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1abf25cf55963d97609390cf9fa2c2c5c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.cache.CALCacheManagerImp.setHazelInstance</definition>
+        <argsstring>(HazelcastInstance hazelcastInstance)</argsstring>
+        <name>setHazelInstance</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.setHazelInstance</qualifiedname>
+        <param>
+          <type>HazelcastInstance</type>
+          <declname>hazelcastInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="18" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1af14c0150a69c438a190977f8cbd4c0ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.cache.CALCacheManagerImp.putCacheValueByKey</definition>
+        <argsstring>(String key, Map value)</argsstring>
+        <name>putCacheValueByKey</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.putCacheValueByKey</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>Map</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="30" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1acc5b6fbd6b1adeb46e58fed3b86f191c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>static Object com.sterlite.cal.core.cache.CALCacheManagerImp.getCacheValueByKey</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getCacheValueByKey</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.getCacheValueByKey</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="42" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a6219718488708a128713358f10b21b3b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>static Object com.sterlite.cal.core.cache.CALCacheManagerImp.getCacheValueByKey</definition>
+        <argsstring>(String key, Object... subKeys)</argsstring>
+        <name>getCacheValueByKey</name>
+        <qualifiedname>com.sterlite.cal.core.cache.CALCacheManagerImp.getCacheValueByKey</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>Object...</type>
+          <declname>subKeys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="49" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="49" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" line="10" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/CALCacheManagerImp.java" bodystart="10" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a689f05016111c0db8e8371d84ed96062" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>CALCacheManagerImp</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1acc5b6fbd6b1adeb46e58fed3b86f191c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>getCacheValueByKey</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a6219718488708a128713358f10b21b3b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>getCacheValueByKey</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a9b25cc5f5faffd02d1546a82cc53a583" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>hazelcast</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1a75804cc219100f3b0816f65477ee7f63" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1af14c0150a69c438a190977f8cbd4c0ac" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>putCacheValueByKey</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp_1abf25cf55963d97609390cf9fa2c2c5c6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::cache::CALCacheManagerImp</scope><name>setHazelInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

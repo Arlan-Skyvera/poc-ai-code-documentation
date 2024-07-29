@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::utils::SAPDBConnection</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection_1a25fd8d7437780476787ba0aaa11c1d63" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.utils.SAPDBConnection.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.utils.SAPDBConnection.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(SAPDBConnection.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" line="15" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection_1a2a5b2b7927378f3b33460979869ed164" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>static Integer com.sterlite.cal.brm.utils.SAPDBConnection.executeUpdateMySQL</definition>
+        <argsstring>(String statement)</argsstring>
+        <name>executeUpdateMySQL</name>
+        <qualifiedname>com.sterlite.cal.brm.utils.SAPDBConnection.executeUpdateMySQL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>statement</declname>
+        </param>
+        <exceptions> throws SQLException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" line="17" column="23" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" bodystart="17" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.utils.SAPDBConnection</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" line="13" column="7" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/utils/SAPDBConnection.java" bodystart="13" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection_1a2a5b2b7927378f3b33460979869ed164" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::utils::SAPDBConnection</scope><name>executeUpdateMySQL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1utils_1_1_s_a_p_d_b_connection_1a25fd8d7437780476787ba0aaa11c1d63" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::utils::SAPDBConnection</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

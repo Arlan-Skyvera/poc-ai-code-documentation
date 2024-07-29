@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::configuration::ZkProperties</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a96a9bd36ba70228dbcf8eb11db2c0b34" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.configuration.ZkProperties.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(ZkProperties.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="22" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a453917071fdc1f9e780012bc533dfb5d" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.AUTOMAPPING_VIEW_PREFIX</definition>
+        <argsstring></argsstring>
+        <name>AUTOMAPPING_VIEW_PREFIX</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.AUTOMAPPING_VIEW_PREFIX</qualifiedname>
+        <initializer>= &quot;/view/**&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="24" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0a544da6369155e721418323daa759ce" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.JAR_RESOURCE_LOCATION</definition>
+        <argsstring></argsstring>
+        <name>JAR_RESOURCE_LOCATION</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.JAR_RESOURCE_LOCATION</qualifiedname>
+        <initializer>= &quot;src/main/resources&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="26" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a2912025c5a1733a253516d413f94d49e" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.UPDATE_SERVLET_MAPPING</definition>
+        <argsstring></argsstring>
+        <name>UPDATE_SERVLET_MAPPING</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.UPDATE_SERVLET_MAPPING</qualifiedname>
+        <initializer>= &quot;/zkau&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="28" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a59febf3b47a49e9eff7f25ee46f11f1a" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.UPDATE_URI</definition>
+        <argsstring></argsstring>
+        <name>UPDATE_URI</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.UPDATE_URI</qualifiedname>
+        <initializer>= UPDATE_SERVLET_MAPPING + &quot;/*&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="29" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1aee475ef8680fbc638b315ecca6795a2a" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.WEB_CONFIG_BASE</definition>
+        <argsstring></argsstring>
+        <name>WEB_CONFIG_BASE</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.WEB_CONFIG_BASE</qualifiedname>
+        <initializer>= &quot;/web&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="31" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a132d35a3b57b700a68365262edb54764" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkProperties.JAR_CONFIG_BASE</definition>
+        <argsstring></argsstring>
+        <name>JAR_CONFIG_BASE</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.JAR_CONFIG_BASE</qualifiedname>
+        <initializer>= UPDATE_SERVLET_MAPPING + ClassWebResource.PATH_PREFIX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="32" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3611339474d9036e2e7e71c3adf30579" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.config</qualifiedname>
+        <initializer>= &quot;jar&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default is jar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="38" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0bd6084ac2c67d3279bf1138eee48ff9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.richletUri</definition>
+        <argsstring></argsstring>
+        <name>richletUri</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.richletUri</qualifiedname>
+        <initializer>= &quot;/richlet/*&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@TODO needs additional configuration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="44" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1adaf4487165031f32e54dc28928843762" prot="private" static="no" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.viewreloverEnabled</definition>
+        <argsstring></argsstring>
+        <name>viewreloverEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.viewreloverEnabled</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register an @InternalResourceViewResolver when enabled. Enabled by default, the prefix and suffix are configurable via zk.viewresolver.prefix and zk.viewresolver.suffix</para>
+<para>Default value true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="53" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a2a759046b2b71f80a7c64fc990015c47" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.viewresolverPrefix</definition>
+        <argsstring></argsstring>
+        <name>viewresolverPrefix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.viewresolverPrefix</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base-folder location of your pages. The final prefix is determined depending on zk.config (application&apos;s configuration) example: - a request to view <computeroutput>hello</computeroutput> and <computeroutput>zk.viewresolver-prefix = pages</computeroutput> will result in /zkau/web/pages/hello.zul</para>
+<para><itemizedlist>
+<listitem><para>a request to view <computeroutput>hello</computeroutput> and <computeroutput>zk.viewresolver-prefix = pages</computeroutput> and <computeroutput>zk-config = war</computeroutput> will result in /WEB-INF/pages/hello.zul </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="64" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a90e611bc0af9662ed13e5f3a0d539abb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.viewresolverSuffix</definition>
+        <argsstring></argsstring>
+        <name>viewresolverSuffix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.viewresolverSuffix</qualifiedname>
+        <initializer>= &quot;.zul&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suffix used by viewresolver.</para>
+<para>Default value .zul </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="72" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1acf6f391d54a2027538a910dc3f39c4b0" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.homepage</definition>
+        <argsstring></argsstring>
+        <name>homepage</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.homepage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No value set, so you need to provide it yourself. When set a @Controller will map a root requests to your homepage. But you are allowed to use the spring-mvc mechanism to redirect (&apos;redirect:homepage&apos;) or forward (&apos;forward:homepage&apos;) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="80" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1aabaf32502d9cdfa53f668e73bdf03ff6" prot="private" static="no" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.viewAutomappingEnabled</definition>
+        <argsstring></argsstring>
+        <name>viewAutomappingEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.viewAutomappingEnabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable auto-mapping URI to a view When enabled then use view/your-zul-page to trigger auto-mapping.</para>
+<para>Default value false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="88" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a78a318a9bc4129584de6c40d421d70c7" prot="private" static="no" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.richletEnabled</definition>
+        <argsstring></argsstring>
+        <name>richletEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.richletEnabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable/Enable Richlets.</para>
+<para>Default value false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="95" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0b65e699ff66e3a40c408d5788de1156" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getRealPath</definition>
+        <argsstring>(String path)</argsstring>
+        <name>getRealPath</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getRealPath</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="97" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="97" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a4779ce49eaffec548ad51b0290cd9380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getConfig</definition>
+        <argsstring>()</argsstring>
+        <name>getConfig</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="110" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3434e7b5966b9ee9e1356322a7dda0ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setConfig</definition>
+        <argsstring>(String config)</argsstring>
+        <name>setConfig</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="116" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a8336e0cea57addd08ba34ff3003c2394" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getUpdateUri</definition>
+        <argsstring>()</argsstring>
+        <name>getUpdateUri</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getUpdateUri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="120" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1af53272a179c12ad69d83aa28352c2135" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getRichletUri</definition>
+        <argsstring>()</argsstring>
+        <name>getRichletUri</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getRichletUri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="124" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1adcbc119ff2acd233d9bf3019b9b5a681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setRichletUri</definition>
+        <argsstring>(String richletUri)</argsstring>
+        <name>setRichletUri</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setRichletUri</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>richletUri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="128" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3dcb79dfdf52727ac3ed2eb5aee360f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getViewresolverPrefix</definition>
+        <argsstring>()</argsstring>
+        <name>getViewresolverPrefix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getViewresolverPrefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="132" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0bc73ec9df766958cdde0f5efb414366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setViewresolverPrefix</definition>
+        <argsstring>(String viewresolverPrefix)</argsstring>
+        <name>setViewresolverPrefix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setViewresolverPrefix</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>viewresolverPrefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="150" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a9ad9f47b0fcbc914b858a8fc145a223c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getViewresolverSuffix</definition>
+        <argsstring>()</argsstring>
+        <name>getViewresolverSuffix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getViewresolverSuffix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="154" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ac4f18cc5b5dfbef063cf9ab91485c9d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setViewresolverSuffix</definition>
+        <argsstring>(String viewresolverSuffix)</argsstring>
+        <name>setViewresolverSuffix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setViewresolverSuffix</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>viewresolverSuffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="158" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a4e182485a1bbecfb5a2ce2354dbc08ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.getRichletEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getRichletEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getRichletEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="162" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ae8b92eb217e485d0eec60b21d33bee2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setRichletEnabled</definition>
+        <argsstring>(Boolean richletEnabled)</argsstring>
+        <name>setRichletEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setRichletEnabled</qualifiedname>
+        <param>
+          <type>Boolean</type>
+          <declname>richletEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="166" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ab6023d6ce978e16b91d36c338d173960" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.getHomepage</definition>
+        <argsstring>()</argsstring>
+        <name>getHomepage</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getHomepage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="170" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a88d76793a30f5a61a9ecad0e5a493bdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setHomepage</definition>
+        <argsstring>(String homepage)</argsstring>
+        <name>setHomepage</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setHomepage</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>homepage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="174" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="174" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a91e42bc74fdd28e1871058d1dd995971" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.getViewreloverEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getViewreloverEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getViewreloverEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="193" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1abb8911804ba0a7e8456a9059713f6c0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setViewreloverEnabled</definition>
+        <argsstring>(Boolean viewreloverEnabled)</argsstring>
+        <name>setViewreloverEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setViewreloverEnabled</qualifiedname>
+        <param>
+          <type>Boolean</type>
+          <declname>viewreloverEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="197" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a8734559e1258d56ad45edc21a006a542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.configuration.ZkProperties.getViewAutomappingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getViewAutomappingEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.getViewAutomappingEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="201" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ac5d18a8ccd335dd595461b875a1c912e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkProperties.setViewAutomappingEnabled</definition>
+        <argsstring>(Boolean viewAutomappingEnabled)</argsstring>
+        <name>setViewAutomappingEnabled</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.setViewAutomappingEnabled</qualifiedname>
+        <param>
+          <type>Boolean</type>
+          <declname>viewAutomappingEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="205" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="205" bodyend="207"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a10c9c36a34d77cf16519438c4924f857" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkProperties.resolvePrefix</definition>
+        <argsstring>()</argsstring>
+        <name>resolvePrefix</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkProperties.resolvePrefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="139" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="139" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configuration properties for ZK</para>
+<para><simplesect kind="author"><para>Dirk </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" line="20" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkProperties.java" bodystart="20" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a453917071fdc1f9e780012bc533dfb5d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>AUTOMAPPING_VIEW_PREFIX</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3611339474d9036e2e7e71c3adf30579" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>config</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a4779ce49eaffec548ad51b0290cd9380" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ab6023d6ce978e16b91d36c338d173960" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getHomepage</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0b65e699ff66e3a40c408d5788de1156" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getRealPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a4e182485a1bbecfb5a2ce2354dbc08ec" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getRichletEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1af53272a179c12ad69d83aa28352c2135" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getRichletUri</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a8336e0cea57addd08ba34ff3003c2394" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getUpdateUri</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a8734559e1258d56ad45edc21a006a542" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getViewAutomappingEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a91e42bc74fdd28e1871058d1dd995971" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getViewreloverEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3dcb79dfdf52727ac3ed2eb5aee360f6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getViewresolverPrefix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a9ad9f47b0fcbc914b858a8fc145a223c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>getViewresolverSuffix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1acf6f391d54a2027538a910dc3f39c4b0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>homepage</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a132d35a3b57b700a68365262edb54764" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>JAR_CONFIG_BASE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0a544da6369155e721418323daa759ce" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>JAR_RESOURCE_LOCATION</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a96a9bd36ba70228dbcf8eb11db2c0b34" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a10c9c36a34d77cf16519438c4924f857" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>resolvePrefix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a78a318a9bc4129584de6c40d421d70c7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>richletEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0bd6084ac2c67d3279bf1138eee48ff9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>richletUri</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a3434e7b5966b9ee9e1356322a7dda0ff" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a88d76793a30f5a61a9ecad0e5a493bdf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setHomepage</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ae8b92eb217e485d0eec60b21d33bee2f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setRichletEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1adcbc119ff2acd233d9bf3019b9b5a681" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setRichletUri</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ac5d18a8ccd335dd595461b875a1c912e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setViewAutomappingEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1abb8911804ba0a7e8456a9059713f6c0f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setViewreloverEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a0bc73ec9df766958cdde0f5efb414366" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setViewresolverPrefix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1ac4f18cc5b5dfbef063cf9ab91485c9d8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>setViewresolverSuffix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a2912025c5a1733a253516d413f94d49e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>UPDATE_SERVLET_MAPPING</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a59febf3b47a49e9eff7f25ee46f11f1a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>UPDATE_URI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1aabaf32502d9cdfa53f668e73bdf03ff6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>viewAutomappingEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1adaf4487165031f32e54dc28928843762" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>viewreloverEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a2a759046b2b71f80a7c64fc990015c47" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>viewresolverPrefix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1a90e611bc0af9662ed13e5f3a0d539abb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>viewresolverSuffix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties_1aee475ef8680fbc638b315ecca6795a2a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkProperties</scope><name>WEB_CONFIG_BASE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

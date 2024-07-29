@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>com::sterlite::cal::ui::core::BaseComposer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::zkoss::zk::ui::util::GenericForwardComposer&lt; Window &gt;</basecompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer" prot="public" virt="non-virtual">com.sterlite.cal.security.controller.MainLayoutComposer</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_module_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseModuleComposer</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseSearchComposer</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_view_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseViewComposer</derivedcompoundref>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_combo_box_item_data_renderer" prot="public">com::sterlite::cal::ui::core::BaseComposer::ComboBoxItemDataRenderer</innerclass>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_combo_item_data_renderer" prot="public">com::sterlite::cal::ui::core::BaseComposer::ComboItemDataRenderer</innerclass>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model" prot="public">com::sterlite::cal::ui::core::BaseComposer::PagingListModel</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aa590afbba4403dc23ecc6e51b6b385d7" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ui.core.BaseComposer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BaseComposer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="43" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a7999c2cfc22939327865824c64d60ca2" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.ui.core.BaseComposer.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="45" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0ed263e93f840f018261f731648c6ef6" prot="protected" static="no" mutable="no">
+        <type>Div</type>
+        <definition>Div com.sterlite.cal.ui.core.BaseComposer.moduleContent</definition>
+        <argsstring></argsstring>
+        <name>moduleContent</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.moduleContent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="46" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a93d97d60f4594f36e5b923895f7e05cd" prot="protected" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.DATE_FORMAT_ALIASNAME</definition>
+        <argsstring></argsstring>
+        <name>DATE_FORMAT_ALIASNAME</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.DATE_FORMAT_ALIASNAME</qualifiedname>
+        <initializer>= &quot;DEFAULT_DATE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="47" column="31" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1adbdffde58fe05090464b19ed21537acd" prot="protected" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.DATE_TIME_FORMAT_ALIASNAME</definition>
+        <argsstring></argsstring>
+        <name>DATE_TIME_FORMAT_ALIASNAME</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.DATE_TIME_FORMAT_ALIASNAME</qualifiedname>
+        <initializer>= &quot;DEFAULT_DATE_TIME&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="48" column="31" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8f930d6c84802dcb8ce425d93e02f183" prot="protected" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.PAGESIZE_ALIASNAME</definition>
+        <argsstring></argsstring>
+        <name>PAGESIZE_ALIASNAME</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PAGESIZE_ALIASNAME</qualifiedname>
+        <initializer>= &quot;DEFAULT_PAGE_SIZE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="49" column="31" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a6aa086bf1197e04bc86e1ca91caf4def" prot="protected" static="yes" mutable="no">
+        <type>final Map&lt; String, HttpSession &gt;</type>
+        <definition>final Map&lt;String, HttpSession&gt; com.sterlite.cal.ui.core.BaseComposer.webActiveSessionMap</definition>
+        <argsstring></argsstring>
+        <name>webActiveSessionMap</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.webActiveSessionMap</qualifiedname>
+        <initializer>= Collections.synchronizedMap(new HashMap&lt;String, HttpSession&gt;())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="50" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a22ba9bfa942d29771cf4e4399c773bc9" prot="protected" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.SYSTEMPARAMETER</definition>
+        <argsstring></argsstring>
+        <name>SYSTEMPARAMETER</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.SYSTEMPARAMETER</qualifiedname>
+        <initializer>= &quot;SystemParameter&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="51" column="31" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5fdb680b51a250fcecc9066b760fedfa" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.BD_SESSION_CONTEXT</definition>
+        <argsstring></argsstring>
+        <name>BD_SESSION_CONTEXT</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.BD_SESSION_CONTEXT</qualifiedname>
+        <initializer>= &quot;_bd-sessi0n-ctx###&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="53" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a18b709d13f8a7790e8e7c4f3659bd1ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ComponentInfo</type>
+        <definition>ComponentInfo com.sterlite.cal.ui.core.BaseComposer.doBeforeCompose</definition>
+        <argsstring>(Page page, Component parent, ComponentInfo compInfo)</argsstring>
+        <name>doBeforeCompose</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.doBeforeCompose</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_view_composer_1a0f881a2580e7122fa75c880f167cd578">doBeforeCompose</reimplementedby>
+        <param>
+          <type>Page</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>Component</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>ComponentInfo</type>
+          <declname>compInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="57" column="22" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8984241cb433b2cc33f09d6fdf70e179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.doAfterCompose</definition>
+        <argsstring>(Window comp)</argsstring>
+        <name>doAfterCompose</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.doAfterCompose</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_module_composer_1aded47e5f92591d9f83686ab115f326bc">doAfterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_view_composer_1a3f28ea4c4dc668ce8700232536310aa3">doAfterCompose</reimplementedby>
+        <param>
+          <type>Window</type>
+          <declname>comp</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="64" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5401e38a16f8ca995759eb2909ed571b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void com.sterlite.cal.ui.core.BaseComposer.afterCompose</definition>
+        <argsstring>(Window comp)</argsstring>
+        <name>afterCompose</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.afterCompose</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ae60898ee5528bbcf85ea764dcc52e448">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_module_composer_1aafa42265786df80938b016eecbb72d97">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer_1ad1eca3bcba1df360b763c7116defb897">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_entry_composer_1a21af886b0fbce929dd42fda642121361">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_entry_composer_s_b_1aafe94c37c409015d4b31b0822446cbcd">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad56cdb0849e7852c398a852176c06d05">afterCompose</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_details_composer_1aaad28674b53abec9482bc6c5ed5d6e0d">afterCompose</reimplementedby>
+        <param>
+          <type>Window</type>
+          <declname>comp</declname>
+        </param>
+        <exceptions> throws Exception</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="73" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a045936c3e11992e99b3d9ba8f1614b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseComposer.getContextPath</definition>
+        <argsstring>()</argsstring>
+        <name>getContextPath</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.getContextPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="93" column="21" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3a8c4c0affa7386f007ccf5e04ac103c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ui.core.BaseComposer.getDateFormat</definition>
+        <argsstring>()</argsstring>
+        <name>getDateFormat</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.getDateFormat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="100" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3f1aee09263be734cfcebdee467a1236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ui.core.BaseComposer.getDateTimeFormat</definition>
+        <argsstring>()</argsstring>
+        <name>getDateTimeFormat</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.getDateTimeFormat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="106" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a82bd0f32f9d1259d626d1d0d6df5483e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.getPageSize</definition>
+        <argsstring>()</argsstring>
+        <name>getPageSize</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.getPageSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="112" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8a4ce8e3e873e2c576ddabdb72c8c04d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.onClick$btnCancel</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onClick$btnCancel</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.onClick$btnCancel</qualifiedname>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="178" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="178" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a31094789c9609d04c28ae93bf173b522" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void com.sterlite.cal.ui.core.BaseComposer.showSuccessDialog</definition>
+        <argsstring>(String message)</argsstring>
+        <name>showSuccessDialog</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.showSuccessDialog</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="188" column="23" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="188" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a2d73bbbbfaca3321d9259cc91404c144" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.sortComboDatas</definition>
+        <argsstring>(List&lt; ComboData &gt; comboDatas)</argsstring>
+        <name>sortComboDatas</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.sortComboDatas</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1data_1_1common_1_1_combo_data" kindref="compound">ComboData</ref> &gt;</type>
+          <declname>comboDatas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="220" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="220" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8d0c2703eaadac0cb5202962982c3453" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.sortComboBoxDatas</definition>
+        <argsstring>(List&lt; ComboBoxData &gt; comboDatas)</argsstring>
+        <name>sortComboBoxDatas</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.sortComboBoxDatas</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1data_1_1common_1_1_combo_box_data" kindref="compound">ComboBoxData</ref> &gt;</type>
+          <declname>comboDatas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="236" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="236" bodyend="248"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a16ad46ef687a92c421d3f41e0b3f7eb0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.internalAfterCompose</definition>
+        <argsstring>(Window comp)</argsstring>
+        <name>internalAfterCompose</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.internalAfterCompose</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_module_composer_1a054da18d1b7a3c61194aeee94443e4be">internalAfterCompose</reimplementedby>
+        <param>
+          <type>Window</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="75" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="75" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0e72589eca883923a14f421d10800049" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void com.sterlite.cal.ui.core.BaseComposer.setModuleContent</definition>
+        <argsstring>(Div moduleContent)</argsstring>
+        <name>setModuleContent</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.setModuleContent</qualifiedname>
+        <param>
+          <type>Div</type>
+          <declname>moduleContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="87" column="22" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aea4116169b63115bbca90ab64f290938" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void com.sterlite.cal.ui.core.BaseComposer.doLogout</definition>
+        <argsstring>(String username)</argsstring>
+        <name>doLogout</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.doLogout</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="118" column="22" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="118" bodyend="129"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5ce1b4378f4508679a728efa0e4cd0d4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.ui.core.BaseComposer.resetComponents</definition>
+        <argsstring>(Component focusElement, Component... components)</argsstring>
+        <name>resetComponents</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.resetComponents</qualifiedname>
+        <param>
+          <type>Component</type>
+          <declname>focusElement</declname>
+        </param>
+        <param>
+          <type>Component...</type>
+          <declname>components</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="196" column="24" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="196" bodyend="218"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.security.controller.MainLayoutComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.ui.core.BaseModuleComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_module_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.ui.core.BaseSearchComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>com.sterlite.cal.ui.core.BaseViewComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_view_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.ui.web.composer.SearchAuditComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.ui.web.composer.SearchAuditEntryComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_entry_composer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.ui.web.composer.SearchAuditEntryComposerSB</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_entry_composer_s_b"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.ui.web.composer.WomIntegrationComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.ui.web.composer.WomIntegrationDetailsComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_details_composer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>moduleContent</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>webActiveSessionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Map&lt; String, HttpSession &gt;</label>
+      </node>
+      <node id="2">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+      <node id="3">
+        <label>Div</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="41" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="41" bodyend="321"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5401e38a16f8ca995759eb2909ed571b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>afterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5fdb680b51a250fcecc9066b760fedfa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>BD_SESSION_CONTEXT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a93d97d60f4594f36e5b923895f7e05cd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>DATE_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1adbdffde58fe05090464b19ed21537acd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>DATE_TIME_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8984241cb433b2cc33f09d6fdf70e179" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>doAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a18b709d13f8a7790e8e7c4f3659bd1ab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>doBeforeCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aea4116169b63115bbca90ab64f290938" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>doLogout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a045936c3e11992e99b3d9ba8f1614b24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>getContextPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3a8c4c0affa7386f007ccf5e04ac103c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>getDateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3f1aee09263be734cfcebdee467a1236" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>getDateTimeFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a82bd0f32f9d1259d626d1d0d6df5483e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>getPageSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a16ad46ef687a92c421d3f41e0b3f7eb0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>internalAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aa590afbba4403dc23ecc6e51b6b385d7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0ed263e93f840f018261f731648c6ef6" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>moduleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8a4ce8e3e873e2c576ddabdb72c8c04d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>onClick$btnCancel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8f930d6c84802dcb8ce425d93e02f183" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>PAGESIZE_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5ce1b4378f4508679a728efa0e4cd0d4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>resetComponents</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a7999c2cfc22939327865824c64d60ca2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0e72589eca883923a14f421d10800049" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>setModuleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a31094789c9609d04c28ae93bf173b522" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>showSuccessDialog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8d0c2703eaadac0cb5202962982c3453" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>sortComboBoxDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a2d73bbbbfaca3321d9259cc91404c144" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>sortComboDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a22ba9bfa942d29771cf4e4399c773bc9" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>SYSTEMPARAMETER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a6aa086bf1197e04bc86e1ca91caf4def" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer</scope><name>webActiveSessionMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::audit::service::IGetAuditService</compoundname>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service" prot="public" virt="non-virtual">com.sterlite.cal.audit.serviceimpl.GetAuditService</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a85ec4ab2ee58240c394e550f8823bcd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.service.IGetAuditService.getNBAuditByDateRangeAndOperationAlias</definition>
+        <argsstring>(Pageable pageable, String startDate, String endDate, String operationAlias, List&lt; String &gt; responseStatus, String request)</argsstring>
+        <name>getNBAuditByDateRangeAndOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.service.IGetAuditService.getNBAuditByDateRangeAndOperationAlias</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service_1accaae17525b9dd62713f18167d7612d7">getNBAuditByDateRangeAndOperationAlias</reimplementedby>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>responseStatus</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="15" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1aae22748cde165b001cca28192d4f8604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.service.IGetAuditService.getNBAuditById</definition>
+        <argsstring>(long id)</argsstring>
+        <name>getNBAuditById</name>
+        <qualifiedname>com.sterlite.cal.audit.service.IGetAuditService.getNBAuditById</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service_1a5c3d354b4d9ebefbb8fb5f0f9aa9661f">getNBAuditById</reimplementedby>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="16" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a023d409e4e2a681e89f668eed3e57275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.service.IGetAuditService.getSBAuditByDateRangeAndOperationAlias</definition>
+        <argsstring>(Pageable pageable, String startDate, String endDate, String operationAlias)</argsstring>
+        <name>getSBAuditByDateRangeAndOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.service.IGetAuditService.getSBAuditByDateRangeAndOperationAlias</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service_1af6fb46ecacd94ba154909020341e9007">getSBAuditByDateRangeAndOperationAlias</reimplementedby>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="17" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a17f5c45520a417a5eef0fcca34a9bba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.service.IGetAuditService.getSBAuditByUniqueId</definition>
+        <argsstring>(String uniqueId)</argsstring>
+        <name>getSBAuditByUniqueId</name>
+        <qualifiedname>com.sterlite.cal.audit.service.IGetAuditService.getSBAuditByUniqueId</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service_1a23159c1ce723af34301c784a2030c71f">getSBAuditByUniqueId</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>uniqueId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="18" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1ac6c9965a91956826e985ebe6352e12ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt; String &gt; com.sterlite.cal.audit.service.IGetAuditService.getUniqueOperationAlias</definition>
+        <argsstring>()</argsstring>
+        <name>getUniqueOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.service.IGetAuditService.getUniqueOperationAlias</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service_1a26762deb82e974c7ddfffab50719bd64">getUniqueOperationAlias</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="19" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.audit.service.IGetAuditService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.audit.serviceimpl.GetAuditService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" line="14" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/service/IGetAuditService.java" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a85ec4ab2ee58240c394e550f8823bcd6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::service::IGetAuditService</scope><name>getNBAuditByDateRangeAndOperationAlias</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1aae22748cde165b001cca28192d4f8604" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::service::IGetAuditService</scope><name>getNBAuditById</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a023d409e4e2a681e89f668eed3e57275" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::service::IGetAuditService</scope><name>getSBAuditByDateRangeAndOperationAlias</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1a17f5c45520a417a5eef0fcca34a9bba0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::service::IGetAuditService</scope><name>getSBAuditByUniqueId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service_1ac6c9965a91956826e985ebe6352e12ca" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::service::IGetAuditService</scope><name>getUniqueOperationAlias</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

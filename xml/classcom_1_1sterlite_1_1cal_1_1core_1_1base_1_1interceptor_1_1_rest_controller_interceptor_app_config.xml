@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AcceptHeaderLocaleResolver</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">WebMvcConfigurer</basecompoundref>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1afd52ff23e82c8cb81bd6ad5baa7a7849" prot="package" static="no" mutable="no">
+        <type>List&lt; Locale &gt;</type>
+        <definition>List&lt;Locale&gt; com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.LOCALES</definition>
+        <argsstring></argsstring>
+        <name>LOCALES</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.LOCALES</qualifiedname>
+        <initializer>= Arrays.asList( new Locale(&quot;en&quot;),   new Locale(&quot;hi&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="19" column="6" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1aec91078aeb8555dd2c58fdc198051b99" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor" kindref="compound">RestControllerInterceptor</ref></type>
+        <definition>RestControllerInterceptor com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.restControllerInterceptor</definition>
+        <argsstring></argsstring>
+        <name>restControllerInterceptor</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.restControllerInterceptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="22" column="27" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1aeb77c71deec290258940a6f2e85c9b2e" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(RestControllerInterceptorAppConfig.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="20" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1a52583ef3059d6d43e2e70675ade46d47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.addInterceptors</definition>
+        <argsstring>(InterceptorRegistry registry)</argsstring>
+        <name>addInterceptors</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.addInterceptors</qualifiedname>
+        <param>
+          <type>InterceptorRegistry</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="25" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1a1a7aa9236b3deffcca9bf627bea396ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Locale</type>
+        <definition>Locale com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.resolveLocale</definition>
+        <argsstring>(HttpServletRequest request)</argsstring>
+        <name>resolveLocale</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig.resolveLocale</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="33" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="33" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>WebMvcConfigurer</label>
+      </node>
+      <node id="2">
+        <label>AcceptHeaderLocaleResolver</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RestControllerInterceptorAppConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOCALES</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>restControllerInterceptor</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>List&lt; Locale &gt;</label>
+      </node>
+      <node id="6">
+        <label>HandlerInterceptor</label>
+      </node>
+      <node id="3">
+        <label>WebMvcConfigurer</label>
+      </node>
+      <node id="2">
+        <label>AcceptHeaderLocaleResolver</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" line="18" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptorAppConfig.java" bodystart="18" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1a52583ef3059d6d43e2e70675ade46d47" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</scope><name>addInterceptors</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1afd52ff23e82c8cb81bd6ad5baa7a7849" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</scope><name>LOCALES</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1aeb77c71deec290258940a6f2e85c9b2e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1a1a7aa9236b3deffcca9bf627bea396ff" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</scope><name>resolveLocale</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_app_config_1aec91078aeb8555dd2c58fdc198051b99" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptorAppConfig</scope><name>restControllerInterceptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::WOMRestClient</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1afd1dcdff83b4fddcc539a728df58e5c0" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.WOMRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(WOMRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="33" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a32f5b5e6e0d1861400a88a10a4dac260" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.WOMRestClient.IP_ADDRESS</definition>
+        <argsstring></argsstring>
+        <name>IP_ADDRESS</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.IP_ADDRESS</qualifiedname>
+        <initializer>= &quot;10.121.28.92&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="34" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1afb8d173902fde0cba5e26aeb6dac832f" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.WOMRestClient.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="35" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a4d82c1e7596efd016a8dbfff6ed6fd8f" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.restclient.WOMRestClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="38" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a6c73d7a97805ddb6cc5b84c9817f9c0b" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.core.base.restclient.WOMRestClient.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="41" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a00cdac78111f805a9edd5acc19fa27f7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.WOMRestClient.baseUrl</definition>
+        <argsstring></argsstring>
+        <name>baseUrl</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.baseUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The base url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="45" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1aa173d4b6efd62b5a2a605a624781a895" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.core.base.restclient.WOMRestClient.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="48" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ac7301e5bcf860af7e92c6b40f07ecbbd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.WOMRestClient.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="51" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="51" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a19b6a02221c4c84d22e8bdf812555e1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.WOMRestClient.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="65" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a32bfc77bee7662c5c3de975525da7a54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.WOMRestClient.getWOMToken</definition>
+        <argsstring>()</argsstring>
+        <name>getWOMToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.getWOMToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="141" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="141" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ad8967e3c68d817ee08ec259e61e9d4b0" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.WOMRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="71" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a668cf8cb23175864b038e88838c079c4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.WOMRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="77" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ac25e5330ea67d98c47f0ec01fe590d2f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.WOMRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="83" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a9761cc7953467f50e1f45659b7b2492a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.WOMRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="89" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="89" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1aa7416524481990f439b9e74ccb775eeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.core.base.restclient.WOMRestClient.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.WOMRestClient.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="95" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="95" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Class <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" kindref="compound">WOMRestClient</ref>.</para>
+<para><simplesect kind="author"><para>sanjay.keshwala </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.WOMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.WOMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" line="31" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/WOMRestClient.java" bodystart="31" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a00cdac78111f805a9edd5acc19fa27f7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>baseUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a4d82c1e7596efd016a8dbfff6ed6fd8f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1aa173d4b6efd62b5a2a605a624781a895" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a668cf8cb23175864b038e88838c079c4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a19b6a02221c4c84d22e8bdf812555e1c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ac7301e5bcf860af7e92c6b40f07ecbbd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a32bfc77bee7662c5c3de975525da7a54" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>getWOMToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a32f5b5e6e0d1861400a88a10a4dac260" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>IP_ADDRESS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a6c73d7a97805ddb6cc5b84c9817f9c0b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1afb8d173902fde0cba5e26aeb6dac832f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1afd1dcdff83b4fddcc539a728df58e5c0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ac25e5330ea67d98c47f0ec01fe590d2f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1ad8967e3c68d817ee08ec259e61e9d4b0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1aa7416524481990f439b9e74ccb775eeb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client_1a9761cc7953467f50e1f45659b7b2492a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::WOMRestClient</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::logger::UniqueIdentifierHolder</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a0666bb7b2b332cc21280b2cee7b3b9f8" prot="private" static="yes" mutable="no">
+        <type>ThreadLocal&lt; StringBuilder &gt;</type>
+        <definition>ThreadLocal&lt;StringBuilder&gt; com.sterlite.cal.core.logger.UniqueIdentifierHolder.threadLocal</definition>
+        <argsstring></argsstring>
+        <name>threadLocal</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.threadLocal</qualifiedname>
+        <initializer>= new ThreadLocal&lt;StringBuilder&gt;() {
+		@Override
+		protected StringBuilder initialValue() {
+			return new StringBuilder(1000);
+		}
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="11" column="28" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1afe28cee5eee091639c943dae697b40c6" prot="private" static="yes" mutable="no">
+        <type>ThreadLocal&lt; StringBuilder &gt;</type>
+        <definition>ThreadLocal&lt;StringBuilder&gt; com.sterlite.cal.core.logger.UniqueIdentifierHolder.threadLocalForLog</definition>
+        <argsstring></argsstring>
+        <name>threadLocalForLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.threadLocalForLog</qualifiedname>
+        <initializer>= new ThreadLocal&lt;StringBuilder&gt;() {
+		@Override
+		protected StringBuilder initialValue() {
+			return new StringBuilder(1000);
+		}
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="17" column="28" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="17" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3cfdf10ea421089584db770b3c553453" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.logger.UniqueIdentifierHolder.UniqueIdentifierHolder</definition>
+        <argsstring>()</argsstring>
+        <name>UniqueIdentifierHolder</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.UniqueIdentifierHolder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="24" column="9" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="24" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a20b63e0aa3031353a073c95091a6141a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</definition>
+        <argsstring>(String operationName, String uniqueIdentifier, String tpUniqueIdentifier)</argsstring>
+        <name>setUniqueIdentifier</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>operationName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>uniqueIdentifier</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>tpUniqueIdentifier</declname>
+        </param>
+        <exceptions> throws UnknownHostException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Unique Identifier with its Operation Name and Thirdparty Identifier</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uniqueIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>UnknownHostException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="35" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="35" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a09e998798a621e37b0e10b629925df60" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</definition>
+        <argsstring>(String operationName, String uniqueIdentifier)</argsstring>
+        <name>setUniqueIdentifier</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>operationName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>uniqueIdentifier</declname>
+        </param>
+        <exceptions> throws UnknownHostException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Unique Identifier with its Operation Name</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uniqueIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>UnknownHostException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="55" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1af9579f9a17137f6d9827edbd69d74a1f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</definition>
+        <argsstring>(String uniqueIdentifier)</argsstring>
+        <name>setUniqueIdentifier</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifier</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uniqueIdentifier</declname>
+        </param>
+        <exceptions> throws UnknownHostException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Unique Identifier</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uniqueIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>UnknownHostException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="72" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1acfa33c77a5ca324d77bc49e66560545c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.core.logger.UniqueIdentifierHolder.getUniqueIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>getUniqueIdentifier</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.getUniqueIdentifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="83" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3303b6e05aca0b78d3feead18d5c5dfd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.sterlite.cal.core.logger.UniqueIdentifierHolder.isUniqueIdentifierAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isUniqueIdentifierAvailable</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.isUniqueIdentifierAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="87" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a6fc2ecc51506b2443648cfdb51e24206" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.flushUniqueIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>flushUniqueIdentifier</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.flushUniqueIdentifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush Unique Identifier&apos;s value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="95" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3317dd01af488fe2ec6f42e52ea3f107" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifierforLog</definition>
+        <argsstring>(String uniqueIdentifier)</argsstring>
+        <name>setUniqueIdentifierforLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.setUniqueIdentifierforLog</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uniqueIdentifier</declname>
+        </param>
+        <exceptions> throws UnknownHostException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Unique Identifier for Log file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uniqueIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>UnknownHostException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="105" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1ab53e213758c9b195b1f1be22b04860cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.core.logger.UniqueIdentifierHolder.getUniqueIdentifierforLog</definition>
+        <argsstring>()</argsstring>
+        <name>getUniqueIdentifierforLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.getUniqueIdentifierforLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="115" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1abfda0777628f351fd19a71151c9d6794" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.core.logger.UniqueIdentifierHolder.flushUniqueIdentifierForLog</definition>
+        <argsstring>()</argsstring>
+        <name>flushUniqueIdentifierForLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.UniqueIdentifierHolder.flushUniqueIdentifierForLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="119" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="119" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class holding unique identifier values. </para>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" line="9" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/UniqueIdentifierHolder.java" bodystart="9" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a6fc2ecc51506b2443648cfdb51e24206" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>flushUniqueIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1abfda0777628f351fd19a71151c9d6794" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>flushUniqueIdentifierForLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1acfa33c77a5ca324d77bc49e66560545c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>getUniqueIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1ab53e213758c9b195b1f1be22b04860cb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>getUniqueIdentifierforLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3303b6e05aca0b78d3feead18d5c5dfd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>isUniqueIdentifierAvailable</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a20b63e0aa3031353a073c95091a6141a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>setUniqueIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a09e998798a621e37b0e10b629925df60" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>setUniqueIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1af9579f9a17137f6d9827edbd69d74a1f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>setUniqueIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3317dd01af488fe2ec6f42e52ea3f107" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>setUniqueIdentifierforLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a0666bb7b2b332cc21280b2cee7b3b9f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>threadLocal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1afe28cee5eee091639c943dae697b40c6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>threadLocalForLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_unique_identifier_holder_1a3cfdf10ea421089584db770b3c553453" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::UniqueIdentifierHolder</scope><name>UniqueIdentifierHolder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

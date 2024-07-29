@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.prm.integration.IPRMOperationIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a27757714691aea6ae6ca76707cea23d6" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PRMOperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="17" column="30" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a74fb6b5e3ed7a91ecd38454e2ade92dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_r_m_rest_client" kindref="compound">PRMRestClient</ref></type>
+        <definition>PRMRestClient com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.prmRestClient</definition>
+        <argsstring></argsstring>
+        <name>prmRestClient</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.prmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="19" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1ad9cc68ef958d536a0d3c813e77805882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPost</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service_1ae1c539f70380b808db2a2eac8445b422">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="22" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a9fac055c113cf075ae112f6b43a2849d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doGet</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service_1a31ff3a2f62a1a796e71c3e8cc655e532">doGet</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="29" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1aba60ccd85ce79fd4a171ab9e88f10f9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPatch</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPatch</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service_1a1e884caae28a768c74c2a781bd0123d3">doPatch</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="36" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1ac1046e9a74bf14a11565cf8a0545e33b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPut</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService.doPut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service_1a199a6895a0751a5541d736b4c823f2f1">doPut</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="43" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="43" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.prm.integration.IPRMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.prm.integration.impl.PRMOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.prm.integration.IPRMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1_i_p_r_m_operation_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" line="15" column="7" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/integration/impl/PRMOperationIntegrationService.java" bodystart="15" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a9fac055c113cf075ae112f6b43a2849d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1aba60ccd85ce79fd4a171ab9e88f10f9b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1ad9cc68ef958d536a0d3c813e77805882" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1ac1046e9a74bf14a11565cf8a0545e33b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a27757714691aea6ae6ca76707cea23d6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1integration_1_1impl_1_1_p_r_m_operation_integration_service_1a74fb6b5e3ed7a91ecd38454e2ade92dd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::integration::impl::PRMOperationIntegrationService</scope><name>prmRestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

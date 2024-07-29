@@ -1,0 +1,54 @@
+\doxysection{com.\+sterlite.\+cal.\+audit.\+controller.\+APIAudit\+Controller Class Reference}
+\hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller}{}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller}\index{com.sterlite.cal.audit.controller.APIAuditController@{com.sterlite.cal.audit.controller.APIAuditController}}
+
+
+Inheritance diagram for com.\+sterlite.\+cal.\+audit.\+controller.\+APIAudit\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+sterlite.\+cal.\+audit.\+controller.\+APIAudit\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_ada34b8d4a9d02d43f36db6844efba1b1}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_ada34b8d4a9d02d43f36db6844efba1b1} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} {\bfseries get\+NBAudit\+With\+Start\+End\+Date\+And\+Operation\+Alias} ( @Request\+Param String start\+Date, String end\+Date, @Pageable\+Default(page=0, size=10, sort="{}execution\+Start\+Date"{}, direction=Sort.\+Direction.\+DESC) Pageable pageable, @Request\+Param(default\+Value="{}\%"{}, required=false) String operation\+Alias, @Request\+Param(default\+Value="{}00\+:00\+:01"{}, required=false) String start\+Time, @Request\+Param(default\+Value="{}23\+:59\+:59"{}, required=false) String end\+Time, @Request\+Param List$<$ String $>$ response\+Status, @Request\+Param(default\+Value="{}\%"{}, required=false) String request)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a0f3f35eca1f5b06e9465b082ca68d514}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a0f3f35eca1f5b06e9465b082ca68d514} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} {\bfseries get\+NBAudit\+By\+Id} (@Path\+Variable long id)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a88e26400ee44009a058a942b3a2bb52f}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a88e26400ee44009a058a942b3a2bb52f} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} {\bfseries get\+SBAudit\+With\+Start\+End\+Date\+And\+Operation\+Alias} ( @Request\+Param String start\+Date, String end\+Date, @Pageable\+Default(page=0, size=10, sort="{}execution\+Start\+Date"{}, direction=Sort.\+Direction.\+DESC) Pageable pageable, @Request\+Param(default\+Value="{}\%"{}) String operation\+Alias, @Request\+Param(default\+Value="{}00\+:00\+:01"{}) String start\+Time, @Request\+Param(default\+Value="{}23\+:59\+:59"{}) String end\+Time)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a64fb263e422b8d8f73b7b64c69586043}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a64fb263e422b8d8f73b7b64c69586043} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} {\bfseries get\+SBAudit\+By\+Unique\+Id} (@Path\+Variable String unique\+Id)  throws Unsupported\+Encoding\+Exception 
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a862a1f0554b8902ff130b4caff667702}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a862a1f0554b8902ff130b4caff667702} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} {\bfseries check\+System\+Up\+And\+Running} ()
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a4eb7abcb8816636beb286299dd80ed80}\label{classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_a4eb7abcb8816636beb286299dd80ed80} 
+List$<$ String $>$ {\bfseries get\+Unique\+Operation\+Alias} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller}{com.\+sterlite.\+cal.\+core.\+base.\+controller.\+Base\+Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+final void {\bfseries set\+Reference\+Identifier} (String reference\+Identifier)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAudit\+Controller.\+java\end{DoxyCompactItemize}

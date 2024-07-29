@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_c_r_m_operation_service_test_8java" kind="file" language="Java">
+    <compoundname>CRMOperationServiceTest.java</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1core_1_1service_1_1_c_r_m_operation_service_test" prot="public">com::sterlite::cal::core::service::CRMOperationServiceTest</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1core_1_1service">com::sterlite::cal::core::service</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.core.service;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.config.api.dataobject.APIConfig;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.config.api.utility.APIConfigUtility;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.config.api.utility.CoreFactoryObject;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.base.holder.APIConfigContextHolder;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.base.locale.LocaleTranslator;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.base.util.JsonUtils;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.cache.CALCacheManagerImp;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.exception.SBIntegrationException;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.crm.core.integration.ICRMOperationIntegrationService;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.crm.core.integration.impl.CRMOperationIntegrationService;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.crm.core.service.impl.CRMOperationService;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Before;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.runner.RunWith;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.InjectMocks;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.Mock;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.MockitoAnnotations;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.powermock.api.mockito.PowerMockito;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.powermock.core.classloader.annotations.PowerMockIgnore;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.powermock.core.classloader.annotations.PrepareForTest;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.powermock.modules.junit4.PowerMockRunner;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.powermock.modules.junit4.PowerMockRunnerDelegate;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.boot.test.context.SpringBootTest;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.boot.test.context.SpringBootTest.WebEnvironment;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.test.context.junit4.SpringRunner;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.text.ParseException;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.HashMap;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.LinkedHashMap;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Map;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.assertEquals;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.assertNull;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.mockito.Mockito.when;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">@RunWith(PowerMockRunner.class)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">@PowerMockRunnerDelegate(SpringRunner.class)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">@SpringBootTest(webEnvironment<sp/>=<sp/>WebEnvironment.MOCK)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">@PowerMockIgnore({<sp/></highlight><highlight class="stringliteral">&quot;javax.*.*&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;com.sun.*&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;org.xml.*&quot;</highlight><highlight class="normal"><sp/>})</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">@PrepareForTest({<sp/>APIConfigContextHolder.class,<sp/>APIConfigUtility.class,<sp/>CALCacheManagerImp.class,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CoreFactoryObject.class,<sp/>LocaleTranslator.class<sp/>})</highlight></codeline>
+<codeline lineno="44" refid="classcom_1_1sterlite_1_1cal_1_1core_1_1service_1_1_c_r_m_operation_service_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1service_1_1_c_r_m_operation_service_test" kindref="compound">CRMOperationServiceTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>@InjectMocks</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service" kindref="compound">CRMOperationService</ref><sp/>crmOperationService;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1integration_1_1_i_c_r_m_operation_integration_service" kindref="compound">ICRMOperationIntegrationService</ref><sp/>crmOperationIntegrationService<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1integration_1_1impl_1_1_c_r_m_operation_integration_service" kindref="compound">CRMOperationIntegrationService</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref><sp/>jsonutil;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>token<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqaXZhIiwiY3JlYXRlZCI6MTU2NjkwMjY0NDQ0OCwiaXBfYWRkcmVzcyI6IjA6MDowOjA6MDowOjA6MSIsImV4cCI6MTU2NjkwNjI0NCwidXNlcmlkIjoiMDAxIn0.gx-Xxr-ELxuE2yTL4zDmMEB9Dd-_sOEjYTJohCsizXTGVXsZUQ2OC0H0kqPSh3dB8FWzAMOa8nf0zbo2AV_9jw&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>sbAuthTypeId<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;AUTH01&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Map&lt;String,<sp/>String&gt;<sp/>mapHeader;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>sbRequestURI<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;brm/getOperation&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref><sp/>config=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>operationAlias<sp/>=</highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MockitoAnnotations.initMocks(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapHeader<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashMap&lt;&gt;();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mapHeader.put(</highlight><highlight class="stringliteral">&quot;authorization&quot;</highlight><highlight class="normal">,<sp/>token);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PowerMockito.mockStatic(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.class);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PowerMockito.when(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.getSBAuthenticationTypeId()).thenReturn(sbAuthTypeId);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PowerMockito.when(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.getSBHeader()).thenReturn(mapHeader);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PowerMockito.when(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.getSBRequestURI()).thenReturn(sbRequestURI);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.setOperationAlias(</highlight><highlight class="stringliteral">&quot;testAlias&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PowerMockito.when(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.getAPIConfig()).thenReturn(config);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>operationAlias=<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1holder_1_1_a_p_i_config_context_holder" kindref="compound">APIConfigContextHolder</ref>.getAPIConfig().getOperationAlias();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>doPostTest()<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>,<sp/>ParseException<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>requestJason<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>sbRequestURI<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;crm/postOperation&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>operation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinkedHashMap&lt;Object,<sp/>Object&gt;<sp/>value<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>LinkedHashMap&lt;&gt;();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Object<sp/>jsonObject<sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jsonutil.getObjectFromJson(requestJason,<sp/>LinkedHashMap.class)).thenReturn(value);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jsonutil.getJsonFromObject(jsonObject)).thenReturn(requestJason);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(crmOperationIntegrationService.doPost(sbRequestURI,<sp/>requestJason,<sp/>sbAuthTypeId,<sp/>mapHeader,operation))</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.thenReturn(</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>output<sp/>=<sp/>crmOperationService.doPost(requestJason);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertNull(output);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>doGetTest()<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Map&lt;String,<sp/>String[]&gt;<sp/>parameterMap<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashMap&lt;&gt;();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(crmOperationIntegrationService.doGet(sbRequestURI,<sp/>parameterMap,<sp/>sbAuthTypeId,<sp/>mapHeader,<sp/>operationAlias))</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.thenReturn(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>output<sp/>=<sp/>crmOperationService.doGet(parameterMap);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">,<sp/>output);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>doPatchTest()<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>parameterMap<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(crmOperationIntegrationService.doPatch(sbRequestURI,<sp/>parameterMap,<sp/>sbAuthTypeId,<sp/>mapHeader))</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.thenReturn(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>output<sp/>=<sp/>crmOperationService.doPatch(parameterMap);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">,<sp/>output);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>doPutTest()<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>parameterMap<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(crmOperationIntegrationService.doPut(sbRequestURI,<sp/>parameterMap,<sp/>sbAuthTypeId,<sp/>mapHeader))</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.thenReturn(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>output<sp/>=<sp/>crmOperationService.doPut(parameterMap);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">,<sp/>output);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/crm-core/src/test/java/com/sterlite/cal/core/service/CRMOperationServiceTest.java"/>
+  </compounddef>
+</doxygen>

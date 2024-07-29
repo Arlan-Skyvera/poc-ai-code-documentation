@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service" prot="public" virt="non-virtual">com.sterlite.cal.ivr.service.IVRProductService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a67c16412da91ccb02e6d528bd2b48c48" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IVRProductServiceImpl.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="40" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ad8ddc7745b7fe8750b0541d3d1f142ee" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration" kindref="compound">ICDABRMIntegration</ref></type>
+        <definition>ICDABRMIntegration com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.cdaBRMIntegration</definition>
+        <argsstring></argsstring>
+        <name>cdaBRMIntegration</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.cdaBRMIntegration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="42" column="28" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a8ebc0846d2051a5a4f83f08d4552132a" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="48" column="19" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a8a103eaa7f0d5fe71cd0955021625d19" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_i_v_r_util" kindref="compound">IVRUtil</ref></type>
+        <definition>IVRUtil com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.ivrUtil</definition>
+        <argsstring></argsstring>
+        <name>ivrUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.ivrUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="51" column="17" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a523a5e0cdfbda831f40696dab61ccc45" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service" kindref="compound">IIVRIntegrationService</ref></type>
+        <definition>IIVRIntegrationService com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.ivrIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>ivrIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.ivrIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="45" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a6c212ff5218c038e0397c71d5b63d380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkCompatibility</definition>
+        <argsstring>(ProductCompatibilityRequest productRequest)</argsstring>
+        <name>checkCompatibility</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkCompatibility</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a782c9a1ddc33cbcfba669c080da3ed03">checkCompatibility</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_compatibility_request" kindref="compound">ProductCompatibilityRequest</ref></type>
+          <declname>productRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="54" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a89a5a15c1bb780f848d2359d90af7dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkCompatibilityTwo</definition>
+        <argsstring>(ProductOfferingRequest productofferReuest)</argsstring>
+        <name>checkCompatibilityTwo</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkCompatibilityTwo</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a4300861a1b865792215062708a1bd4fc">checkCompatibilityTwo</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_offering_request" kindref="compound">ProductOfferingRequest</ref></type>
+          <declname>productofferReuest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="61" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a49ca81c78df0934e2e625647c7b7d189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_remaining_e_m_i_response_object" kindref="compound">RemainingEMIResponseObject</ref></type>
+        <definition>RemainingEMIResponseObject com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getBasictProduct</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>getBasictProduct</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getBasictProduct</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a7b67494f9ffd53d128230dc8ccf3038a">getBasictProduct</reimplements>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="68" column="35" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1af44e5d5e01f42eb3f35b8fdd50ee1ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref></type>
+        <definition>ProductDetails com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getProductDetails</definition>
+        <argsstring>(String productID)</argsstring>
+        <name>getProductDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getProductDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1afb7d32a510ddf5f29927d1d17db6808d">getProductDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productID</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="75" column="23" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="75" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ace73d4ea0db511c4999b3cae9c270ec7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getProductCode</definition>
+        <argsstring>(String packageName, String productTypeID)</argsstring>
+        <name>getProductCode</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getProductCode</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1af431768a396358a1ab40a3c35b5093e3">getProductCode</reimplements>
+        <param>
+          <type>String</type>
+          <declname>packageName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="162" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1af47484347e75c5a4b21a568387acb3e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_quote_b_r_m_response" kindref="compound">QuoteBRMResponse</ref></type>
+        <definition>QuoteBRMResponse com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getQuote</definition>
+        <argsstring>(QuotationForPlanBRMRequest quoteRequest)</argsstring>
+        <name>getQuote</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getQuote</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a5ed642a0400cc6bc5d0da423784cce0b">getQuote</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="169" column="25" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1abfa533d19d4938b9d9c4bec6027c7c91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getBaseProductId</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>getBaseProductId</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getBaseProductId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a116b898d4b56071bba50bcbc36706b68">getBaseProductId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="176" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ae4248946776b9fc811b9efc458f8d0c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref> &gt;</type>
+        <definition>List&lt; ProductDetails &gt; com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkExtraBenefitsOfAddOn</definition>
+        <argsstring>(CompatibityCheckVO compatibityCheckVO)</argsstring>
+        <name>checkExtraBenefitsOfAddOn</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.checkExtraBenefitsOfAddOn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1a93001640ece50268e25379b0bb05e3b6">checkExtraBenefitsOfAddOn</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_compatibity_check_v_o" kindref="compound">CompatibityCheckVO</ref></type>
+          <declname>compatibityCheckVO</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="183" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="183" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a56ff9b7f9ac9810ac6c9a8e085d43e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref></type>
+        <definition>ProductDetails com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getLatestProductDetails</definition>
+        <argsstring>(String productID)</argsstring>
+        <name>getLatestProductDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl.getLatestProductDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service_1aa6bb3ab7f598d639b65a5c0f78fcd2b6">getLatestProductDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productID</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="238" column="23" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="238" bodyend="313"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRProductService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.IVRProductServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ivrIntegrationService</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.ivr.integration.IIVRIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRProductService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" line="37" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRProductServiceImpl.java" bodystart="37" bodyend="315"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ad8ddc7745b7fe8750b0541d3d1f142ee" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>cdaBRMIntegration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a6c212ff5218c038e0397c71d5b63d380" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>checkCompatibility</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a89a5a15c1bb780f848d2359d90af7dae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>checkCompatibilityTwo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ae4248946776b9fc811b9efc458f8d0c7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>checkExtraBenefitsOfAddOn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1abfa533d19d4938b9d9c4bec6027c7c91" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getBaseProductId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a49ca81c78df0934e2e625647c7b7d189" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getBasictProduct</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a56ff9b7f9ac9810ac6c9a8e085d43e6c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getLatestProductDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1ace73d4ea0db511c4999b3cae9c270ec7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getProductCode</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1af44e5d5e01f42eb3f35b8fdd50ee1ae2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getProductDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1af47484347e75c5a4b21a568387acb3e9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>getQuote</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a523a5e0cdfbda831f40696dab61ccc45" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>ivrIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a8a103eaa7f0d5fe71cd0955021625d19" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>ivrUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a8ebc0846d2051a5a4f83f08d4552132a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_product_service_impl_1a67c16412da91ccb02e6d528bd2b48c48" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRProductServiceImpl</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

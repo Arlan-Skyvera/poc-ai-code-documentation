@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1adb2204af01a221b192ad9d201c0bc30d" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMBudgetOperationServiceTest.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="66" column="29" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aff6d8efc1ebab27a8262ba3ec644a8d6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service" kindref="compound">CBMBudgetOperationService</ref></type>
+        <definition>CBMBudgetOperationService com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetService</definition>
+        <argsstring></argsstring>
+        <name>budgetService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="68" column="35" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a2e959d78b37692ae4ede4ad6e89178cd" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.cbr</definition>
+        <argsstring></argsstring>
+        <name>cbr</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.cbr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="71" column="36" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1af1581d78c326d03c3d434215397e48a7" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_info_repo" kindref="compound">ContractBudgetInfoRepo</ref></type>
+        <definition>ContractBudgetInfoRepo com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetRepo</definition>
+        <argsstring></argsstring>
+        <name>budgetRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="74" column="32" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4ca6b9fe349092cda8ba56c11893dc05" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository" kindref="compound">ContractRepository</ref></type>
+        <definition>ContractRepository com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractMasterRepo</definition>
+        <argsstring></argsstring>
+        <name>contractMasterRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractMasterRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="77" column="28" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a98e20f3c1d89a3c2994f21aa4beefbda" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo" kindref="compound">CategoryMasterRepo</ref></type>
+        <definition>CategoryMasterRepo com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.categoryRepo</definition>
+        <argsstring></argsstring>
+        <name>categoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.categoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="80" column="28" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a05bf2c9840a95dfec0cd21608539093e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1validators_1_1_budget_validator" kindref="compound">BudgetValidator</ref></type>
+        <definition>BudgetValidator com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="83" column="25" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aa20f325dff06cba3a94325e160935d21" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="89" column="21" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7ef4b4f82b0d6634e50437524447adf8" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service" kindref="compound">ICBMIntegrationService</ref></type>
+        <definition>ICBMIntegrationService com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.cbmIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>cbmIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.cbmIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="95" column="32" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a0a503efe8c42d179b062a1e625113a38" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_matrix_repo" kindref="compound">ContractBudgetMatrixRepo</ref></type>
+        <definition>ContractBudgetMatrixRepo com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractBudgetMatrixRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudgetMatrixRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractBudgetMatrixRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="98" column="34" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a59426b883bebad83c1429afdce212e07" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref></type>
+        <definition>BudgetDetailsRepo com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetdetailsRepo</definition>
+        <argsstring></argsstring>
+        <name>budgetdetailsRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.budgetdetailsRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="101" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a02d589781070eec1ac279354d93a6eea" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="86" column="11" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a5850365687deae4a522f30846e926776" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository" kindref="compound">ContractBudgetHistoryRepository</ref></type>
+        <definition>ContractBudgetHistoryRepository com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractBudHistoryRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudHistoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.contractBudHistoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="92" column="33" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4861a7447f9c9c255bbb61ca127295a3" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.MILLIS_IN_A_DAY</definition>
+        <argsstring></argsstring>
+        <name>MILLIS_IN_A_DAY</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.MILLIS_IN_A_DAY</qualifiedname>
+        <initializer>= 1000 * 60 * 60 * 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="113" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae2c3f4c1b851a0c76dabab58ea0a838b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="104" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="104" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aaf9f1eaa0343b7a175150aa4c7d69179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessContractTest</definition>
+        <argsstring>()</argsstring>
+        <name>getBudgetSuccessContractTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessContractTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, java.text.ParseException, 			InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="124" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="124" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a1d65894c193fb17e5f1daf2e199b6d19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessBABYTest</definition>
+        <argsstring>()</argsstring>
+        <name>getBudgetSuccessBABYTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessBABYTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, java.text.ParseException, 			InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="199" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="199" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae71e7896b2ba698b6b94399551cb2c02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessBySITest</definition>
+        <argsstring>()</argsstring>
+        <name>getBudgetSuccessBySITest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getBudgetSuccessBySITest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, java.text.ParseException, 			InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="270" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="270" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a749d1afaee5dd962d281e783ef561aef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetForDataNotFound</definition>
+        <argsstring>()</argsstring>
+        <name>GetBudgetForDataNotFound</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetForDataNotFound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="345" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="345" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7d30264f76a3d85bbd00722cf1e0fb2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testConsumeBudgetNULLRequest</definition>
+        <argsstring>()</argsstring>
+        <name>testConsumeBudgetNULLRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testConsumeBudgetNULLRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="364" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="364" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aeb9e131761b1ea10bf4101fdf4035494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestSuccess</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestSuccess</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestSuccess</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="371" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="371" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae691af2bb63fb0c58e9aa5d112795efe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLBudgetValue</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestNULLBudgetValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLBudgetValue</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="383" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="383" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a1d71c320c4b7a8fa6cd9bb0590b75dd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLContractId</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestNULLContractId</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLContractId</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="395" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="395" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7b0a94fe66e42af84730c10b0e84f99e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLBANumber</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestNULLBANumber</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLBANumber</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="407" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="407" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4cad298501235e55c1529370c0c4767f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLInvoiceNumber</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestNULLInvoiceNumber</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestNULLInvoiceNumber</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="419" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="419" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a65b47bae9c2a08954876a63a88bf16c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestZeroBudgetValue</definition>
+        <argsstring>()</argsstring>
+        <name>testValidateRequestZeroBudgetValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testValidateRequestZeroBudgetValue</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="431" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="431" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a72a76e189631dc4451881d0b4acc1207" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetNullTest</definition>
+        <argsstring>()</argsstring>
+        <name>consumeBudgetNullTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetNullTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="486" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="486" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a51ee157de874566eca221f385064db24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetFirstTest</definition>
+        <argsstring>()</argsstring>
+        <name>consumeBudgetFirstTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetFirstTest</qualifiedname>
+        <exceptions> throws NullPointerException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="491" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="491" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a65f01e8f972ab56a2beb3e7860a56ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINull</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetBudgetforSINull</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="613" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="613" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae18620234edc7f914175e3a6da17eeb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSIRequest</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetBudgetforSIRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSIRequest</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException,NullPointerException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="621" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="621" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1af7f14403fa32755594a43b58a2119b3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINullPackageList</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetBudgetforSINullPackageList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINullPackageList</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="634" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="634" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a029791365d386975cd1e28ed80338948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINullDuration</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetBudgetforSINullDuration</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.validateGetBudgetforSINullDuration</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="647" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="647" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a80f8c79124a05257700ab33c8c3e52c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetforSIFailedRequest</definition>
+        <argsstring>()</argsstring>
+        <name>GetBudgetforSIFailedRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetforSIFailedRequest</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="659" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="659" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ab0b6f84268dd8a4a2ca98614714b2ec4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetforSISuccessRequest</definition>
+        <argsstring>()</argsstring>
+        <name>GetBudgetforSISuccessRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.GetBudgetforSISuccessRequest</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="689" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="689" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a55099e981176c144565b142b73fd634f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetContractMasterNull</definition>
+        <argsstring>()</argsstring>
+        <name>consumeBudgetContractMasterNull</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetContractMasterNull</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="720" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="720" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a6522ca1f3a2c7d43723afc4eb29cbc22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetTest</definition>
+        <argsstring>()</argsstring>
+        <name>consumeBudgetTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetTest</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException, InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="733" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="733" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a18993ab3962d75a15939222b1166bfbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetTest1</definition>
+        <argsstring>()</argsstring>
+        <name>consumeBudgetTest1</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.consumeBudgetTest1</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, ParseException,NullPointerException, InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="770" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="770" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ace53e0342e4ce75ea120f26ab06b0da0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getCategoryMasterTest</definition>
+        <argsstring>()</argsstring>
+        <name>getCategoryMasterTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.getCategoryMasterTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="803" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="803" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1abd994406ec3bf1a780b3111f1c78e147" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testMaintainHistory</definition>
+        <argsstring>()</argsstring>
+        <name>testMaintainHistory</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.testMaintainHistory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="810" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="810" bodyend="819"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1adca4867165cab4aa9e8dc66c2e007ff1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>static Date com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.findNextDay</definition>
+        <argsstring>(Date date)</argsstring>
+        <name>findNextDay</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.findNextDay</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="115" column="21" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1acf6e5886dc76ec0fb0eff064d0770027" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>static Date com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.findNextTwoDay</definition>
+        <argsstring>(Date date)</argsstring>
+        <name>findNextTwoDay</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest.findNextTwoDay</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="119" column="21" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="119" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.CBMBudgetOperationServiceTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>contractBudHistoryRepo</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetHistoryRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>JpaRepository&lt; ContractBudgetHistoryMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" line="64" column="7" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMBudgetOperationServiceTest.java" bodystart="64" bodyend="823"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a59426b883bebad83c1429afdce212e07" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>budgetdetailsRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1af1581d78c326d03c3d434215397e48a7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>budgetRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aff6d8efc1ebab27a8262ba3ec644a8d6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>budgetService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a98e20f3c1d89a3c2994f21aa4beefbda" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>categoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7ef4b4f82b0d6634e50437524447adf8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>cbmIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a2e959d78b37692ae4ede4ad6e89178cd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>cbr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a55099e981176c144565b142b73fd634f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>consumeBudgetContractMasterNull</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a51ee157de874566eca221f385064db24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>consumeBudgetFirstTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a72a76e189631dc4451881d0b4acc1207" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>consumeBudgetNullTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a6522ca1f3a2c7d43723afc4eb29cbc22" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>consumeBudgetTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a18993ab3962d75a15939222b1166bfbd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>consumeBudgetTest1</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a0a503efe8c42d179b062a1e625113a38" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>contractBudgetMatrixRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a5850365687deae4a522f30846e926776" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>contractBudHistoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4ca6b9fe349092cda8ba56c11893dc05" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>contractMasterRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1adca4867165cab4aa9e8dc66c2e007ff1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>findNextDay</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1acf6e5886dc76ec0fb0eff064d0770027" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>findNextTwoDay</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a749d1afaee5dd962d281e783ef561aef" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>GetBudgetForDataNotFound</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a80f8c79124a05257700ab33c8c3e52c0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>GetBudgetforSIFailedRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ab0b6f84268dd8a4a2ca98614714b2ec4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>GetBudgetforSISuccessRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a1d65894c193fb17e5f1daf2e199b6d19" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>getBudgetSuccessBABYTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae71e7896b2ba698b6b94399551cb2c02" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>getBudgetSuccessBySITest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aaf9f1eaa0343b7a175150aa4c7d69179" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>getBudgetSuccessContractTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ace53e0342e4ce75ea120f26ab06b0da0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>getCategoryMasterTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae2c3f4c1b851a0c76dabab58ea0a838b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a02d589781070eec1ac279354d93a6eea" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1adb2204af01a221b192ad9d201c0bc30d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4861a7447f9c9c255bbb61ca127295a3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>MILLIS_IN_A_DAY</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7d30264f76a3d85bbd00722cf1e0fb2e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testConsumeBudgetNULLRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1abd994406ec3bf1a780b3111f1c78e147" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testMaintainHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a7b0a94fe66e42af84730c10b0e84f99e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestNULLBANumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae691af2bb63fb0c58e9aa5d112795efe" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestNULLBudgetValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a1d71c320c4b7a8fa6cd9bb0590b75dd4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestNULLContractId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a4cad298501235e55c1529370c0c4767f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestNULLInvoiceNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aeb9e131761b1ea10bf4101fdf4035494" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestSuccess</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a65b47bae9c2a08954876a63a88bf16c9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>testValidateRequestZeroBudgetValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1aa20f325dff06cba3a94325e160935d21" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>utils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a65f01e8f972ab56a2beb3e7860a56ff4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>validateGetBudgetforSINull</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a029791365d386975cd1e28ed80338948" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>validateGetBudgetforSINullDuration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1af7f14403fa32755594a43b58a2119b3e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>validateGetBudgetforSINullPackageList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1ae18620234edc7f914175e3a6da17eeb1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>validateGetBudgetforSIRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_budget_operation_service_test_1a05bf2c9840a95dfec0cd21608539093e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMBudgetOperationServiceTest</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

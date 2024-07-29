@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.isd.idm.service.IIDMOperationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a60b268acf946c993aeb8c63f9da4e3aa" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.idm.service.impl.IDMOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IIDMOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="29" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ac6dc6dee37c7d4a0a69ff4961ce90d00" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.isd.idm.service.impl.IDMOperationService.REQUEST</definition>
+        <argsstring></argsstring>
+        <name>REQUEST</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.REQUEST</qualifiedname>
+        <initializer>= &quot;Request&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="30" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ad7ffcf9c8c81501c0c39c468d514428e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.createUser</definition>
+        <argsstring>(IDMCreateUserRequest userRequest)</argsstring>
+        <name>createUser</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.createUser</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1a1d07df06d796dfb144fe30b188b31976">createUser</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="33" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ad98b04014765c800fbde9e94d5ecfc25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.getUserByID</definition>
+        <argsstring>(String userId)</argsstring>
+        <name>getUserByID</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.getUserByID</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1af07303a5274efed739bd7cc3e8cce30d">getUserByID</reimplements>
+        <param>
+          <type>String</type>
+          <declname>userId</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="51" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="51" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a113a87c6fbb402a1ab3cd0dc9d1ff6e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchUsers</definition>
+        <argsstring>(IDMCreateUserRequest userRequest)</argsstring>
+        <name>searchUsers</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchUsers</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1a2515afa27129d1dbac989f5fd387cd7a">searchUsers</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="65" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="65" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ab45ce157c77da479ae2e1dcecf5e4365" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.deleteUserById</definition>
+        <argsstring>(String userId)</argsstring>
+        <name>deleteUserById</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.deleteUserById</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1a55f85d6977107a523a85b338bfd03150">deleteUserById</reimplements>
+        <param>
+          <type>String</type>
+          <declname>userId</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="181" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="181" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ae08e2753093c1b6b91d410ca5898c9ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.updateUser</definition>
+        <argsstring>(IDMUpdateUserRequest userRequest)</argsstring>
+        <name>updateUser</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.updateUser</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1abc586bf7b5da990fc05ae597bfccc314">updateUser</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_update_user_request" kindref="compound">IDMUpdateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="193" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="193" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a2fcf75d1748c186302607fc3b7a3786f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.updateUserName</definition>
+        <argsstring>(IDMUpdateUserNameForMsisdnVO userRequest)</argsstring>
+        <name>updateUserName</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.updateUserName</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service_1a87ae3c10e2f90befade61330e2166c45">updateUserName</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_update_user_name_for_msisdn_v_o" kindref="compound">IDMUpdateUserNameForMsisdnVO</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="221" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="221" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a3e64608fc0cd9388e7014ac85407bea7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.validateUpdateUserNameForMsisdn</definition>
+        <argsstring>(IDMUpdateUserNameForMsisdnVO userRequest)</argsstring>
+        <name>validateUpdateUserNameForMsisdn</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.validateUpdateUserNameForMsisdn</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_update_user_name_for_msisdn_v_o" kindref="compound">IDMUpdateUserNameForMsisdnVO</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="240" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="240" bodyend="254"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a288252b218938c86545f52df11ae9177" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByUsername</definition>
+        <argsstring>(IDMCreateUserRequest userRequest)</argsstring>
+        <name>searchByUsername</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByUsername</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="82" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ac995a051eae7771c1f497ce88c1c4a57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByPersonalisedMSISDN</definition>
+        <argsstring>(IDMCreateUserRequest userRequest)</argsstring>
+        <name>searchByPersonalisedMSISDN</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByPersonalisedMSISDN</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="92" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1aa8a548475669eaf0fe41fdd685330358" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByEmail</definition>
+        <argsstring>(IDMCreateUserRequest userRequest)</argsstring>
+        <name>searchByEmail</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchByEmail</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="103" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a6f442f2a6cc5bcbe9a36de16e465e300" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchAll</definition>
+        <argsstring>()</argsstring>
+        <name>searchAll</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.searchAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="113" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="113" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1affa804066ce3de62dbc2eb788b37956c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyIDs</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setDummyIDs</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyIDs</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="124" column="14" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a9fc28c3b40f5f72b45eb25fab3209115" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyNames</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setDummyNames</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyNames</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="130" column="14" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a6b128f4aa74128af28603b783bee1dfd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyPhoneNumbers</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setDummyPhoneNumbers</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyPhoneNumbers</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="136" column="14" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="136" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ace952d3b888ec7ce8232a731291b57cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyEmails</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setDummyEmails</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyEmails</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="149" column="14" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="149" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a26be0923fc9b45b00e63536c4a01bb0d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyUsernames</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setDummyUsernames</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setDummyUsernames</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="162" column="14" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a5acbdef5c8c51ef2d7d14c65a4cf4e01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setResponse</definition>
+        <argsstring>(IDMCreateUserRequest userRequest, IDMCreateUserRequest user2)</argsstring>
+        <name>setResponse</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.impl.IDMOperationService.setResponse</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>userRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1valueobject_1_1_i_d_m_create_user_request" kindref="compound">IDMCreateUserRequest</ref></type>
+          <declname>user2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="168" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="168" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.idm.service.impl.IDMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.idm.service.IIDMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.idm.service.impl.IDMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.idm.service.IIDMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" line="27" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/impl/IDMOperationService.java" bodystart="27" bodyend="256"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ad7ffcf9c8c81501c0c39c468d514428e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>createUser</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ab45ce157c77da479ae2e1dcecf5e4365" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>deleteUserById</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ad98b04014765c800fbde9e94d5ecfc25" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>getUserByID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a60b268acf946c993aeb8c63f9da4e3aa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ac6dc6dee37c7d4a0a69ff4961ce90d00" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>REQUEST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a6f442f2a6cc5bcbe9a36de16e465e300" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>searchAll</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1aa8a548475669eaf0fe41fdd685330358" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>searchByEmail</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ac995a051eae7771c1f497ce88c1c4a57" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>searchByPersonalisedMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a288252b218938c86545f52df11ae9177" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>searchByUsername</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a113a87c6fbb402a1ab3cd0dc9d1ff6e5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>searchUsers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ace952d3b888ec7ce8232a731291b57cc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setDummyEmails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1affa804066ce3de62dbc2eb788b37956c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setDummyIDs</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a9fc28c3b40f5f72b45eb25fab3209115" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setDummyNames</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a6b128f4aa74128af28603b783bee1dfd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setDummyPhoneNumbers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a26be0923fc9b45b00e63536c4a01bb0d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setDummyUsernames</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a5acbdef5c8c51ef2d7d14c65a4cf4e01" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>setResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1ae08e2753093c1b6b91d410ca5898c9ed" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>updateUser</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a2fcf75d1748c186302607fc3b7a3786f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>updateUserName</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1impl_1_1_i_d_m_operation_service_1a3e64608fc0cd9388e7014ac85407bea7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::impl::IDMOperationService</scope><name>validateUpdateUserNameForMsisdn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

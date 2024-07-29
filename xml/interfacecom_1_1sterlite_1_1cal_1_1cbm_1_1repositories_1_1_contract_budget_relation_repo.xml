@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; ContractBudgetRelation, Long &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab679a528a80890a0cecf1b6f14452e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Page&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>Page&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractId</definition>
+        <argsstring>(@Param(&quot;contractId&quot;) String contractId, Pageable paging)</argsstring>
+        <name>findByContractId</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractId</qualifiedname>
+        <param>
+          <type>@Param(&quot;contractId&quot;) String</type>
+          <declname>contractId</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>paging</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="20" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1af4ec094052ef7eab55b8cad61166912c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByBudgetId</definition>
+        <argsstring>(String budgetId)</argsstring>
+        <name>findByBudgetId</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByBudgetId</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>budgetId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="22" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a5ba8fa3655c137cb5a4dcffddecb6961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Set&lt; String &gt;</type>
+        <definition>Set&lt; String &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMSISDNByContractId</definition>
+        <argsstring>(String contractId)</argsstring>
+        <name>findMSISDNByContractId</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMSISDNByContractId</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="25" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ae82711fcab2692a62ece8604b03f7ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref></type>
+        <definition>ContractBudgetRelation com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdAndServiceInstanceNumber</definition>
+        <argsstring>(String contractId, String serviceInstanceNumber)</argsstring>
+        <name>findByContractIdAndServiceInstanceNumber</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdAndServiceInstanceNumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="28" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1aff5b5abe5829b1b8354738c9cbe7fb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref></type>
+        <definition>ContractBudgetRelation com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractListBySI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findContractListBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractListBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="31" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab469a8e724d4fb125fed48162dbe2680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref></type>
+        <definition>ContractBudgetRelation com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractBudgetRelation</definition>
+        <argsstring>(String serviceInstanceNumber, String contractId)</argsstring>
+        <name>findContractBudgetRelation</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractBudgetRelation</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="34" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1acf4ed57ee50df19c7758f5c2706ab026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref></type>
+        <definition>ContractBudgetRelation com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractsBySI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findContractsBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractsBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="37" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a38de08e3a48a17c045af8345b6550d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMultipleContractBySI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findMultipleContractBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMultipleContractBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="40" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a65af11dbda88989347feaf82fcffb64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractListByCA</definition>
+        <argsstring>(String customerAccNo)</argsstring>
+        <name>findContractListByCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findContractListByCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>customerAccNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="43" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a9906f72bd32d237bbea31ac2d67be42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findTerminatedServiceInstance</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findTerminatedServiceInstance</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findTerminatedServiceInstance</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="46" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1aa48a489d0e547ae1caaa9a1feb801647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractId</definition>
+        <argsstring>(@Param(&quot;contractId&quot;) String contractId)</argsstring>
+        <name>findByContractId</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractId</qualifiedname>
+        <param>
+          <type>@Param(&quot;contractId&quot;) String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="49" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a4e07b16570b4015d644b47bf3e2a5e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Set&lt; String &gt;</type>
+        <definition>Set&lt; String &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdByMsisdn</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>findByContractIdByMsisdn</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdByMsisdn</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a84fddbc1cef2c9d1b6154c72c2098c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.updateForTerminatedBA</definition>
+        <argsstring>(@Param(&quot;contractBudgetId&quot;) Long contractBudgetId)</argsstring>
+        <name>updateForTerminatedBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.updateForTerminatedBA</qualifiedname>
+        <param>
+          <type>@Param(&quot;contractBudgetId&quot;) Long</type>
+          <declname>contractBudgetId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="58" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a66d187f4ae6e9c3739ac63e8895f7787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIDForCancelledServiceInstances</definition>
+        <argsstring>(@Param(&quot;contractId&quot;) String contractId)</argsstring>
+        <name>findByContractIDForCancelledServiceInstances</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIDForCancelledServiceInstances</qualifiedname>
+        <param>
+          <type>@Param(&quot;contractId&quot;) String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="61" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a8ce5e26592a5c86bd2a2da170942e65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMultipleContractByMSISDN</definition>
+        <argsstring>(Collection&lt; String &gt; msisdns)</argsstring>
+        <name>findMultipleContractByMSISDN</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findMultipleContractByMSISDN</qualifiedname>
+        <param>
+          <type>Collection&lt; String &gt;</type>
+          <declname>msisdns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="64" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab25328c7f4ca1fb7251c04097aa8b2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.updateBalContractBudRelTbl</definition>
+        <argsstring>(@Param(&quot;totalBudget&quot;) BigDecimal totalBudget, @Param(&quot;serviceInstanceNumber&quot;) String serviceInstanceNumber, @Param(&quot;contractId&quot;) String contractId)</argsstring>
+        <name>updateBalContractBudRelTbl</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.updateBalContractBudRelTbl</qualifiedname>
+        <param>
+          <type>@Param(&quot;totalBudget&quot;) BigDecimal</type>
+          <declname>totalBudget</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;serviceInstanceNumber&quot;) String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;contractId&quot;) String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="71" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a8eb8fd54fd8f54e506c82f1b52dbe9d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref></type>
+        <definition>ContractBudgetRelation com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findLastContractsRelationBySI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findLastContractsRelationBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findLastContractsRelationBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="76" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a686d4052af450fb1a76045d3d7ec8580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByBillingAccNoActiveSI</definition>
+        <argsstring>(@Param(&quot;billingAccNo&quot;) String billingAccNo)</argsstring>
+        <name>findByBillingAccNoActiveSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByBillingAccNoActiveSI</qualifiedname>
+        <param>
+          <type>@Param(&quot;billingAccNo&quot;) String</type>
+          <declname>billingAccNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="79" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab523c021c961900eca9b741930812c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findEndDateBySI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findEndDateBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findEndDateBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="82" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ac120cbf59812604e186860ee8c52c653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.deleteContractIdAndMstId</definition>
+        <argsstring>(String contractId, String contractMstd)</argsstring>
+        <name>deleteContractIdAndMstId</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.deleteContractIdAndMstId</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contractMstd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="86" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a358a4521939b4ae7eb757843b1e7e28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>List&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdAndSI</definition>
+        <argsstring>(@Param(&quot;contractId&quot;) String contractId, @Param(&quot;serviceInstanceList&quot;) List&lt; String &gt; serviceInstanceList)</argsstring>
+        <name>findByContractIdAndSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo.findByContractIdAndSI</qualifiedname>
+        <param>
+          <type>@Param(&quot;contractId&quot;) String</type>
+          <declname>contractId</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;serviceInstanceList&quot;) List&lt; String &gt;</type>
+          <declname>serviceInstanceList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="90" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; ContractBudgetRelation, Long &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; ContractBudgetRelation, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" line="17" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/ContractBudgetRelationRepo.java" bodystart="17" bodyend="93"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ac120cbf59812604e186860ee8c52c653" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>deleteContractIdAndMstId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a686d4052af450fb1a76045d3d7ec8580" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByBillingAccNoActiveSI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1af4ec094052ef7eab55b8cad61166912c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByBudgetId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab679a528a80890a0cecf1b6f14452e62" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1aa48a489d0e547ae1caaa9a1feb801647" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ae82711fcab2692a62ece8604b03f7ba1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractIdAndServiceInstanceNumber</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a358a4521939b4ae7eb757843b1e7e28c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractIdAndSI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a4e07b16570b4015d644b47bf3e2a5e83" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractIdByMsisdn</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a66d187f4ae6e9c3739ac63e8895f7787" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findByContractIDForCancelledServiceInstances</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab469a8e724d4fb125fed48162dbe2680" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findContractBudgetRelation</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a65af11dbda88989347feaf82fcffb64b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findContractListByCA</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1aff5b5abe5829b1b8354738c9cbe7fb24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findContractListBySI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1acf4ed57ee50df19c7758f5c2706ab026" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findContractsBySI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab523c021c961900eca9b741930812c60" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findEndDateBySI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a8eb8fd54fd8f54e506c82f1b52dbe9d3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findLastContractsRelationBySI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a5ba8fa3655c137cb5a4dcffddecb6961" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findMSISDNByContractId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a8ce5e26592a5c86bd2a2da170942e65b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findMultipleContractByMSISDN</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a38de08e3a48a17c045af8345b6550d14" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findMultipleContractBySI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a9906f72bd32d237bbea31ac2d67be42a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>findTerminatedServiceInstance</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1ab25328c7f4ca1fb7251c04097aa8b2f8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>updateBalContractBudRelTbl</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo_1a84fddbc1cef2c9d1b6154c72c2098c74" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::ContractBudgetRelationRepo</scope><name>updateForTerminatedBA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

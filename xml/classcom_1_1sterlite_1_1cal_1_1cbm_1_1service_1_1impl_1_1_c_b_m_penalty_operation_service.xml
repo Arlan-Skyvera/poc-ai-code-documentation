@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.service.ICBMPenaltyOperationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1afd09ff12691f368becfe2536f8e3da8d" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMPenaltyOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="32" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a44660061baa702a9ba557e049a03eedc" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.pricing</definition>
+        <argsstring></argsstring>
+        <name>pricing</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.pricing</qualifiedname>
+        <initializer>= &quot;PRICING&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="33" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a7167bdb07b73225d2c7a6e2ff302f183" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.PREFIX_VAL</definition>
+        <argsstring></argsstring>
+        <name>PREFIX_VAL</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.PREFIX_VAL</qualifiedname>
+        <initializer>=&quot;355&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="82" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a76687de8849f127e7f4cee129bbc2e5d" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffBetOldAndNewMCV</definition>
+        <argsstring></argsstring>
+        <name>diffBetOldAndNewMCV</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffBetOldAndNewMCV</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="34" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5e2eecbb029da16661b57b2b5ee39002" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffBetMCVAndDowngradeMRC</definition>
+        <argsstring></argsstring>
+        <name>diffBetMCVAndDowngradeMRC</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffBetMCVAndDowngradeMRC</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="35" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1abaee9a5477b62c5d97d67eb0aa35d123" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.downgradedMRCTotal</definition>
+        <argsstring></argsstring>
+        <name>downgradedMRCTotal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.downgradedMRCTotal</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="36" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a25e7851033223c92f25c95b490ed56c0" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.consumedBudget</definition>
+        <argsstring></argsstring>
+        <name>consumedBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.consumedBudget</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="37" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aa739e7ae7351576903f83362283df395" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.currMCV</definition>
+        <argsstring></argsstring>
+        <name>currMCV</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.currMCV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="38" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a22f883e87f88004fc8b0dff83c05eae5" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.currTotalMCV</definition>
+        <argsstring></argsstring>
+        <name>currTotalMCV</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.currTotalMCV</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="39" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a3bdf5e19900228a86c0515c3b006b2f9" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.updatedMCV</definition>
+        <argsstring></argsstring>
+        <name>updatedMCV</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.updatedMCV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="40" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a8bc12119b0270f7ee1ad493fdae63190" prot="package" static="no" mutable="no">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt;String&gt; com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.listOfDowngradedSI</definition>
+        <argsstring></argsstring>
+        <name>listOfDowngradedSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.listOfDowngradedSI</qualifiedname>
+        <initializer>= new ArrayList()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="42" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a6199e2d6c37109c981a7918ccbc4172c" prot="package" static="no" mutable="no">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractEndDate</definition>
+        <argsstring></argsstring>
+        <name>contractEndDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractEndDate</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="43" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ab58f9edfc745dfbe9b9ba802b2a41000" prot="package" static="no" mutable="no">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.startDate</definition>
+        <argsstring></argsstring>
+        <name>startDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.startDate</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="44" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a4557a97dc8cff64b5fd566edb76532c9" prot="package" static="no" mutable="no">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt;String&gt; com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.listOfAllSI</definition>
+        <argsstring></argsstring>
+        <name>listOfAllSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.listOfAllSI</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="45" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a9e67db00b3bc0b9f6dfc4e79b3fa96b4" prot="package" static="no" mutable="no">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.startdate</definition>
+        <argsstring></argsstring>
+        <name>startdate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.startdate</qualifiedname>
+        <initializer>=null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="46" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a24d90d1c534766fd3c54a21b95149125" prot="package" static="no" mutable="no">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.endDate</definition>
+        <argsstring></argsstring>
+        <name>endDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.endDate</qualifiedname>
+        <initializer>=new Date()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="47" column="6" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ad659374ade35d8690915e3b0a49ab62f" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.usedBudget</definition>
+        <argsstring></argsstring>
+        <name>usedBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.usedBudget</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="49" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a9e5fe983831331c908be7df266ecf8a4" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository" kindref="compound">ContractRepository</ref></type>
+        <definition>ContractRepository com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="52" column="20" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1acde845699e2111884481573981979780" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractBudgetRelationRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudgetRelationRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.contractBudgetRelationRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="55" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1b43f43bc2b4686d7bb3fe341d5fc081" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service" kindref="compound">ICBMIntegrationService</ref></type>
+        <definition>ICBMIntegrationService com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.integrationService</definition>
+        <argsstring></argsstring>
+        <name>integrationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.integrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="58" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a52ebaa537a5615ee21ce5b78e4c31c0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.minorUnit</definition>
+        <argsstring></argsstring>
+        <name>minorUnit</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.minorUnit</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="41" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a3d3eb7dd3376bdc47bc0365a1e72c62f" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffDays</definition>
+        <argsstring></argsstring>
+        <name>diffDays</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.diffDays</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="48" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aba8b4f0d2b71325a601550bc5e068151" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDuration</definition>
+        <argsstring></argsstring>
+        <name>penaltyDuration</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="74" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ae5b3c77993bb6ea8e5232e18ad5a0378" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDurationForOneYear</definition>
+        <argsstring></argsstring>
+        <name>penaltyDurationForOneYear</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDurationForOneYear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="77" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a919601c0988e7ffbec4f5f9a05b6b938" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDurationForTwoYear</definition>
+        <argsstring></argsstring>
+        <name>penaltyDurationForTwoYear</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.penaltyDurationForTwoYear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="80" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5988a55212e28d2045b72b03a9bedde8" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="61" column="23" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1693c1b89e4fcfeb5488abe6b28ce094" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="64" column="21" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1ce93880f7b3bca3cfb7c8bfc3a5958e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.josnUtil</definition>
+        <argsstring></argsstring>
+        <name>josnUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.josnUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="67" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a90ce8f55873d76dd9df838ff8b74e438" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.remainingEMIURL</definition>
+        <argsstring></argsstring>
+        <name>remainingEMIURL</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.remainingEMIURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Remaining EMI From BRM url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="71" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1acdbdf7867c6b467886f88b72e36fb7c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getPenaltyDetails</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>getPenaltyDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getPenaltyDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service_1a7c425399a855fe2d0944d04c1c620c46">getPenaltyDetails</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="86" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="86" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ae362228fb272e1f5485ced3097ad2704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.isContractRenewed</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>isContractRenewed</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.isContractRenewed</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="264" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="264" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aaa88ee1f012da5ec4774cb9256dead53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.isPenaltyValid</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>isPenaltyValid</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.isPenaltyValid</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="324" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="324" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1afca64c7fae732b1fd4b4d06ac2632ceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getUpdatedMRCTotal</definition>
+        <argsstring>(List&lt; FutureMRCDetails &gt; listOfFutureMRCDetails, List&lt; ContractBudgetRelation &gt; contractBudgetRelationList)</argsstring>
+        <name>getUpdatedMRCTotal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getUpdatedMRCTotal</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_future_m_r_c_details" kindref="compound">FutureMRCDetails</ref> &gt;</type>
+          <declname>listOfFutureMRCDetails</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+          <declname>contractBudgetRelationList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="395" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="395" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a7f2bcaad008c5562f3c638014c3244a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.calculatePenalty</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>calculatePenalty</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.calculatePenalty</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="422" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="422" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a800455549e4921636d657c33e5f027c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.calculatePenaltyForWithinThirtyDays</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>calculatePenaltyForWithinThirtyDays</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.calculatePenaltyForWithinThirtyDays</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="457" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="457" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a21448ac8e15d152e331e5e3ff09b3ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.CalculatetedPenaltyAfterThirtyDaysORNoOrderType</definition>
+        <argsstring>(PenaltyRequest penaltyRequest, PenaltyResponse penaltyResponse)</argsstring>
+        <name>CalculatetedPenaltyAfterThirtyDaysORNoOrderType</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.CalculatetedPenaltyAfterThirtyDaysORNoOrderType</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_response" kindref="compound">PenaltyResponse</ref></type>
+          <declname>penaltyResponse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="487" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="487" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a4bc24d9329751930b37eb86af05402b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getCurrMRCTotal</definition>
+        <argsstring>(List&lt; ContractBudgetRelation &gt; contractBudgetRelationList, PenaltyRequest penaltyRequest)</argsstring>
+        <name>getCurrMRCTotal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getCurrMRCTotal</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+          <declname>contractBudgetRelationList</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="530" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="530" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a258dbfe7e5b3968b904d024f86f58e95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_remaining_e_m_i_count_details" kindref="compound">RemainingEMICountDetails</ref></type>
+        <definition>RemainingEMICountDetails com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.fetchRemainingEMICountFromBRM</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>fetchRemainingEMICountFromBRM</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.fetchRemainingEMICountFromBRM</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="562" column="33" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="562" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a142f7ad3f3b236d7d60cd94c5e08541f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.validateRequest</definition>
+        <argsstring>(PenaltyRequest penaltyRequest)</argsstring>
+        <name>validateRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.validateRequest</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_penalty_request" kindref="compound">PenaltyRequest</ref></type>
+          <declname>penaltyRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="588" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="588" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5aad33f9ec4d542baac524412f5d0d87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getPenaltyDetailsForPortOut</definition>
+        <argsstring>(PortoutPenaltyRequest portoutpenaltyRequest)</argsstring>
+        <name>getPenaltyDetailsForPortOut</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.getPenaltyDetailsForPortOut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service_1ae3c7f117f38be29e5329a333cbe06a6b">getPenaltyDetailsForPortOut</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_portout_penalty_request" kindref="compound">PortoutPenaltyRequest</ref></type>
+          <declname>portoutpenaltyRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="609" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="609" bodyend="708"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a78d0e416f62dd143c10f5b9cedfe6982" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.changeNumber</definition>
+        <argsstring>(String originalNo, String prefixVal)</argsstring>
+        <name>changeNumber</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService.changeNumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>originalNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>prefixVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="710" column="23" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="710" bodyend="721"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMPenaltyOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMPenaltyOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>listOfAllSI</edgelabel>
+          <edgelabel>listOfDowngradedSI</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>contractEndDate</edgelabel>
+          <edgelabel>endDate</edgelabel>
+          <edgelabel>startDate</edgelabel>
+          <edgelabel>startdate</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>contractRepo</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>contractBudgetRelationRepo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>integrationService</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.cbm.integration.ICBMIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service"/>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetRelationRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.cbm.repositories.ContractRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMPenaltyOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>Date</label>
+      </node>
+      <node id="4">
+        <label>List&lt; String &gt;</label>
+      </node>
+      <node id="9">
+        <label>JpaRepository&lt; ContractBudgetRelation, Long &gt;</label>
+      </node>
+      <node id="7">
+        <label>JpaRepository&lt; ContractMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" line="30" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMPenaltyOperationService.java" bodystart="30" bodyend="722"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5988a55212e28d2045b72b03a9bedde8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a7f2bcaad008c5562f3c638014c3244a8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>calculatePenalty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a800455549e4921636d657c33e5f027c7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>calculatePenaltyForWithinThirtyDays</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a21448ac8e15d152e331e5e3ff09b3ccf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>CalculatetedPenaltyAfterThirtyDaysORNoOrderType</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a78d0e416f62dd143c10f5b9cedfe6982" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>changeNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a25e7851033223c92f25c95b490ed56c0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>consumedBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1acde845699e2111884481573981979780" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>contractBudgetRelationRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a6199e2d6c37109c981a7918ccbc4172c" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>contractEndDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a9e5fe983831331c908be7df266ecf8a4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>contractRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aa739e7ae7351576903f83362283df395" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>currMCV</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a22f883e87f88004fc8b0dff83c05eae5" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>currTotalMCV</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5e2eecbb029da16661b57b2b5ee39002" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>diffBetMCVAndDowngradeMRC</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a76687de8849f127e7f4cee129bbc2e5d" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>diffBetOldAndNewMCV</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a3d3eb7dd3376bdc47bc0365a1e72c62f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>diffDays</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1abaee9a5477b62c5d97d67eb0aa35d123" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>downgradedMRCTotal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a24d90d1c534766fd3c54a21b95149125" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>endDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a258dbfe7e5b3968b904d024f86f58e95" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>fetchRemainingEMICountFromBRM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a4bc24d9329751930b37eb86af05402b8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>getCurrMRCTotal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1acdbdf7867c6b467886f88b72e36fb7c5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>getPenaltyDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a5aad33f9ec4d542baac524412f5d0d87" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>getPenaltyDetailsForPortOut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1afca64c7fae732b1fd4b4d06ac2632ceb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>getUpdatedMRCTotal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1b43f43bc2b4686d7bb3fe341d5fc081" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>integrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ae362228fb272e1f5485ced3097ad2704" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>isContractRenewed</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aaa88ee1f012da5ec4774cb9256dead53" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>isPenaltyValid</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1ce93880f7b3bca3cfb7c8bfc3a5958e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>josnUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a4557a97dc8cff64b5fd566edb76532c9" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>listOfAllSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a8bc12119b0270f7ee1ad493fdae63190" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>listOfDowngradedSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1afd09ff12691f368becfe2536f8e3da8d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a52ebaa537a5615ee21ce5b78e4c31c0c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>minorUnit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1aba8b4f0d2b71325a601550bc5e068151" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>penaltyDuration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ae5b3c77993bb6ea8e5232e18ad5a0378" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>penaltyDurationForOneYear</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a919601c0988e7ffbec4f5f9a05b6b938" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>penaltyDurationForTwoYear</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a7167bdb07b73225d2c7a6e2ff302f183" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>PREFIX_VAL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a44660061baa702a9ba557e049a03eedc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>pricing</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a90ce8f55873d76dd9df838ff8b74e438" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>remainingEMIURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ab58f9edfc745dfbe9b9ba802b2a41000" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>startDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a9e67db00b3bc0b9f6dfc4e79b3fa96b4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>startdate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a3bdf5e19900228a86c0515c3b006b2f9" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>updatedMCV</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1ad659374ade35d8690915e3b0a49ab62f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>usedBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a1693c1b89e4fcfeb5488abe6b28ce094" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>utils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_penalty_operation_service_1a142f7ad3f3b236d7d60cd94c5e08541f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMPenaltyOperationService</scope><name>validateRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

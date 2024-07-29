@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::PCCRestClient</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ab88ceaa1cd2793a49c9dc5a553952619" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.PCCRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PCCRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="26" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1af64b42131cdb36a3717f833eed81ae2e" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.restclient.PCCRestClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="29" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a825ae0f5ca29c1ec7d12f9d3ef807792" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.core.base.restclient.PCCRestClient.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="32" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ae1944081d8b83a4eff653bb6373fed38" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.PCCRestClient.baseUrl</definition>
+        <argsstring></argsstring>
+        <name>baseUrl</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.baseUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The base url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="36" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a75d61284ac3fa27e38fb24d3777bda39" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.PCCRestClient.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="39" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="39" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a18427b620826aa191b7588f1b854b3d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.PCCRestClient.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="53" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="53" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a6bf6d0df3064772980036c041cdcaf7b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.PCCRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="59" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="59" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a71aa85655446add8a26603e81489552b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.PCCRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="65" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a2c2c8b0302a2a4c634d1bb19a7bd87de" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.PCCRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="71" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a58b936697621801e41d7234f477da0f4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.PCCRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="77" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ad0b573d38dbc24e342833aa122e0933f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.PCCRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="82" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="82" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a652c95d902ec5a0e1f0ce68e8edf7d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.core.base.restclient.PCCRestClient.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.PCCRestClient.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="87" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="87" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Class <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client" kindref="compound">PCCRestClient</ref>.</para>
+<para><simplesect kind="author"><para>Maulik Patel </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.PCCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.PCCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" line="24" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/PCCRestClient.java" bodystart="24" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ae1944081d8b83a4eff653bb6373fed38" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>baseUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ad0b573d38dbc24e342833aa122e0933f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1af64b42131cdb36a3717f833eed81ae2e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a71aa85655446add8a26603e81489552b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a18427b620826aa191b7588f1b854b3d9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a75d61284ac3fa27e38fb24d3777bda39" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a825ae0f5ca29c1ec7d12f9d3ef807792" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1ab88ceaa1cd2793a49c9dc5a553952619" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a2c2c8b0302a2a4c634d1bb19a7bd87de" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a6bf6d0df3064772980036c041cdcaf7b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a652c95d902ec5a0e1f0ce68e8edf7d52" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client_1a58b936697621801e41d7234f477da0f4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::PCCRestClient</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::lpsg::service::manager::LPSGServiceManager</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1ad90b4bfd2d0a7646bc2dbf6e809b99ec" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1_i_l_p_s_g_operation_service" kindref="compound">ILPSGOperationService</ref></type>
+        <definition>ILPSGOperationService com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.lpsgService</definition>
+        <argsstring></argsstring>
+        <name>lpsgService</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.lpsgService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" line="23" column="31" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a626f957f4fb220b4587902995e7b5ac6" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(LPSGServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" line="24" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a235055f6fd67daa8f3fce57750a82444" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" line="26" column="11" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a080f734f2f14037017fa049b43183451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" line="28" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" bodystart="28" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.lpsg.service.manager.LPSGServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" line="20" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/manager/LPSGServiceManager.java" bodystart="20" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a080f734f2f14037017fa049b43183451" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::manager::LPSGServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a235055f6fd67daa8f3fce57750a82444" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::manager::LPSGServiceManager</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1a626f957f4fb220b4587902995e7b5ac6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::manager::LPSGServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager_1ad90b4bfd2d0a7646bc2dbf6e809b99ec" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::manager::LPSGServiceManager</scope><name>lpsgService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

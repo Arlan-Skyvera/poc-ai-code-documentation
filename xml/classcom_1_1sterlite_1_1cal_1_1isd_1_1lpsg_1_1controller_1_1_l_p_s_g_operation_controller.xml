@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a96078def9b7739cb8168b6493aed697d" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(LPSGOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" line="26" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a77489b9f46da0b9b90c0e8d9056bd2f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1manager_1_1_l_p_s_g_service_manager" kindref="compound">LPSGServiceManager</ref></type>
+        <definition>LPSGServiceManager com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.lpsgMgr</definition>
+        <argsstring></argsstring>
+        <name>lpsgMgr</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.lpsgMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" line="29" column="28" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1aa80d0274e6c7829855f32b3e2e7f8b44" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" line="32" column="19" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a9cf812247a08cfa250ce6a34b6a7619f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.doPost</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController.doPost</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" line="37" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" bodystart="37" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.lpsg.controller.LPSGOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" line="24" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/controller/LPSGOperationController.java" bodystart="24" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a9cf812247a08cfa250ce6a34b6a7619f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1aa80d0274e6c7829855f32b3e2e7f8b44" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a96078def9b7739cb8168b6493aed697d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1controller_1_1_l_p_s_g_operation_controller_1a77489b9f46da0b9b90c0e8d9056bd2f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>lpsgMgr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::controller::LPSGOperationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

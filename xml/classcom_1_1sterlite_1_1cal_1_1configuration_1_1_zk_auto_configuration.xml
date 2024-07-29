@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::configuration::ZkAutoConfiguration</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a4116f5dc5664d84bdaf7ef5306868f63" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.configuration.ZkAutoConfiguration.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkAutoConfiguration.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(ZkAutoConfiguration.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="29" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a9083ab91cb05c9af397a5d3cf6129eac" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.ZkAutoConfiguration.AUTOMAPPING</definition>
+        <argsstring></argsstring>
+        <name>AUTOMAPPING</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkAutoConfiguration.AUTOMAPPING</qualifiedname>
+        <initializer>= &quot;view/**&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="31" column="29" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1ac59dc7e699a8072addaac63d5492d1ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ServletRegistrationBean&lt; DHtmlLayoutServlet &gt;</type>
+        <definition>ServletRegistrationBean&lt; DHtmlLayoutServlet &gt; com.sterlite.cal.configuration.ZkAutoConfiguration.dHtmlLayoutServlet</definition>
+        <argsstring>()</argsstring>
+        <name>dHtmlLayoutServlet</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkAutoConfiguration.dHtmlLayoutServlet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="34" column="32" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="34" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a41d0e81032cdbcc5a84f39a1a1cc155a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ServletRegistrationBean&lt; DHtmlUpdateServlet &gt;</type>
+        <definition>ServletRegistrationBean&lt; DHtmlUpdateServlet &gt; com.sterlite.cal.configuration.ZkAutoConfiguration.dHtmlUpdateServlet</definition>
+        <argsstring>()</argsstring>
+        <name>dHtmlUpdateServlet</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkAutoConfiguration.dHtmlUpdateServlet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="53" column="32" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a02f60e9c49865b6d4c2736349c8ea9fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.configuration.ZkAutoConfiguration.autoViewmapping</definition>
+        <argsstring>(HttpServletRequest request)</argsstring>
+        <name>autoViewmapping</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkAutoConfiguration.autoViewmapping</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="65" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="65" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" line="28" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkAutoConfiguration.java" bodystart="28" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a9083ab91cb05c9af397a5d3cf6129eac" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkAutoConfiguration</scope><name>AUTOMAPPING</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a02f60e9c49865b6d4c2736349c8ea9fa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkAutoConfiguration</scope><name>autoViewmapping</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1ac59dc7e699a8072addaac63d5492d1ea" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkAutoConfiguration</scope><name>dHtmlLayoutServlet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a41d0e81032cdbcc5a84f39a1a1cc155a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkAutoConfiguration</scope><name>dHtmlUpdateServlet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_auto_configuration_1a4116f5dc5664d84bdaf7ef5306868f63" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkAutoConfiguration</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

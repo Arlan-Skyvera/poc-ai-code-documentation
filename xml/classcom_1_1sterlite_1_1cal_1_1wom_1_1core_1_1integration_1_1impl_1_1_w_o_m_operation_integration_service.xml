@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.wom.core.integration.IWOMOperationIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a128d5246945a9c4207dc4ee358169590" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(WOMOperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="31" column="30" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a33c040e33b36ed73e2c6d87a68fc201f" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>SUCCESS</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.SUCCESS</qualifiedname>
+        <initializer>=&quot;SUCCESS&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="33" column="29" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1adec40cabae9e80b356b9154ccf31f17b" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.FAILED</definition>
+        <argsstring></argsstring>
+        <name>FAILED</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.FAILED</qualifiedname>
+        <initializer>=&quot;Inventory Not Found!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="35" column="29" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a8682d140fc36116586c3fce6b09827f1" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" kindref="compound">WOMRestClient</ref></type>
+        <definition>WOMRestClient com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.womRestClient</definition>
+        <argsstring></argsstring>
+        <name>womRestClient</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.womRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="38" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7c11ba359bb5d1f4c3d485d8501b28f6" prot="private" static="no" mutable="no">
+        <type>EntityManager</type>
+        <definition>EntityManager com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.em</definition>
+        <argsstring></argsstring>
+        <name>em</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.em</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="43" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a9fa5521f2c39fe3a81ad937546b5b024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPost</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1ac3beb8472920f55fec48d02d91a18d85">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="46" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1af075ea73e3696a7e000d30db79ad6316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doGet</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1abf430e7e11a05c863ae541c6fb819da0">doGet</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="53" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1af76a0fb90cb1e6102f585de236259340" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPatch</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPatch</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1a68dd1fa594618007fcc25e1bc36908ec">doPatch</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="60" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7681fd61912db56aaea864bfa6020fbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPut</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.doPut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1aa2262fc178e25fdd3a96f477b2092e8e">doPut</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="67" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a6d434492a30437702cab9ea774799a00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1base_1_1utils_1_1_response" kindref="compound">Response</ref></type>
+        <definition>Response com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.getNotificationAttribute</definition>
+        <argsstring>(Response responseObject)</argsstring>
+        <name>getNotificationAttribute</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.getNotificationAttribute</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1a6cf8a5e98c8109fc5132fc5626a4ad60">getNotificationAttribute</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1base_1_1utils_1_1_response" kindref="compound">Response</ref></type>
+          <declname>responseObject</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="76" column="17" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="76" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a9fa2dfe37cbfe8e25639c46f9c8a8f79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1base_1_1utils_1_1_response" kindref="compound">Response</ref></type>
+        <definition>Response com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.updateNetworkServiceInstance</definition>
+        <argsstring>(String inventoryNumber)</argsstring>
+        <name>updateNetworkServiceInstance</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.updateNetworkServiceInstance</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service_1a6fdeaa7af9990a778911768e6173e08f">updateNetworkServiceInstance</reimplements>
+        <param>
+          <type>String</type>
+          <declname>inventoryNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="188" column="17" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="188" bodyend="216"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1aea8f116ce7e4ae2434d65523cdf91e1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.replaceJsonValue</definition>
+        <argsstring>(CommunicationMessage message, Map&lt; String, Object &gt; notificationMap)</argsstring>
+        <name>replaceJsonValue</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.replaceJsonValue</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1vo_1_1_communication_message" kindref="compound">CommunicationMessage</ref></type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>notificationMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="109" column="14" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="109" bodyend="169"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7052fece79e5943eecad3d8fa0d6613b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.removeObjectFromList</definition>
+        <argsstring>(List&lt; CommunicationDetails &gt; communicationDetails, String type)</argsstring>
+        <name>removeObjectFromList</name>
+        <qualifiedname>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService.removeObjectFromList</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1vo_1_1_communication_details" kindref="compound">CommunicationDetails</ref> &gt;</type>
+          <declname>communicationDetails</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="171" column="21" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="171" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.wom.core.integration.IWOMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.wom.core.integration.impl.WOMOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.wom.core.integration.IWOMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" line="29" column="7" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/integration/impl/WOMOperationIntegrationService.java" bodystart="29" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1af075ea73e3696a7e000d30db79ad6316" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1af76a0fb90cb1e6102f585de236259340" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a9fa5521f2c39fe3a81ad937546b5b024" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7681fd61912db56aaea864bfa6020fbc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7c11ba359bb5d1f4c3d485d8501b28f6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>em</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1adec40cabae9e80b356b9154ccf31f17b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>FAILED</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a6d434492a30437702cab9ea774799a00" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>getNotificationAttribute</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a128d5246945a9c4207dc4ee358169590" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a7052fece79e5943eecad3d8fa0d6613b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>removeObjectFromList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1aea8f116ce7e4ae2434d65523cdf91e1a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>replaceJsonValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a33c040e33b36ed73e2c6d87a68fc201f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>SUCCESS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a9fa2dfe37cbfe8e25639c46f9c8a8f79" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>updateNetworkServiceInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1impl_1_1_w_o_m_operation_integration_service_1a8682d140fc36116586c3fce6b09827f1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::integration::impl::WOMOperationIntegrationService</scope><name>womRestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

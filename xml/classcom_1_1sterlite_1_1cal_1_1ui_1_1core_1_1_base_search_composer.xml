@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>com::sterlite::cal::ui::core::BaseSearchComposer</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseComposer</basecompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.web.composer.SearchAuditComposer</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.web.composer.WomIntegrationComposer</derivedcompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a2d0f2969910d15fcea0d3672bfb9cd8c" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ui.core.BaseSearchComposer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BaseSearchComposer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="30" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a9548eeeb151a804b1e771480bad1d4a3" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.ui.core.BaseSearchComposer.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="32" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a7e594452b1b81db2b0e7ff45b4e68254" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.core.BaseSearchComposer.SEARCH_COMPOSER_REF</definition>
+        <argsstring></argsstring>
+        <name>SEARCH_COMPOSER_REF</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.SEARCH_COMPOSER_REF</qualifiedname>
+        <initializer>= &quot;_searchComposerRef&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="33" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5c2772302a34c0d987f6bcea76601919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract void</type>
+        <definition>abstract void com.sterlite.cal.ui.core.BaseSearchComposer.onDoubleClickedSearchItem</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onDoubleClickedSearchItem</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.onDoubleClickedSearchItem</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer_1a573201bff4c2f10cfcbcbe9041643205">onDoubleClickedSearchItem</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ae9f2abfec88e1f59a36c0d38c7430217">onDoubleClickedSearchItem</reimplementedby>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <exceptions> throws Exception</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="35" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a3aee93253f88a856161cde4619e109f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.createComponent</definition>
+        <argsstring>(String uri, Component parent, Map&lt;?, ?&gt; map)</argsstring>
+        <name>createComponent</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.createComponent</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Component</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>Map&lt;?, ?&gt;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="230" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="230" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ad487a1b4f1026101f6a386c68d7d54c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.onClick$btnSearch</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onClick$btnSearch</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.onClick$btnSearch</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer_1aee1d0767e66ee23e51a584914a1eaffe">onClick$btnSearch</reimplementedby>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1abe47707bb6ca87c422f94000d82b3584">onClick$btnSearch</reimplementedby>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="244" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="244" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ab11096187504e65804309324e419f17d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.onOK</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onOK</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.onOK</qualifiedname>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="251" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="251" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a026bcf1ff0dafe2638ba60b187af6ea5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</definition>
+        <argsstring>(Long id, String name, Tabbox tabbox, String viewFile)</argsstring>
+        <name>addViewTab</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Tabbox</type>
+          <declname>tabbox</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>viewFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="37" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="37" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1abc01a62cbb851ccac58b14754b821358" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</definition>
+        <argsstring>(String id, String name, Tabbox tabbox, String viewFile, Map&lt; String, Object &gt; argMap, boolean closable)</argsstring>
+        <name>addViewTab</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Tabbox</type>
+          <declname>tabbox</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>viewFile</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>argMap</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>closable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="79" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="79" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a11493df44547831acea6bf6865920663" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</definition>
+        <argsstring>(Long id, String name, Tabbox tabbox, String viewFile, Map&lt; String, Object &gt; argMap)</argsstring>
+        <name>addViewTab</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Tabbox</type>
+          <declname>tabbox</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>viewFile</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>argMap</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="127" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="127" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5b5d6e07187b9173fc6d98509c415ae0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</definition>
+        <argsstring>(String id, String name, Tabbox tabbox, String viewFile, Map&lt; String, Object &gt; argMap)</argsstring>
+        <name>addViewTab</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseSearchComposer.addViewTab</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Tabbox</type>
+          <declname>tabbox</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>viewFile</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>argMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="183" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="183" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>yash.kapasi </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseSearchComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.ui.web.composer.SearchAuditComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_search_audit_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.ui.web.composer.WomIntegrationComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseSearchComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>moduleContent</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>webActiveSessionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Map&lt; String, HttpSession &gt;</label>
+      </node>
+      <node id="3">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+      <node id="4">
+        <label>Div</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" line="28" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseSearchComposer.java" bodystart="28" bodyend="257"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a026bcf1ff0dafe2638ba60b187af6ea5" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1abc01a62cbb851ccac58b14754b821358" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a11493df44547831acea6bf6865920663" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5b5d6e07187b9173fc6d98509c415ae0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5401e38a16f8ca995759eb2909ed571b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>afterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5fdb680b51a250fcecc9066b760fedfa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>BD_SESSION_CONTEXT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a3aee93253f88a856161cde4619e109f8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>createComponent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a93d97d60f4594f36e5b923895f7e05cd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>DATE_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1adbdffde58fe05090464b19ed21537acd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>DATE_TIME_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8984241cb433b2cc33f09d6fdf70e179" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>doAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a18b709d13f8a7790e8e7c4f3659bd1ab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>doBeforeCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aea4116169b63115bbca90ab64f290938" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>doLogout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a045936c3e11992e99b3d9ba8f1614b24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>getContextPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3a8c4c0affa7386f007ccf5e04ac103c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>getDateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3f1aee09263be734cfcebdee467a1236" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>getDateTimeFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a82bd0f32f9d1259d626d1d0d6df5483e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>getPageSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a16ad46ef687a92c421d3f41e0b3f7eb0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>internalAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a2d0f2969910d15fcea0d3672bfb9cd8c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0ed263e93f840f018261f731648c6ef6" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>moduleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8a4ce8e3e873e2c576ddabdb72c8c04d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>onClick$btnCancel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ad487a1b4f1026101f6a386c68d7d54c4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>onClick$btnSearch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5c2772302a34c0d987f6bcea76601919" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>onDoubleClickedSearchItem</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ab11096187504e65804309324e419f17d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>onOK</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8f930d6c84802dcb8ce425d93e02f183" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>PAGESIZE_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5ce1b4378f4508679a728efa0e4cd0d4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>resetComponents</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a7e594452b1b81db2b0e7ff45b4e68254" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>SEARCH_COMPOSER_REF</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a9548eeeb151a804b1e771480bad1d4a3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0e72589eca883923a14f421d10800049" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>setModuleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a31094789c9609d04c28ae93bf173b522" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>showSuccessDialog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8d0c2703eaadac0cb5202962982c3453" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>sortComboBoxDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a2d73bbbbfaca3321d9259cc91404c144" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>sortComboDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a22ba9bfa942d29771cf4e4399c773bc9" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>SYSTEMPARAMETER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a6aa086bf1197e04bc86e1ca91caf4def" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseSearchComposer</scope><name>webActiveSessionMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

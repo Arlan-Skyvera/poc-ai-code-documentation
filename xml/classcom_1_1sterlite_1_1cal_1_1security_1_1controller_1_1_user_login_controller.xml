@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::security::controller::UserLoginController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::zkoss::zk::ui::select::SelectorComposer&lt; Window &gt;</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a360f1e156b183ec6d94177ba6681014d" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.security.controller.UserLoginController.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="22" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a9d73e595fb94808bb91c65a36018724c" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.security.controller.UserLoginController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(UserLoginController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="24" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1af8da5d767755cd13577427e3028aad3a" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1security_1_1service_1_1_i_user_login_service" kindref="compound">IUserLoginService</ref></type>
+        <definition>IUserLoginService com.sterlite.cal.security.controller.UserLoginController.userLoginService</definition>
+        <argsstring></argsstring>
+        <name>userLoginService</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.userLoginService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="27" column="19" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a457308211fd31c6a7d5a9c07b9b5ad6b" prot="package" static="no" mutable="no">
+        <type>Textbox</type>
+        <definition>Textbox com.sterlite.cal.security.controller.UserLoginController.txtUsername</definition>
+        <argsstring></argsstring>
+        <name>txtUsername</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.txtUsername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="30" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a77049b16c407c8bba546673a9ef1a7d6" prot="package" static="no" mutable="no">
+        <type>Textbox</type>
+        <definition>Textbox com.sterlite.cal.security.controller.UserLoginController.txtPassword</definition>
+        <argsstring></argsstring>
+        <name>txtPassword</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.txtPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="33" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a34ad128e72ea45449dfdad8a1a745ea6" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.sterlite.cal.security.controller.UserLoginController.btnLogin</definition>
+        <argsstring></argsstring>
+        <name>btnLogin</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.btnLogin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="36" column="20" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a2a190c63878748bcab61632d48d94486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.UserLoginController.doLogin</definition>
+        <argsstring>()</argsstring>
+        <name>doLogin</name>
+        <qualifiedname>com.sterlite.cal.security.controller.UserLoginController.doLogin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="39" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="39" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.security.controller.UserLoginController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SelectorComposer&lt; Window &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.security.controller.UserLoginController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>userLoginService</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>txtPassword</edgelabel>
+          <edgelabel>txtUsername</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.security.service.IUserLoginService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1security_1_1service_1_1_i_user_login_service"/>
+      </node>
+      <node id="2">
+        <label>SelectorComposer&lt; Window &gt;</label>
+      </node>
+      <node id="4">
+        <label>Textbox</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" line="19" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/UserLoginController.java" bodystart="19" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a34ad128e72ea45449dfdad8a1a745ea6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>btnLogin</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a2a190c63878748bcab61632d48d94486" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>doLogin</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a9d73e595fb94808bb91c65a36018724c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a360f1e156b183ec6d94177ba6681014d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a77049b16c407c8bba546673a9ef1a7d6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>txtPassword</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1a457308211fd31c6a7d5a9c07b9b5ad6b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>txtUsername</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_user_login_controller_1af8da5d767755cd13577427e3028aad3a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::security::controller::UserLoginController</scope><name>userLoginService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

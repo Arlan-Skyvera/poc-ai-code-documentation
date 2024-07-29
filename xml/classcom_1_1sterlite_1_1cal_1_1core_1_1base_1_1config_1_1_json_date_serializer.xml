@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::config::JsonDateSerializer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">com::fasterxml::jackson::databind::JsonDeserializer&lt; Date &gt;</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ac29929794d8d70b9c31cbe2377cc7ce0" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.config.JsonDateSerializer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonDateSerializer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JsonDateDeserializer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" line="27" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ab2ccf2f918b489d0a4d9daa4746ed7fd" prot="private" static="no" mutable="no">
+        <type>final SimpleDateFormat</type>
+        <definition>final SimpleDateFormat com.sterlite.cal.core.base.config.JsonDateSerializer.dateFormat</definition>
+        <argsstring></argsstring>
+        <name>dateFormat</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonDateSerializer.dateFormat</qualifiedname>
+        <initializer>= new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" line="29" column="32" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ae220688f261af357ab8b23e06a7204aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.core.base.config.JsonDateSerializer.deserialize</definition>
+        <argsstring>(JsonParser arg0, DeserializationContext arg1)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonDateSerializer.deserialize</qualifiedname>
+        <param>
+          <type>JsonParser</type>
+          <declname>arg0</declname>
+        </param>
+        <param>
+          <type>DeserializationContext</type>
+          <declname>arg1</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" line="32" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" bodystart="32" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>punit.akolkar </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonDateSerializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonDeserializer&lt; Date &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonDateSerializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonDeserializer&lt; Date &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" line="25" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonDateSerializer.java" bodystart="25" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ab2ccf2f918b489d0a4d9daa4746ed7fd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonDateSerializer</scope><name>dateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ae220688f261af357ab8b23e06a7204aa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonDateSerializer</scope><name>deserialize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_serializer_1ac29929794d8d70b9c31cbe2377cc7ce0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonDateSerializer</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

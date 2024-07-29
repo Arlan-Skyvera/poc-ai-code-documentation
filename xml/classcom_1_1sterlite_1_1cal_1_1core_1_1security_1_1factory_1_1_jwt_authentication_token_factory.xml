@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a3e4e9f93ada412cd73526b0d60247bed" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.REDIRECT_UNAUTHORIZED</definition>
+        <argsstring></argsstring>
+        <name>REDIRECT_UNAUTHORIZED</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.REDIRECT_UNAUTHORIZED</qualifiedname>
+        <initializer>= &quot;/unAutherized&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="35" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a7a3bb07d3a43a72f9ffb09239f471625" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JwtAuthenticationTokenFactory.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="58" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a0737b1d3e030be125342f98649e867cb" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util" kindref="compound">JwtTokenUtil</ref></type>
+        <definition>JwtTokenUtil com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.jwtTokenUtil</definition>
+        <argsstring></argsstring>
+        <name>jwtTokenUtil</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.jwtTokenUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="38" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a0b852fac45ecd3301d5c313fae934a82" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util" kindref="compound">UserCacheUtil</ref></type>
+        <definition>UserCacheUtil com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.UserCacheUtil</definition>
+        <argsstring></argsstring>
+        <name>UserCacheUtil</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.UserCacheUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="41" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a41e73a5a1146d5f7ef103d65fbddca6f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.tokenHeader</definition>
+        <argsstring></argsstring>
+        <name>tokenHeader</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.tokenHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="44" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a65987f99b61a3b97986d71db8d0c617d" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.expiration</definition>
+        <argsstring></argsstring>
+        <name>expiration</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.expiration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="47" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a03615008ee17a94faefaa612f8190c70" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.refresh</definition>
+        <argsstring></argsstring>
+        <name>refresh</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="50" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a90de1bf6c62474da4f8a698d609b5447" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.doFilterInternal</definition>
+        <argsstring>(HttpServletRequest request, HttpServletResponse response, FilterChain chain)</argsstring>
+        <name>doFilterInternal</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.doFilterInternal</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>FilterChain</type>
+          <declname>chain</declname>
+        </param>
+        <exceptions> throws ServletException, IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Start - by Kaival : Customization related to token and validating request from user using IPAddress.</para>
+<para>Start - by Kaival : Customization related expiring token.</para>
+<para>End - by Kaival : Customization related expiring token.</para>
+<para>Load UserDetails from cache</para>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="60" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="60" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1aed1a87d4b1d445136f13e2cf465af058" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.isUserAuthorized</definition>
+        <argsstring>(JwtUser userDetails, String requestPath)</argsstring>
+        <name>isUserAuthorized</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactory.isUserAuthorized</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user" kindref="compound">JwtUser</ref></type>
+          <declname>userDetails</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="150" column="17" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="150" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" line="33" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactory.java" bodystart="33" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a90de1bf6c62474da4f8a698d609b5447" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>doFilterInternal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a65987f99b61a3b97986d71db8d0c617d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>expiration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1aed1a87d4b1d445136f13e2cf465af058" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>isUserAuthorized</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a0737b1d3e030be125342f98649e867cb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>jwtTokenUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a7a3bb07d3a43a72f9ffb09239f471625" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a3e4e9f93ada412cd73526b0d60247bed" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>REDIRECT_UNAUTHORIZED</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a03615008ee17a94faefaa612f8190c70" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>refresh</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a41e73a5a1146d5f7ef103d65fbddca6f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>tokenHeader</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_1a0b852fac45ecd3301d5c313fae934a82" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactory</scope><name>UserCacheUtil</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

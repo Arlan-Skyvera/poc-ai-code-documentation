@@ -1,0 +1,78 @@
+\doxysection{com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service Class Reference}
+\hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service}{}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service}\index{com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}}
+
+
+Inheritance diagram for com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_response}{CALAuthentication\+Response}} \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a01b2252de4f5244b4a6b191732309b2c}{get\+BRMAuth\+Token}} (\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}} cal\+Authentication\+Request)
+\item 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_response}{CALAuthentication\+Response}} \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_ae51fd1093d18f051b6559393b8bddbda}{get\+Keycloak\+Auth\+Token}} (\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}} cal\+Authentication\+Request)
+\item 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a0e8ea466ee142214e0a41f3e1d75763d}{get\+Authentication}} (\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}} user)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a51489e255f696e7f34d3b1be73f2b42d}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a51489e255f696e7f34d3b1be73f2b42d} 
+String {\bfseries convert\+To\+MD5} (String password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a5eb2423f8dd0b3ea62f89be35ed55cb1}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a5eb2423f8dd0b3ea62f89be35ed55cb1} 
+static final \mbox{\hyperlink{interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger}{ILogger}} {\bfseries LOGGER} = ILogger.\+get\+Instant(Authentication\+Service.\+class)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a0e8ea466ee142214e0a41f3e1d75763d}\index{com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}!getAuthentication@{getAuthentication}}
+\index{getAuthentication@{getAuthentication}!com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{getAuthentication()}{getAuthentication()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a0e8ea466ee142214e0a41f3e1d75763d} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response}{Cal\+Base\+Response}} com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service.\+get\+Authentication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}}}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_i_authentication_service}{com.\+sterlite.\+cal.\+core.\+security.\+service.\+IAuthentication\+Service}}.
+
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a01b2252de4f5244b4a6b191732309b2c}\index{com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}!getBRMAuthToken@{getBRMAuthToken}}
+\index{getBRMAuthToken@{getBRMAuthToken}!com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{getBRMAuthToken()}{getBRMAuthToken()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_a01b2252de4f5244b4a6b191732309b2c} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_response}{CALAuthentication\+Response}} com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service.\+get\+BRMAuth\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}}}]{cal\+Authentication\+Request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_i_authentication_service}{com.\+sterlite.\+cal.\+core.\+security.\+service.\+IAuthentication\+Service}}.
+
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_ae51fd1093d18f051b6559393b8bddbda}\index{com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}!getKeycloakAuthToken@{getKeycloakAuthToken}}
+\index{getKeycloakAuthToken@{getKeycloakAuthToken}!com.sterlite.cal.core.security.serviceImpl.AuthenticationService@{com.sterlite.cal.core.security.serviceImpl.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{getKeycloakAuthToken()}{getKeycloakAuthToken()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_authentication_service_ae51fd1093d18f051b6559393b8bddbda} 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_response}{CALAuthentication\+Response}} com.\+sterlite.\+cal.\+core.\+security.\+service\+Impl.\+Authentication\+Service.\+get\+Keycloak\+Auth\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_request}{CALAuthentication\+Request}}}]{cal\+Authentication\+Request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_i_authentication_service}{com.\+sterlite.\+cal.\+core.\+security.\+service.\+IAuthentication\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+repository/core/src/main/java/com/sterlite/cal/core/security/service\+Impl/Authentication\+Service.\+java\end{DoxyCompactItemize}

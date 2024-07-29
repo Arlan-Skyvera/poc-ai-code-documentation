@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.cugvpn.integration.ICUGVPNOperationIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a955010d3e339ad158878cf9aa5d34017" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CUGVPNOperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="17" column="30" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aae4e541a0ce8f813427ad542846db3b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="19" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a6deef9650bc125e07ed938d31fd9fff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.doPost</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service_1aefea8fddae06587d9e1d199f4243607b">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="22" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aef4a32632244594fa0b907637326b7bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.doGet</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service_1ad73dca2ba71db983b00238ca19108332">doGet</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="30" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a4b0967c4fc654590c59343688883fa5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMPatchOperation</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>performBRMPatchOperation</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMPatchOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service_1a6ba9db5a007ddc8e5cbd11a3412e9d4c">performBRMPatchOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="38" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aaacc36bf5bd3b32c8cb49a0ca264998c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMPutOperation</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>performBRMPutOperation</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMPutOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service_1aa5421a391a636b5745890a34c65e4ff0">performBRMPutOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="46" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a56f28f8c8c661370c3fc5b231ca0d7a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMDeleteOperation</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>performBRMDeleteOperation</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService.performBRMDeleteOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service_1a93c6f69aa669448980d0d4a15573622a">performBRMDeleteOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="55" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="55" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cugvpn.integration.ICUGVPNOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cugvpn.integration.impl.CUGVPNOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cugvpn.integration.ICUGVPNOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1_i_c_u_g_v_p_n_operation_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" line="15" column="7" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/integration/impl/CUGVPNOperationIntegrationService.java" bodystart="15" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aae4e541a0ce8f813427ad542846db3b7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aef4a32632244594fa0b907637326b7bd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a6deef9650bc125e07ed938d31fd9fff3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a955010d3e339ad158878cf9aa5d34017" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a56f28f8c8c661370c3fc5b231ca0d7a2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>performBRMDeleteOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1a4b0967c4fc654590c59343688883fa5c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>performBRMPatchOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1integration_1_1impl_1_1_c_u_g_v_p_n_operation_integration_service_1aaacc36bf5bd3b32c8cb49a0ca264998c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::integration::impl::CUGVPNOperationIntegrationService</scope><name>performBRMPutOperation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

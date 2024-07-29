@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseSearchComposer</basecompoundref>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1_1_search_item_renderer" prot="private">com::sterlite::cal::ui::web::composer::WomIntegrationComposer::SearchItemRenderer</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a5f4e0baf1bf9ad080675c5c9278b853c" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ui.web.composer.WomIntegrationComposer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(WomIntegrationComposer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="41" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ae7857d100e329edf36fa0a522db177b4" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.ui.web.composer.WomIntegrationComposer.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="43" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a7e7fe18467ab76440a3d5f001d9148b5" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.web.composer.WomIntegrationComposer.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.MODULE</qualifiedname>
+        <initializer>= &quot; [ WomIntegrationComposer ] &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="44" column="29" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad557310448c515ec6c14c52222cb6642" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ui.web.composer.WomIntegrationComposer.DROPDOWN</definition>
+        <argsstring></argsstring>
+        <name>DROPDOWN</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.DROPDOWN</qualifiedname>
+        <initializer>= &quot;--select--&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="45" column="29" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a949a930a96ff3a20ff5bf30aa0444d27" prot="private" static="no" mutable="no">
+        <type>Combobox</type>
+        <definition>Combobox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.comboEventAlias</definition>
+        <argsstring></argsstring>
+        <name>comboEventAlias</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.comboEventAlias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="46" column="18" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1af59820c8131877343bf317fffe60e914" prot="private" static="no" mutable="no">
+        <type>Datebox</type>
+        <definition>Datebox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.dateFrom</definition>
+        <argsstring></argsstring>
+        <name>dateFrom</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.dateFrom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="47" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a88c8aaf515feb2b43729296b784d72b0" prot="private" static="no" mutable="no">
+        <type>Datebox</type>
+        <definition>Datebox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.dateTo</definition>
+        <argsstring></argsstring>
+        <name>dateTo</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.dateTo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="48" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a6f08beb09ac06fd11ce68905c55acc96" prot="private" static="no" mutable="no">
+        <type>Textbox</type>
+        <definition>Textbox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.eventSource</definition>
+        <argsstring></argsstring>
+        <name>eventSource</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.eventSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="49" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a53de14f547691ba68611f60f979e038f" prot="private" static="no" mutable="no">
+        <type>Textbox</type>
+        <definition>Textbox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.externalReferenceId</definition>
+        <argsstring></argsstring>
+        <name>externalReferenceId</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.externalReferenceId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="50" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1aafa7bee87995497cdf435d2c31983e5c" prot="private" static="no" mutable="no">
+        <type>Textbox</type>
+        <definition>Textbox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.inputData</definition>
+        <argsstring></argsstring>
+        <name>inputData</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.inputData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="51" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a57b4973842ce29c93ee4a1ca514c7280" prot="private" static="no" mutable="no">
+        <type>Listbox</type>
+        <definition>Listbox com.sterlite.cal.ui.web.composer.WomIntegrationComposer.searchResultGrid</definition>
+        <argsstring></argsstring>
+        <name>searchResultGrid</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.searchResultGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="52" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad8c09e5c187b271d30cde7117563f137" prot="private" static="no" mutable="no">
+        <type>Div</type>
+        <definition>Div com.sterlite.cal.ui.web.composer.WomIntegrationComposer.womAuditDetailsDiv</definition>
+        <argsstring></argsstring>
+        <name>womAuditDetailsDiv</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.womAuditDetailsDiv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="53" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ae9f2abfec88e1f59a36c0d38c7430217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onDoubleClickedSearchItem</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onDoubleClickedSearchItem</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onDoubleClickedSearchItem</qualifiedname>
+        <reimplements refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5c2772302a34c0d987f6bcea76601919">onDoubleClickedSearchItem</reimplements>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="56" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad56cdb0849e7852c398a852176c06d05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.web.composer.WomIntegrationComposer.afterCompose</definition>
+        <argsstring>(Window comp)</argsstring>
+        <name>afterCompose</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.afterCompose</qualifiedname>
+        <reimplements refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5401e38a16f8ca995759eb2909ed571b">afterCompose</reimplements>
+        <param>
+          <type>Window</type>
+          <declname>comp</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="63" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="63" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a649af17d880225a4d3e4276eaa242cd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onClick$btnReset</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onClick$btnReset</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onClick$btnReset</qualifiedname>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="83" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="83" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1abe47707bb6ca87c422f94000d82b3584" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onClick$btnSearch</definition>
+        <argsstring>(Event event)</argsstring>
+        <name>onClick$btnSearch</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.onClick$btnSearch</qualifiedname>
+        <reimplements refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ad487a1b4f1026101f6a386c68d7d54c4">onClick$btnSearch</reimplements>
+        <param>
+          <type>Event</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="98" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="98" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a87dc341f3a13e9551b66085650079606" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.ui.web.composer.WomIntegrationComposer.isDatesMoreThanThirty</definition>
+        <argsstring>(Date startDate, Date endDate)</argsstring>
+        <name>isDatesMoreThanThirty</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.isDatesMoreThanThirty</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>Date</type>
+          <declname>endDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="162" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="162" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a651406b5ea8513be0b1d913f36cf9b07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.ui.web.composer.WomIntegrationComposer.isDatesValid</definition>
+        <argsstring>(Date startDate, Date endDate)</argsstring>
+        <name>isDatesValid</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.isDatesValid</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>Date</type>
+          <declname>endDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="179" column="17" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="179" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a4c1429665f6edf8ca3e45eeb381581c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.sterlite.cal.ui.web.composer.WomIntegrationComposer.checkEmptyNull</definition>
+        <argsstring>(Object str)</argsstring>
+        <name>checkEmptyNull</name>
+        <qualifiedname>com.sterlite.cal.ui.web.composer.WomIntegrationComposer.checkEmptyNull</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="193" column="23" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="193" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.web.composer.WomIntegrationComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseSearchComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.web.composer.WomIntegrationComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>moduleContent</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>webActiveSessionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseSearchComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Map&lt; String, HttpSession &gt;</label>
+      </node>
+      <node id="4">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+      <node id="5">
+        <label>Div</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" line="39" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/web/composer/WomIntegrationComposer.java" bodystart="39" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a026bcf1ff0dafe2638ba60b187af6ea5" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1abc01a62cbb851ccac58b14754b821358" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a11493df44547831acea6bf6865920663" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a5b5d6e07187b9173fc6d98509c415ae0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>addViewTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad56cdb0849e7852c398a852176c06d05" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>afterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5fdb680b51a250fcecc9066b760fedfa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>BD_SESSION_CONTEXT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a4c1429665f6edf8ca3e45eeb381581c5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>checkEmptyNull</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a949a930a96ff3a20ff5bf30aa0444d27" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>comboEventAlias</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a3aee93253f88a856161cde4619e109f8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>createComponent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a93d97d60f4594f36e5b923895f7e05cd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>DATE_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1adbdffde58fe05090464b19ed21537acd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>DATE_TIME_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1af59820c8131877343bf317fffe60e914" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>dateFrom</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a88c8aaf515feb2b43729296b784d72b0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>dateTo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8984241cb433b2cc33f09d6fdf70e179" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>doAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a18b709d13f8a7790e8e7c4f3659bd1ab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>doBeforeCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aea4116169b63115bbca90ab64f290938" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>doLogout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad557310448c515ec6c14c52222cb6642" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>DROPDOWN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a6f08beb09ac06fd11ce68905c55acc96" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>eventSource</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a53de14f547691ba68611f60f979e038f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>externalReferenceId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a045936c3e11992e99b3d9ba8f1614b24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>getContextPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3a8c4c0affa7386f007ccf5e04ac103c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>getDateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3f1aee09263be734cfcebdee467a1236" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>getDateTimeFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a82bd0f32f9d1259d626d1d0d6df5483e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>getPageSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1aafa7bee87995497cdf435d2c31983e5c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>inputData</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a16ad46ef687a92c421d3f41e0b3f7eb0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>internalAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a87dc341f3a13e9551b66085650079606" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>isDatesMoreThanThirty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a651406b5ea8513be0b1d913f36cf9b07" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>isDatesValid</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a5f4e0baf1bf9ad080675c5c9278b853c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a7e7fe18467ab76440a3d5f001d9148b5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0ed263e93f840f018261f731648c6ef6" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>moduleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8a4ce8e3e873e2c576ddabdb72c8c04d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>onClick$btnCancel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a649af17d880225a4d3e4276eaa242cd0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>onClick$btnReset</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1abe47707bb6ca87c422f94000d82b3584" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>onClick$btnSearch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ae9f2abfec88e1f59a36c0d38c7430217" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>onDoubleClickedSearchItem</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1ab11096187504e65804309324e419f17d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>onOK</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8f930d6c84802dcb8ce425d93e02f183" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>PAGESIZE_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5ce1b4378f4508679a728efa0e4cd0d4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>resetComponents</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_search_composer_1a7e594452b1b81db2b0e7ff45b4e68254" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>SEARCH_COMPOSER_REF</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1a57b4973842ce29c93ee4a1ca514c7280" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>searchResultGrid</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ae7857d100e329edf36fa0a522db177b4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0e72589eca883923a14f421d10800049" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>setModuleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a31094789c9609d04c28ae93bf173b522" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>showSuccessDialog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8d0c2703eaadac0cb5202962982c3453" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>sortComboBoxDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a2d73bbbbfaca3321d9259cc91404c144" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>sortComboDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a22ba9bfa942d29771cf4e4399c773bc9" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>SYSTEMPARAMETER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a6aa086bf1197e04bc86e1ca91caf4def" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>webActiveSessionMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1web_1_1composer_1_1_wom_integration_composer_1ad8c09e5c187b271d30cde7117563f137" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::web::composer::WomIntegrationComposer</scope><name>womAuditDetailsDiv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::util::UserCacheUtil</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a50ff33070c323cec8a243d339adfd3fe" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.util.UserCacheUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.UserCacheUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(UserCacheUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" line="17" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a9a543054b0a6c9e65f928edf1a7c0838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.UserCacheUtil.putInLoginUserCache</definition>
+        <argsstring>(JwtUser jwtUser)</argsstring>
+        <name>putInLoginUserCache</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.UserCacheUtil.putInLoginUserCache</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user" kindref="compound">JwtUser</ref></type>
+          <declname>jwtUser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" line="19" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a9a226ed86bea4059b33b0c7648f105e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user" kindref="compound">JwtUser</ref></type>
+        <definition>JwtUser com.sterlite.cal.core.security.util.UserCacheUtil.getLoginUserFromCache</definition>
+        <argsstring>(String username)</argsstring>
+        <name>getLoginUserFromCache</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.UserCacheUtil.getLoginUserFromCache</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" line="32" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" bodystart="32" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" line="15" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/UserCacheUtil.java" bodystart="15" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a9a226ed86bea4059b33b0c7648f105e8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::UserCacheUtil</scope><name>getLoginUserFromCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a50ff33070c323cec8a243d339adfd3fe" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::UserCacheUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_1a9a543054b0a6c9e65f928edf1a7c0838" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::UserCacheUtil</scope><name>putInLoginUserCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

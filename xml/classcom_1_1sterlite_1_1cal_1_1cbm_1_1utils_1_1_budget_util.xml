@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::utils::BudgetUtil</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a5b6b356f0a4ca1501cb867a271268bff" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.utils.BudgetUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BudgetUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="28" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a6dca750010d206a50d2febdc96baf179" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.utils.BudgetUtil.util</definition>
+        <argsstring></argsstring>
+        <name>util</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.util</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="32" column="21" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a71355dc54de37189d91bc9fa381c895e" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.cbm.utils.BudgetUtil.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="34" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa2728005d3adcf218a9efb19b80e49a0" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref></type>
+        <definition>BudgetDetailsRepo com.sterlite.cal.cbm.utils.BudgetUtil.repo</definition>
+        <argsstring></argsstring>
+        <name>repo</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="37" column="27" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1adc8d1f0e193cd08de5b7362f0e513f19" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo" kindref="compound">CategoryMasterRepo</ref></type>
+        <definition>CategoryMasterRepo com.sterlite.cal.cbm.utils.BudgetUtil.categoryRepo</definition>
+        <argsstring></argsstring>
+        <name>categoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.categoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="40" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a7ecda02db380359eee4c55c1738e1c42" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.utils.BudgetUtil.commonUtil</definition>
+        <argsstring></argsstring>
+        <name>commonUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.commonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="42" column="21" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a4a7c37c3b4e1f7de4975334ed34cf011" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Double &gt;</type>
+        <definition>Map&lt; String, Double &gt; com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudget</definition>
+        <argsstring>(ContractRequest request)</argsstring>
+        <name>calcaluteBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudget</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="44" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="44" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a2dbc602c7d46732aa79e5067c913e3ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Double &gt;</type>
+        <definition>Map&lt; String, Double &gt; com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudget</definition>
+        <argsstring>(AllocateBudgetRequest request)</argsstring>
+        <name>calcaluteBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudget</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="127" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="127" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a2be2f80c03d8bad88aff6e95d11d7b10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, BigDecimal &gt;</type>
+        <definition>Map&lt; String, BigDecimal &gt; com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudgetWithBD</definition>
+        <argsstring>(ContractRequest request)</argsstring>
+        <name>calcaluteBudgetWithBD</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudgetWithBD</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="228" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="228" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a682d42e40f4b6bc102c18eb676a0a001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, BigDecimal &gt;</type>
+        <definition>Map&lt; String, BigDecimal &gt; com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudgetWithBD</definition>
+        <argsstring>(AllocateBudgetRequest request)</argsstring>
+        <name>calcaluteBudgetWithBD</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.calcaluteBudgetWithBD</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="321" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="321" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aecbbef164643b84a26f049b8facd55f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.utils.BudgetUtil.persistBudgetDetails</definition>
+        <argsstring>(Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>persistBudgetDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.persistBudgetDetails</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="453" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="453" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1ac1a03da8802f7cfe74f68b30e7debc60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.utils.BudgetUtil.persistBudgetDetailsWithBD</definition>
+        <argsstring>(Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>persistBudgetDetailsWithBD</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.persistBudgetDetailsWithBD</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="523" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="523" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa4927ced4ef7e342e7c8b6cb46c3f0cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>Set&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.utils.BudgetUtil.updateContractBudgetRelation</definition>
+        <argsstring>(Set&lt; ContractBudgetRelation &gt; budgetRelationSet)</argsstring>
+        <name>updateContractBudgetRelation</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.updateContractBudgetRelation</qualifiedname>
+        <param>
+          <type>Set&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+          <declname>budgetRelationSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="602" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="602" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a9bc7451a3e9efc86729671c9da818988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>BigDecimal com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudget</definition>
+        <argsstring>(String serviceInstance, String contractId)</argsstring>
+        <name>getTotalBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudget</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstance</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="653" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="653" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a7cf19f2f6a215e15ab0ac1afe8f667b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>BigDecimal com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetForExpiry</definition>
+        <argsstring>(String serviceInstance, String contractId)</argsstring>
+        <name>getTotalBudgetForExpiry</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetForExpiry</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstance</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="658" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="658" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa0a58efb822c0ca1e9b34d4afdd9c344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.utils.BudgetUtil.updateBalanceBudgetDetails</definition>
+        <argsstring>(BigDecimal budgetBalance, String serviceInstance, String category)</argsstring>
+        <name>updateBalanceBudgetDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.updateBalanceBudgetDetails</qualifiedname>
+        <param>
+          <type>BigDecimal</type>
+          <declname>budgetBalance</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstance</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="723" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="723" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a13055eeb5d23676351fa69124b15c391" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>BigDecimal com.sterlite.cal.cbm.utils.BudgetUtil.getNextSequenceValBudHis</definition>
+        <argsstring>()</argsstring>
+        <name>getNextSequenceValBudHis</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getNextSequenceValBudHis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="730" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="730" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a50a38637cd6e5d0213cb6c016429feb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_v_o" kindref="compound">AllocateBudgetVO</ref> &gt;</type>
+        <definition>List&lt; AllocateBudgetVO &gt; com.sterlite.cal.cbm.utils.BudgetUtil.getAllocateBudgetVO</definition>
+        <argsstring>(AllocateBudgetRequest abr)</argsstring>
+        <name>getAllocateBudgetVO</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getAllocateBudgetVO</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>abr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="754" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="754" bodyend="799"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a12f66159a2baba4fdd25f014ccad8247" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>static BigDecimal com.sterlite.cal.cbm.utils.BudgetUtil.getTotalMRCWithBD</definition>
+        <argsstring>(List&lt; ServiceInstanceDetails &gt; serviceDetails)</argsstring>
+        <name>getTotalMRCWithBD</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalMRCWithBD</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref> &gt;</type>
+          <declname>serviceDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="384" column="27" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="384" bodyend="396"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a4d7243aa8dbfb6916534e3cf231478e2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.utils.BudgetUtil.getTotalMRC</definition>
+        <argsstring>(List&lt; ServiceInstanceDetails &gt; serviceDetails)</argsstring>
+        <name>getTotalMRC</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalMRC</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref> &gt;</type>
+          <declname>serviceDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="399" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="399" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a9f68f5885c39e4db2769702f61ffd1b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudget</definition>
+        <argsstring>(List&lt; AllocateBudgetRequest.BudgetInfo &gt; budgetDetails)</argsstring>
+        <name>getTotalBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudget</qualifiedname>
+        <param>
+          <type>List&lt; AllocateBudgetRequest.BudgetInfo &gt;</type>
+          <declname>budgetDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="415" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="415" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa1f34897dd60a319de7a79d31507af58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetAllocated</definition>
+        <argsstring>(List&lt; ContractRequest.BudgetInfo &gt; budgetDetails)</argsstring>
+        <name>getTotalBudgetAllocated</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetAllocated</qualifiedname>
+        <param>
+          <type>List&lt; ContractRequest.BudgetInfo &gt;</type>
+          <declname>budgetDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="429" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="429" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a66113e4833fb6fc8fac1c8f6d486eec7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>BigDecimal com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetAllocatedBD</definition>
+        <argsstring>(List&lt; ContractRequest.BudgetInfo &gt; budgetDetails)</argsstring>
+        <name>getTotalBudgetAllocatedBD</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.getTotalBudgetAllocatedBD</qualifiedname>
+        <param>
+          <type>List&lt; ContractRequest.BudgetInfo &gt;</type>
+          <declname>budgetDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="441" column="20" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="441" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a20355861cbc46d4b95c5a6507e05dca0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.utils.BudgetUtil.calculateEndBasedOnCategoryAndSegment</definition>
+        <argsstring>(Date startDate, String category, String segment, Integer duration)</argsstring>
+        <name>calculateEndBasedOnCategoryAndSegment</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.calculateEndBasedOnCategoryAndSegment</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>segment</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="577" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="577" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1ad1ede81749d5b7f9fb70fec439fb516d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.BudgetUtil.fetchDuration</definition>
+        <argsstring>(String category, String segment)</argsstring>
+        <name>fetchDuration</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.fetchDuration</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="662" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="662" bodyend="675"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a30a7491ea58e5d5d0e5e4c246dd518e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.cbm.utils.BudgetUtil.transformMsg</definition>
+        <argsstring>(String message, String contractId)</argsstring>
+        <name>transformMsg</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.BudgetUtil.transformMsg</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="801" column="22" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="801" bodyend="803"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.utils.BudgetUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" line="26" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/BudgetUtil.java" bodystart="26" bodyend="805"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a71355dc54de37189d91bc9fa381c895e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a4a7c37c3b4e1f7de4975334ed34cf011" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>calcaluteBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a2dbc602c7d46732aa79e5067c913e3ac" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>calcaluteBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a2be2f80c03d8bad88aff6e95d11d7b10" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>calcaluteBudgetWithBD</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a682d42e40f4b6bc102c18eb676a0a001" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>calcaluteBudgetWithBD</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a20355861cbc46d4b95c5a6507e05dca0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>calculateEndBasedOnCategoryAndSegment</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1adc8d1f0e193cd08de5b7362f0e513f19" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>categoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a7ecda02db380359eee4c55c1738e1c42" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>commonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1ad1ede81749d5b7f9fb70fec439fb516d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>fetchDuration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a50a38637cd6e5d0213cb6c016429feb5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getAllocateBudgetVO</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a13055eeb5d23676351fa69124b15c391" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getNextSequenceValBudHis</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a9f68f5885c39e4db2769702f61ffd1b7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a9bc7451a3e9efc86729671c9da818988" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa1f34897dd60a319de7a79d31507af58" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalBudgetAllocated</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a66113e4833fb6fc8fac1c8f6d486eec7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalBudgetAllocatedBD</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a7cf19f2f6a215e15ab0ac1afe8f667b5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalBudgetForExpiry</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a4d7243aa8dbfb6916534e3cf231478e2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalMRC</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a12f66159a2baba4fdd25f014ccad8247" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>getTotalMRCWithBD</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a5b6b356f0a4ca1501cb867a271268bff" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aecbbef164643b84a26f049b8facd55f4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>persistBudgetDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1ac1a03da8802f7cfe74f68b30e7debc60" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>persistBudgetDetailsWithBD</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa2728005d3adcf218a9efb19b80e49a0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>repo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a30a7491ea58e5d5d0e5e4c246dd518e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>transformMsg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa0a58efb822c0ca1e9b34d4afdd9c344" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>updateBalanceBudgetDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1aa4927ced4ef7e342e7c8b6cb46c3f0cf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>updateContractBudgetRelation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util_1a6dca750010d206a50d2febdc96baf179" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::BudgetUtil</scope><name>util</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

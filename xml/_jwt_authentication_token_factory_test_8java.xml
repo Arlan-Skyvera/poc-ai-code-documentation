@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_jwt_authentication_token_factory_test_8java" kind="file" language="Java">
+    <compoundname>JwtAuthenticationTokenFactoryTest.java</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test" prot="public">com::sterlite::cal::core::security::factory::JwtAuthenticationTokenFactoryTest</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory">com::sterlite::cal::core::security::factory</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.core.security.factory;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.mockito.Mockito.mock;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.mockito.Mockito.when;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.IOException;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Date;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.servlet.FilterChain;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.servlet.ServletException;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.servlet.http.HttpServletRequest;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.servlet.http.HttpServletResponse;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Before;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.runner.RunWith;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.InjectMocks;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.Mock;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.MockitoAnnotations;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.boot.test.context.SpringBootTest;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.test.context.junit4.SpringRunner;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.test.util.ReflectionTestUtils;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.base.BaseTest;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.logger.ILogger;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.logger.Logger.LogType;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.security.util.JwtTokenUtil;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.security.util.UserCacheUtilTest;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">@RunWith(SpringRunner.class)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">@SpringBootTest</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">@AutoConfigureMockMvc</highlight></codeline>
+<codeline lineno="34" refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test" kindref="compound">JwtAuthenticationTokenFactoryTest</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test" kindref="compound">BaseTest</ref>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/><ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref><sp/>LOGGER<sp/>=<sp/><ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>.getInstant(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test" kindref="compound">JwtAuthenticationTokenFactoryTest</ref>.class);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>@InjectMocks</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory" kindref="compound">JwtAuthenticationTokenFactory</ref><sp/>jwtAuthenticationTokenFactory;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util" kindref="compound">JwtTokenUtil</ref><sp/>jwtTokenUtil;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_user_cache_util_test" kindref="compound">UserCacheUtilTest</ref><sp/>userCacheUtilTest;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MockitoAnnotations.initMocks(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOGGER.startLog(</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">,<ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref>.PROCESS);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReflectionTestUtils.setField(jwtAuthenticationTokenFactory,<sp/></highlight><highlight class="stringliteral">&quot;tokenHeader&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;authorization&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReflectionTestUtils.setField(jwtAuthenticationTokenFactory,<sp/></highlight><highlight class="stringliteral">&quot;expiration&quot;</highlight><highlight class="normal">,<sp/>3600L);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ReflectionTestUtils.setField(jwtAuthenticationTokenFactory,<sp/></highlight><highlight class="stringliteral">&quot;refresh&quot;</highlight><highlight class="normal">,<sp/>3600L);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOGGER.endLog(</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">,<ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref>.PROCESS);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test01DoFilterInternal()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>strMethodName<sp/>=</highlight><highlight class="stringliteral">&quot;test01DoFilterInternal&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOGGER.startLog(strMethodName,<ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref>.PROCESS);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>token<sp/>=<sp/>getPropertyValueFromMap(</highlight><highlight class="stringliteral">&quot;jwt.token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HttpServletRequest<sp/>httpServletRequest<sp/>=<sp/>mock(HttpServletRequest.class);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HttpServletResponse<sp/>httpServletResponse<sp/>=<sp/>mock(HttpServletResponse.class);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilterChain<sp/>filterChain<sp/>=<sp/>mock(FilterChain.class);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(httpServletRequest.getHeader(</highlight><highlight class="stringliteral">&quot;authorization&quot;</highlight><highlight class="normal">)).thenReturn(token);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(httpServletRequest.getRequestURI()).thenReturn(</highlight><highlight class="stringliteral">&quot;/doFilterInternal&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(httpServletRequest.getMethod()).thenReturn(</highlight><highlight class="stringliteral">&quot;POST&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(httpServletRequest.getContextPath()).thenReturn(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jwtTokenUtil.isTokenExpired(token)).thenReturn(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jwtTokenUtil.getCreatedDateFromToken(token)).thenReturn(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Date());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jwtTokenUtil.refreshToken(token)).thenReturn(token);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jwtTokenUtil.getUsernameFromToken(token)).thenReturn(</highlight><highlight class="stringliteral">&quot;jiva&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(jwtTokenUtil.getIpAddressFromToken(token)).thenReturn(</highlight><highlight class="stringliteral">&quot;0.0.0.0.0.0.1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jwtAuthenticationTokenFactory.doFilterInternal(httpServletRequest,<sp/>httpServletResponse,<sp/>filterChain);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOGGER.endLog(strMethodName,<ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref>.PROCESS);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(ServletException<sp/>|<sp/>IOException<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOGGER.error(strMethodName,<sp/><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref>.ERROR,e);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/core/src/test/java/com/sterlite/cal/core/security/factory/JwtAuthenticationTokenFactoryTest.java"/>
+  </compounddef>
+</doxygen>

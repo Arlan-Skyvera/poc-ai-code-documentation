@@ -1,0 +1,63 @@
+\doxysection{com.\+sterlite.\+cal.\+core.\+security.\+util.\+Jwt\+Token\+Util Class Reference}
+\hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util}{}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util}\index{com.sterlite.cal.core.security.util.JwtTokenUtil@{com.sterlite.cal.core.security.util.JwtTokenUtil}}
+
+
+Inheritance diagram for com.\+sterlite.\+cal.\+core.\+security.\+util.\+Jwt\+Token\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+sterlite.\+cal.\+core.\+security.\+util.\+Jwt\+Token\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a1272045d905a945ea19a33cdaad9108c}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a1272045d905a945ea19a33cdaad9108c} 
+String {\bfseries get\+Username\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a53de5677009ceb000af8950914157cd7}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a53de5677009ceb000af8950914157cd7} 
+String {\bfseries get\+Ip\+Address\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_aa8edd6da4ee3f66eeb95a2db3c253faa}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_aa8edd6da4ee3f66eeb95a2db3c253faa} 
+List$<$ Map$<$ Granted\+Authority, String $>$ $>$ {\bfseries get\+Authorities\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a7ea8590d3d53284fb84e855660828685}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a7ea8590d3d53284fb84e855660828685} 
+Date {\bfseries get\+Created\+Date\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a16f7835b4f21f81d5960b3a3a6c9fbbd}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a16f7835b4f21f81d5960b3a3a6c9fbbd} 
+Date {\bfseries get\+Expiration\+Date\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_ade7d6087af1e580c0d7c6b44e8b6db5a}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_ade7d6087af1e580c0d7c6b44e8b6db5a} 
+String {\bfseries get\+Audience\+From\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a71af93f2db165246d6858d1789078eda}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a71af93f2db165246d6858d1789078eda} 
+Boolean {\bfseries is\+Token\+Expired} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a687520ada1d726207505ef17c76f25d7}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a687520ada1d726207505ef17c76f25d7} 
+String {\bfseries generate\+Token} (\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user}{Jwt\+User}} user\+Details, String ip\+Address)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a14001b181980af5c687ac045db2d8dc5}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a14001b181980af5c687ac045db2d8dc5} 
+Boolean {\bfseries can\+Token\+Be\+Refreshed} (String token, Date last\+Password\+Reset)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a598a02ed8279652ad550194de0d7e3d9}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a598a02ed8279652ad550194de0d7e3d9} 
+String {\bfseries refresh\+Token} (String token)
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a5594bae6b537547a466b77af8a673ae7}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_a5594bae6b537547a466b77af8a673ae7} 
+Boolean {\bfseries validate\+Token} (String token, \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user}{Jwt\+User}} user\+Details, String ip\+Address, String token\+Ip\+Address)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+repository/core/src/main/java/com/sterlite/cal/core/security/util/Jwt\+Token\+Util.\+java\end{DoxyCompactItemize}

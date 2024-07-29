@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::CampaignRestClient</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a110f41d3e0ebd1ba51cc837bb417a56a" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.CampaignRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CampaignRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="24" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a21db58675b076d52b7303150c12508ad" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.CampaignRestClient.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="42" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a737996aeb66fc2b54b9feaeb806cff37" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.restclient.CampaignRestClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="27" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0783713fe612534148722bc602146bb6" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.core.base.restclient.CampaignRestClient.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="30" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0d265c7d4ffc633566ed5e170eff2147" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.baseUrl</definition>
+        <argsstring></argsstring>
+        <name>baseUrl</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.baseUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The base url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="34" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1ac01036290dfc7d5cae1308d51a7486e2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.baseRequestPath</definition>
+        <argsstring></argsstring>
+        <name>baseRequestPath</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.baseRequestPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="37" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a216cebed6c462c303d4319b637fc34a4" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.Requestpath</definition>
+        <argsstring></argsstring>
+        <name>Requestpath</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.Requestpath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="40" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aba685f4afafcd21b958138804b3fc4e1" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.core.base.restclient.CampaignRestClient.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="45" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aad636d4098a4ebc6196ecc160eb4e73e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="47" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="47" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1afa0b8086ba4b14d21c7abd50055878ef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="61" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="61" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a2d8eb8bdd657f419170db1d824dda956" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.CampaignRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="67" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0c4abef6f0fd36354731d2522899af4b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.CampaignRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="73" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a1818e41d0ada398d18b1539e8055c3e3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.CampaignRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="79" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a01e78d6ff65fd4f4f848639f9ed75adc" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.CampaignRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="85" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="85" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1afb4409139df163db68488ed78a4db95a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.core.base.restclient.CampaignRestClient.prePareHeaderMap</definition>
+        <argsstring>()</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.prePareHeaderMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="90" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="90" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aabb4d351d3a2ca93ddb831129f28aa33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.CampaignRestClient.getCAMPToken</definition>
+        <argsstring>()</argsstring>
+        <name>getCAMPToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.CampaignRestClient.getCAMPToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="111" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="111" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.CampaignRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.CampaignRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" line="21" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/CampaignRestClient.java" bodystart="21" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1ac01036290dfc7d5cae1308d51a7486e2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>baseRequestPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0d265c7d4ffc633566ed5e170eff2147" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>baseUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a737996aeb66fc2b54b9feaeb806cff37" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aba685f4afafcd21b958138804b3fc4e1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aabb4d351d3a2ca93ddb831129f28aa33" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>getCAMPToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0c4abef6f0fd36354731d2522899af4b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1afa0b8086ba4b14d21c7abd50055878ef" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1aad636d4098a4ebc6196ecc160eb4e73e" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a0783713fe612534148722bc602146bb6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a21db58675b076d52b7303150c12508ad" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a110f41d3e0ebd1ba51cc837bb417a56a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a1818e41d0ada398d18b1539e8055c3e3" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a2d8eb8bdd657f419170db1d824dda956" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1afb4409139df163db68488ed78a4db95a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a01e78d6ff65fd4f4f848639f9ed75adc" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client_1a216cebed6c462c303d4319b637fc34a4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::CampaignRestClient</scope><name>Requestpath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

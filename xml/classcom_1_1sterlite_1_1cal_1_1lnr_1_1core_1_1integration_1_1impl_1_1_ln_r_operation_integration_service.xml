@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.lnr.core.integration.ILnROperationIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1adad8a1c73040edb907178f91ad1ddf33" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(LnROperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="16" column="30" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1aad487eeefbcff016d227bb01ef734605" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_ln_r_rest_client" kindref="compound">LnRRestClient</ref></type>
+        <definition>LnRRestClient com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.lnrRestClient</definition>
+        <argsstring></argsstring>
+        <name>lnrRestClient</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.lnrRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="18" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a968234e886cca668bebe0b9ed171fa5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPost</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service_1a5b35b02d2c3d6f9efd6823aebe51acd8">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="21" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a26dab8ab56689885950c32b922f50aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doGet</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service_1aefb68737df206b12620bccf2289e6e93">doGet</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="28" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a1c04c07afbcd7a3cf7be191480ef085e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPatch</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPatch</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service_1a3f944daa80eab9e27aceff0669172e99">doPatch</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="35" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a7095cc8cde3ef2503a3f7a1d3422de2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPut</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService.doPut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service_1a0ac2ed7dbcc4b096bf651065d285e80e">doPut</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="42" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="42" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.lnr.core.integration.ILnROperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.lnr.core.integration.impl.LnROperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.lnr.core.integration.ILnROperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1_i_ln_r_operation_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" line="14" column="7" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/integration/impl/LnROperationIntegrationService.java" bodystart="14" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a26dab8ab56689885950c32b922f50aab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a1c04c07afbcd7a3cf7be191480ef085e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a968234e886cca668bebe0b9ed171fa5e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1a7095cc8cde3ef2503a3f7a1d3422de2d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1aad487eeefbcff016d227bb01ef734605" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>lnrRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1integration_1_1impl_1_1_ln_r_operation_integration_service_1adad8a1c73040edb907178f91ad1ddf33" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::integration::impl::LnROperationIntegrationService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

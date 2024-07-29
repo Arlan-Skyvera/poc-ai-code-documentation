@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::crm::core::service::impl::CRMOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.crm.core.service.ICRMOperationService</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_service" prot="public" virt="non-virtual">com.sterlite.cal.crm.core.service.ICRMService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1adee768d02ed265d606f8d3e0ab5a8a2b" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.crm.core.service.impl.CRMOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CRMOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="22" column="29" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a718db06ef8673b20c198baf7bc28f4f5" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.crm.core.service.impl.CRMOperationService.EMPTY</definition>
+        <argsstring></argsstring>
+        <name>EMPTY</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.EMPTY</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="28" column="28" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a7c790f38c167d53d7b55bad66de11fc0" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1integration_1_1_i_c_r_m_operation_integration_service" kindref="compound">ICRMOperationIntegrationService</ref></type>
+        <definition>ICRMOperationIntegrationService com.sterlite.cal.crm.core.service.impl.CRMOperationService.crmOperationIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>crmOperationIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.crmOperationIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="24" column="33" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1afab6e7fdc5850a845d4bebd2f5853570" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.crm.core.service.impl.CRMOperationService.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="27" column="11" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1ac1052218851e4e30b6eaeb06b38dbf2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPost</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service_1a6c1acbb0e057959d0fac50b9e734f142">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="32" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="32" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a9d25e29e2ebfaf20177c2c81feda72b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.impl.CRMOperationService.doGet</definition>
+        <argsstring>(Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service_1aef993de7e7a1c1b16ea4025149a74113">doGet</reimplements>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="91" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a5373acb6322b695f24a01759392bf3b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPatch</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPatch</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service_1aed8115e2637753d25d5bb46cede5873f">doPatch</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="101" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a559d3e088eb4f83894877913467a6e72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPut</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.crm.core.service.impl.CRMOperationService.doPut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service_1a7afae655c3e8d89814b08db2d5685a5e">doPut</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="108" column="15" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="108" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.crm.core.service.impl.CRMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.crm.core.service.ICRMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.crm.core.service.ICRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.crm.core.service.impl.CRMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>crmOperationIntegrationService</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.crm.core.integration.ICRMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1integration_1_1_i_c_r_m_operation_integration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.crm.core.service.ICRMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.crm.core.service.ICRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1_i_c_r_m_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" line="20" column="7" bodyfile="repository/crm-core/src/main/java/com/sterlite/cal/crm/core/service/impl/CRMOperationService.java" bodystart="20" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a7c790f38c167d53d7b55bad66de11fc0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>crmOperationIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a9d25e29e2ebfaf20177c2c81feda72b0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a5373acb6322b695f24a01759392bf3b1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1ac1052218851e4e30b6eaeb06b38dbf2a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a559d3e088eb4f83894877913467a6e72" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1a718db06ef8673b20c198baf7bc28f4f5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>EMPTY</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1afab6e7fdc5850a845d4bebd2f5853570" prot="package" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1crm_1_1core_1_1service_1_1impl_1_1_c_r_m_operation_service_1adee768d02ed265d606f8d3e0ab5a8a2b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::crm::core::service::impl::CRMOperationService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

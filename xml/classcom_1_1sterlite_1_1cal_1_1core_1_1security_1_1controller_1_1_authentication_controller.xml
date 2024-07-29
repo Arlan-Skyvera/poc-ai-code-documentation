@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::controller::AuthenticationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1ad2652b197701b90783dcfe3f8101887b" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.controller.AuthenticationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(AuthenticationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="34" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a1d6c16a255cf604b969a5a293710e90b" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.controller.AuthenticationController.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="44" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a1ed92a8c50ff8b41ad52e76299ae3c6e" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_i_authentication_service" kindref="compound">IAuthenticationService</ref></type>
+        <definition>IAuthenticationService com.sterlite.cal.core.security.controller.AuthenticationController.authenticationService</definition>
+        <argsstring></argsstring>
+        <name>authenticationService</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.authenticationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="37" column="32" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a57e077ccc28d6e4255b28a2eebe032c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.core.security.controller.AuthenticationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="39" column="19" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1afedeb2415c10e08a8f7a9bc9745b6597" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.security.controller.AuthenticationController.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="42" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1af9c09ceb93f8063c07a18d6d71a3e803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_c_a_l_authentication_response" kindref="compound">CALAuthenticationResponse</ref></type>
+        <definition>CALAuthenticationResponse com.sterlite.cal.core.security.controller.AuthenticationController.getAuthToken</definition>
+        <argsstring>(@RequestBody String requestJson)</argsstring>
+        <name>getAuthToken</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.getAuthToken</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="49" column="34" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="49" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1ab931633615b4c62c8fa21700652de210" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ResponseEntity</type>
+        <definition>ResponseEntity com.sterlite.cal.core.security.controller.AuthenticationController.unAutherizedResponse</definition>
+        <argsstring>(HttpServletResponse response)</argsstring>
+        <name>unAutherizedResponse</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.unAutherizedResponse</qualifiedname>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="85" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a2cdab6ad42e3b2885bf3dc62db079fea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.core.security.controller.AuthenticationController.getAuth</definition>
+        <argsstring>(@RequestBody String jsonData)</argsstring>
+        <name>getAuth</name>
+        <qualifiedname>com.sterlite.cal.core.security.controller.AuthenticationController.getAuth</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="100" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="100" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.controller.AuthenticationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.controller.AuthenticationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" line="32" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/controller/AuthenticationController.java" bodystart="32" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a1ed92a8c50ff8b41ad52e76299ae3c6e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>authenticationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1afedeb2415c10e08a8f7a9bc9745b6597" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a2cdab6ad42e3b2885bf3dc62db079fea" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>getAuth</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1af9c09ceb93f8063c07a18d6d71a3e803" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>getAuthToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a57e077ccc28d6e4255b28a2eebe032c9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1a1d6c16a255cf604b969a5a293710e90b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1ad2652b197701b90783dcfe3f8101887b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>setReferenceIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_1ab931633615b4c62c8fa21700652de210" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::controller::AuthenticationController</scope><name>unAutherizedResponse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

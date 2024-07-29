@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_1_1_i_authentication_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.core.security.integration.IAuthenticationIntegrationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1aa1bb316715a1e9870770f674acaff6b6" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(AuthenticationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" line="21" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1a839e250a21d204216de0393141782d37" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" line="24" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1ac6007bdd1d127c0fddde97037d78b7e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_b_r_m_token_response" kindref="compound">BRMTokenResponse</ref></type>
+        <definition>BRMTokenResponse com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.getBRMAuthToken</definition>
+        <argsstring>(String brmURI, BRMAuthenticationRequest brmAuthenticationRequest, String brmAuthTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>getBRMAuthToken</name>
+        <qualifiedname>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService.getBRMAuthToken</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_1_1_i_authentication_integration_service_1a84259cac18f74d69d9569361fb1d8046">getBRMAuthToken</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_b_r_m_authentication_request" kindref="compound">BRMAuthenticationRequest</ref></type>
+          <declname>brmAuthenticationRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>brmAuthTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" line="27" column="25" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" bodystart="27" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.security.integration.IAuthenticationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_1_1_i_authentication_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmRestClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.security.integration.IAuthenticationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_1_1_i_authentication_integration_service"/>
+      </node>
+      <node id="6">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" line="19" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/integrationImpl/AuthenticationIntegrationService.java" bodystart="19" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1a839e250a21d204216de0393141782d37" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1ac6007bdd1d127c0fddde97037d78b7e3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>getBRMAuthToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_1aa1bb316715a1e9870770f674acaff6b6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::integrationImpl::AuthenticationIntegrationService</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::dms::controller::DMSOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1acf223103a6659dd41a29f3c1b0f74c3b" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.dms.controller.DMSOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DMSOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="29" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a42ff7cc804d2a4a43b970858537178b6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager" kindref="compound">DMSServiceManager</ref></type>
+        <definition>DMSServiceManager com.sterlite.cal.isd.dms.controller.DMSOperationController.dmsMgr</definition>
+        <argsstring></argsstring>
+        <name>dmsMgr</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.dmsMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="32" column="27" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1af8d69b9de946bc7349c8c0d30d694c34" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.dms.controller.DMSOperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="35" column="19" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a571d3861a6b616e52e31fd16a5db9cd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.dms.controller.DMSOperationController.saveDocument</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>saveDocument</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.saveDocument</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="38" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="38" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a817307e2318deec70e730d7ba50fad9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.dms.controller.DMSOperationController.retrieveDocument</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>retrieveDocument</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.retrieveDocument</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="71" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="71" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a33f55c1e80edca21224399b74e6f7ab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.dms.controller.DMSOperationController.partnerDocumentUpload</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>partnerDocumentUpload</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.controller.DMSOperationController.partnerDocumentUpload</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="102" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="102" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.dms.controller.DMSOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.dms.controller.DMSOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" line="27" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/controller/DMSOperationController.java" bodystart="27" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a42ff7cc804d2a4a43b970858537178b6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>dmsMgr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1af8d69b9de946bc7349c8c0d30d694c34" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1acf223103a6659dd41a29f3c1b0f74c3b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a33f55c1e80edca21224399b74e6f7ab4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>partnerDocumentUpload</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a817307e2318deec70e730d7ba50fad9e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>retrieveDocument</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1controller_1_1_d_m_s_operation_controller_1a571d3861a6b616e52e31fd16a5db9cd1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>saveDocument</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::controller::DMSOperationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

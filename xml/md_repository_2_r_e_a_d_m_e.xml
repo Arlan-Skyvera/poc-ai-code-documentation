@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="md_repository_2_r_e_a_d_m_e" kind="page">
+    <compoundname>md_repository_2_r_e_a_d_m_e</compoundname>
+    <title>&lt;strong&gt;Important Steps to be performed post cloning&lt;/strong&gt;</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para>Post cloning the repo, run the script init-repo.sh to enable pre-commit check on your local repo . Else you will be restricted during push and need to amend all the commits to match the pre-receive check.</para>
+</listitem><listitem><para>For gradle build setup, need to create credentials using below commands -<itemizedlist>
+<listitem><para><bold>Go to Component home</bold> - cd ${Component_home}/modules</para>
+</listitem><listitem><para><bold>To add credentials</bold> - gradle -b build.gradle_make_credentials addCredentials <ndash/>key password <ndash/>value $password</para>
+</listitem><listitem><para><bold>To remove credentials</bold> - gradle -b build.gradle_make_credentials removeCredentials <ndash/>key password</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<sect1 id="md_repository_2_r_e_a_d_m_e_1autotoc_md7">
+<title><bold>Gradle Installation</bold></title><para>Follow below link -</para>
+<para><ulink url="https://gradle.org/releases/">https://gradle.org/releases/</ulink> [Version - 4.10.2] </para>
+</sect1>
+    </detaileddescription>
+    <location file="repository/README.md"/>
+  </compounddef>
+</doxygen>

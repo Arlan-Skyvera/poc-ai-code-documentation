@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::CacheServiceApplication</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1ad6a3821f4371db59e64a2c4e0b50809b" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.CacheServiceApplication.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CacheServiceApplication.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="27" column="30" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a9a198671357283818a023163190ed622" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service" kindref="compound">ICacheService</ref></type>
+        <definition>ICacheService com.sterlite.cal.CacheServiceApplication.cacheService</definition>
+        <argsstring></argsstring>
+        <name>cacheService</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.cacheService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="30" column="23" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a12815fb2755b62272fd82eda425e72fd" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CacheServiceApplication.parallelismThread</definition>
+        <argsstring></argsstring>
+        <name>parallelismThread</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.parallelismThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parallelism thread. Used by internal parallel stream operations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="40" column="16" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a19fd1316250f580b5cbc2cd2b395f27c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CacheServiceApplication.maxPoolSize</definition>
+        <argsstring></argsstring>
+        <name>maxPoolSize</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.maxPoolSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="43" column="16" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a0af03376d8416873888f21b63a81fb33" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CacheServiceApplication.queueCapacity</definition>
+        <argsstring></argsstring>
+        <name>queueCapacity</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.queueCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="46" column="16" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a6384c542702cbc96ac197eb91c06993f" prot="package" static="no" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.CacheServiceApplication.hazelcastInstance</definition>
+        <argsstring></argsstring>
+        <name>hazelcastInstance</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.hazelcastInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="34" column="19" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a677202b114fb7fd2563f530c222733bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.CacheServiceApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Main method which runs the application. In this, the spring context is initialized. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="53" column="20" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="53" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a21a0c5f68b0fc32847d5f4e2e0e94046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TaskExecutor</type>
+        <definition>TaskExecutor com.sterlite.cal.CacheServiceApplication.threadPoolTaskExecutor</definition>
+        <argsstring>()</argsstring>
+        <name>threadPoolTaskExecutor</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.threadPoolTaskExecutor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="63" column="21" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="63" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a706505b3c1b50c953261d317c0a0e0a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.CacheServiceApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.CacheServiceApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Post construct method to load cache on server startup. Method also sets the parallelism thread as system property. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="88" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="88" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.CacheServiceApplication</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hazelcastInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HazelcastInstance</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" line="25" column="7" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/CacheServiceApplication.java" bodystart="25" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a9a198671357283818a023163190ed622" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>cacheService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a6384c542702cbc96ac197eb91c06993f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>hazelcastInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a706505b3c1b50c953261d317c0a0e0a6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1ad6a3821f4371db59e64a2c4e0b50809b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a677202b114fb7fd2563f530c222733bd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>main</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a19fd1316250f580b5cbc2cd2b395f27c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>maxPoolSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a12815fb2755b62272fd82eda425e72fd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>parallelismThread</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a0af03376d8416873888f21b63a81fb33" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>queueCapacity</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_cache_service_application_1a21a0c5f68b0fc32847d5f4e2e0e94046" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CacheServiceApplication</scope><name>threadPoolTaskExecutor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

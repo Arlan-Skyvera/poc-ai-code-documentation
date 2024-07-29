@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1_1_c_u_g_v_p_n_service" prot="package">com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager::CUGVPNService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ab2f1d43c2612902a8545793d9382b7bc" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CUGVPNServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="27" column="30" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a811bc007c193128401378d6b23a6fcdb" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="28" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac954eb4ba09cc72659adef61ab880230" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="29" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a9c0b4bab1ab74cbeeebeb435e4fa461b" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="30" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a2194aa92972de9e6f660a3aa41bb7c96" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="31" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a3eb8bceb05e28f9f71b9a12fa83e83f8" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="32" column="23" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1aee4ade85a3d6aed2f4340aff4b180a64" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="35" column="28" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac0b544ce97040a3d056c18aa54e77e94" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, CUGVPNService &gt;</type>
+        <definition>Map&lt;String, CUGVPNService&gt; com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="37" column="13" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a05639aefe989ac3f3b703b9ed983fae2" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="38" column="13" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a1c37d166b2d2a9f0e4c4cd242c0866dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="41" column="13" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a70673ab5c74eed33107105ea282ad4fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="88" column="18" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="88" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac3a42f7bd21d7d2a913c749bd69ab13a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="101" column="15" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="101" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a7985eb8d28caf29bbc2bef0b9539fdc7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.loadCUGVPNService</definition>
+        <argsstring>()</argsstring>
+        <name>loadCUGVPNService</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.loadCUGVPNService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="51" column="14" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="51" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ad6b2f0e803d6befc897f2cafd04facc2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.loadCUGVPNServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadCUGVPNServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.loadCUGVPNServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="75" column="14" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="75" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a65fdcda303fce9cd5450776231f7ef61" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.cugvpn.service.manager.CUGVPNServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="157" column="26" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="157" bodyend="174"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" line="25" column="7" bodyfile="repository/cug-vpn-service/src/main/java/com/sterlite/cal/cugvpn/service/manager/CUGVPNServiceManager.java" bodystart="25" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a05639aefe989ac3f3b703b9ed983fae2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1aee4ade85a3d6aed2f4340aff4b180a64" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac3a42f7bd21d7d2a913c749bd69ab13a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a70673ab5c74eed33107105ea282ad4fd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a65fdcda303fce9cd5450776231f7ef61" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac954eb4ba09cc72659adef61ab880230" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a9c0b4bab1ab74cbeeebeb435e4fa461b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a811bc007c193128401378d6b23a6fcdb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a2194aa92972de9e6f660a3aa41bb7c96" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a1c37d166b2d2a9f0e4c4cd242c0866dc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a7985eb8d28caf29bbc2bef0b9539fdc7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>loadCUGVPNService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ad6b2f0e803d6befc897f2cafd04facc2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>loadCUGVPNServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ab2f1d43c2612902a8545793d9382b7bc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1a3eb8bceb05e28f9f71b9a12fa83e83f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cugvpn_1_1service_1_1manager_1_1_c_u_g_v_p_n_service_manager_1ac0b544ce97040a3d056c18aa54e77e94" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cugvpn::service::manager::CUGVPNServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

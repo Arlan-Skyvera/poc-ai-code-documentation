@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a82aa500b69563dbf43728e1760be454a" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CreditLimitOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="27" column="29" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1ad6a7d4f75fea0344ab727045e6d822d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1service_1_1manager_1_1_credit_limit_service_manager" kindref="compound">CreditLimitServiceManager</ref></type>
+        <definition>CreditLimitServiceManager com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.creditlimitMgr</definition>
+        <argsstring></argsstring>
+        <name>creditlimitMgr</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.creditlimitMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="30" column="35" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1ae0bc5894ff6db696a5d7a798470141d4" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="33" column="19" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a558459ee3dea67e284d83f6170ae6ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.updateCustomerCreditLimit</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>updateCustomerCreditLimit</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.updateCustomerCreditLimit</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="36" column="15" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="36" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a47fdd5049814043aff537a5de5bcaf62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.setCreditLimitCap</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>setCreditLimitCap</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.setCreditLimitCap</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="54" column="15" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="54" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a3eaee7834c72705ca9fe622008816f58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.getCustomerCreditLimit</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getCustomerCreditLimit</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController.getCustomerCreditLimit</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="74" column="15" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="74" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.creditlimit.controller.CreditLimitOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" line="25" column="7" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/controller/CreditLimitOperationController.java" bodystart="25" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1ad6a7d4f75fea0344ab727045e6d822d3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>creditlimitMgr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a3eaee7834c72705ca9fe622008816f58" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>getCustomerCreditLimit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1ae0bc5894ff6db696a5d7a798470141d4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a82aa500b69563dbf43728e1760be454a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a47fdd5049814043aff537a5de5bcaf62" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>setCreditLimitCap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>setReferenceIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1controller_1_1_credit_limit_operation_controller_1a558459ee3dea67e284d83f6170ae6ba4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::controller::CreditLimitOperationController</scope><name>updateCustomerCreditLimit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

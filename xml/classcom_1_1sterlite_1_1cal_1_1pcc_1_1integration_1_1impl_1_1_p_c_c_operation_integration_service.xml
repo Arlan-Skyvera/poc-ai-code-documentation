@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.pcc.integration.IPCCOperationIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a88194ca7ff675414e5be2df35757de59" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PCCOperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="23" column="30" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a42a6e176026403e661a14a26346c3802" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client" kindref="compound">PCCRestClient</ref></type>
+        <definition>PCCRestClient com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.pccRestClient</definition>
+        <argsstring></argsstring>
+        <name>pccRestClient</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.pccRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="25" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a5b2357e57d330e62bccbc5e603ab4601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPost</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPost</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service_1a28c8c5a0f65afbdd5b94ea8f7d3ace08">doPost</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="28" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a805af38fd4d23ffb8ddfab90c30ad3ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doGet</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doGet</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service_1a20c4c0508d37327107e5236a89bdfbf9">doGet</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="35" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a2199dbc66851bd432fc2d493366484f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPatch</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPatch</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service_1a5e37bbfbd9e3e62de21302761d8de303">doPatch</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="42" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a85da7e3ebc8eb27465e80d98c8de3a08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPut</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doPut</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service_1af244bcef1ffa83ca69a2dda01eed0ba2">doPut</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="49" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1aa763ec472316f22c004dbaae81ecc2ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doDelete</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doDelete</name>
+        <qualifiedname>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService.doDelete</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service_1aa54d6517963f51724653aea7282e9c02">doDelete</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="55" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="55" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.pcc.integration.IPCCOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.pcc.integration.impl.PCCOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.pcc.integration.IPCCOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1_i_p_c_c_operation_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" line="21" column="7" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/integration/impl/PCCOperationIntegrationService.java" bodystart="21" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1aa763ec472316f22c004dbaae81ecc2ee" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>doDelete</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a805af38fd4d23ffb8ddfab90c30ad3ba" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a2199dbc66851bd432fc2d493366484f9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a5b2357e57d330e62bccbc5e603ab4601" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a85da7e3ebc8eb27465e80d98c8de3a08" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a88194ca7ff675414e5be2df35757de59" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1integration_1_1impl_1_1_p_c_c_operation_integration_service_1a42a6e176026403e661a14a26346c3802" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::integration::impl::PCCOperationIntegrationService</scope><name>pccRestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

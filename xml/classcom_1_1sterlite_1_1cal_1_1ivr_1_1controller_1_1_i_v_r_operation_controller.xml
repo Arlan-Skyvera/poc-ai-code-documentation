@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::controller::IVROperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ab891d764b76a7de8d0a37dfefd51db89" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.controller.IVROperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IVROperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="43" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9d5fd235600fdcaccdb82a1f75599b24" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_i_v_r_operation_service" kindref="compound">IIVROperationService</ref></type>
+        <definition>IIVROperationService com.sterlite.cal.ivr.controller.IVROperationController.ivrService</definition>
+        <argsstring></argsstring>
+        <name>ivrService</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.ivrService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="46" column="31" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1aa4f114de0efc2e36e143ea3b916fb65e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1manager_1_1_i_v_r_service_manager" kindref="compound">IVRServiceManager</ref></type>
+        <definition>IVRServiceManager com.sterlite.cal.ivr.controller.IVROperationController.ivrServiceMgr</definition>
+        <argsstring></argsstring>
+        <name>ivrServiceMgr</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.ivrServiceMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="49" column="28" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ab98f5ea25ab463212e721967745dfa67" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.controller.IVROperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="54" column="19" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1af1be10ed8777418acd0622d84b4e453e" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service" kindref="compound">IIVRIntegrationService</ref></type>
+        <definition>IIVRIntegrationService com.sterlite.cal.ivr.controller.IVROperationController.integrationService</definition>
+        <argsstring></argsstring>
+        <name>integrationService</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.integrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="52" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1aaa6fadc2b644364422e1cb8aae6eb22f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_monetory_balance_response" kindref="compound">GetMonetoryBalanceResponse</ref></type>
+        <definition>GetMonetoryBalanceResponse com.sterlite.cal.ivr.controller.IVROperationController.getMonetaryBalance</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getMonetaryBalance</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getMonetaryBalance</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="58" column="35" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a50f60af1f31b721884b9169ff8cce832" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_update_monetory_balance_response" kindref="compound">UpdateMonetoryBalanceResponse</ref></type>
+        <definition>UpdateMonetoryBalanceResponse com.sterlite.cal.ivr.controller.IVROperationController.updateMonetaryBalance</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>updateMonetaryBalance</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.updateMonetaryBalance</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="70" column="38" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ac3eaed77ef68fe75c8676a056b885940" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.controller.IVROperationController.subscribeAddOn</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>subscribeAddOn</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.subscribeAddOn</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="82" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a5bdd9cb5d1b6a4b0c1c5f021ff041c41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.controller.IVROperationController.doRechargeByPlan</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>doRechargeByPlan</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.doRechargeByPlan</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="93" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a89562d096feb035947d0b7724c4a2344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.controller.IVROperationController.doRechargetByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>doRechargetByWOM</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.doRechargetByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="104" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="104" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9522b6994e4028398b931bb3b9e3fdea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.getLastInvoiceAmount</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getLastInvoiceAmount</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getLastInvoiceAmount</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="125" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="125" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a6731d91587d5c80962b78ad7f89cc7d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.getUnbilledUsageAmount</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getUnbilledUsageAmount</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getUnbilledUsageAmount</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="139" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="139" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9e2102718128b12231431043116d9495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.getSIDetailsFromMsisdn</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getSIDetailsFromMsisdn</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getSIDetailsFromMsisdn</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="153" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="153" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9bd81238b73285bf46b3a5e2d358ddb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.checkSufficientBalance</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>checkSufficientBalance</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.checkSufficientBalance</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="165" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="165" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ac71823ff30a1f99e5d097d6f1c0d912c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.getAddonWiseUsedUnsedQuota</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getAddonWiseUsedUnsedQuota</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getAddonWiseUsedUnsedQuota</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="177" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="177" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a986aaa6024fa71710b9650907febf5ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.doRechargeByVoucher</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>doRechargeByVoucher</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.doRechargeByVoucher</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="193" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="193" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a835f7619fd6feded3a53d348845dcd71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.updatePrefLanguage</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>updatePrefLanguage</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.updatePrefLanguage</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="207" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="207" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a91966bb978352afc41174ce3cd28e4cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.updatePrefLanguagedBRM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>updatePrefLanguagedBRM</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.updatePrefLanguagedBRM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="221" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="221" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a90b6fb91e27b045239ab227e04a7843e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.getCDADetails</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getCDADetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getCDADetails</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="233" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1af6729f77ccdfb29e92c7f7bbeba1f80c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.ivr.controller.IVROperationController.updateAccountAddressDetails</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>updateAccountAddressDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.updateAccountAddressDetails</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="239" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="239" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a752ac866ea80e64933451a095a79a5c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.controller.IVROperationController.validatePlanServices</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>validatePlanServices</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.validatePlanServices</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="253" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="253" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a0e6b2cc4c080f72e94e7ec6849e35158" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LinkedHashMap&lt; String, Object &gt;</type>
+        <definition>LinkedHashMap&lt; String, Object &gt; com.sterlite.cal.ivr.controller.IVROperationController.getProductDetailsFromUPCForBRM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getProductDetailsFromUPCForBRM</name>
+        <qualifiedname>com.sterlite.cal.ivr.controller.IVROperationController.getProductDetailsFromUPCForBRM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="264" column="22" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="264" bodyend="277"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.controller.IVROperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.controller.IVROperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>integrationService</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.ivr.integration.IIVRIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" line="41" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/controller/IVROperationController.java" bodystart="41" bodyend="278"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9bd81238b73285bf46b3a5e2d358ddb5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>checkSufficientBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a5bdd9cb5d1b6a4b0c1c5f021ff041c41" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>doRechargeByPlan</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a986aaa6024fa71710b9650907febf5ca" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>doRechargeByVoucher</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a89562d096feb035947d0b7724c4a2344" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>doRechargetByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ac71823ff30a1f99e5d097d6f1c0d912c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getAddonWiseUsedUnsedQuota</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a90b6fb91e27b045239ab227e04a7843e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getCDADetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9522b6994e4028398b931bb3b9e3fdea" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getLastInvoiceAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1aaa6fadc2b644364422e1cb8aae6eb22f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getMonetaryBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a0e6b2cc4c080f72e94e7ec6849e35158" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getProductDetailsFromUPCForBRM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9e2102718128b12231431043116d9495" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getSIDetailsFromMsisdn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a6731d91587d5c80962b78ad7f89cc7d0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>getUnbilledUsageAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1af1be10ed8777418acd0622d84b4e453e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>integrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a9d5fd235600fdcaccdb82a1f75599b24" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>ivrService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1aa4f114de0efc2e36e143ea3b916fb65e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>ivrServiceMgr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ab98f5ea25ab463212e721967745dfa67" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ab891d764b76a7de8d0a37dfefd51db89" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>setReferenceIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1ac3eaed77ef68fe75c8676a056b885940" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>subscribeAddOn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1af6729f77ccdfb29e92c7f7bbeba1f80c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>updateAccountAddressDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a50f60af1f31b721884b9169ff8cce832" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>updateMonetaryBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a835f7619fd6feded3a53d348845dcd71" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>updatePrefLanguage</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a91966bb978352afc41174ce3cd28e4cb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>updatePrefLanguagedBRM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1controller_1_1_i_v_r_operation_controller_1a752ac866ea80e64933451a095a79a5c9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::controller::IVROperationController</scope><name>validatePlanServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

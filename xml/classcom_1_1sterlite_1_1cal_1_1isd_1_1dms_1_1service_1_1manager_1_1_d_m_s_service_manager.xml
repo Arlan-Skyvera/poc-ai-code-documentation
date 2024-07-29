@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1af6b354fdb0a8ed4b2a6619061f2f0009" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DMSServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="23" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1a61fcb879f457b921a8564fb7ca714ddc" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1_i_d_m_s_operation_service" kindref="compound">IDMSOperationService</ref></type>
+        <definition>IDMSOperationService com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.dmsService</definition>
+        <argsstring></argsstring>
+        <name>dmsService</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.dmsService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="26" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1ad2145b7d63df9c96a958d3e0abca14b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.uploadDocument</definition>
+        <argsstring>(UploadDocumentRequest request)</argsstring>
+        <name>uploadDocument</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.uploadDocument</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1valueobject_1_1_upload_document_request" kindref="compound">UploadDocumentRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="28" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="28" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1ad986a6ced80fa7a614c374c4e02ca48c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.downloadDocument</definition>
+        <argsstring>(RetrieveDocumentRequest request)</argsstring>
+        <name>downloadDocument</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.downloadDocument</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1valueobject_1_1_retrieve_document_request" kindref="compound">RetrieveDocumentRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="52" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="52" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1a6df31750e22d990e83044ad163b0dd21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.partnerDocumentUpload</definition>
+        <argsstring>(PartnerDocumentSave request)</argsstring>
+        <name>partnerDocumentUpload</name>
+        <qualifiedname>com.sterlite.cal.isd.dms.service.manager.DMSServiceManager.partnerDocumentUpload</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1valueobject_1_1_partner_document_save" kindref="compound">PartnerDocumentSave</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="75" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="75" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" line="21" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/dms/service/manager/DMSServiceManager.java" bodystart="21" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1a61fcb879f457b921a8564fb7ca714ddc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</scope><name>dmsService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1ad986a6ced80fa7a614c374c4e02ca48c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</scope><name>downloadDocument</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1af6b354fdb0a8ed4b2a6619061f2f0009" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1a6df31750e22d990e83044ad163b0dd21" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</scope><name>partnerDocumentUpload</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1dms_1_1service_1_1manager_1_1_d_m_s_service_manager_1ad2145b7d63df9c96a958d3e0abca14b0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::dms::service::manager::DMSServiceManager</scope><name>uploadDocument</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

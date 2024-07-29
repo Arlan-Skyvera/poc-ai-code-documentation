@@ -1,0 +1,179 @@
+\doxysection{com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util Class Reference}
+\hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util}{}\label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+
+
+Collaboration diagram for com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a9ca0aca21af3872e494fa928b620da3a}\label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a9ca0aca21af3872e494fa928b620da3a} 
+static Script\+Engine {\bfseries get\+Nashorn\+Script\+Engine} ()
+\item 
+static String \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aede3896ec0602a2326ec1b65de04e090}{modify\+Request\+Json\+By\+Replacing\+Request\+Data}} (String request\+Json, Map$<$ String, String $>$ request\+Data)
+\item 
+static String \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_abba119139411a8f13a7b6df4a05feccb}{modify\+Request\+URIBy\+Replacing\+URIData}} (String request\+URI, Map$<$ String, String $>$ request\+Data)
+\item 
+static Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_afe1c97ebb6d3526998c618b58a674f7b}{get\+Values\+From\+Response}} (String response\+String, List$<$ String $>$ \$separated\+Keys)
+\item 
+static String \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_ab14c3f9384d44cdb372a6bd12ad114d9}{modify\+Expression}} (String expression, Map$<$ String, String $>$ \$key\+Value\+Map)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a70db6d7d7a33a9db850e811040e8fde1}{get\+Keys\+From\+Test\+Expression}} (String expression)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a7062ca2af4f7c9d5a0fdbe43800ad330}{execute\+Test\+Expression}} (String response, String test\+Expression)
+\item 
+static void \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a88f93ed328b64633d3ff09a52e9082c5}{store\+Response\+Attribute\+Values}} (String response\+String, String response\+Attribute)
+\item 
+static Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aa79640c39a527a2311ae47eacfe1ed76}{get\+Map\+To\+Replace\+Content}} (Map$<$ String, String $>$ request\+Data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a7062ca2af4f7c9d5a0fdbe43800ad330}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!executeTestExpression@{executeTestExpression}}
+\index{executeTestExpression@{executeTestExpression}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{executeTestExpression()}{executeTestExpression()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a7062ca2af4f7c9d5a0fdbe43800ad330} 
+static boolean com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+execute\+Test\+Expression (\begin{DoxyParamCaption}\item[{String}]{response}{, }\item[{String}]{test\+Expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a boolean value to indicate evaluation of test expression. This method will accept response as a string and test expression as a string. Method will evaluate the given test expression on given response using nashorn java script engine and returns result as a boolean value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & response JSON String \\
+\hline
+{\em test\+Expression} & JSON String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value as a result of evaluation 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a70db6d7d7a33a9db850e811040e8fde1}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!getKeysFromTestExpression@{getKeysFromTestExpression}}
+\index{getKeysFromTestExpression@{getKeysFromTestExpression}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{getKeysFromTestExpression()}{getKeysFromTestExpression()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a70db6d7d7a33a9db850e811040e8fde1} 
+static List$<$ String $>$ com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+get\+Keys\+From\+Test\+Expression (\begin{DoxyParamCaption}\item[{String}]{expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a List$<$\+String$>$. This method will accept test expression as a string Method will extract keys from given test expression returns a list of such keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & test\+Expression JSON String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of keys from given test expression 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aa79640c39a527a2311ae47eacfe1ed76}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!getMapToReplaceContent@{getMapToReplaceContent}}
+\index{getMapToReplaceContent@{getMapToReplaceContent}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{getMapToReplaceContent()}{getMapToReplaceContent()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aa79640c39a527a2311ae47eacfe1ed76} 
+static Map$<$ String, String $>$ com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+get\+Map\+To\+Replace\+Content (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{request\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This method will accept map of request data. Method will merge common master data, previous results of test cases and request data into single map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Data} & map of fields with their values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a map 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_afe1c97ebb6d3526998c618b58a674f7b}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!getValuesFromResponse@{getValuesFromResponse}}
+\index{getValuesFromResponse@{getValuesFromResponse}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{getValuesFromResponse()}{getValuesFromResponse()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_afe1c97ebb6d3526998c618b58a674f7b} 
+static Map$<$ String, String $>$ com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+get\+Values\+From\+Response (\begin{DoxyParamCaption}\item[{String}]{response\+String}{, }\item[{List$<$ String $>$}]{\$separated\+Keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a Map$<$\+String, String$>$. This method will accept response JSON string and data to be placed in the JSON string. Method will fetch values from response JSON string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+String} & response JSON String \\
+\hline
+{\em \$separated\+Keys} & list of fields to be fetched from response string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map$<$\+String, String$>$ of response field as key with its value as value 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_ab14c3f9384d44cdb372a6bd12ad114d9}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!modifyExpression@{modifyExpression}}
+\index{modifyExpression@{modifyExpression}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{modifyExpression()}{modifyExpression()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_ab14c3f9384d44cdb372a6bd12ad114d9} 
+static String com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+modify\+Expression (\begin{DoxyParamCaption}\item[{String}]{expression}{, }\item[{Map$<$ String, String $>$}]{\$key\+Value\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a String. This method will accept test expression as a string and map of fields with their values. This data of map will be used to replace the content of the test expression.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & test\+Expression JSON String \\
+\hline
+{\em \$key\+Value\+Map} & map of fields with their values used to replace test expression content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String modified test expression 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aede3896ec0602a2326ec1b65de04e090}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!modifyRequestJsonByReplacingRequestData@{modifyRequestJsonByReplacingRequestData}}
+\index{modifyRequestJsonByReplacingRequestData@{modifyRequestJsonByReplacingRequestData}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{modifyRequestJsonByReplacingRequestData()}{modifyRequestJsonByReplacingRequestData()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_aede3896ec0602a2326ec1b65de04e090} 
+static String com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+modify\+Request\+Json\+By\+Replacing\+Request\+Data (\begin{DoxyParamCaption}\item[{String}]{request\+Json}{, }\item[{Map$<$ String, String $>$}]{request\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a JSON string. This method will accept JSON string of the API and data to be placed in the JSON. Method will modify JSON string and returns a modified JSON string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Json} & JSON for the API \\
+\hline
+{\em request\+Data} & data to be replaced in JSON \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified JSON string 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_abba119139411a8f13a7b6df4a05feccb}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!modifyRequestURIByReplacingURIData@{modifyRequestURIByReplacingURIData}}
+\index{modifyRequestURIByReplacingURIData@{modifyRequestURIByReplacingURIData}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{modifyRequestURIByReplacingURIData()}{modifyRequestURIByReplacingURIData()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_abba119139411a8f13a7b6df4a05feccb} 
+static String com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+modify\+Request\+URIBy\+Replacing\+URIData (\begin{DoxyParamCaption}\item[{String}]{request\+URI}{, }\item[{Map$<$ String, String $>$}]{request\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a string. This method will accept URI of the API in form of string and data to be placed in the URI string. Method will modify URI string and returns a modified URI string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+URI} & URI for the API \\
+\hline
+{\em request\+Data} & data to be replaced in URI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified URI string 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a88f93ed328b64633d3ff09a52e9082c5}\index{com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}!storeResponseAttributeValues@{storeResponseAttributeValues}}
+\index{storeResponseAttributeValues@{storeResponseAttributeValues}!com.sterlite.cal.test.util.TestUtil@{com.sterlite.cal.test.util.TestUtil}}
+\doxysubsubsection{\texorpdfstring{storeResponseAttributeValues()}{storeResponseAttributeValues()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1test_1_1util_1_1_test_util_a88f93ed328b64633d3ff09a52e9082c5} 
+static void com.\+sterlite.\+cal.\+test.\+util.\+Test\+Util.\+store\+Response\+Attribute\+Values (\begin{DoxyParamCaption}\item[{String}]{response\+String}{, }\item[{String}]{response\+Attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This method will accept response string and attributes in form of key value pair \# separated. Method will fetch the values mentioned in the attribute list from response string. And store it into a Map. So that these values can be used for further test cases.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+String} & response JSON String \\
+\hline
+{\em response\+Attribute} & JSON String \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+repository/cal-\/testing/src/test/java/com/sterlite/cal/test/util/Test\+Util.\+java\end{DoxyCompactItemize}

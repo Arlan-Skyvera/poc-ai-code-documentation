@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::serviceImpl::UserDetailService</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UserDetailsService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service_1aeeb49c0f2dc906680482809da2c7b37e" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.serviceImpl.UserDetailService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.serviceImpl.UserDetailService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(UserDetailService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" line="20" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service_1abbcc28efa9c091b072006bfac4d15afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UserDetails</type>
+        <definition>UserDetails com.sterlite.cal.core.security.serviceImpl.UserDetailService.loadUserByUsername</definition>
+        <argsstring>(String username)</argsstring>
+        <name>loadUserByUsername</name>
+        <qualifiedname>com.sterlite.cal.core.security.serviceImpl.UserDetailService.loadUserByUsername</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <exceptions> throws UsernameNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" line="23" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" bodystart="23" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.serviceImpl.UserDetailService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UserDetailsService</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.serviceImpl.UserDetailService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>UserDetailsService</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" line="18" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/serviceImpl/UserDetailService.java" bodystart="18" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service_1abbcc28efa9c091b072006bfac4d15afb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::serviceImpl::UserDetailService</scope><name>loadUserByUsername</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service_1aeeb49c0f2dc906680482809da2c7b37e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::serviceImpl::UserDetailService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

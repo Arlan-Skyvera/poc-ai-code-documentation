@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_i_b_r_m_repository_8java" kind="file" language="Java">
+    <compoundname>IBRMRepository.java</compoundname>
+    <innerclass refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" prot="public">com::sterlite::cal::brm::core::repository::IBRMRepository</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository">com::sterlite::cal::brm::core::repository</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.brm.core.repository;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Map;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.jdbc.core.RowMapper;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.config.query.dataobject.QueryConfig;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>getResultByQuery(Map&lt;String,Object&gt;<sp/>parameterMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig)<sp/>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Map&lt;String,<sp/>Object&gt;<sp/>queryForMapForSingleRecord(Map&lt;String,Object&gt;<sp/>parameterMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig)<sp/>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Map&lt;String,<sp/>Object&gt;&gt;<sp/>queryForListMultipleRecords(Map&lt;String,Object&gt;<sp/>paramMap,<ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Map&lt;String,<sp/>Object&gt;&gt;<sp/>queryForListMultipleRecords(Map&lt;String,<sp/>Object&gt;<sp/>paramMap,<sp/>String<sp/>queryToBeExecuted,<sp/>String<sp/>dataSource);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateByQuery(Map&lt;String,Object&gt;<sp/>parameterMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>&lt;T&gt;<sp/>T<sp/>getObjectByQuery(Map&lt;String,Object&gt;<sp/>parameterMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig,<sp/>RowMapper&lt;T&gt;<sp/>rowMapper);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>&lt;T&gt;<sp/>List&lt;T&gt;<sp/>getListByQuery(Map&lt;String,Object&gt;<sp/>parameterMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref><sp/>queryConfig,<sp/>RowMapper&lt;T&gt;<sp/>rowMapper);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/IBRMRepository.java"/>
+  </compounddef>
+</doxygen>

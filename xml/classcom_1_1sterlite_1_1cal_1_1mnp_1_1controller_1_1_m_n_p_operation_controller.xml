@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::mnp::controller::MNPOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1abd666abf3e96d0e3fa3cedb3b448501a" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.mnp.controller.MNPOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(MNPOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="24" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a0b5c9d2c7b832c4fd7e8431f4b29698c" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_m_n_p_operation_service" kindref="compound">IMNPOperationService</ref></type>
+        <definition>IMNPOperationService com.sterlite.cal.mnp.controller.MNPOperationController.mnpService</definition>
+        <argsstring></argsstring>
+        <name>mnpService</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.mnpService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="27" column="30" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a1549f8e859909e2f7db28ccaf54217a6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.mnp.controller.MNPOperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="32" column="19" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ab4e62087c5a5f096d9b00742397fa68b" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service" kindref="compound">IRepatriationService</ref></type>
+        <definition>IRepatriationService com.sterlite.cal.mnp.controller.MNPOperationController.repatService</definition>
+        <argsstring></argsstring>
+        <name>repatService</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.repatService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="29" column="23" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a3b113fb18212c028be0463b765fa235e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.nprequestbyWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>nprequestbyWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.nprequestbyWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="36" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2003eaa98cfe6789bc642ad2df90ca16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npexecbyWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npexecbyWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npexecbyWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="45" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aa8c80e5708bf9e33c941dfecde617564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npbroadcastByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npbroadcastByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npbroadcastByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="53" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a84f0e18738bd7d8efbb1831c60aeaa09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npabortByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npabortByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npabortByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="61" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1af4e63cdbe1a7ea655d4f06896e4ed892" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.mnp.controller.MNPOperationController.npreadyForESBservice</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npreadyForESBservice</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npreadyForESBservice</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="69" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aee756f28ceb588628f8c5e84faca8777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.mnp.controller.MNPOperationController.npresponseforESBservice</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npresponseforESBservice</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npresponseforESBservice</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="78" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a08ea79d72062c08dc8a8e833b9536cc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.mnp.controller.MNPOperationController.npabortactivatedforesbservice</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npabortactivatedforesbservice</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npabortactivatedforesbservice</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="87" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aef4d9bfa2854c8c9af37250ec9f7088f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.nprequestfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>nprequestfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.nprequestfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="97" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a59235ab55f853f62e3e8969c61f4398d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.validateNPrequestForPortoutByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>validateNPrequestForPortoutByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.validateNPrequestForPortoutByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="107" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1afd12875b1997caa23741aabb48e200a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npresponsebyWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npresponsebyWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npresponsebyWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="115" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ad72edc67f0be38c14326c6262a68dda8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npReadyfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npReadyfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npReadyfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="126" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ad8d93a45005829a176e16e4c6eaf51c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npExecfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npExecfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npExecfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="135" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2431c243941a485d15562ee4554865f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npAbortActivatedfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npAbortActivatedfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npAbortActivatedfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="144" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ac3c1d7e93bd3f79c553fa756744a667c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdonefornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdonefornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdonefornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="152" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a8fadc282743177e7ae4d3c6583e81a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npabortfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npabortfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npabortfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="161" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1adccc7f8fcc5d5cce73756af7c3257d9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npbroadcastfornpportout</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npbroadcastfornpportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npbroadcastfornpportout</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="170" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a086608fc176333b686504c41a7747fe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdiscrejectByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdiscrejectByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdiscrejectByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="178" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aa1bf269adcbfad97b62f10626f3076bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdeactdoneByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdeactdoneByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdeactdoneByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="186" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1afd44ad9952d5d6f11f2b8b5cc16d3016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdisconnect</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdisconnect</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdisconnect</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="195" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a189b52153c1c46c297abff19cf0c213f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdisconnectByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdisconnectByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdisconnectByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="204" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a37934b06040719ad738bd7ad9eec1e9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdiscacceptedByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdiscacceptedByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdiscacceptedByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="212" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="212" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a6af7aead266bf4cade8529f9e5fce05a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npDeactivatedForRepatReceive</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npDeactivatedForRepatReceive</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npDeactivatedForRepatReceive</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="222" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="222" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ae6ed8be091477d598521e69e4b689e61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdeactivatedByWOM</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdeactivatedByWOM</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdeactivatedByWOM</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="230" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="230" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ac56ff68cebe499bcedd3c02a8373766f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdisrejectedreturn</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdisrejectedreturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdisrejectedreturn</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="238" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="238" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aef43dfa5f2dbea88c3d4f122004d99ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdeactdoneForReturn</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdeactdoneForReturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdeactdoneForReturn</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="246" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a36cba45c1be0da37c85181899389b7b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npdiscacceptedreturn</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npdiscacceptedreturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npdiscacceptedreturn</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="254" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="254" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a0ea58a7af0076edf3edba11dd4ea1b89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.persistESBData</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>persistESBData</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.persistESBData</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="264" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="264" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ab52d8d1068887ec8848495846816dece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.getDonorConfig</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>getDonorConfig</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.getDonorConfig</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="274" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="274" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2918e96323c176230d8856011799e62b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.controller.MNPOperationController.npcancelledbycrdc</definition>
+        <argsstring>(@RequestBody String request)</argsstring>
+        <name>npcancelledbycrdc</name>
+        <qualifiedname>com.sterlite.cal.mnp.controller.MNPOperationController.npcancelledbycrdc</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="289" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="289" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.controller.MNPOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.controller.MNPOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>repatService</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.mnp.service.IRepatriationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1_i_repatriation_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" line="22" column="7" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/controller/MNPOperationController.java" bodystart="22" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ab52d8d1068887ec8848495846816dece" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>getDonorConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a1549f8e859909e2f7db28ccaf54217a6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1abd666abf3e96d0e3fa3cedb3b448501a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a0b5c9d2c7b832c4fd7e8431f4b29698c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>mnpService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a08ea79d72062c08dc8a8e833b9536cc1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npabortactivatedforesbservice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2431c243941a485d15562ee4554865f5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npAbortActivatedfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a84f0e18738bd7d8efbb1831c60aeaa09" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npabortByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a8fadc282743177e7ae4d3c6583e81a8e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npabortfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aa8c80e5708bf9e33c941dfecde617564" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npbroadcastByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1adccc7f8fcc5d5cce73756af7c3257d9b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npbroadcastfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2918e96323c176230d8856011799e62b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npcancelledbycrdc</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aa1bf269adcbfad97b62f10626f3076bb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdeactdoneByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aef43dfa5f2dbea88c3d4f122004d99ae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdeactdoneForReturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ae6ed8be091477d598521e69e4b689e61" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdeactivatedByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a6af7aead266bf4cade8529f9e5fce05a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npDeactivatedForRepatReceive</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a37934b06040719ad738bd7ad9eec1e9d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdiscacceptedByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a36cba45c1be0da37c85181899389b7b5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdiscacceptedreturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1afd44ad9952d5d6f11f2b8b5cc16d3016" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdisconnect</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a189b52153c1c46c297abff19cf0c213f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdisconnectByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a086608fc176333b686504c41a7747fe7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdiscrejectByWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ac56ff68cebe499bcedd3c02a8373766f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdisrejectedreturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ac3c1d7e93bd3f79c553fa756744a667c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npdonefornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a2003eaa98cfe6789bc642ad2df90ca16" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npexecbyWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ad8d93a45005829a176e16e4c6eaf51c1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npExecfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1af4e63cdbe1a7ea655d4f06896e4ed892" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npreadyForESBservice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ad72edc67f0be38c14326c6262a68dda8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npReadyfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a3b113fb18212c028be0463b765fa235e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>nprequestbyWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aef4d9bfa2854c8c9af37250ec9f7088f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>nprequestfornpportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1afd12875b1997caa23741aabb48e200a2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npresponsebyWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1aee756f28ceb588628f8c5e84faca8777" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>npresponseforESBservice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a0ea58a7af0076edf3edba11dd4ea1b89" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>persistESBData</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1ab4e62087c5a5f096d9b00742397fa68b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>repatService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>setReferenceIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1controller_1_1_m_n_p_operation_controller_1a59235ab55f853f62e3e8969c61f4398d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::controller::MNPOperationController</scope><name>validateNPrequestForPortoutByWOM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

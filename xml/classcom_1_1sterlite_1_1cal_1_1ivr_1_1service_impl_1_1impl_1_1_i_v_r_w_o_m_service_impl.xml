@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::serviceImpl::impl::IVRWOMServiceImpl</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_w_o_m_service" prot="public" virt="non-virtual">com.sterlite.cal.ivr.service.IVRWOMService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a90d89860dcbb8612c11f788e8fa85c94" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IVRWOMServiceImpl.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" line="20" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1aefa33385a7629b3b7a478eda97012d64" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service" kindref="compound">IIVRIntegrationService</ref></type>
+        <definition>IIVRIntegrationService com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.ivrIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>ivrIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.ivrIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" line="22" column="32" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a5d912ebce162868740602830babc4a44" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" line="25" column="19" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a5873d635fa22304ac83c23b13b4af9cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.subscribeAddOnCreateOrder</definition>
+        <argsstring>(CreateSubscriptionOrder createSubscriptionOrder)</argsstring>
+        <name>subscribeAddOnCreateOrder</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl.subscribeAddOnCreateOrder</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_w_o_m_service_1a3e7ba1bbcf133afa233f36d827e909d0">subscribeAddOnCreateOrder</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_create_subscription_order" kindref="compound">CreateSubscriptionOrder</ref></type>
+          <declname>createSubscriptionOrder</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" line="29" column="12" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" bodystart="29" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRWOMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_w_o_m_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.IVRWOMServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRWOMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_w_o_m_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" line="18" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/IVRWOMServiceImpl.java" bodystart="18" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1aefa33385a7629b3b7a478eda97012d64" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRWOMServiceImpl</scope><name>ivrIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a5d912ebce162868740602830babc4a44" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRWOMServiceImpl</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a90d89860dcbb8612c11f788e8fa85c94" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRWOMServiceImpl</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_i_v_r_w_o_m_service_impl_1a5873d635fa22304ac83c23b13b4af9cd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::IVRWOMServiceImpl</scope><name>subscribeAddOnCreateOrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

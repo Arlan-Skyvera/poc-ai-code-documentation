@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::config::JsonTimestampSerializer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">com::fasterxml::jackson::databind::JsonSerializer&lt; Timestamp &gt;</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a3061f5e9febf50c4cadbcfcefd40274c" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.config.JsonTimestampSerializer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampSerializer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JsonTimestampSerializer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Constant LOGGER. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" line="24" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a75331ff661eef8075c90756bfa5c24e5" prot="private" static="no" mutable="no">
+        <type>SimpleDateFormat</type>
+        <definition>SimpleDateFormat com.sterlite.cal.core.base.config.JsonTimestampSerializer.dateFormatter</definition>
+        <argsstring></argsstring>
+        <name>dateFormatter</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampSerializer.dateFormatter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The date formatter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" line="27" column="26" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a4fdba3f397fc7560410d2972a5311e80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.base.config.JsonTimestampSerializer.JsonTimestampSerializer</definition>
+        <argsstring>(String brmTimestampFormat)</argsstring>
+        <name>JsonTimestampSerializer</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampSerializer.JsonTimestampSerializer</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>brmTimestampFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiates a new json timestamp serializer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeStampFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time stamp format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" line="36" column="8" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1ab0dbb6ac609d3e1281d9e68c1badf1cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.config.JsonTimestampSerializer.serialize</definition>
+        <argsstring>(Timestamp value, JsonGenerator gen, SerializerProvider serializers)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampSerializer.serialize</qualifiedname>
+        <param>
+          <type>Timestamp</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>JsonGenerator</type>
+          <declname>gen</declname>
+        </param>
+        <param>
+          <type>SerializerProvider</type>
+          <declname>serializers</declname>
+        </param>
+        <exceptions> throws IOException, JsonProcessingException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" line="55" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" bodystart="55" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Class <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer" kindref="compound">JsonTimestampSerializer</ref>.</para>
+<para><simplesect kind="author"><para>dilip.dumania </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonTimestampSerializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonSerializer&lt; Timestamp &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonTimestampSerializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonSerializer&lt; Timestamp &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" line="21" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampSerializer.java" bodystart="21" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a75331ff661eef8075c90756bfa5c24e5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampSerializer</scope><name>dateFormatter</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a4fdba3f397fc7560410d2972a5311e80" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampSerializer</scope><name>JsonTimestampSerializer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1a3061f5e9febf50c4cadbcfcefd40274c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampSerializer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_serializer_1ab0dbb6ac609d3e1281d9e68c1badf1cd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampSerializer</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

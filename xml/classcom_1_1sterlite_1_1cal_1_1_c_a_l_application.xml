@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::CALApplication</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a96a47a8e92b9bdabaf0728cc1e565907" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>static final ILogger com.sterlite.cal.CALApplication::LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CALApplication.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="26" column="30" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a8e14a18de23f104fc3e7697fd570ab7a" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service" kindref="compound">ICacheService</ref></type>
+        <definition>ICacheService com.sterlite.cal.CALApplication.cacheService</definition>
+        <argsstring></argsstring>
+        <name>cacheService</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.cacheService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="29" column="23" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1adf5b6328f9309d078e65c218c43a6d82" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CALApplication::parallelismThread</definition>
+        <argsstring></argsstring>
+        <name>parallelismThread</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.parallelismThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parallelism thread. Used by internal parallel stream operations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="39" column="16" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a6f68f6be7ac63ed98ff74e3388f64db0" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CALApplication::maxPoolSize</definition>
+        <argsstring></argsstring>
+        <name>maxPoolSize</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.maxPoolSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="42" column="16" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a5cda8463b585cd3487dce0c418e4a64e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.CALApplication::queueCapacity</definition>
+        <argsstring></argsstring>
+        <name>queueCapacity</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.queueCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="45" column="16" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1aaaea72936a9d10324d925149f11faa30" prot="package" static="no" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.CALApplication.hazelcastInstance</definition>
+        <argsstring></argsstring>
+        <name>hazelcastInstance</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.hazelcastInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="33" column="19" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a76b44d60ad9dccdbbbde409ed086a3be" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>ILogger com.sterlite.cal.CALApplication.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.logger</qualifiedname>
+        <initializer>= ILogger.getInstant(CALApplication.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="33" column="9" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a9b008244aab02041c2e1274f7b33a613" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration" kindref="compound">HazelcastClientConfiguration</ref></type>
+        <definition>HazelcastClientConfiguration com.sterlite.cal.CALApplication.hazelcastClientConfiguration</definition>
+        <argsstring></argsstring>
+        <name>hazelcastClientConfiguration</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.hazelcastClientConfiguration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="37" column="30" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a2c3d59476864788e5ca037a0ecb65b12" prot="package" static="no" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.CALApplication.hazelcastClientInstance</definition>
+        <argsstring></argsstring>
+        <name>hazelcastClientInstance</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.hazelcastClientInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="41" column="19" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.CALApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Main method which runs the application. In this, the spring context is initialized.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="53" column="20" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.CALApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/CALApplication.java" line="21" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.CALApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="52" column="20" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="52" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a9664bb9dfd9b53394cc81bc1bac206ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TaskExecutor</type>
+        <definition>TaskExecutor com.sterlite.cal.CALApplication.threadPoolTaskExecutor</definition>
+        <argsstring>()</argsstring>
+        <name>threadPoolTaskExecutor</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.threadPoolTaskExecutor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="63" column="21" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="63" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.CALApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Post construct method to load cache on server startup. Method also sets the parallelism thread as system property. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="141" column="13" bodyfile="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="141" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.CALApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/CALApplication.java" line="30" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.CALApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="57" column="13" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1ade932f0a201ebf2efa6f3836f7a9d518" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.CALApplication.hazelcastClientInstance</definition>
+        <argsstring>()</argsstring>
+        <name>hazelcastClientInstance</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.hazelcastClientInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="67" column="26" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a46b04c3818994303c1ab7e0990b368bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TaskExecutor</type>
+        <definition>TaskExecutor com.sterlite.cal.CALApplication.threadPoolTaskExecutor3</definition>
+        <argsstring>()</argsstring>
+        <name>threadPoolTaskExecutor3</name>
+        <qualifiedname>com.sterlite.cal.CALApplication.threadPoolTaskExecutor3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" line="72" column="21" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="72" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+<simplesect kind="since"><para>April 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.CALApplication</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hazelcastClientInstance</edgelabel>
+          <edgelabel>hazelcastInstance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>logger</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>hazelcastClientConfiguration</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HazelcastInstance</label>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal/src/main/java/com/sterlite/cal/CALApplication.java" line="24" column="7" bodyfile="repository/la-cal/src/main/java/com/sterlite/cal/CALApplication.java" bodystart="31" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a8e14a18de23f104fc3e7697fd570ab7a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>cacheService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a9b008244aab02041c2e1274f7b33a613" prot="package" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>hazelcastClientConfiguration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a2c3d59476864788e5ca037a0ecb65b12" prot="package" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>hazelcastClientInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1ade932f0a201ebf2efa6f3836f7a9d518" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>hazelcastClientInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1aaaea72936a9d10324d925149f11faa30" prot="package" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>hazelcastInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a15ca3989d5aaf65c51879b7767611a33" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a96a47a8e92b9bdabaf0728cc1e565907" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a76b44d60ad9dccdbbbde409ed086a3be" prot="package" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>logger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>main</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>main</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1af979e9b1d14dc6e1a444614e93f593fb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>main</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a6f68f6be7ac63ed98ff74e3388f64db0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>maxPoolSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1adf5b6328f9309d078e65c218c43a6d82" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>parallelismThread</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a5cda8463b585cd3487dce0c418e4a64e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>queueCapacity</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a9664bb9dfd9b53394cc81bc1bac206ac" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>threadPoolTaskExecutor</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_c_a_l_application_1a46b04c3818994303c1ab7e0990b368bd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::CALApplication</scope><name>threadPoolTaskExecutor3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

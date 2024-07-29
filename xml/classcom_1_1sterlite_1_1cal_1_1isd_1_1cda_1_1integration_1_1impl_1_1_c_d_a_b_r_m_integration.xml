@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration" prot="public" virt="non-virtual">com.sterlite.cal.isd.cda.integration.ICDABRMIntegration</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a4536aae2920f2115ddce126462a20da5" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CDABRMIntegration.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="28" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a98feb4c1c48faae281fede1325350011" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="31" column="23" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a0fd2dfea1b5ac2f38a845bfd6136cf88" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="34" column="19" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a8307cd1d50e930667ccb3c0ea28e1305" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="37" column="21" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a8299e1f7fddbc8dd560ea1262f3169f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getOutstandamount</definition>
+        <argsstring>(String billingAccountNumber)</argsstring>
+        <name>getOutstandamount</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getOutstandamount</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration_1a3d03774a9e44367da1f75edfbc1fb7b3">getOutstandamount</reimplements>
+        <param>
+          <type>String</type>
+          <declname>billingAccountNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="40" column="13" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="40" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a0c4df17fd9423444693b89b220f69e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_remaining_e_m_i_response_object" kindref="compound">RemainingEMIResponseObject</ref></type>
+        <definition>RemainingEMIResponseObject com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getSIDetailsFromCustomerManagement</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>getSIDetailsFromCustomerManagement</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getSIDetailsFromCustomerManagement</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration_1a5443940afaecd77884acce520c3801df">getSIDetailsFromCustomerManagement</reimplements>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="61" column="35" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="61" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1ae9eb4d8334865ada58a2b0b198b647e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_quote_b_r_m_response" kindref="compound">QuoteBRMResponse</ref></type>
+        <definition>QuoteBRMResponse com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getQuotForPlan</definition>
+        <argsstring>(String brmURI, QuotationForPlanBRMRequest quoteRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getQuotForPlan</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getQuotForPlan</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration_1a4ad98c76a7d206e2dbd5051883670805">getQuotForPlan</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="77" column="25" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a80a4dc22266678092841b13954744c69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_bill_estimation_response" kindref="compound">BillEstimationResponse</ref></type>
+        <definition>BillEstimationResponse com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getBillEstimation</definition>
+        <argsstring>(BillingEstimationRequest billRequest)</argsstring>
+        <name>getBillEstimation</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration.getBillEstimation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration_1a5a266344b9065c4d86039b9773c13ef7">getBillEstimation</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_billing_estimation_request" kindref="compound">BillingEstimationRequest</ref></type>
+          <declname>billRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="87" column="31" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="87" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.cda.integration.ICDABRMIntegration</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.cda.integration.impl.CDABRMIntegration</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.cda.integration.ICDABRMIntegration</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1_i_c_d_a_b_r_m_integration"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" line="26" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/integration/impl/CDABRMIntegration.java" bodystart="26" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a98feb4c1c48faae281fede1325350011" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a80a4dc22266678092841b13954744c69" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>getBillEstimation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a8299e1f7fddbc8dd560ea1262f3169f3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>getOutstandamount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1ae9eb4d8334865ada58a2b0b198b647e5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>getQuotForPlan</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a0c4df17fd9423444693b89b220f69e90" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>getSIDetailsFromCustomerManagement</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a0fd2dfea1b5ac2f38a845bfd6136cf88" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a4536aae2920f2115ddce126462a20da5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1integration_1_1impl_1_1_c_d_a_b_r_m_integration_1a8307cd1d50e930667ccb3c0ea28e1305" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::integration::impl::CDABRMIntegration</scope><name>utils</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

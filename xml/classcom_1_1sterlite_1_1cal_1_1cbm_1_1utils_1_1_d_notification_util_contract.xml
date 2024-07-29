@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::utils::DNotificationUtilContract</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a6f1625f583fb2bfb9a9f91568b354ed1" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.utils.DNotificationUtilContract.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DNotificationUtilContract.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="19" column="30" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1aa10391163f8abe5744c9c6ca6534f082" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.cbm.utils.DNotificationUtilContract.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="22" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a6c49a1137de142fdf6961824e1451320" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.utils.DNotificationUtilContract.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="25" column="11" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a9dd051bd4c65f3859e7b8ad7cf8a03be" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.DNotificationUtilContract.dNotificationUrl</definition>
+        <argsstring></argsstring>
+        <name>dNotificationUrl</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.dNotificationUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="29" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a47c6490b7858ae9683777a732b442477" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.DNotificationUtilContract.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="31" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="31" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a270bc42fac67dda7ce517eeb2c929f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.DNotificationUtilContract.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="44" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1ab8c6ab72b27b1af20159815314a5c867" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.cbm.utils.DNotificationUtilContract.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="62" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="62" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a7d1c3c30f38db8568a2b186244e9e633" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.cbm.utils.DNotificationUtilContract.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="50" column="11" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a215453423a5fd755f7e64c33203a8c5a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.cbm.utils.DNotificationUtilContract.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.DNotificationUtilContract.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="56" column="11" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="56" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.utils.DNotificationUtilContract</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.utils.DNotificationUtilContract</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" line="17" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/DNotificationUtilContract.java" bodystart="17" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a9dd051bd4c65f3859e7b8ad7cf8a03be" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>dNotificationUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1aa10391163f8abe5744c9c6ca6534f082" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a215453423a5fd755f7e64c33203a8c5a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a270bc42fac67dda7ce517eeb2c929f3f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a47c6490b7858ae9683777a732b442477" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a6c49a1137de142fdf6961824e1451320" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a6f1625f583fb2bfb9a9f91568b354ed1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1a7d1c3c30f38db8568a2b186244e9e633" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract_1ab8c6ab72b27b1af20159815314a5c867" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::DNotificationUtilContract</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

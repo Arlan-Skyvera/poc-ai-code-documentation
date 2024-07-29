@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::core::client::BRMQueryClient</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a75e22a716da72ca635eda2710b92dbab" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.core.client.BRMQueryClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BRMQueryClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="23" column="30" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a67795a4c3174a9ff82365495115cad9d" prot="private" static="yes" mutable="no">
+        <type>HashMap&lt; String, NamedParameterJdbcTemplate &gt;</type>
+        <definition>HashMap&lt;String, NamedParameterJdbcTemplate&gt; com.sterlite.cal.brm.core.client.BRMQueryClient.mapNameParamJdbcTemplate</definition>
+        <argsstring></argsstring>
+        <name>mapNameParamJdbcTemplate</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.mapNameParamJdbcTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="24" column="24" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a68c29eaad03a7d941a144304a3ec20d5" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config" kindref="compound">BRMPersistenceConfig</ref></type>
+        <definition>BRMPersistenceConfig com.sterlite.cal.brm.core.client.BRMQueryClient.brmPersistenceConfig</definition>
+        <argsstring></argsstring>
+        <name>brmPersistenceConfig</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.brmPersistenceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="27" column="22" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aecc5ec587f7162b6499a5f547c159e30" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.brm.core.client.BRMQueryClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="30" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1acf7470b6b596e90d0d58b4952e2ed9c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.client.BRMQueryClient.queryForObject</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig)</argsstring>
+        <name>queryForObject</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForObject</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_d_b_operation_exception" kindref="compound">DBOperationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="32" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="32" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a22e0b7bfd3e05be515e7ce41fdc2d9bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.client.BRMQueryClient.updateByQuery</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig)</argsstring>
+        <name>updateByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.updateByQuery</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_d_b_operation_exception" kindref="compound">DBOperationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="58" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="58" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aaa6e24936fb19aa5e1812b7a3d3f72cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.core.client.BRMQueryClient.queryForMap</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig)</argsstring>
+        <name>queryForMap</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForMap</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="85" column="12" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="85" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a75fa285b5e972a1aaa9307a853bc1e21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.core.client.BRMQueryClient.queryForListMultipleRecords</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig)</argsstring>
+        <name>queryForListMultipleRecords</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForListMultipleRecords</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="106" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="106" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aebd4b75d95c5db6f9ed1fa1555a5dd67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.core.client.BRMQueryClient.queryForListMultipleRecords</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, String queryToBeExecuted, String dataSource)</argsstring>
+        <name>queryForListMultipleRecords</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForListMultipleRecords</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>queryToBeExecuted</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dataSource</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="128" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="128" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a0d37ac80e133cb84951c96769ce56531" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.brm.core.client.BRMQueryClient.queryForSpecificObject</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig, RowMapper&lt; T &gt; rowMapper)</argsstring>
+        <name>queryForSpecificObject</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForSpecificObject</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <param>
+          <type>RowMapper&lt; T &gt;</type>
+          <declname>rowMapper</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_d_b_operation_exception" kindref="compound">DBOperationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="143" column="11" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="143" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a7986b33096adf0d6815916c06a38eb72" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; List&lt; T &gt;</type>
+        <definition>public&lt; T &gt; List&lt; T &gt; com.sterlite.cal.brm.core.client.BRMQueryClient.queryForSpecificList</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig, RowMapper&lt; T &gt; rowMapper)</argsstring>
+        <name>queryForSpecificList</name>
+        <qualifiedname>com.sterlite.cal.brm.core.client.BRMQueryClient.queryForSpecificList</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <param>
+          <type>RowMapper&lt; T &gt;</type>
+          <declname>rowMapper</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_d_b_operation_exception" kindref="compound">DBOperationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="169" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="169" bodyend="193"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" line="21" column="7" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/client/BRMQueryClient.java" bodystart="21" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a68c29eaad03a7d941a144304a3ec20d5" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>brmPersistenceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aecc5ec587f7162b6499a5f547c159e30" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a75e22a716da72ca635eda2710b92dbab" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a67795a4c3174a9ff82365495115cad9d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>mapNameParamJdbcTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a75fa285b5e972a1aaa9307a853bc1e21" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForListMultipleRecords</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aebd4b75d95c5db6f9ed1fa1555a5dd67" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForListMultipleRecords</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1aaa6e24936fb19aa5e1812b7a3d3f72cc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1acf7470b6b596e90d0d58b4952e2ed9c2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a7986b33096adf0d6815916c06a38eb72" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForSpecificList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a0d37ac80e133cb84951c96769ce56531" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>queryForSpecificObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client_1a22e0b7bfd3e05be515e7ce41fdc2d9bb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::client::BRMQueryClient</scope><name>updateByQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

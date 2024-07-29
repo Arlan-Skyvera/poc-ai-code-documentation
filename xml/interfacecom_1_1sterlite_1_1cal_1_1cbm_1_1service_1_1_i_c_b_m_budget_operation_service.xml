@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</compoundname>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1abc5806d253262d020224f7e076dc3e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudget</definition>
+        <argsstring>(BudgetRequest budgetId, Pageable pageable)</argsstring>
+        <name>getBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudget</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ad9f1162e5d578df8a33cc5f7ea2b2c80">getBudget</reimplementedby>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref></type>
+          <declname>budgetId</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="15" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a7b996eda73a2156cc3940d049e384df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.ICBMBudgetOperationService.consumeBudget</definition>
+        <argsstring>(ConsumeBudgetRequest requestObj)</argsstring>
+        <name>consumeBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ICBMBudgetOperationService.consumeBudget</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1af6566951860b57b4d6f85c39ff970701">consumeBudget</reimplementedby>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="17" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1ab93da50862c607d156d558a2e2292c1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudgetForSI</definition>
+        <argsstring>(BudgetForSiRequest requestObj, QuotationForPlanBRMRequest quoteRequest)</argsstring>
+        <name>getBudgetForSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudgetForSI</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a4d6e376655a46dc845db85c8380a752e">getBudgetForSI</reimplementedby>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_for_si_request" kindref="compound">BudgetForSiRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="19" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a5cc1213593420b77c901167112aacf4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getCategoryMaster</definition>
+        <argsstring>()</argsstring>
+        <name>getCategoryMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getCategoryMaster</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a237175f0b99721554bfade3094224fa6">getCategoryMaster</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="21" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a37fa6860c92b5b061c96fbb4c158ba70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudgetByIdentifier</definition>
+        <argsstring>(BudgetRequest budgetRequest, Pageable pageable)</argsstring>
+        <name>getBudgetByIdentifier</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ICBMBudgetOperationService.getBudgetByIdentifier</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1adb62e93db751bdfc2c349e55c0c9a3ba">getBudgetByIdentifier</reimplementedby>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref></type>
+          <declname>budgetRequest</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="23" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.ICBMBudgetOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" line="14" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/ICBMBudgetOperationService.java" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a7b996eda73a2156cc3940d049e384df1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</scope><name>consumeBudget</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1abc5806d253262d020224f7e076dc3e32" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</scope><name>getBudget</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a37fa6860c92b5b061c96fbb4c158ba70" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</scope><name>getBudgetByIdentifier</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1ab93da50862c607d156d558a2e2292c1e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</scope><name>getBudgetForSI</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a5cc1213593420b77c901167112aacf4e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ICBMBudgetOperationService</scope><name>getCategoryMaster</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

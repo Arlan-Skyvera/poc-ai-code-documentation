@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::UPCRestClient</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.UPCBaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1ab1317501e79ac8e307221115a476c859" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.UPCRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(UPCRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="21" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a572a2f7da174ac9042fa6bbdfcff9dd8" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.UPCRestClient.IP_ADDRESS</definition>
+        <argsstring></argsstring>
+        <name>IP_ADDRESS</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.IP_ADDRESS</qualifiedname>
+        <initializer>= &quot;10.121.28.92&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="22" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a7555267e2022e2a3be91a1d9f958e740" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.UPCRestClient.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="31" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a1ec0cdf4f1c5c999fbca09f523c13eef" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.restclient.UPCRestClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="25" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a13f86b7b26186c8f4ed5134e45d8af3f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.UPCRestClient.baseUrl</definition>
+        <argsstring></argsstring>
+        <name>baseUrl</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.baseUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The base url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="29" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a99dbf74ddd461beee1ec8d54f9aa0d6e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.core.base.restclient.UPCRestClient.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="34" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a198d4b84ec48d70d3b90115cf13a4b6d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.UPCRestClient.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="36" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="36" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1ae9f8e196a058fc37017d935d9be1d6f5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.UPCRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="42" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a36cbfba0026abca55283fce31637a6bb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.UPCRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="48" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1af5c4df099d909b35c3b77726bb51bb51" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.UPCRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="54" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a0cf820c06e5ff341d6214850ec95f912" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.UPCRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="60" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a5bfe3cf843471dc7ebc48e43aa40895a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.UPCRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="66" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="66" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a8fe256a4ed596d880632685ac4c22ece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.core.base.restclient.UPCRestClient.prePareHeaderMap</definition>
+        <argsstring>()</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.prePareHeaderMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="72" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="72" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a931f62f15d43abae70c80ec2145f83d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.UPCRestClient.getUPCToken</definition>
+        <argsstring>()</argsstring>
+        <name>getUPCToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.UPCRestClient.getUPCToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="92" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="92" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.UPCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.UPCBaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.UPCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.UPCBaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" line="19" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/UPCRestClient.java" bodystart="19" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a13f86b7b26186c8f4ed5134e45d8af3f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>baseUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a0cf820c06e5ff341d6214850ec95f912" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client_1a01fb83f70d66321e92f5022e176e1955" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::UPCBaseRestClient."><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a1ec0cdf4f1c5c999fbca09f523c13eef" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a99dbf74ddd461beee1ec8d54f9aa0d6e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a36cbfba0026abca55283fce31637a6bb" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client_1abb65870645b8f479de591e91fcff37bf" prot="public" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::UPCBaseRestClient."><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a931f62f15d43abae70c80ec2145f83d3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>getUPCToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a198d4b84ec48d70d3b90115cf13a4b6d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a572a2f7da174ac9042fa6bbdfcff9dd8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>IP_ADDRESS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a7555267e2022e2a3be91a1d9f958e740" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1ab1317501e79ac8e307221115a476c859" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1af5c4df099d909b35c3b77726bb51bb51" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client_1ac26604a7432e280a7c08f6d285916258" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::UPCBaseRestClient."><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1ae9f8e196a058fc37017d935d9be1d6f5" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client_1a9bad39af902bee51c5badb799c772ceb" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::UPCBaseRestClient."><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a8fe256a4ed596d880632685ac4c22ece" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client_1a5bfe3cf843471dc7ebc48e43aa40895a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_base_rest_client_1a6cf962434fdf3cb1d0fed370a5169c0a" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::UPCBaseRestClient."><scope>com::sterlite::cal::core::base::restclient::UPCRestClient</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

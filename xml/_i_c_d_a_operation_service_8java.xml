@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_i_c_d_a_operation_service_8java" kind="file" language="Java">
+    <compoundname>ICDAOperationService.java</compoundname>
+    <innerclass refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1_i_c_d_a_operation_service" prot="public">com::sterlite::cal::isd::cda::service::ICDAOperationService</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service">com::sterlite::cal::isd::cda::service</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.isd.cda.service;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.base.valueobject.CalBaseResponse;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.exception.SBIntegrationException;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.isd.cda.valueobject.CDALPSGRequest;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.isd.cda.valueobject.CDAOldOrderRequest;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.isd.cda.valueobject.CDAOrderRequest;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.isd.cda.valueobject.CustomerAccountRequest;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1_i_c_d_a_operation_service" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1_i_c_d_a_operation_service" kindref="compound">ICDAOperationService</ref>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref><sp/>orderValidate(<ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_c_d_a_order_request" kindref="compound">CDAOrderRequest</ref><sp/>cdaOrderReq)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref><sp/>orderValidateOld(<ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_c_d_a_old_order_request" kindref="compound">CDAOldOrderRequest</ref><sp/>cdaOrderReq)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref><sp/>orderValidateForCDAAndLPSG(<ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_c_d_a_l_p_s_g_request" kindref="compound">CDALPSGRequest</ref><sp/>request)</highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref><sp/>getBALevelChargesForCDA(<ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_customer_account_request" kindref="compound">CustomerAccountRequest</ref><sp/>customerAccRequest);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/ICDAOperationService.java"/>
+  </compounddef>
+</doxygen>

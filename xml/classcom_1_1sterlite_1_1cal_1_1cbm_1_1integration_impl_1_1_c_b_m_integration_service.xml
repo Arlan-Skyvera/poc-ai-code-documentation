@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.integration.ICBMIntegrationService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a7c5e16c92f1f20c401cfcb9cf3ac7834" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="27" column="30" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1afc4761e416c2b3c4db01d9e762053a63" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="30" column="23" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a534467c5202cc9da1d17553f69f2153c" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client" kindref="compound">CRMRestClient</ref></type>
+        <definition>CRMRestClient com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.crmRestClient</definition>
+        <argsstring></argsstring>
+        <name>crmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.crmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="33" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1af799af89d75a80f065adc9252ab7674f" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="36" column="11" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a12dd6a391c7f3941b000a8491c0115cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_response" kindref="compound">QuotationForPlanBRMResponse</ref></type>
+        <definition>QuotationForPlanBRMResponse com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.getQuotationForPlan</definition>
+        <argsstring>(String brmuri, QuotationForPlanBRMRequest quoteRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getQuotationForPlan</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.getQuotationForPlan</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a56b5130d70dba3aacd0db165e93ba7b2">getQuotationForPlan</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="39" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a05b06bcad098f858f13c15fa41b80bf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_coefficient_response" kindref="compound">BudgetCoefficientResponse</ref></type>
+        <definition>BudgetCoefficientResponse com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.getBudgetCoefficientRequest</definition>
+        <argsstring>(BudgetCoefficientRequest request)</argsstring>
+        <name>getBudgetCoefficientRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService.getBudgetCoefficientRequest</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a51cb1b25c51261040479ea5cf6770c75">getBudgetCoefficientRequest</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_coefficient_request" kindref="compound">BudgetCoefficientRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="48" column="34" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="48" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.integration.ICBMIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>crmRestClient</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.integration.ICBMIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.restclient.CRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="5">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" line="25" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integrationImpl/CBMIntegrationService.java" bodystart="25" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1afc4761e416c2b3c4db01d9e762053a63" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a534467c5202cc9da1d17553f69f2153c" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>crmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a05b06bcad098f858f13c15fa41b80bf5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>getBudgetCoefficientRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a12dd6a391c7f3941b000a8491c0115cf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>getQuotationForPlan</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1af799af89d75a80f065adc9252ab7674f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a7c5e16c92f1f20c401cfcb9cf3ac7834" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::integrationImpl::CBMIntegrationService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

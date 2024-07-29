@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::core::service::impl::BRMOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.core.service.IBRMOperationService</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.core.service.IBRMService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a9e21230d63c09152de612a60d03b668e" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.core.service.impl.BRMOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IBRMOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="43" column="29" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ae6961e0cdd51b2b41a987f2d71144db7" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1integration_1_1_i_b_r_m_operation_integration_service" kindref="compound">IBRMOperationIntegrationService</ref></type>
+        <definition>IBRMOperationIntegrationService com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmOperationIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>brmOperationIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmOperationIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="45" column="33" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1afc1192575cb858f341408e028a3e4846" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.brm.core.service.impl.BRMOperationService.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="47" column="11" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a4ec1bc91a2d261fb9cfa029088bf1d1b" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="49" column="16" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a9586b5eb378eb1d14d48511eba0c831e" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_b_r_m_utility" kindref="compound">BRMUtility</ref></type>
+        <definition>BRMUtility com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmUtils</definition>
+        <argsstring></argsstring>
+        <name>brmUtils</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="52" column="12" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a1b4abf5ab381ea08a800589a2661813b" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="55" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ab9a49ff164db91ba211f082b2e1a24f6" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_brm_common_utils" kindref="compound">BrmCommonUtils</ref></type>
+        <definition>BrmCommonUtils com.sterlite.cal.brm.core.service.impl.BRMOperationService.commonUtils</definition>
+        <argsstring></argsstring>
+        <name>commonUtils</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.commonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="58" column="16" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ae3a9e2922eb72f360c966473bac2736f" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.sterlite.cal.brm.core.service.impl.BRMOperationService.minorUnit</definition>
+        <argsstring></argsstring>
+        <name>minorUnit</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.minorUnit</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="60" column="5" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ac96773cb5eb8e82408fce97a400f5104" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMOperation</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>performBRMOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1aa6e8318c980cf54922674dbfbed29801">performBRMOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="63" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="63" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a476e8b9c271026ae3a3dd0b84d48161e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMGetOperation</definition>
+        <argsstring>(Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>performBRMGetOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMGetOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1a3818f7a1e2a5505caa27b8fd8e1b9f34">performBRMGetOperation</reimplements>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="482" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="482" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a98569090cfa0b514dd4b43c1853f984b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.impl.BRMOperationService.performFileDownloadOperation</definition>
+        <argsstring>(Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>performFileDownloadOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performFileDownloadOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1a049f29de5e00a6af2bd275ef67111c12">performFileDownloadOperation</reimplements>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="579" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="579" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ab894b2e68c318e9a93c3ba7f14258827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMPatchOperation</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>performBRMPatchOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMPatchOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1a11fb1fee546c808a74dae0b727b2f4c0">performBRMPatchOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="588" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="588" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ad7b1993e3b21c7b5578a99b137064b29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMDeleteOperation</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>performBRMDeleteOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMDeleteOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1acb4f80ef86d038dfdb2e82b85c085d97">performBRMDeleteOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="597" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="597" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ac3db43204f41ee8e43f85bbe15b29e82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMPutOperation</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>performBRMPutOperation</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.performBRMPutOperation</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1a28897c9607e023f15aaac4ae7c768677">performBRMPutOperation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="606" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="606" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a1ab3c987f1fbd1dd68c957ea7fd29197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getResultByQuery</definition>
+        <argsstring>(String requestJason)</argsstring>
+        <name>getResultByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getResultByQuery</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service_1a6f2fdb8fd32812626b2972597fe3d8e4">getResultByQuery</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="620" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="620" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a254314d55e078a4e4dd549f86057cbda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForRechargeHistory</definition>
+        <argsstring>(String response, int offset, int limit)</argsstring>
+        <name>getPaginationForRechargeHistory</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForRechargeHistory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="646" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="646" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a57cc53a3e5bbf64ac5ef8dbce867aafc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForUsageHistory</definition>
+        <argsstring>(String response, int offset, int limit)</argsstring>
+        <name>getPaginationForUsageHistory</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForUsageHistory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="681" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="681" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a2a1fe5913201b75f3c6c6b9859fd5e4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForPaymentHistory</definition>
+        <argsstring>(String response, int offset, int limit)</argsstring>
+        <name>getPaginationForPaymentHistory</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForPaymentHistory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="728" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="728" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a83e8b8cde458dfa0649f3519acb2e92a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForSearchBill</definition>
+        <argsstring>(String response, int offset, int limit)</argsstring>
+        <name>getPaginationForSearchBill</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getPaginationForSearchBill</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="807" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="807" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a08dfe658199fe8c7b836d09dbb29d826" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.impl.BRMOperationService.getDepositDetail</definition>
+        <argsstring>(String response)</argsstring>
+        <name>getDepositDetail</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.getDepositDetail</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="847" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="847" bodyend="872"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a434c9c155746930ce3a43cf79e7328ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.service.impl.BRMOperationService.createDeviceMappingForManualBill</definition>
+        <argsstring>(Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>createDeviceMappingForManualBill</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.createDeviceMappingForManualBill</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="362" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="362" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a7efbdd32808ea2e2e353edc3914eb19f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.service.impl.BRMOperationService.updateSalesInvoiceNumberBasedOnExternalID</definition>
+        <argsstring>(Map&lt; String, Object &gt; customMap)</argsstring>
+        <name>updateSalesInvoiceNumberBasedOnExternalID</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.impl.BRMOperationService.updateSalesInvoiceNumberBasedOnExternalID</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="437" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="437" bodyend="480"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.core.service.impl.BRMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.service.IBRMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.core.service.impl.BRMOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmOperationIntegrationService</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>brmUtils</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>brmRestClient</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>commonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.brm.core.integration.IBRMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1integration_1_1_i_b_r_m_operation_integration_service"/>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>brmQueryClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.service.IBRMOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.brm.core.util.BRMUtility</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_b_r_m_utility"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>com.sterlite.cal.brm.core.util.BrmCommonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_brm_common_utils"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="12">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" line="41" column="7" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/impl/BRMOperationService.java" bodystart="41" bodyend="876"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ae6961e0cdd51b2b41a987f2d71144db7" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>brmOperationIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a4ec1bc91a2d261fb9cfa029088bf1d1b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a1b4abf5ab381ea08a800589a2661813b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a9586b5eb378eb1d14d48511eba0c831e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>brmUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ab9a49ff164db91ba211f082b2e1a24f6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>commonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a434c9c155746930ce3a43cf79e7328ae" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>createDeviceMappingForManualBill</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a08dfe658199fe8c7b836d09dbb29d826" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getDepositDetail</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a2a1fe5913201b75f3c6c6b9859fd5e4e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getPaginationForPaymentHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a254314d55e078a4e4dd549f86057cbda" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getPaginationForRechargeHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a83e8b8cde458dfa0649f3519acb2e92a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getPaginationForSearchBill</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a57cc53a3e5bbf64ac5ef8dbce867aafc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getPaginationForUsageHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a1ab3c987f1fbd1dd68c957ea7fd29197" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>getResultByQuery</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1afc1192575cb858f341408e028a3e4846" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a9e21230d63c09152de612a60d03b668e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ae3a9e2922eb72f360c966473bac2736f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>minorUnit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ad7b1993e3b21c7b5578a99b137064b29" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performBRMDeleteOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a476e8b9c271026ae3a3dd0b84d48161e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performBRMGetOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ac96773cb5eb8e82408fce97a400f5104" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performBRMOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ab894b2e68c318e9a93c3ba7f14258827" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performBRMPatchOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1ac3db43204f41ee8e43f85bbe15b29e82" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performBRMPutOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a98569090cfa0b514dd4b43c1853f984b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>performFileDownloadOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1impl_1_1_b_r_m_operation_service_1a7efbdd32808ea2e2e353edc3914eb19f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::impl::BRMOperationService</scope><name>updateSalesInvoiceNumberBasedOnExternalID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

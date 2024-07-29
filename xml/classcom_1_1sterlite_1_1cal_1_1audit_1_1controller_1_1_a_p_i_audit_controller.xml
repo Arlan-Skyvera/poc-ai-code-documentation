@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::audit::controller::APIAuditController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a3310cad73d125e62fcf44d3353e6996c" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.audit.controller.APIAuditController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(APIAuditController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="31" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1abbf86157f6576e7342c24dade1cd3f48" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service" kindref="compound">GetAuditService</ref></type>
+        <definition>GetAuditService com.sterlite.cal.audit.controller.APIAuditController.auditService</definition>
+        <argsstring></argsstring>
+        <name>auditService</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.auditService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="34" column="17" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1ada34b8d4a9d02d43f36db6844efba1b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.controller.APIAuditController.getNBAuditWithStartEndDateAndOperationAlias</definition>
+        <argsstring>( @RequestParam String startDate, String endDate, @PageableDefault(page=0, size=10, sort=&quot;executionStartDate&quot;, direction=Sort.Direction.DESC) Pageable pageable, @RequestParam(defaultValue=&quot;%&quot;, required=false) String operationAlias, @RequestParam(defaultValue=&quot;00:00:01&quot;, required=false) String startTime, @RequestParam(defaultValue=&quot;23:59:59&quot;, required=false) String endTime, @RequestParam List&lt; String &gt; responseStatus, @RequestParam(defaultValue=&quot;%&quot;, required=false) String request)</argsstring>
+        <name>getNBAuditWithStartEndDateAndOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.getNBAuditWithStartEndDateAndOperationAlias</qualifiedname>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type>@PageableDefault(page=0, size=10, sort=&quot;executionStartDate&quot;, direction=Sort.Direction.DESC) Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;%&quot;, required=false) String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;00:00:01&quot;, required=false) String</type>
+          <declname>startTime</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;23:59:59&quot;, required=false) String</type>
+          <declname>endTime</declname>
+        </param>
+        <param>
+          <type>@RequestParam List&lt; String &gt;</type>
+          <declname>responseStatus</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;%&quot;, required=false) String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="38" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a0f3f35eca1f5b06e9465b082ca68d514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.controller.APIAuditController.getNBAuditById</definition>
+        <argsstring>(@PathVariable long id)</argsstring>
+        <name>getNBAuditById</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.getNBAuditById</qualifiedname>
+        <param>
+          <type>@PathVariable long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="55" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a88e26400ee44009a058a942b3a2bb52f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.controller.APIAuditController.getSBAuditWithStartEndDateAndOperationAlias</definition>
+        <argsstring>( @RequestParam String startDate, String endDate, @PageableDefault(page=0, size=10, sort=&quot;executionStartDate&quot;, direction=Sort.Direction.DESC) Pageable pageable, @RequestParam(defaultValue=&quot;%&quot;) String operationAlias, @RequestParam(defaultValue=&quot;00:00:01&quot;) String startTime, @RequestParam(defaultValue=&quot;23:59:59&quot;) String endTime)</argsstring>
+        <name>getSBAuditWithStartEndDateAndOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.getSBAuditWithStartEndDateAndOperationAlias</qualifiedname>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type>@PageableDefault(page=0, size=10, sort=&quot;executionStartDate&quot;, direction=Sort.Direction.DESC) Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;%&quot;) String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;00:00:01&quot;) String</type>
+          <declname>startTime</declname>
+        </param>
+        <param>
+          <type>@RequestParam(defaultValue=&quot;23:59:59&quot;) String</type>
+          <declname>endTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="65" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="65" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a64fb263e422b8d8f73b7b64c69586043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.controller.APIAuditController.getSBAuditByUniqueId</definition>
+        <argsstring>(@PathVariable String uniqueId)</argsstring>
+        <name>getSBAuditByUniqueId</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.getSBAuditByUniqueId</qualifiedname>
+        <param>
+          <type>@PathVariable String</type>
+          <declname>uniqueId</declname>
+        </param>
+        <exceptions> throws UnsupportedEncodingException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="80" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="80" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a862a1f0554b8902ff130b4caff667702" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.audit.controller.APIAuditController.checkSystemUpAndRunning</definition>
+        <argsstring>()</argsstring>
+        <name>checkSystemUpAndRunning</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.checkSystemUpAndRunning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="91" column="24" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a4eb7abcb8816636beb286299dd80ed80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt; String &gt; com.sterlite.cal.audit.controller.APIAuditController.getUniqueOperationAlias</definition>
+        <argsstring>()</argsstring>
+        <name>getUniqueOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.controller.APIAuditController.getUniqueOperationAlias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="102" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="102" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.audit.controller.APIAuditController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.audit.controller.APIAuditController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>auditService</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.audit.repository.NBAPIAuditRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.audit.repository.SBAPIAuditRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_s_b_a_p_i_audit_repository"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.audit.service.IGetAuditService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_get_audit_service"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.audit.serviceimpl.GetAuditService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1serviceimpl_1_1_get_audit_service"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>nbAPIAuditRepository</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>sbAPIAuditRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="7">
+        <label>JpaRepository&lt; NBAPIAudit, Long &gt;</label>
+      </node>
+      <node id="9">
+        <label>JpaRepository&lt; SBAPIAudit, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" line="29" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/controller/APIAuditController.java" bodystart="29" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1abbf86157f6576e7342c24dade1cd3f48" prot="package" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>auditService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a862a1f0554b8902ff130b4caff667702" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>checkSystemUpAndRunning</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a0f3f35eca1f5b06e9465b082ca68d514" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>getNBAuditById</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1ada34b8d4a9d02d43f36db6844efba1b1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>getNBAuditWithStartEndDateAndOperationAlias</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a64fb263e422b8d8f73b7b64c69586043" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>getSBAuditByUniqueId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a88e26400ee44009a058a942b3a2bb52f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>getSBAuditWithStartEndDateAndOperationAlias</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a4eb7abcb8816636beb286299dd80ed80" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>getUniqueOperationAlias</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1controller_1_1_a_p_i_audit_controller_1a3310cad73d125e62fcf44d3353e6996c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::audit::controller::APIAuditController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

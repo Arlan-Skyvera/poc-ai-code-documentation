@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::pcc::service::manager::PCCServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1_1pcc_service" prot="private">com::sterlite::cal::pcc::service::manager::PCCServiceManager::pccService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1acfb17c039789cb27b3edb3f2c9bc55ae" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.pcc.service.manager.PCCServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PCCServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="28" column="30" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a34fa9328391bd8201d3c505d173cd577" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="29" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a38b16f9f4674ca1377fcc21c709b2f9e" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="30" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ad5089f52b4be6e671dc875e2a595f473" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="31" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a3d16a22d9db25a3bb1f5ace428347ecd" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="32" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a9e4234224461e46d0f3ead586f9c2d92" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.pcc.service.manager.PCCServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="33" column="23" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a4e2b317e435fc2c977a98cef510542a3" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.pcc.service.manager.PCCServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="36" column="28" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1acb30dc66f7c93cf066e37b1da99a61b1" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, pccService &gt;</type>
+        <definition>Map&lt;String, pccService&gt; com.sterlite.cal.pcc.service.manager.PCCServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="38" column="13" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a5d52b3cd4ba35bfaf0d610b448555552" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.pcc.service.manager.PCCServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="39" column="13" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a61584f8ac654f28a6875b5edb91b2724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.pcc.service.manager.PCCServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="42" column="13" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ad2524f12455b7e7929f9427fd26cfebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.pcc.service.manager.PCCServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="89" column="18" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="89" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ae6f360863feb82142b451d05a3c93f84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="102" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="102" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a8879bc4ada68fa66104a8456fd87ce1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.pcc.service.manager.PCCServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="124" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="124" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1aa71bfa083993c316754197e966ec7cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="146" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="146" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1abcd6fe1bb74bb70dcf9ed3a4fd9256d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="162" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="162" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1aac22e8982b186c877b36d6696c4c7a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.pcc.service.manager.PCCServiceManager.doDelete</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doDelete</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.doDelete</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="238" column="15" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="238" bodyend="262"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a92929e3c85f170a108f88afe539f898f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.pcc.service.manager.PCCServiceManager.loadpccService</definition>
+        <argsstring>()</argsstring>
+        <name>loadpccService</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.loadpccService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="52" column="14" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="52" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a30da20ed7f3c587952d10ce5abf47724" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.pcc.service.manager.PCCServiceManager.loadpccServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadpccServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.loadpccServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="76" column="14" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="76" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a55857ad24b415fe871dc453282cf9c1e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.pcc.service.manager.PCCServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.pcc.service.manager.PCCServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="220" column="26" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="220" bodyend="237"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" line="26" column="7" bodyfile="repository/pcc-core/src/main/java/com/sterlite/cal/pcc/service/manager/PCCServiceManager.java" bodystart="26" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a5d52b3cd4ba35bfaf0d610b448555552" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a4e2b317e435fc2c977a98cef510542a3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1aac22e8982b186c877b36d6696c4c7a9c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>doDelete</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a8879bc4ada68fa66104a8456fd87ce1e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1aa71bfa083993c316754197e966ec7cfc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ae6f360863feb82142b451d05a3c93f84" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1abcd6fe1bb74bb70dcf9ed3a4fd9256d0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ad2524f12455b7e7929f9427fd26cfebf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a55857ad24b415fe871dc453282cf9c1e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a38b16f9f4674ca1377fcc21c709b2f9e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1ad5089f52b4be6e671dc875e2a595f473" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a34fa9328391bd8201d3c505d173cd577" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a3d16a22d9db25a3bb1f5ace428347ecd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a61584f8ac654f28a6875b5edb91b2724" prot="public" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a92929e3c85f170a108f88afe539f898f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>loadpccService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a30da20ed7f3c587952d10ce5abf47724" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>loadpccServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1acfb17c039789cb27b3edb3f2c9bc55ae" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1a9e4234224461e46d0f3ead586f9c2d92" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1pcc_1_1service_1_1manager_1_1_p_c_c_service_manager_1acb30dc66f7c93cf066e37b1da99a61b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::pcc::service::manager::PCCServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

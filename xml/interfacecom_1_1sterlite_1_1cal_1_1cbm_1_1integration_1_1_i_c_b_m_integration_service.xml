@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::integration::ICBMIntegrationService</compoundname>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a56b5130d70dba3aacd0db165e93ba7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_response" kindref="compound">QuotationForPlanBRMResponse</ref></type>
+        <definition>QuotationForPlanBRMResponse com.sterlite.cal.cbm.integration.ICBMIntegrationService.getQuotationForPlan</definition>
+        <argsstring>(String brmuri, QuotationForPlanBRMRequest quoteRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getQuotationForPlan</name>
+        <qualifiedname>com.sterlite.cal.cbm.integration.ICBMIntegrationService.getQuotationForPlan</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a12dd6a391c7f3941b000a8491c0115cf">getQuotationForPlan</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integration/ICBMIntegrationService.java" line="12" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a51cb1b25c51261040479ea5cf6770c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_coefficient_response" kindref="compound">BudgetCoefficientResponse</ref></type>
+        <definition>BudgetCoefficientResponse com.sterlite.cal.cbm.integration.ICBMIntegrationService.getBudgetCoefficientRequest</definition>
+        <argsstring>(BudgetCoefficientRequest request)</argsstring>
+        <name>getBudgetCoefficientRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.integration.ICBMIntegrationService.getBudgetCoefficientRequest</qualifiedname>
+        <reimplementedby refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service_1a05b06bcad098f858f13c15fa41b80bf5">getBudgetCoefficientRequest</reimplementedby>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_coefficient_request" kindref="compound">BudgetCoefficientRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integration/ICBMIntegrationService.java" line="14" column="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.integration.ICBMIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.integrationImpl.CBMIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1integration_impl_1_1_c_b_m_integration_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/integration/ICBMIntegrationService.java" line="11" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/integration/ICBMIntegrationService.java" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a51cb1b25c51261040479ea5cf6770c75" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::integration::ICBMIntegrationService</scope><name>getBudgetCoefficientRequest</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service_1a56b5130d70dba3aacd0db165e93ba7b2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::integration::ICBMIntegrationService</scope><name>getQuotationForPlan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

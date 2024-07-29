@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::util::GenerateMachineToken</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1ae3b92207254580c17d03184cc609b856" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.security.util.GenerateMachineToken.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="14" column="17" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1a69383692a76d7b09767eff6f1c572498" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_BASEURL</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_BASEURL</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_BASEURL</qualifiedname>
+        <initializer>= &quot;sso.keycloak.url&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="16" column="33" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1ac9ee3097ba35c0c69768eb925b2de4ac" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_REALM</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_REALM</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_REALM</qualifiedname>
+        <initializer>= &quot;sso.keycloak.realm.name&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="17" column="33" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1acc6ec236b47ad6d887cce41888af3ad0" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_CLIENT_ID</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_CLIENT_ID</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_CLIENT_ID</qualifiedname>
+        <initializer>= &quot;sso.keycloak.api.client.id&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="18" column="33" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1a26f0bb850f5ce62e21674c0b039d578f" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_SECRET</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_SECRET</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.KEYCLOAK_SECRET</qualifiedname>
+        <initializer>= &quot;sso.keycloak.api.client.id.secret&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="19" column="33" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1af3f1c21472a947875a66efc52ee463a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.security.util.GenerateMachineToken.getMachineToken</definition>
+        <argsstring>()</argsstring>
+        <name>getMachineToken</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.GenerateMachineToken.getMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="21" column="19" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="21" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.util.GenerateMachineToken</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" line="12" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/util/GenerateMachineToken.java" bodystart="12" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1ae3b92207254580c17d03184cc609b856" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1af3f1c21472a947875a66efc52ee463a5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>getMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1a69383692a76d7b09767eff6f1c572498" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>KEYCLOAK_BASEURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1acc6ec236b47ad6d887cce41888af3ad0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>KEYCLOAK_CLIENT_ID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1ac9ee3097ba35c0c69768eb925b2de4ac" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>KEYCLOAK_REALM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token_1a26f0bb850f5ce62e21674c0b039d578f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::GenerateMachineToken</scope><name>KEYCLOAK_SECRET</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

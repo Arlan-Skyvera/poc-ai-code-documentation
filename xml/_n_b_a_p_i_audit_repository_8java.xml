@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_n_b_a_p_i_audit_repository_8java" kind="file" language="Java">
+    <compoundname>NBAPIAuditRepository.java</compoundname>
+    <innerclass refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository" prot="public">com::sterlite::cal::audit::repository::NBAPIAuditRepository</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1audit_1_1repository">com::sterlite::cal::audit::repository</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.audit.repository;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.domain.Page;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.domain.Pageable;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.Query;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.audit.dataobject.NBAPIAudit;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository" kindref="compound">NBAPIAuditRepository</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;NBAPIAudit,<sp/>Long&gt;{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1dataobject_1_1_n_b_a_p_i_audit" kindref="compound">NBAPIAudit</ref><sp/>findByUniqueId(String<sp/>uniqueId);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(value<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;select<sp/>nb<sp/>from<sp/>NBAPIAudit<sp/>nb<sp/>where<sp/>executionStartDate<sp/>between<sp/>to_date(?1,<sp/>&apos;dd-mm-yyyy<sp/>hh24:mi:ss&apos;)<sp/>and<sp/>to_date(?2,<sp/>&apos;dd-mm-yyyy<sp/>hh24:mi:ss&apos;)<sp/>and<sp/>operationAlias<sp/>like<sp/>?3<sp/>and<sp/>responseStatus<sp/>IN(?4)<sp/>and<sp/>request<sp/>like<sp/>%?5%&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>Page&lt;NBAPIAudit&gt;<sp/>findByDateRangeAndOperationAlias(String<sp/>startDate,<sp/>String<sp/>endDate,<sp/>String<sp/>operationAlias,<sp/>Pageable<sp/>paging,List&lt;String&gt;<sp/>responseStatus,String<sp/>request);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1dataobject_1_1_n_b_a_p_i_audit" kindref="compound">NBAPIAudit</ref><sp/>findByNbAuditId(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(value<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;select<sp/>DISTINCT<sp/>operationAlias<sp/>from<sp/>NBAPIAudit&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>List&lt;String&gt;<sp/>getAllUniqueOperationAlias();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java"/>
+  </compounddef>
+</doxygen>

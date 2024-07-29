@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1_i_subscriber_operation_with_w_o_m_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.subscriber.service.ISubscriberOperationWithWOMService</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.core.service.IBRMService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a7349f76323c65c7e30b80ef612b3b01e" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(SubscriberOperationWithWOMService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="39" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a76170e8b460463018dbd151d787ba945" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createCustomer</definition>
+        <argsstring></argsstring>
+        <name>createCustomer</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createCustomer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="42" column="16" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a21daac826869fa4f57511dfe8a5d62d1" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="46" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1af95cd9e904c78d8821e7bed23962ded0" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" kindref="compound">WOMRestClient</ref></type>
+        <definition>WOMRestClient com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.womRestClient</definition>
+        <argsstring></argsstring>
+        <name>womRestClient</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.womRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="49" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1acc415f47b5c1142dbbe67e2d82c47c32" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="52" column="11" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1adbe3517ea5eb9734a21812c9b28334fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createCustomer</definition>
+        <argsstring>(String customerAccountDetail)</argsstring>
+        <name>createCustomer</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createCustomer</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1_i_subscriber_operation_with_w_o_m_service_1ac46537440f6825327a776f5ef65db8cf">createCustomer</reimplements>
+        <param>
+          <type>String</type>
+          <declname>customerAccountDetail</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="57" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="57" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a48de9e3b8c09504cc92d64f6d415bf41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1workorder_1_1valueobject_1_1_fulfillment_work_order_wrapper_data" kindref="compound">FulfillmentWorkOrderWrapperData</ref></type>
+        <definition>FulfillmentWorkOrderWrapperData com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.getFulfillmentWorkOrderWrapperData</definition>
+        <argsstring>(CustomerDetail customerDetail)</argsstring>
+        <name>getFulfillmentWorkOrderWrapperData</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.getFulfillmentWorkOrderWrapperData</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1customer_1_1valueobject_1_1_customer_detail" kindref="compound">CustomerDetail</ref></type>
+          <declname>customerDetail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="85" column="40" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="85" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1ae400c87b6c99448944e0f0f4a70bea73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createBalanceTransferOrder</definition>
+        <argsstring>(String womBTOrder)</argsstring>
+        <name>createBalanceTransferOrder</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService.createBalanceTransferOrder</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1_i_subscriber_operation_with_w_o_m_service_1a33e1289c783f8d0f6512ebf22bf82c14">createBalanceTransferOrder</reimplements>
+        <param>
+          <type>String</type>
+          <declname>womBTOrder</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="239" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="239" bodyend="243"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.subscriber.service.ISubscriberOperationWithWOMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1_i_subscriber_operation_with_w_o_m_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.service.impl.SubscriberOperationWithWOMService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmRestClient</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>womRestClient</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.subscriber.service.ISubscriberOperationWithWOMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1_i_subscriber_operation_with_w_o_m_service"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.core.base.restclient.WOMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="7">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" line="37" column="7" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/service/impl/SubscriberOperationWithWOMService.java" bodystart="37" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a21daac826869fa4f57511dfe8a5d62d1" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1ae400c87b6c99448944e0f0f4a70bea73" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>createBalanceTransferOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a76170e8b460463018dbd151d787ba945" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>createCustomer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1adbe3517ea5eb9734a21812c9b28334fa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>createCustomer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a48de9e3b8c09504cc92d64f6d415bf41" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>getFulfillmentWorkOrderWrapperData</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1acc415f47b5c1142dbbe67e2d82c47c32" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1a7349f76323c65c7e30b80ef612b3b01e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1service_1_1impl_1_1_subscriber_operation_with_w_o_m_service_1af95cd9e904c78d8821e7bed23962ded0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::service::impl::SubscriberOperationWithWOMService</scope><name>womRestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

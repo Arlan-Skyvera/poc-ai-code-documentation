@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::logger::Logger</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" prot="public" virt="non-virtual">com.sterlite.cal.core.logger.ILogger</basecompoundref>
+    <innerclass refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" prot="public">com::sterlite::cal::core::logger::Logger::LogType</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a196bd079bbed8604f9d1af0063441691" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.logger.Logger.STARTED</definition>
+        <argsstring></argsstring>
+        <name>STARTED</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.STARTED</qualifiedname>
+        <initializer>= &quot;Started&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="17" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a0eb04a5951bbef64f8cd963b889f5b59" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.logger.Logger.RETURN</definition>
+        <argsstring></argsstring>
+        <name>RETURN</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.RETURN</qualifiedname>
+        <initializer>= &quot;return&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="18" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ab7c874ccf22b6212f1b0b9ab130ec2b6" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.logger.Logger.TIMEINMS</definition>
+        <argsstring></argsstring>
+        <name>TIMEINMS</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.TIMEINMS</qualifiedname>
+        <initializer>= &quot; ms&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="19" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aebf662f5d892287df992a9303ab17fc7" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.logger.Logger.SPACE</definition>
+        <argsstring></argsstring>
+        <name>SPACE</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.SPACE</qualifiedname>
+        <initializer>=&quot; &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="20" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aed85063f8f69ef47d89154d0936dbdd1" prot="private" static="no" mutable="no">
+        <type>final org.slf4j.Logger</type>
+        <definition>final org.slf4j.Logger com.sterlite.cal.core.logger.Logger.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strModule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="26" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a9157730483a6556f5985bcd384597b29" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.logger.Logger.Logger</definition>
+        <argsstring>(Class&lt;?&gt; className)</argsstring>
+        <name>Logger</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.Logger</qualifiedname>
+        <param>
+          <type>Class&lt;?&gt;</type>
+          <declname>className</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="28" column="2" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="28" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af74c49595c9a6d875c0634ee1c29ab24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.info</definition>
+        <argsstring>(String strMethodName, LogType logType, String strMessage)</argsstring>
+        <name>info</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.info</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a68187a0f80cacd1b225334ae0cadf418">info</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>strMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="33" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a82a6ef96be82205b8fad8868a0282039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.info</definition>
+        <argsstring>(String strMethodName, LogType logType, String... strMessages)</argsstring>
+        <name>info</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.info</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String...</type>
+          <declname>strMessages</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="40" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af728c1c5e674fef825163a49980e1359" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.info</definition>
+        <argsstring>(String strMethodName, LogType logType, Object... strMessages)</argsstring>
+        <name>info</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.info</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>Object...</type>
+          <declname>strMessages</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="47" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a2575d53da7dcae90bb9320c13eb6db06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.debug</definition>
+        <argsstring>(String strMethodName, LogType logType, String strMessage)</argsstring>
+        <name>debug</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.debug</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a3662e48eb0827f0a16df2635bf03ffc3">debug</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>strMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="54" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a9628a116bab5aa589f33ed15bb831360" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.debug</definition>
+        <argsstring>(String strMethodName, LogType logType, String... strMessage)</argsstring>
+        <name>debug</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.debug</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ad324f9820ba3f6e298cc6d842e0b842e">debug</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String...</type>
+          <declname>strMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="62" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a6af566285ba64de770eecd926d9e309d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.debug</definition>
+        <argsstring>(String strMethodName, LogType logType, Object... strMessage)</argsstring>
+        <name>debug</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.debug</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>Object...</type>
+          <declname>strMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="69" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a3738d1fd4a11a8c0eec5eba66c16536d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.error</definition>
+        <argsstring>(String strMethodName, LogType logType, Throwable throwable)</argsstring>
+        <name>error</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.error</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a8888129127a708598c961ec3fdd965b0">error</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>Throwable</type>
+          <declname>throwable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="76" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af6fe4f1242aede6670931836cb306c1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.startLog</definition>
+        <argsstring>(String strMethodName, LogType logType)</argsstring>
+        <name>startLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.startLog</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ac3f84f1a122e98a7480e7ee9b72a5621">startLog</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="83" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afe1394aa95cbf62cebb2d4b9d72cfdaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.endLog</definition>
+        <argsstring>(String strMethodName, LogType logType)</argsstring>
+        <name>endLog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.endLog</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ae5deece5558a9aaae91374a9d5a7bdf5">endLog</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="93" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1acef225d6207a93e8387fd8e15f2b6602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.logger.Logger.warn</definition>
+        <argsstring>(String strMethodName, LogType logType, String strMessage)</argsstring>
+        <name>warn</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.warn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ad96645eea55c6b76c9de00967f54534a">warn</reimplements>
+        <param>
+          <type>String</type>
+          <declname>strMethodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>strMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="103" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1adb418cc8ce91d5d3ce46483b5d7a9340" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.logger.Logger.isTraceEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isTraceEnabled</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.isTraceEnabled</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a725e201a646eb7d722de7d688865a516">isTraceEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="198" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="198" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aadee69487cf97618bc954955e2f70c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.logger.Logger.isDebugEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isDebugEnabled</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.isDebugEnabled</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a988dcb43539d122f497ce4a5f3589add">isDebugEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="203" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd1a601e231de2972bbdbea60f78338a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.logger.Logger.isInfoEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isInfoEnabled</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.isInfoEnabled</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a2748b5e01cafcb3f11a0f2ccb8ea8bb9">isInfoEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="208" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ae4982fc9b7387931db5e4d43642b1172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.logger.Logger.isWarnEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isWarnEnabled</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.isWarnEnabled</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a4987d61a903afdcc396082cb0b6dadfe">isWarnEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="213" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a349756776c7e0ca6d6e9085b095785ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.logger.Logger.isErrorEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isErrorEnabled</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.isErrorEnabled</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a54ce0d09525e049af0832d49193b3cd2">isErrorEnabled</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="218" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="218" bodyend="220"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ae1d065ffe9ee34e8681947cbd1cee471" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgString</definition>
+        <argsstring>(String methodName, LogType logType, String... msg)</argsstring>
+        <name>getMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="109" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="109" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd13d70cb0a47b5e6d9a736c5bf1bde8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgString</definition>
+        <argsstring>(String methodName, LogType logType, Object ...msg)</argsstring>
+        <name>getMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>Object ...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="119" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ad8ac953731c33dc044c3dcc7e212cfe5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgStringforAPILog</definition>
+        <argsstring>(String methodName, LogType logType, String... msg)</argsstring>
+        <name>getMsgStringforAPILog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgStringforAPILog</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>String...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="130" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="130" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a07d059aa755a953b42e43a724e609b0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgStringforAPILog</definition>
+        <argsstring>(String methodName, LogType logType, Object ...msg)</argsstring>
+        <name>getMsgStringforAPILog</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgStringforAPILog</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type><ref refid="enumcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1_1_log_type" kindref="compound">LogType</ref></type>
+          <declname>logType</declname>
+        </param>
+        <param>
+          <type>Object ...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="140" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd3c4a4c471d039939389b9f2090a0e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgString</definition>
+        <argsstring>(String methodName, String msg)</argsstring>
+        <name>getMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets Message to be shown to user string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of module/feature Eg: Lead, CAF, Geography etc. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>className</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of class in which log message is being written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of method in which log message is being written </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to be shown to user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strRequestResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates/Appends &quot;Request/Response&quot; string to user in Log; Gets appended in message string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Message to be shown to user string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="165" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a954b3ea5a8b7528bfe1941f7f5c8d222" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getStartMsgString</definition>
+        <argsstring>(String methodName, Object object)</argsstring>
+        <name>getStartMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getStartMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="169" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a1dd3ca9fbd5b8448a807927ab4d335b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getEndMsgString</definition>
+        <argsstring>(String methodName, Long startTime, String msg)</argsstring>
+        <name>getEndMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getEndMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Long</type>
+          <declname>startTime</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="174" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a4f00e68e016b76d0342d9e8e4e7fdf3d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getEndMsgString</definition>
+        <argsstring>(String methodName, String ...msg)</argsstring>
+        <name>getEndMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getEndMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>String ...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="178" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="178" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a43dae5520c1ec9f14503d9043d3e6b05" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.logger.Logger.getMsgString</definition>
+        <argsstring>(String methodName, Object ...msg)</argsstring>
+        <name>getMsgString</name>
+        <qualifiedname>com.sterlite.cal.core.logger.Logger.getMsgString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>Object ...</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="187" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="187" bodyend="195"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.logger.Logger</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.logger.Logger</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" line="15" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/logger/Logger.java" bodystart="15" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a2575d53da7dcae90bb9320c13eb6db06" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>debug</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a9628a116bab5aa589f33ed15bb831360" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>debug</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a6af566285ba64de770eecd926d9e309d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>debug</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ab0cd6781ce86eb7ad7ab9f4d213fe941" prot="public" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::logger::ILogger."><scope>com::sterlite::cal::core::logger::Logger</scope><name>debug</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afe1394aa95cbf62cebb2d4b9d72cfdaa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>endLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a3738d1fd4a11a8c0eec5eba66c16536d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>error</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a1dd3ca9fbd5b8448a807927ab4d335b9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getEndMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a4f00e68e016b76d0342d9e8e4e7fdf3d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getEndMsgString</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a7fdca3f05de7b6d2158970bf861e360f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getInstant</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ae1d065ffe9ee34e8681947cbd1cee471" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd13d70cb0a47b5e6d9a736c5bf1bde8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd3c4a4c471d039939389b9f2090a0e5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a43dae5520c1ec9f14503d9043d3e6b05" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ad8ac953731c33dc044c3dcc7e212cfe5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgStringforAPILog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a07d059aa755a953b42e43a724e609b0c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getMsgStringforAPILog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a954b3ea5a8b7528bfe1941f7f5c8d222" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>getStartMsgString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af74c49595c9a6d875c0634ee1c29ab24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>info</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a82a6ef96be82205b8fad8868a0282039" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>info</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af728c1c5e674fef825163a49980e1359" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>info</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1ac074adcbf7d07b08094e5ddad95cd218" prot="public" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::logger::ILogger."><scope>com::sterlite::cal::core::logger::Logger</scope><name>info</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger_1a5142fd9a5b0a804c2fe6804701cac2a9" prot="public" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::logger::ILogger."><scope>com::sterlite::cal::core::logger::Logger</scope><name>info</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aadee69487cf97618bc954955e2f70c61" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>isDebugEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a349756776c7e0ca6d6e9085b095785ae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>isErrorEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1afd1a601e231de2972bbdbea60f78338a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>isInfoEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1adb418cc8ce91d5d3ce46483b5d7a9340" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>isTraceEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ae4982fc9b7387931db5e4d43642b1172" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>isWarnEnabled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a9157730483a6556f5985bcd384597b29" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>Logger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aed85063f8f69ef47d89154d0936dbdd1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>logger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a0eb04a5951bbef64f8cd963b889f5b59" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>RETURN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1aebf662f5d892287df992a9303ab17fc7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>SPACE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1a196bd079bbed8604f9d1af0063441691" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>STARTED</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1af6fe4f1242aede6670931836cb306c1a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>startLog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1ab7c874ccf22b6212f1b0b9ab130ec2b6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>TIMEINMS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_logger_1acef225d6207a93e8387fd8e15f2b6602" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::logger::Logger</scope><name>warn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

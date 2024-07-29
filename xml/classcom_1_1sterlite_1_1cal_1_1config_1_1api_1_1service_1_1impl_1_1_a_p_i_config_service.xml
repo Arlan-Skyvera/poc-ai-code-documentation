@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::config::api::service::impl::APIConfigService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1inter_1_1_i_a_p_i_config_service" prot="public" virt="non-virtual">com.sterlite.cal.config.api.service.inter.IAPIConfigService</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1ac34862f8a32c6a2e0ae58a56393f5c93" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.config.api.service.impl.APIConfigService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.config.api.service.impl.APIConfigService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(APIConfigService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" line="19" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1af09767941f792b613aaa6ee353559e42" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1repository_1_1_a_p_i_config_repository" kindref="compound">APIConfigRepository</ref></type>
+        <definition>APIConfigRepository com.sterlite.cal.config.api.service.impl.APIConfigService.apiConfigRepository</definition>
+        <argsstring></argsstring>
+        <name>apiConfigRepository</name>
+        <qualifiedname>com.sterlite.cal.config.api.service.impl.APIConfigService.apiConfigRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" line="21" column="21" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1a6900168c5b35779324a90bee99cd4945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt; &gt;</type>
+        <definition>Map&lt; String, Map&lt; String, APIConfig &gt; &gt; com.sterlite.cal.config.api.service.impl.APIConfigService.getAPIConfigCacheMap</definition>
+        <argsstring>()</argsstring>
+        <name>getAPIConfigCacheMap</name>
+        <qualifiedname>com.sterlite.cal.config.api.service.impl.APIConfigService.getAPIConfigCacheMap</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1inter_1_1_i_a_p_i_config_service_1a6c6fd07cc0cc092a05afac69119648c5">getAPIConfigCacheMap</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" line="25" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" bodystart="25" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.config.api.service.impl.APIConfigService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.config.api.service.inter.IAPIConfigService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1inter_1_1_i_a_p_i_config_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.config.api.service.impl.APIConfigService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>apiConfigRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.config.api.repository.APIConfigRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1repository_1_1_a_p_i_config_repository"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.config.api.service.inter.IAPIConfigService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1inter_1_1_i_a_p_i_config_service"/>
+      </node>
+      <node id="4">
+        <label>JpaRepository&lt; APIConfig, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" line="17" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/api/service/impl/APIConfigService.java" bodystart="17" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1af09767941f792b613aaa6ee353559e42" prot="package" virt="non-virtual"><scope>com::sterlite::cal::config::api::service::impl::APIConfigService</scope><name>apiConfigRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1a6900168c5b35779324a90bee99cd4945" prot="public" virt="non-virtual"><scope>com::sterlite::cal::config::api::service::impl::APIConfigService</scope><name>getAPIConfigCacheMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service_1ac34862f8a32c6a2e0ae58a56393f5c93" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::api::service::impl::APIConfigService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

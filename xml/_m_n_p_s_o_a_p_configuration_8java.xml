@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_m_n_p_s_o_a_p_configuration_8java" kind="file" language="Java">
+    <compoundname>MNPSOAPConfiguration.java</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1config_1_1_m_n_p_s_o_a_p_configuration" prot="public">com::sterlite::cal::mnp::config::MNPSOAPConfiguration</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1mnp_1_1config">com::sterlite::cal::mnp::config</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.mnp.config;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.context.annotation.Bean;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.context.annotation.Configuration;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.oxm.jaxb.Jaxb2Marshaller;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.mnp.constants.MNPConstants;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">@Configuration</highlight></codeline>
+<codeline lineno="10" refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1config_1_1_m_n_p_s_o_a_p_configuration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1config_1_1_m_n_p_s_o_a_p_configuration" kindref="compound">MNPSOAPConfiguration</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>@Bean</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Jaxb2Marshaller<sp/>marshaller()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Jaxb2Marshaller<sp/>jaxb2Marshaller=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Jaxb2Marshaller();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jaxb2Marshaller.setContextPaths(<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPEXEC,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPBROADCAST,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPABORT,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPRESPONSE,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPREADY,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPABORTACT,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDONE,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDEACTDONE,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDISREJECTED,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDEACTIVATED,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDISCACCEPTED,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPRESPONSE_PORTOUT</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1constants_1_1_m_n_p_constants" kindref="compound">MNPConstants</ref>.MARSHALLER_PATH_NPDISCONNECT);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>jaxb2Marshaller;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/config/MNPSOAPConfiguration.java"/>
+  </compounddef>
+</doxygen>

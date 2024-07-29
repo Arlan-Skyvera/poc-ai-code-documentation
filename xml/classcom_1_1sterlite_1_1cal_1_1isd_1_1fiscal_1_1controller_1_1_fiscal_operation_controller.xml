@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a538f045d133346e9892d8e85103df4e7" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(FiscalOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="19" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1ad398ecb63d5d31a0d83c56e09bc973bc" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1service_1_1_i_fiscal_operation_service" kindref="compound">IFiscalOperationService</ref></type>
+        <definition>IFiscalOperationService com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalService</definition>
+        <argsstring></argsstring>
+        <name>fiscalService</name>
+        <qualifiedname>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="22" column="33" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a7b7a431498ce375c5e74ff50295f03ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalInit</definition>
+        <argsstring>()</argsstring>
+        <name>fiscalInit</name>
+        <qualifiedname>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="27" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a63fcfa69b02b6b4e7e934729db4683f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalCmd</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>fiscalCmd</name>
+        <qualifiedname>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalCmd</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="42" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="42" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1aca7fba3a6248b5243515bdeddb5dfd0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalClose</definition>
+        <argsstring>()</argsstring>
+        <name>fiscalClose</name>
+        <qualifiedname>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController.fiscalClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="58" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="58" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.fiscal.controller.FiscalOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" line="17" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/fiscal/controller/FiscalOperationController.java" bodystart="17" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1aca7fba3a6248b5243515bdeddb5dfd0c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>fiscalClose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a63fcfa69b02b6b4e7e934729db4683f1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>fiscalCmd</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a7b7a431498ce375c5e74ff50295f03ac" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>fiscalInit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1ad398ecb63d5d31a0d83c56e09bc973bc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>fiscalService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1fiscal_1_1controller_1_1_fiscal_operation_controller_1a538f045d133346e9892d8e85103df4e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::isd::fiscal::controller::FiscalOperationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

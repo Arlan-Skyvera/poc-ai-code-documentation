@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::audit::repository::NBAPIAuditRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; NBAPIAudit, Long &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a0707ed95acf62d4fe0754b34382d4c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1dataobject_1_1_n_b_a_p_i_audit" kindref="compound">NBAPIAudit</ref></type>
+        <definition>NBAPIAudit com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByUniqueId</definition>
+        <argsstring>(String uniqueId)</argsstring>
+        <name>findByUniqueId</name>
+        <qualifiedname>com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByUniqueId</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uniqueId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" line="13" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1ab0d106df83d4a64db1018c22c9c9c9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Page&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1dataobject_1_1_n_b_a_p_i_audit" kindref="compound">NBAPIAudit</ref> &gt;</type>
+        <definition>Page&lt; NBAPIAudit &gt; com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByDateRangeAndOperationAlias</definition>
+        <argsstring>(String startDate, String endDate, String operationAlias, Pageable paging, List&lt; String &gt; responseStatus, String request)</argsstring>
+        <name>findByDateRangeAndOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByDateRangeAndOperationAlias</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>paging</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>responseStatus</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" line="16" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a64da8357815e2f3015f54d0b9da69ed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1dataobject_1_1_n_b_a_p_i_audit" kindref="compound">NBAPIAudit</ref></type>
+        <definition>NBAPIAudit com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByNbAuditId</definition>
+        <argsstring>(long id)</argsstring>
+        <name>findByNbAuditId</name>
+        <qualifiedname>com.sterlite.cal.audit.repository.NBAPIAuditRepository.findByNbAuditId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" line="18" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a553ea4af0e3f9670307bf57c172fabf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt; String &gt; com.sterlite.cal.audit.repository.NBAPIAuditRepository.getAllUniqueOperationAlias</definition>
+        <argsstring>()</argsstring>
+        <name>getAllUniqueOperationAlias</name>
+        <qualifiedname>com.sterlite.cal.audit.repository.NBAPIAuditRepository.getAllUniqueOperationAlias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" line="21" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.audit.repository.NBAPIAuditRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; NBAPIAudit, Long &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.audit.repository.NBAPIAuditRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; NBAPIAudit, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" line="12" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/repository/NBAPIAuditRepository.java" bodystart="12" bodyend="22"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1ab0d106df83d4a64db1018c22c9c9c9ed" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::repository::NBAPIAuditRepository</scope><name>findByDateRangeAndOperationAlias</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a64da8357815e2f3015f54d0b9da69ed7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::repository::NBAPIAuditRepository</scope><name>findByNbAuditId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a0707ed95acf62d4fe0754b34382d4c2b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::repository::NBAPIAuditRepository</scope><name>findByUniqueId</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1repository_1_1_n_b_a_p_i_audit_repository_1a553ea4af0e3f9670307bf57c172fabf8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::repository::NBAPIAuditRepository</scope><name>getAllUniqueOperationAlias</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

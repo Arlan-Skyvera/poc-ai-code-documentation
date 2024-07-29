@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_add_on_integration_service" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::integration::IIVRAddOnIntegrationService</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_add_on_integration_service_1a8066e8cce2c46b28ef30bcf524898589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_quote_b_r_m_response" kindref="compound">QuoteBRMResponse</ref></type>
+        <definition>QuoteBRMResponse com.sterlite.cal.ivr.integration.IIVRAddOnIntegrationService.getQuotForPlan</definition>
+        <argsstring>(String brmuri, QuoteBRMRequest quoteRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getQuotForPlan</name>
+        <qualifiedname>com.sterlite.cal.ivr.integration.IIVRAddOnIntegrationService.getQuotForPlan</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_quote_b_r_m_request" kindref="compound">QuoteBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integration/IIVRAddOnIntegrationService.java" line="12" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_add_on_integration_service_1a059d27434f836e9107a337ed55254e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.ivr.integration.IIVRAddOnIntegrationService.subscribeAddOn</definition>
+        <argsstring>(String uri, CRMAddOnReqest request, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>subscribeAddOn</name>
+        <qualifiedname>com.sterlite.cal.ivr.integration.IIVRAddOnIntegrationService.subscribeAddOn</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_c_r_m_add_on_reqest" kindref="compound">CRMAddOnReqest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integration/IIVRAddOnIntegrationService.java" line="13" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integration/IIVRAddOnIntegrationService.java" line="10" column="18" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integration/IIVRAddOnIntegrationService.java" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_add_on_integration_service_1a8066e8cce2c46b28ef30bcf524898589" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integration::IIVRAddOnIntegrationService</scope><name>getQuotForPlan</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_add_on_integration_service_1a059d27434f836e9107a337ed55254e0a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integration::IIVRAddOnIntegrationService</scope><name>subscribeAddOn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

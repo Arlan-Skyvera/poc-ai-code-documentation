@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ClientHttpRequestInterceptor</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a60773e8a84f3434443ac521f30b4729a" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(RequestResponseLoggingInterceptor.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="28" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1ac1b4ccaf77735598e610baf52cd168bd" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.API_AUDIT_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>API_AUDIT_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.API_AUDIT_ENABLE</qualifiedname>
+        <initializer>= &quot;api.audit.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="43" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a1bcb5878bda7fd94edf3b98016c21350" prot="package" static="no" mutable="no">
+        <type>JmsTemplate</type>
+        <definition>JmsTemplate com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.jmsTemplate</definition>
+        <argsstring></argsstring>
+        <name>jmsTemplate</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.jmsTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="31" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1aae5824635a6b1be01168f0e90c7c73bc" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="34" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a3fe391781b6378262ebe2c07495f4173" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_persist_audit_service" kindref="compound">IPersistAuditService</ref></type>
+        <definition>IPersistAuditService com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.persistAuditService</definition>
+        <argsstring></argsstring>
+        <name>persistAuditService</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.persistAuditService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="41" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a154386fce0060f3de9ce4535dc48a619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.RequestResponseLoggingInterceptor</definition>
+        <argsstring>()</argsstring>
+        <name>RequestResponseLoggingInterceptor</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.RequestResponseLoggingInterceptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="37" column="8" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a1d250f127beb5006835bc0fcdc64272d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ClientHttpResponse</type>
+        <definition>ClientHttpResponse com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.intercept</definition>
+        <argsstring>(HttpRequest request, byte[] body, ClientHttpRequestExecution execution)</argsstring>
+        <name>intercept</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.intercept</qualifiedname>
+        <param>
+          <type>HttpRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>ClientHttpRequestExecution</type>
+          <declname>execution</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>intercept Rest request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="49" column="27" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="49" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1afaa7d7fb401c84a7eab54aee1f62448e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>StringBuilder</type>
+        <definition>StringBuilder com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.logRequest</definition>
+        <argsstring>(HttpRequest request, byte[] body)</argsstring>
+        <name>logRequest</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.logRequest</qualifiedname>
+        <param>
+          <type>HttpRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>body</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="67" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="67" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a7deaaac4ad6b9d3bd302f8413c9cced3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.logResponse</definition>
+        <argsstring>(ClientHttpResponse response, Long elapsedTime, HttpRequest request, StringBuilder logRequest)</argsstring>
+        <name>logResponse</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.logResponse</qualifiedname>
+        <param>
+          <type>ClientHttpResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>Long</type>
+          <declname>elapsedTime</declname>
+        </param>
+        <param>
+          <type>HttpRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>StringBuilder</type>
+          <declname>logRequest</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Rest Response <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="93" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="93" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a68b1ef9a3d4b5c89d29a25dce708a763" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.auditRequest</definition>
+        <argsstring>(HttpRequest request, byte[] body)</argsstring>
+        <name>auditRequest</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.auditRequest</qualifiedname>
+        <param>
+          <type>HttpRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>body</declname>
+        </param>
+        <exceptions> throws IOException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="120" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="120" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1ae65b9e3373be5b2cbd8a9f8105d43639" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.auditResponse</definition>
+        <argsstring>(ClientHttpResponse response)</argsstring>
+        <name>auditResponse</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor.auditResponse</qualifiedname>
+        <param>
+          <type>ClientHttpResponse</type>
+          <declname>response</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="139" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="139" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ClientHttpRequestInterceptor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptor</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jmsTemplate</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>persistAuditService</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.audit.service.IPersistAuditService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_persist_audit_service"/>
+      </node>
+      <node id="4">
+        <label>Environment</label>
+      </node>
+      <node id="2">
+        <label>ClientHttpRequestInterceptor</label>
+      </node>
+      <node id="3">
+        <label>JmsTemplate</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" line="26" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RequestResponseLoggingInterceptor.java" bodystart="26" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1ac1b4ccaf77735598e610baf52cd168bd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>API_AUDIT_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a68b1ef9a3d4b5c89d29a25dce708a763" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>auditRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1ae65b9e3373be5b2cbd8a9f8105d43639" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>auditResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1aae5824635a6b1be01168f0e90c7c73bc" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a1d250f127beb5006835bc0fcdc64272d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>intercept</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a1bcb5878bda7fd94edf3b98016c21350" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>jmsTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a60773e8a84f3434443ac521f30b4729a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1afaa7d7fb401c84a7eab54aee1f62448e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>logRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a7deaaac4ad6b9d3bd302f8413c9cced3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>logResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a3fe391781b6378262ebe2c07495f4173" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>persistAuditService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_1a154386fce0060f3de9ce4535dc48a619" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RequestResponseLoggingInterceptor</scope><name>RequestResponseLoggingInterceptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

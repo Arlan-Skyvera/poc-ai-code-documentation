@@ -1,0 +1,1409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::CBMContractOperationTestService</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3f8007c470e0b09b0d25d50480226932" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.CBMContractOperationTestService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMContractOperationTestService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="82" column="29" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac0469fb376e314afcac0b699f1b82de4" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service" kindref="compound">CBMContractOperationService</ref></type>
+        <definition>CBMContractOperationService com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractOperationService</definition>
+        <argsstring></argsstring>
+        <name>contractOperationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractOperationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="85" column="37" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a02b34831adcd2d8ee6abf04ebb833bf0" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository" kindref="compound">ContractRepository</ref></type>
+        <definition>ContractRepository com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="88" column="28" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2c696a9431298a00f95cf284f90645b6" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_info_repo" kindref="compound">ContractBudgetInfoRepo</ref></type>
+        <definition>ContractBudgetInfoRepo com.sterlite.cal.cbm.service.CBMContractOperationTestService.cbRepo</definition>
+        <argsstring></argsstring>
+        <name>cbRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.cbRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="91" column="32" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aa0053241d95a1a699523af5d1e6176b0" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRelationRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRelationRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRelationRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="94" column="36" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a283d7113950f2ec9da3a1cbd587c6592" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1validators_1_1_contract_validator" kindref="compound">ContractValidator</ref></type>
+        <definition>ContractValidator com.sterlite.cal.cbm.service.CBMContractOperationTestService.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="97" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a94912bb03df4a9443ee43ba99c6f0b30" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.service.CBMContractOperationTestService.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="100" column="21" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aa230c7fe997617f0f004abc9f4bc2eeb" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref></type>
+        <definition>BudgetDetailsRepo com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetdetailsRepo</definition>
+        <argsstring></argsstring>
+        <name>budgetdetailsRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetdetailsRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="103" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a26bd24764470ea14c96526862bd5593a" prot="private" static="no" mutable="no">
+        <type>Set&lt; String &gt;</type>
+        <definition>Set&lt;String&gt; com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractSet</definition>
+        <argsstring></argsstring>
+        <name>contractSet</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractSet</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="105" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8afdf8076211b47a0f47024f242da2f2" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_matrix_repo" kindref="compound">ContractBudgetMatrixRepo</ref></type>
+        <definition>ContractBudgetMatrixRepo com.sterlite.cal.cbm.service.CBMContractOperationTestService.cbmRepo</definition>
+        <argsstring></argsstring>
+        <name>cbmRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.cbmRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="108" column="34" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a965e566dd36f75694409be84e76a1060" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.service.CBMContractOperationTestService.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="111" column="19" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a65d8fc344e8e0fa1484e8120d294430b" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service" kindref="compound">ICBMBudgetOperationService</ref></type>
+        <definition>ICBMBudgetOperationService com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetService</definition>
+        <argsstring></argsstring>
+        <name>budgetService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="114" column="36" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a05561e867d8257efe89acda43dfd7e8f" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service" kindref="compound">ICBMPenaltyOperationService</ref></type>
+        <definition>ICBMPenaltyOperationService com.sterlite.cal.cbm.service.CBMContractOperationTestService.penaltyService</definition>
+        <argsstring></argsstring>
+        <name>penaltyService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.penaltyService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="117" column="37" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a709a9964b5a91a46a9bff2f233371074" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_d_nofication_i_v_r_service_contract" kindref="compound">DNoficationIVRServiceContract</ref></type>
+        <definition>DNoficationIVRServiceContract com.sterlite.cal.cbm.service.CBMContractOperationTestService.dnotificationService</definition>
+        <argsstring></argsstring>
+        <name>dnotificationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.dnotificationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="120" column="39" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1afeb1df4d92b1d98e4315408b77abeb43" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+        <definition>ContractMaster com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractMaster</definition>
+        <argsstring></argsstring>
+        <name>contractMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractMaster</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="122" column="24" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae3a24c6c4c85f5adc779c4ee7d58d1f7" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service" kindref="compound">ICBMContractOperationService</ref></type>
+        <definition>ICBMContractOperationService com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractService</definition>
+        <argsstring></argsstring>
+        <name>contractService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="134" column="38" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="134" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a69b16502f45854d658b390407239f3c6" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+        <definition>ContractRequest com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRequest</definition>
+        <argsstring></argsstring>
+        <name>contractRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.contractRequest</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="124" column="17" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a7e8025203aa848abf51735e51f7c4447" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.CBMContractOperationTestService.requestJson</definition>
+        <argsstring></argsstring>
+        <name>requestJson</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.requestJson</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="125" column="8" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a06d1f4f6890d3c3cf00840b81f5eb089" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_new_old_contract_and_budget_request_vo" kindref="compound">NewOldContractAndBudgetRequestVo</ref></type>
+        <definition>NewOldContractAndBudgetRequestVo com.sterlite.cal.cbm.service.CBMContractOperationTestService.request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.request</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="127" column="34" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a02fbda8212706446b58c634c241ebf52" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref></type>
+        <definition>BudgetRequest com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetRequest</definition>
+        <argsstring></argsstring>
+        <name>budgetRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.budgetRequest</qualifiedname>
+        <initializer>= new <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="129" column="15" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a528443400dc5b2d129761c23b00a2f08" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+        <definition>List&lt;ContractMaster&gt; com.sterlite.cal.cbm.service.CBMContractOperationTestService.existingContractList</definition>
+        <argsstring></argsstring>
+        <name>existingContractList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.existingContractList</qualifiedname>
+        <initializer>= new ArrayList&lt;<ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="131" column="6" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab1edda055df1bb7290f7b4211f99f3d2" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.cbm.service.CBMContractOperationTestService.MILLIS_IN_A_DAY</definition>
+        <argsstring></argsstring>
+        <name>MILLIS_IN_A_DAY</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.MILLIS_IN_A_DAY</qualifiedname>
+        <initializer>= 1000 * 60 * 60 * 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1474" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1474" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a75c1b15405a84831b3d3be5308d8bd25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="137" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="137" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a074c76c2317509d377d3b0aab0c3268a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>testContractUpdate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractUpdate</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, ParseException, InstantiationException, 			IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="242" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="242" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac0444b65788368bf525136e8e627131b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateAnnexure</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateAnnexure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateAnnexure</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, UnsupportedEncodingException, net.minidev.json.parser.ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="271" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="271" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5dcee6fff6519c7adaa2d9bcc39f6bab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateAnnexure</definition>
+        <argsstring>()</argsstring>
+        <name>testUpdateAnnexure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateAnnexure</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, ParseException, InstantiationException, IllegalAccessException, 			ClassNotFoundException, UnsupportedEncodingException, net.minidev.json.parser.ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="303" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="303" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a4a9ef9448650969ed5af18fcbc9178c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractDetails</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractDetails</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="361" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="361" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc2411a43d58a91ee4e03138d2426fec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusNULLrelation</definition>
+        <argsstring>()</argsstring>
+        <name>testUpdateContractStatusNULLrelation</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusNULLrelation</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, net.minidev.json.parser.ParseException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="383" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="383" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1f0e96b2ae5ab950454a7e54528e6389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusDataNotFound</definition>
+        <argsstring>()</argsstring>
+        <name>testUpdateContractStatusDataNotFound</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusDataNotFound</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, net.minidev.json.parser.ParseException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="401" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="401" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a9a2392244fbad1304febc9a753c11491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusSUCCESS</definition>
+        <argsstring>()</argsstring>
+        <name>testUpdateContractStatusSUCCESS</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testUpdateContractStatusSUCCESS</qualifiedname>
+        <exceptions> throws UnsupportedEncodingException, net.minidev.json.parser.ParseException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="426" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="426" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8f6975e20285d1f88726f7268560c4f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractAndBudget</definition>
+        <argsstring>()</argsstring>
+        <name>testContractAndBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractAndBudget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="488" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="488" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51a91acecb3ca9f5cb85f63a0bf7dc3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractByCA</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractByCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractByCA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="510" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="510" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aaa23a47d0f71bda8d53553ed5cadd8d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testgetMSISDNByContract</definition>
+        <argsstring>()</argsstring>
+        <name>testgetMSISDNByContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testgetMSISDNByContract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="531" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="531" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a41c8cc1f8e6c0cde124d05c23f9b6958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractRenewal</definition>
+        <argsstring>()</argsstring>
+        <name>testContractRenewal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testContractRenewal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="551" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="551" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a57834e442c107e369e1c7574b6cdc31e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCA</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListByCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="636" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="636" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a4fd9c6584d7659349e7cca4d28b97777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListBySI</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListBySI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListBySI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="669" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="669" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3d269519a43b87ea24f3c225a3b2c025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByInvalidCA</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListByInvalidCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByInvalidCA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="702" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="702" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1adab837f7559ba56b325f537efd849445" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByInvalidSI</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListByInvalidSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByInvalidSI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="722" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="722" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae1899b30249892ff80b725303c8d1c36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCASIBothNull</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListByCASIBothNull</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCASIBothNull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="740" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="740" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae32c542c229673496b7a89ff57559754" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCASIBothPresent</definition>
+        <argsstring>()</argsstring>
+        <name>testGetContractListByCASIBothPresent</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetContractListByCASIBothPresent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="756" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="756" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aab3ec358e787f8aae45047cfaa5a7782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractSingleActiveSI</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateContractSingleActiveSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractSingleActiveSI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="772" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="772" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab92867da7e18a6149276674b9b688444" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMultipleActiveSI</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateContractMultipleActiveSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMultipleActiveSI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="807" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="807" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a36286e7fe8f4ac10663073a36104b9af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForContractID</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateContractMandatoryValidationForContractID</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForContractID</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="847" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="847" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc8c68ae02824b6462ce190d504adad8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForSINumber</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateContractMandatoryValidationForSINumber</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForSINumber</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="859" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="859" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aca0cbf85e8b0b8e6284604f62633b70e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForReason</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateContractMandatoryValidationForReason</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateContractMandatoryValidationForReason</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="871" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="871" bodyend="880"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae24c62c2458ac568742d114aa50d6293" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateAnnexureNotAllowed</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateAnnexureNotAllowed</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateAnnexureNotAllowed</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="883" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="883" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab57d90d5d203dc324111c05c2217f409" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateContractIDAlreadyExists</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateContractIDAlreadyExists</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateContractIDAlreadyExists</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="891" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="891" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a890cab2c311b0f215234bbd688c343e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateMandatoryPenaltyAmount</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateMandatoryPenaltyAmount</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateMandatoryPenaltyAmount</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="900" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="900" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a903af3a517c36ad60f698e018eff0010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateSaveContractResponseFailure</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateSaveContractResponseFailure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateSaveContractResponseFailure</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="910" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="910" bodyend="919"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2110339337a1f43d6ca4253d9234ed73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateSaveAnnexureResponseFailure</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateSaveAnnexureResponseFailure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCreateSaveAnnexureResponseFailure</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="922" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="922" bodyend="945"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3b4aa01f3c1a8a27ef02b96b121077ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractIdByMsisdnSuccessTest</definition>
+        <argsstring>()</argsstring>
+        <name>getContractIdByMsisdnSuccessTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractIdByMsisdnSuccessTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="948" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="948" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac6c6f418eb60c558814b21c70225369d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractIdByMsisdnFailTest</definition>
+        <argsstring>()</argsstring>
+        <name>getContractIdByMsisdnFailTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractIdByMsisdnFailTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="969" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="969" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5a1258bffb4914b2b28a3890ae5795dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnFail1Test</definition>
+        <argsstring>()</argsstring>
+        <name>getContractDateByMsisdnFail1Test</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnFail1Test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="987" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="987" bodyend="1002"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af8ab2593142dacf4322811e608dff0e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnFail2Test</definition>
+        <argsstring>()</argsstring>
+        <name>getContractDateByMsisdnFail2Test</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnFail2Test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1005" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1005" bodyend="1022"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a775ef591fb0e220621fcd8a88bceba45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnSuccessTest</definition>
+        <argsstring>()</argsstring>
+        <name>getContractDateByMsisdnSuccessTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDateByMsisdnSuccessTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1025" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1025" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a65163f2d4671605c6d630047b5769931" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractAndBudgetContractIDNullOrEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>testGetOldNewContractAndBudgetContractIDNullOrEmpty</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractAndBudgetContractIDNullOrEmpty</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1052" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1052" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aec434f7ce3aa16a0835f165401a1ec6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractAndBudgetOrderTypeNullOrEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>testGetOldNewContractAndBudgetOrderTypeNullOrEmpty</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractAndBudgetOrderTypeNullOrEmpty</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1059" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1059" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af7fef58b71c5d1a52e45fdc32bfe688c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateContractBudgetCoefficientTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractBudgetCoefficientTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateContractBudgetCoefficientTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1066" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1066" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a28d106969909de21ef537b995c6a3232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateSITest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSITest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateSITest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1073" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1073" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a66b5bc97ff7e77d9cfde958d63e50eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateSINumberTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSINumberTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateSINumberTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1080" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1080" bodyend="1084"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a9f00f3f52929057d405d5a79811a9854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateMRCTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateMRCTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateMRCTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1087" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1087" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1f528f508a00e0b863fbe2b85327ace9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateMRCValueTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateMRCValueTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.validateMRCValueTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1094" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1094" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2e43f3ccdbf9f1a798e6381a2bf8062b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractForProvideOrder</definition>
+        <argsstring>()</argsstring>
+        <name>testGetOldNewContractForProvideOrder</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractForProvideOrder</qualifiedname>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1101" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1101" bodyend="1112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a381484125d698d77744ae3fc69bc829b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractForChangePlan</definition>
+        <argsstring>()</argsstring>
+        <name>testGetOldNewContractForChangePlan</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testGetOldNewContractForChangePlan</qualifiedname>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1115" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1115" bodyend="1124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a265875a4e16a0ce3626f4967ec857a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLOLDBA</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBANULLOLDBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLOLDBA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1127" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1127" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae649840a724fc7459d493b9238759967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYOLDBA</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAEMPTYOLDBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYOLDBA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1133" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1133" bodyend="1137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af419ca026a06fc4dcb2b76e952f35264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLNEWBA</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBANULLNEWBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLNEWBA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1140" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1140" bodyend="1144"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51b1d38fd0ef906a3385adfb062f9705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYNEWBA</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAEMPTYNEWBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYNEWBA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1147" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1147" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5f41299568a92acb0c93477178e1dbb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBANULLSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1155" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1155" bodyend="1160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a326a98e5a1b26acfb0128acba723ba55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAEMPTYSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAEMPTYSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1163" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1163" bodyend="1170"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a7af7420f4a83b5828b0a8915d4648d39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLFirstObjectSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBANULLFirstObjectSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBANULLFirstObjectSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1173" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1173" bodyend="1181"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2cf2d73cbe723392a004462335feeef0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectOLDSINULLinSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAFirstObjectOLDSINULLinSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectOLDSINULLinSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1184" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1184" bodyend="1192"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8e5e6d24f85e53c3000547b68ca70dac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectOLDSIEMPTYinSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAFirstObjectOLDSIEMPTYinSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectOLDSIEMPTYinSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1195" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1195" bodyend="1205"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc05b2e8c20546f6c1a8e0ffd9a41750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectNEWSINULLinSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAFirstObjectNEWSINULLinSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectNEWSINULLinSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1208" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1208" bodyend="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3494d02ad87a27e9e804eaa32bc12b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectNEWSIEMPTYinSIList</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBAFirstObjectNEWSIEMPTYinSIList</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBAFirstObjectNEWSIEMPTYinSIList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1221" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1221" bodyend="1232"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a80deabce70cc4ae7b8840fa95c77bd8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA_EMPTYoldRelations</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBA_EMPTYoldRelations</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA_EMPTYoldRelations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1235" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1235" bodyend="1247"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a75cbccfcf311bcd88219ff53e41f45f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA_NULLoldRelations</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBA_NULLoldRelations</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA_NULLoldRelations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1250" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1250" bodyend="1264"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac3b0e05a0a5ae95ab79fbfba86c71638" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA</definition>
+        <argsstring>()</argsstring>
+        <name>testTerminateBA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testTerminateBA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1267" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1267" bodyend="1289"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1a0c7c747ad0593a6a665daa07153392" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCancelContractServiceInstance</definition>
+        <argsstring>()</argsstring>
+        <name>testCancelContractServiceInstance</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCancelContractServiceInstance</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1292" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1292" bodyend="1322"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac15b78580c675ff98885591adccaf268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCancelContract</definition>
+        <argsstring>()</argsstring>
+        <name>testCancelContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCancelContract</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1326" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1326" bodyend="1345"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acbf9330bbda38c127c7cefb3232454fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testAlreadyCancelledContract</definition>
+        <argsstring>()</argsstring>
+        <name>testAlreadyCancelledContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testAlreadyCancelledContract</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1348" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1348" bodyend="1367"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab90833786548c14248110d68221289a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal</definition>
+        <argsstring>()</argsstring>
+        <name>testCheckEligibilityForRenewal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1370" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1370" bodyend="1409"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aed14b6148dbbb0e0f4a689c4436bb3b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal_contract_notActive</definition>
+        <argsstring>()</argsstring>
+        <name>testCheckEligibilityForRenewal_contract_notActive</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal_contract_notActive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1412" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1412" bodyend="1451"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a09d9cd222fde882695b5dcb923769c1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal_NoContractDetails</definition>
+        <argsstring>()</argsstring>
+        <name>testCheckEligibilityForRenewal_NoContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.testCheckEligibilityForRenewal_NoContractDetails</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1454" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1454" bodyend="1473"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51eb37c60d0f7a8f22c2fbbcdecc269c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDetailsSuccessTest</definition>
+        <argsstring>()</argsstring>
+        <name>getContractDetailsSuccessTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.getContractDetailsSuccessTest</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, java.text.ParseException, 			InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1481" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1481" bodyend="1540"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1c39aa218a6452f47293a29e7505195f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>static Date com.sterlite.cal.cbm.service.CBMContractOperationTestService.findNextDay</definition>
+        <argsstring>(Date date)</argsstring>
+        <name>findNextDay</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.CBMContractOperationTestService.findNextDay</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="1476" column="21" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="1476" bodyend="1478"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.CBMContractOperationTestService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>contractRequest</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>request</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>budgetRequest</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>existingContractList</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.cbm.valueobject.BudgetRequest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.cbm.valueobject.ContractRequest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.cbm.valueobject.NewOldContractAndBudgetRequestVo</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_new_old_contract_and_budget_request_vo"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.valueobject.BaseVO</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_base_v_o"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>Serializable</label>
+      </node>
+      <node id="8">
+        <label>List&lt; com.sterlite.cal.cbm.dataobjects.ContractMaster &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" line="80" column="7" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/CBMContractOperationTestService.java" bodystart="80" bodyend="1542"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aa230c7fe997617f0f004abc9f4bc2eeb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>budgetdetailsRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a02fbda8212706446b58c634c241ebf52" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>budgetRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a65d8fc344e8e0fa1484e8120d294430b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>budgetService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8afdf8076211b47a0f47024f242da2f2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>cbmRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2c696a9431298a00f95cf284f90645b6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>cbRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1afeb1df4d92b1d98e4315408b77abeb43" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractMaster</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac0469fb376e314afcac0b699f1b82de4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractOperationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aa0053241d95a1a699523af5d1e6176b0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractRelationRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a02b34831adcd2d8ee6abf04ebb833bf0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a69b16502f45854d658b390407239f3c6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae3a24c6c4c85f5adc779c4ee7d58d1f7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a26bd24764470ea14c96526862bd5593a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>contractSet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a709a9964b5a91a46a9bff2f233371074" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>dnotificationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a528443400dc5b2d129761c23b00a2f08" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>existingContractList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1c39aa218a6452f47293a29e7505195f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>findNextDay</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5a1258bffb4914b2b28a3890ae5795dd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractDateByMsisdnFail1Test</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af8ab2593142dacf4322811e608dff0e5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractDateByMsisdnFail2Test</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a775ef591fb0e220621fcd8a88bceba45" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractDateByMsisdnSuccessTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51eb37c60d0f7a8f22c2fbbcdecc269c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractDetailsSuccessTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac6c6f418eb60c558814b21c70225369d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractIdByMsisdnFailTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3b4aa01f3c1a8a27ef02b96b121077ad" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>getContractIdByMsisdnSuccessTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a75c1b15405a84831b3d3be5308d8bd25" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a965e566dd36f75694409be84e76a1060" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3f8007c470e0b09b0d25d50480226932" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab1edda055df1bb7290f7b4211f99f3d2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>MILLIS_IN_A_DAY</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a05561e867d8257efe89acda43dfd7e8f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>penaltyService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a06d1f4f6890d3c3cf00840b81f5eb089" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>request</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a7e8025203aa848abf51735e51f7c4447" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>requestJson</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acbf9330bbda38c127c7cefb3232454fb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testAlreadyCancelledContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac15b78580c675ff98885591adccaf268" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCancelContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1a0c7c747ad0593a6a665daa07153392" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCancelContractServiceInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab90833786548c14248110d68221289a5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCheckEligibilityForRenewal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aed14b6148dbbb0e0f4a689c4436bb3b1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCheckEligibilityForRenewal_contract_notActive</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a09d9cd222fde882695b5dcb923769c1c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCheckEligibilityForRenewal_NoContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8f6975e20285d1f88726f7268560c4f4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testContractAndBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a41c8cc1f8e6c0cde124d05c23f9b6958" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testContractRenewal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a074c76c2317509d377d3b0aab0c3268a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testContractUpdate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac0444b65788368bf525136e8e627131b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateAnnexure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae24c62c2458ac568742d114aa50d6293" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateAnnexureNotAllowed</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab57d90d5d203dc324111c05c2217f409" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateContractIDAlreadyExists</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a890cab2c311b0f215234bbd688c343e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateMandatoryPenaltyAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2110339337a1f43d6ca4253d9234ed73" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateSaveAnnexureResponseFailure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a903af3a517c36ad60f698e018eff0010" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testCreateSaveContractResponseFailure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51a91acecb3ca9f5cb85f63a0bf7dc3a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractByCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a4a9ef9448650969ed5af18fcbc9178c1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a57834e442c107e369e1c7574b6cdc31e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListByCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae1899b30249892ff80b725303c8d1c36" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListByCASIBothNull</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae32c542c229673496b7a89ff57559754" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListByCASIBothPresent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3d269519a43b87ea24f3c225a3b2c025" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListByInvalidCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1adab837f7559ba56b325f537efd849445" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListByInvalidSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a4fd9c6584d7659349e7cca4d28b97777" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetContractListBySI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aaa23a47d0f71bda8d53553ed5cadd8d5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testgetMSISDNByContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a65163f2d4671605c6d630047b5769931" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetOldNewContractAndBudgetContractIDNullOrEmpty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aec434f7ce3aa16a0835f165401a1ec6d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetOldNewContractAndBudgetOrderTypeNullOrEmpty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a381484125d698d77744ae3fc69bc829b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetOldNewContractForChangePlan</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2e43f3ccdbf9f1a798e6381a2bf8062b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testGetOldNewContractForProvideOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ac3b0e05a0a5ae95ab79fbfba86c71638" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a80deabce70cc4ae7b8840fa95c77bd8d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBA_EMPTYoldRelations</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a75cbccfcf311bcd88219ff53e41f45f5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBA_NULLoldRelations</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a51b1d38fd0ef906a3385adfb062f9705" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAEMPTYNEWBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ae649840a724fc7459d493b9238759967" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAEMPTYOLDBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a326a98e5a1b26acfb0128acba723ba55" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAEMPTYSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a3494d02ad87a27e9e804eaa32bc12b08" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAFirstObjectNEWSIEMPTYinSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc05b2e8c20546f6c1a8e0ffd9a41750" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAFirstObjectNEWSINULLinSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a8e5e6d24f85e53c3000547b68ca70dac" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAFirstObjectOLDSIEMPTYinSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a2cf2d73cbe723392a004462335feeef0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBAFirstObjectOLDSINULLinSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a7af7420f4a83b5828b0a8915d4648d39" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBANULLFirstObjectSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af419ca026a06fc4dcb2b76e952f35264" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBANULLNEWBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a265875a4e16a0ce3626f4967ec857a23" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBANULLOLDBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5f41299568a92acb0c93477178e1dbb6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateBANULLSIList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a36286e7fe8f4ac10663073a36104b9af" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateContractMandatoryValidationForContractID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aca0cbf85e8b0b8e6284604f62633b70e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateContractMandatoryValidationForReason</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc8c68ae02824b6462ce190d504adad8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateContractMandatoryValidationForSINumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1ab92867da7e18a6149276674b9b688444" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateContractMultipleActiveSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1aab3ec358e787f8aae45047cfaa5a7782" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testTerminateContractSingleActiveSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a5dcee6fff6519c7adaa2d9bcc39f6bab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testUpdateAnnexure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1f0e96b2ae5ab950454a7e54528e6389" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testUpdateContractStatusDataNotFound</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1acc2411a43d58a91ee4e03138d2426fec" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testUpdateContractStatusNULLrelation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a9a2392244fbad1304febc9a753c11491" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>testUpdateContractStatusSUCCESS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a94912bb03df4a9443ee43ba99c6f0b30" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>utils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1af7fef58b71c5d1a52e45fdc32bfe688c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validateContractBudgetCoefficientTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a9f00f3f52929057d405d5a79811a9854" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validateMRCTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a1f528f508a00e0b863fbe2b85327ace9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validateMRCValueTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a66b5bc97ff7e77d9cfde958d63e50eb4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validateSINumberTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a28d106969909de21ef537b995c6a3232" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validateSITest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_c_b_m_contract_operation_test_service_1a283d7113950f2ec9da3a1cbd587c6592" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::CBMContractOperationTestService</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

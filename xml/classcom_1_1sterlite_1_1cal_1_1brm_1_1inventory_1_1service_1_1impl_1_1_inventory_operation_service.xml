@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::inventory::service::impl::InventoryOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1_i_inventory_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.inventory.service.IInventoryOperationService</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.core.service.IBRMService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a6330cb3f807eab7f717c0e15b9b69976" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(InventoryOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" line="29" column="29" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a3a18a84365698d8bba88303b58bc8d94" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" line="32" column="11" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a401e65126b2bccab0e38b0e7a16ddba3" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" line="35" column="16" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1afd503ef9e42c4de69c2c4874be72b453" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.getInventoryAttributeValueBySubType</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>getInventoryAttributeValueBySubType</name>
+        <qualifiedname>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService.getInventoryAttributeValueBySubType</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1_i_inventory_operation_service_1a97cf632204423963279e130f9ca973cf">getInventoryAttributeValueBySubType</reimplements>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" line="38" column="15" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" bodystart="38" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.inventory.service.IInventoryOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1_i_inventory_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.inventory.service.impl.InventoryOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.service.IBRMService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1_i_b_r_m_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.inventory.service.IInventoryOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1_i_inventory_operation_service"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" line="27" column="7" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/brm/inventory/service/impl/InventoryOperationService.java" bodystart="27" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a401e65126b2bccab0e38b0e7a16ddba3" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::inventory::service::impl::InventoryOperationService</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1afd503ef9e42c4de69c2c4874be72b453" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::inventory::service::impl::InventoryOperationService</scope><name>getInventoryAttributeValueBySubType</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a3a18a84365698d8bba88303b58bc8d94" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::inventory::service::impl::InventoryOperationService</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1inventory_1_1service_1_1impl_1_1_inventory_operation_service_1a6330cb3f807eab7f717c0e15b9b69976" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::inventory::service::impl::InventoryOperationService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

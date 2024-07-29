@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1_1_ln_r_service" prot="private">com::sterlite::cal::lnr::core::service::manager::LnRServiceManager::LnRService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a7da4b84dcc5ae65342032df163dac9d0" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(LnRServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="27" column="30" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a134e5e2ad855e067c9e774e4bb23f580" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="28" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a9012c142497f8f9fa8477a650ad182de" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="29" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1af9e6be589a2dfda894680f5c2432b9a4" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="30" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a9742d1079f7c5a1c4d97a77f33352aa3" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="31" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a8e690ef19c6f72985197789c8b530eae" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="32" column="23" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a358e294622e0114927f521dadbb7cdd5" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="35" column="28" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1aaace8706150559079a4d2765055a3424" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, LnRService &gt;</type>
+        <definition>Map&lt;String, LnRService&gt; com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="37" column="13" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2de6c9869404e8e63fa748947d11b8ff" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="38" column="13" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a95ff079d13b53878e48d4a0d05e17820" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="41" column="13" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2f5948c7f4373e98496cc409e158c559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="87" column="18" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="87" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a204c414254d152ea57d157362fd3f641" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="100" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="100" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2865f461ab0d9b93bf090d62bcd85cf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="122" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="122" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a01ff9fe1e951dd37b597a4402aae9f86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="144" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="144" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a401421d34cfe9ee93f71932f61fe948b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="160" column="15" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="160" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a0d9fb1f2b1715fa47704984afd4e2d39" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.loadLnRService</definition>
+        <argsstring>()</argsstring>
+        <name>loadLnRService</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.loadLnRService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="51" column="14" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="51" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a397946c97af36d71f362fdb91347dfb2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.loadLnRServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadLnRServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.loadLnRServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="74" column="14" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="74" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a3c1dbda26b64004bbc23b6315e4253bf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.lnr.core.service.manager.LnRServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="223" column="26" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="223" bodyend="240"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" line="25" column="7" bodyfile="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/core/service/manager/LnRServiceManager.java" bodystart="25" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2de6c9869404e8e63fa748947d11b8ff" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a358e294622e0114927f521dadbb7cdd5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2865f461ab0d9b93bf090d62bcd85cf7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a01ff9fe1e951dd37b597a4402aae9f86" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a204c414254d152ea57d157362fd3f641" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a401421d34cfe9ee93f71932f61fe948b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a2f5948c7f4373e98496cc409e158c559" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a3c1dbda26b64004bbc23b6315e4253bf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a9012c142497f8f9fa8477a650ad182de" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1af9e6be589a2dfda894680f5c2432b9a4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a134e5e2ad855e067c9e774e4bb23f580" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a9742d1079f7c5a1c4d97a77f33352aa3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a95ff079d13b53878e48d4a0d05e17820" prot="public" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a0d9fb1f2b1715fa47704984afd4e2d39" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>loadLnRService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a397946c97af36d71f362fdb91347dfb2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>loadLnRServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a7da4b84dcc5ae65342032df163dac9d0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1a8e690ef19c6f72985197789c8b530eae" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1core_1_1service_1_1manager_1_1_ln_r_service_manager_1aaace8706150559079a4d2765055a3424" prot="private" virt="non-virtual"><scope>com::sterlite::cal::lnr::core::service::manager::LnRServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

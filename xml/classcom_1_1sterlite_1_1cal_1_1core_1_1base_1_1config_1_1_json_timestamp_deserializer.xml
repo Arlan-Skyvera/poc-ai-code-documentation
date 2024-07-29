@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">com::fasterxml::jackson::databind::JsonDeserializer&lt; Timestamp &gt;</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a8a1af932da87db6424516fc200ca4a06" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.config.JsonTimestampDeserializer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JsonTimestampDeserializer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="21" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a8b6c39cbbfcad37c1bde77a4a3769e88" prot="private" static="no" mutable="no">
+        <type>List&lt; SimpleDateFormat &gt;</type>
+        <definition>List&lt;SimpleDateFormat&gt; com.sterlite.cal.core.base.config.JsonTimestampDeserializer.listSimpleDateFormats</definition>
+        <argsstring></argsstring>
+        <name>listSimpleDateFormats</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.listSimpleDateFormats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="23" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1ae83ea282a00ae88e8660097d7bca8024" prot="private" static="no" mutable="no">
+        <type>SimpleDateFormat</type>
+        <definition>SimpleDateFormat com.sterlite.cal.core.base.config.JsonTimestampDeserializer.defaultSimpleDateFormat</definition>
+        <argsstring></argsstring>
+        <name>defaultSimpleDateFormat</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.defaultSimpleDateFormat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="25" column="26" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a0c45052c12b557bd2ca756133547019b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.JsonTimestampDeserializer</definition>
+        <argsstring>(String brmTimestampFormat, List&lt; SimpleDateFormat &gt; listSimpleDateFormats)</argsstring>
+        <name>JsonTimestampDeserializer</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.JsonTimestampDeserializer</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>brmTimestampFormat</declname>
+        </param>
+        <param>
+          <type>List&lt; SimpleDateFormat &gt;</type>
+          <declname>listSimpleDateFormats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for initialising Timestamp Deserializer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>brmTimestampFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- default BRM timestamp format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>listSimpleDateFormats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- List of supported timestamp formats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="33" column="8" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1af5e3525c54042d9a2a11741777b7cdf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Timestamp</type>
+        <definition>Timestamp com.sterlite.cal.core.base.config.JsonTimestampDeserializer.deserialize</definition>
+        <argsstring>(JsonParser p, DeserializationContext ctxt)</argsstring>
+        <name>deserialize</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.deserialize</qualifiedname>
+        <param>
+          <type>JsonParser</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>DeserializationContext</type>
+          <declname>ctxt</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to deserialize Json representation a timestamp to Java timestamp</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="55" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="55" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a588560d65d1402bb98f13a57af075187" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Class&lt; Timestamp &gt;</type>
+        <definition>Class&lt; Timestamp &gt; com.sterlite.cal.core.base.config.JsonTimestampDeserializer.handledType</definition>
+        <argsstring>()</argsstring>
+        <name>handledType</name>
+        <qualifiedname>com.sterlite.cal.core.base.config.JsonTimestampDeserializer.handledType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="88" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="88" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Custom Timestamp Deserializer.</para>
+<para><simplesect kind="author"><para>milan.jadwani </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonTimestampDeserializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonDeserializer&lt; Timestamp &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.config.JsonTimestampDeserializer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonDeserializer&lt; Timestamp &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" line="19" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/config/JsonTimestampDeserializer.java" bodystart="19" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1ae83ea282a00ae88e8660097d7bca8024" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>defaultSimpleDateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1af5e3525c54042d9a2a11741777b7cdf0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>deserialize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a588560d65d1402bb98f13a57af075187" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>handledType</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a0c45052c12b557bd2ca756133547019b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>JsonTimestampDeserializer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a8b6c39cbbfcad37c1bde77a4a3769e88" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>listSimpleDateFormats</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_timestamp_deserializer_1a8a1af932da87db6424516fc200ca4a06" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::config::JsonTimestampDeserializer</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

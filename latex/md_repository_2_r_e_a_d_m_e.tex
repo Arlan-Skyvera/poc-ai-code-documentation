@@ -1,0 +1,15 @@
+\chapter{\texorpdfstring{$<$}{<}strong\texorpdfstring{$>$}{>}Important Steps to be performed post cloning\texorpdfstring{$<$}{<}/strong\texorpdfstring{$>$}{>}}
+\hypertarget{md_repository_2_r_e_a_d_m_e}{}\label{md_repository_2_r_e_a_d_m_e}\index{$<$strong$>$Important Steps to be performed post cloning$<$/strong$>$@{$<$strong$>$Important Steps to be performed post cloning$<$/strong$>$}}
+
+\begin{DoxyEnumerate}
+\item Post cloning the repo, run the script init-\/repo.\+sh to enable pre-\/commit check on your local repo . Else you will be restricted during push and need to amend all the commits to match the pre-\/receive check.
+\item For gradle build setup, need to create credentials using below commands -\/
+\begin{DoxyItemize}
+\item {\bfseries{Go to Component home}} -\/ cd \$\{Component\+\_\+home\}/modules
+\item {\bfseries{To add credentials}} -\/ gradle -\/b build.\+gradle\+\_\+make\+\_\+credentials add\+Credentials --key password --value \$password
+\item {\bfseries{To remove credentials}} -\/ gradle -\/b build.\+gradle\+\_\+make\+\_\+credentials remove\+Credentials --key password
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md_repository_2_r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{{\bfseries{Gradle Installation}}}{{\bfseries{Gradle Installation}}}}\label{md_repository_2_r_e_a_d_m_e_autotoc_md7}
+Follow below link -\/
+
+\href{https://gradle.org/releases/}{\texttt{ https\+://gradle.\+org/releases/}} \mbox{[}Version -\/ 4.\+10.\+2\mbox{]} 

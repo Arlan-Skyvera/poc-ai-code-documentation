@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1ade7e766bbfe15c18b0aa8d0c9d9edb0d" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(HazelcastClientConfiguration.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="23" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1ae671b36e308f25816531fe8c92608f45" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.serverIP</definition>
+        <argsstring></argsstring>
+        <name>serverIP</name>
+        <qualifiedname>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.serverIP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="26" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1a16392a29e2e0c20d604c009206bb6cde" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.nearMapNames</definition>
+        <argsstring></argsstring>
+        <name>nearMapNames</name>
+        <qualifiedname>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.nearMapNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="29" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1a4f443d8b9cb366c230bdf2747c69dff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ClientConfig</type>
+        <definition>ClientConfig com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.getClientConfig</definition>
+        <argsstring>()</argsstring>
+        <name>getClientConfig</name>
+        <qualifiedname>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.getClientConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="31" column="21" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="31" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1aabeab8f940110bf44b10501c75beb904" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>NearCacheConfig</type>
+        <definition>static NearCacheConfig com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.generateNearCacheConfig</definition>
+        <argsstring>(String key)</argsstring>
+        <name>generateNearCacheConfig</name>
+        <qualifiedname>com.sterlite.cal.core.cache.config.HazelcastClientConfiguration.generateNearCacheConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="52" column="32" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="52" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" line="21" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/cache/config/HazelcastClientConfiguration.java" bodystart="21" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1aabeab8f940110bf44b10501c75beb904" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</scope><name>generateNearCacheConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1a4f443d8b9cb366c230bdf2747c69dff3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</scope><name>getClientConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1ade7e766bbfe15c18b0aa8d0c9d9edb0d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1a16392a29e2e0c20d604c009206bb6cde" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</scope><name>nearMapNames</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1config_1_1_hazelcast_client_configuration_1ae671b36e308f25816531fe8c92608f45" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::cache::config::HazelcastClientConfiguration</scope><name>serverIP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

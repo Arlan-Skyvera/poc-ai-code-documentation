@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.subscriber.integration.ISubscriberOperationIntegrationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ad5f83cc27d29114d33f701a141093556" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(SubscriberOperationIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="19" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ac143a88394825dbcbd76fdcfb7ee0ce2" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="22" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ad88a6f423793d3c328ee00d5d9314114" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.createServiceInstance</definition>
+        <argsstring>(String brmuri, String serviceInstanceDetail, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>createServiceInstance</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.createServiceInstance</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1aa97f61e98722f11df01cc810728e6e13">createServiceInstance</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceDetail</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="25" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a494d5792896158833fdd9cfaefbd24ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.createCustomer</definition>
+        <argsstring>(String brmuri, String serviceInstanceDetail, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>createCustomer</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.createCustomer</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1a54f6e26bf29690ddda4116b87efbd589">createCustomer</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceDetail</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="33" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a3312408b4c675aa722b43301470bbd79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.getBillingDetails</definition>
+        <argsstring>(String brmuri, String billingAccountNumber, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getBillingDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.getBillingDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1a66b3c4ba1e49644adce2bf49dbff221e">getBillingDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>billingAccountNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="42" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a6631d083e3b1111ab107e31f1e480466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.updateCustomerAccountDetails</definition>
+        <argsstring>(String brmuri, String requestJson, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>updateCustomerAccountDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.updateCustomerAccountDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1a87a596567c622eb7ff19da49b46aeddf">updateCustomerAccountDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmuri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="50" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a84ee121a2b7f73dc1faa6422196a2dee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.getServiceInstanceDetails</definition>
+        <argsstring>(String brmURI, Map&lt; String, String[]&gt; parameterMap, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>getServiceInstanceDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.getServiceInstanceDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1ab03b30f494ca1ca7bebadc692cd1a382">getServiceInstanceDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="58" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a8ce77c7fef2a5d3104ecfd7e487ced7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1valueobjects_1_1_associate_discount_response_v_o" kindref="compound">AssociateDiscountResponseVO</ref></type>
+        <definition>AssociateDiscountResponseVO com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.associatedDiscount</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>associatedDiscount</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService.associatedDiscount</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service_1a13d3975f2e48bc88205a5ab89b149822">associatedDiscount</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="66" column="36" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="66" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.subscriber.integration.ISubscriberOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmRestClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.subscriber.integration.ISubscriberOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1_i_subscriber_operation_integration_service"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="6">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" line="17" column="7" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/integration/impl/SubscriberOperationIntegrationService.java" bodystart="17" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a8ce77c7fef2a5d3104ecfd7e487ced7e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>associatedDiscount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ac143a88394825dbcbd76fdcfb7ee0ce2" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a494d5792896158833fdd9cfaefbd24ed" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>createCustomer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ad88a6f423793d3c328ee00d5d9314114" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>createServiceInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a3312408b4c675aa722b43301470bbd79" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>getBillingDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a84ee121a2b7f73dc1faa6422196a2dee" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>getServiceInstanceDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1ad5f83cc27d29114d33f701a141093556" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service_1a6631d083e3b1111ab107e31f1e480466" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::integration::impl::SubscriberOperationIntegrationService</scope><name>updateCustomerAccountDetails</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

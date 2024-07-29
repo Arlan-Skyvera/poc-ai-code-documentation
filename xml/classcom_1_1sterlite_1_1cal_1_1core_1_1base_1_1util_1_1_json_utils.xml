@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::util::JsonUtils</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a400efc1dffb6995b4c355ec06c8a7eaa" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.util.JsonUtils.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JsonUtils.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="29" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a9fb8db151e4f394510533fb78be5dab3" prot="private" static="no" mutable="no">
+        <type>ObjectMapper</type>
+        <definition>ObjectMapper com.sterlite.cal.core.base.util.JsonUtils.MAPPER</definition>
+        <argsstring></argsstring>
+        <name>MAPPER</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.MAPPER</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="31" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a510c34f462a25725859e24250d747d8c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_rest_config" kindref="compound">RestConfig</ref></type>
+        <definition>RestConfig com.sterlite.cal.core.base.util.JsonUtils.restConfig</definition>
+        <argsstring></argsstring>
+        <name>restConfig</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.restConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="33" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1acda60ac44233ed5cc1305da46c6f9c1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ObjectMapper</type>
+        <definition>ObjectMapper com.sterlite.cal.core.base.util.JsonUtils.getMapper</definition>
+        <argsstring>()</argsstring>
+        <name>getMapper</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.getMapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="35" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="35" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ab2c013c31210456443e26f3f5ba5060b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.util.JsonUtils.getJsonFromObject</definition>
+        <argsstring>(Object data)</argsstring>
+        <name>getJsonFromObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.getJsonFromObject</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="54" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="54" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a82cb650b1f27a8df900895e5f3983fc4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</definition>
+        <argsstring>(String jsonData, Class&lt; T &gt; beanType)</argsstring>
+        <name>getObjectFromJson</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>jsonData</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>beanType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="66" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="66" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ad9e40e83d3691c7564aefae6bef5231e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</definition>
+        <argsstring>(String jsonData, JavaType javaType)</argsstring>
+        <name>getObjectFromJson</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>jsonData</declname>
+        </param>
+        <param>
+          <type>JavaType</type>
+          <declname>javaType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="78" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="78" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ab4a013177b1936a47206dec4202a5e3f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</definition>
+        <argsstring>(String jsonData, TypeReference&lt; T &gt; typeReference)</argsstring>
+        <name>getObjectFromJson</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.getObjectFromJson</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>jsonData</declname>
+        </param>
+        <param>
+          <type>TypeReference&lt; T &gt;</type>
+          <declname>typeReference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="90" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="90" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a2441fb509ce225baa5e27ca9f9d58968" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.util.JsonUtils.convertValue</definition>
+        <argsstring>(Object fromValue, TypeReference&lt; T &gt; typeReference)</argsstring>
+        <name>convertValue</name>
+        <qualifiedname>com.sterlite.cal.core.base.util.JsonUtils.convertValue</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>fromValue</declname>
+        </param>
+        <param>
+          <type>TypeReference&lt; T &gt;</type>
+          <declname>typeReference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="103" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="103" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" line="27" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/util/JsonUtils.java" bodystart="27" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a2441fb509ce225baa5e27ca9f9d58968" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>convertValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ab2c013c31210456443e26f3f5ba5060b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>getJsonFromObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1acda60ac44233ed5cc1305da46c6f9c1a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>getMapper</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a82cb650b1f27a8df900895e5f3983fc4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>getObjectFromJson</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ad9e40e83d3691c7564aefae6bef5231e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>getObjectFromJson</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1ab4a013177b1936a47206dec4202a5e3f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>getObjectFromJson</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a400efc1dffb6995b4c355ec06c8a7eaa" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a9fb8db151e4f394510533fb78be5dab3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>MAPPER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils_1a510c34f462a25725859e24250d747d8c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::util::JsonUtils</scope><name>restConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

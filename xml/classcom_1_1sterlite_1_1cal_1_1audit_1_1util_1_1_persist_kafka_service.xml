@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::audit::util::PersistKafkaService</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a4f7d616c35adf25eae6d1fbfe53116f0" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.audit.util.PersistKafkaService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PersistKafkaService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="17" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1ac663ac8c00901a91dee0f02afde99977" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer" kindref="compound">KafkaProducer</ref></type>
+        <definition>KafkaProducer com.sterlite.cal.audit.util.PersistKafkaService.kafkaProducer</definition>
+        <argsstring></argsstring>
+        <name>kafkaProducer</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.kafkaProducer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="20" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a19fc314439dfef632f913603f0a29954" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.audit.util.PersistKafkaService.kafkaContractTopic</definition>
+        <argsstring></argsstring>
+        <name>kafkaContractTopic</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.kafkaContractTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="23" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a15f0a8e091e5b297de4b2d34cc7d0c34" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer com.sterlite.cal.audit.util.PersistKafkaService.kafkaMaxResponseWait</definition>
+        <argsstring></argsstring>
+        <name>kafkaMaxResponseWait</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.kafkaMaxResponseWait</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="26" column="17" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a564da17cbe94711d0c8557944f2d3db7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.audit.util.PersistKafkaService.kafkaBudgetTopic</definition>
+        <argsstring></argsstring>
+        <name>kafkaBudgetTopic</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.kafkaBudgetTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="29" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a834c79db16a6c42df4424e38fde5de2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.audit.util.PersistKafkaService.sendToContractTopic</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>sendToContractTopic</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.sendToContractTopic</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="32" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a12cf092b77e266b8fa66e9fb52e1a4d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.audit.util.PersistKafkaService.sendToBudgetTopic</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>sendToBudgetTopic</name>
+        <qualifiedname>com.sterlite.cal.audit.util.PersistKafkaService.sendToBudgetTopic</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="41" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="41" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" line="15" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/audit/util/PersistKafkaService.java" bodystart="15" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a564da17cbe94711d0c8557944f2d3db7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>kafkaBudgetTopic</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a19fc314439dfef632f913603f0a29954" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>kafkaContractTopic</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a15f0a8e091e5b297de4b2d34cc7d0c34" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>kafkaMaxResponseWait</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1ac663ac8c00901a91dee0f02afde99977" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>kafkaProducer</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a4f7d616c35adf25eae6d1fbfe53116f0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a12cf092b77e266b8fa66e9fb52e1a4d8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>sendToBudgetTopic</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service_1a834c79db16a6c42df4424e38fde5de2c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::audit::util::PersistKafkaService</scope><name>sendToContractTopic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

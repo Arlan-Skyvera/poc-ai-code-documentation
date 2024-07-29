@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_i_v_r_add_on_subscription_service_8java" kind="file" language="Java">
+    <compoundname>IVRAddOnSubscriptionService.java</compoundname>
+    <innerclass refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service" prot="public">com::sterlite::cal::ivr::service::IVRAddOnSubscriptionService</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1ivr_1_1service">com::sterlite::cal::ivr::service</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.ivr.service;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Map;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.exception.SBIntegrationException;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.ivr.valueobject.ProductDetails;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.ivr.valueobject.SubscribeAddOnByPartnerRequest;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.ivr.valueobject.SubscribeAddOnRequest;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service" kindref="compound">IVRAddOnSubscriptionService</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/>perform(Map&lt;String,<sp/>Object&gt;<sp/>serviceDetailMap,<ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_subscribe_add_on_request" kindref="compound">SubscribeAddOnRequest</ref><sp/>ivrAddOnRequest);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/>getProductNameByProductID(String<sp/>productID)<sp/><sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/>InstantiationException,<sp/>IllegalAccessException,<sp/>ClassNotFoundException,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref><sp/>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Map&lt;String,<sp/>String&gt;<sp/>getProfileId(<ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref><sp/>productResponse);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Boolean<sp/>isAddonCompatible(Map&lt;String,<sp/>Object&gt;<sp/>serviceDetailMap,<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_subscribe_add_on_request" kindref="compound">SubscribeAddOnRequest</ref><sp/>ivrAddOnByPartnerRequest);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/service/IVRAddOnSubscriptionService.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::repositories::CategoryMasterRepo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; CategoryMaster, Long &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo_1a75405e32a25bb7cb8818df9fae17167f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_category_master" kindref="compound">CategoryMaster</ref> &gt;</type>
+        <definition>List&lt; CategoryMaster &gt; com.sterlite.cal.cbm.repositories.CategoryMasterRepo.findByCategory</definition>
+        <argsstring>(String category)</argsstring>
+        <name>findByCategory</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.CategoryMasterRepo.findByCategory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/CategoryMasterRepo.java" line="11" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo_1ad0777c3959a914b90ed383e3c4d81ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_category_master" kindref="compound">CategoryMaster</ref></type>
+        <definition>CategoryMaster com.sterlite.cal.cbm.repositories.CategoryMasterRepo.findByCategoryAndSegment</definition>
+        <argsstring>(String category, String segment)</argsstring>
+        <name>findByCategoryAndSegment</name>
+        <qualifiedname>com.sterlite.cal.cbm.repositories.CategoryMasterRepo.findByCategoryAndSegment</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/CategoryMasterRepo.java" line="12" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.repositories.CategoryMasterRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; CategoryMaster, Long &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.repositories.CategoryMasterRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; CategoryMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/CategoryMasterRepo.java" line="9" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/CategoryMasterRepo.java" bodystart="9" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo_1a75405e32a25bb7cb8818df9fae17167f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::CategoryMasterRepo</scope><name>findByCategory</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo_1ad0777c3959a914b90ed383e3c4d81ecb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::repositories::CategoryMasterRepo</scope><name>findByCategoryAndSegment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

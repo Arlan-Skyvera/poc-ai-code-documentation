@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cache::controller::UICacheServiceController</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a17e35b923658c58a7498ab3d2e78d9ee" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cache.controller.UICacheServiceController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.UICacheServiceController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(UICacheServiceController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="26" column="30" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1af95552042837a38bb452e9683f4bd863" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1ui_1_1service_1_1_i_u_i_cache_service" kindref="compound">IUICacheService</ref></type>
+        <definition>IUICacheService com.sterlite.cal.cache.controller.UICacheServiceController.uiCacheService</definition>
+        <argsstring></argsstring>
+        <name>uiCacheService</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.UICacheServiceController.uiCacheService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="29" column="25" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a3ecc0d56a7768c69ae2d8bce61dd470a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Integer &gt;</type>
+        <definition>Map&lt; String, Integer &gt; com.sterlite.cal.cache.controller.UICacheServiceController.reloadAllCache</definition>
+        <argsstring>()</argsstring>
+        <name>reloadAllCache</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.UICacheServiceController.reloadAllCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="35" column="12" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="35" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a6cfcc4714096ce790e5e3183f5c92751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.cache.controller.UICacheServiceController.reloadCacheByCacheId</definition>
+        <argsstring>(@RequestParam(name=&quot;cacheId&quot;) String cacheId)</argsstring>
+        <name>reloadCacheByCacheId</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.UICacheServiceController.reloadCacheByCacheId</qualifiedname>
+        <param>
+          <type>@RequestParam(name=&quot;cacheId&quot;) String</type>
+          <declname>cacheId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="72" column="12" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="72" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1add5c7b3665ffcf2f3875e68898101c10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Integer &gt;</type>
+        <definition>Map&lt; String, Integer &gt; com.sterlite.cal.cache.controller.UICacheServiceController.getTotalOfEachCache</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalOfEachCache</name>
+        <qualifiedname>com.sterlite.cal.cache.controller.UICacheServiceController.getTotalOfEachCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="139" column="12" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="139" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" line="24" column="7" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/controller/UICacheServiceController.java" bodystart="24" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1add5c7b3665ffcf2f3875e68898101c10" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::UICacheServiceController</scope><name>getTotalOfEachCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a17e35b923658c58a7498ab3d2e78d9ee" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::UICacheServiceController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a3ecc0d56a7768c69ae2d8bce61dd470a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::UICacheServiceController</scope><name>reloadAllCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1a6cfcc4714096ce790e5e3183f5c92751" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::UICacheServiceController</scope><name>reloadCacheByCacheId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1controller_1_1_u_i_cache_service_controller_1af95552042837a38bb452e9683f4bd863" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::controller::UICacheServiceController</scope><name>uiCacheService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

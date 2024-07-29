@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.subscriber.devicemapping.service.IDeviceMappingService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a5cd5c3586c5465162130e438d6e48b93" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DeviceMappingService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="44" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a3f23ec12a4294ac7d2ead77cca926c7a" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="47" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1aedff1d01a5bec56c15fdb6201685f58c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1common_1_1validators_1_1_common_validator" kindref="compound">CommonValidator</ref></type>
+        <definition>CommonValidator com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="62" column="25" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a0650f2024664982e931eb229845c4d94" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util" kindref="compound">SubscriberUtil</ref></type>
+        <definition>SubscriberUtil com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.subscriberutil</definition>
+        <argsstring></argsstring>
+        <name>subscriberutil</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.subscriberutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="50" column="17" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ad6369731559d1057288c5e7bffaf22ea" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo" kindref="compound">DeviceMappingRepo</ref></type>
+        <definition>DeviceMappingRepo com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.devicemappingRepo</definition>
+        <argsstring></argsstring>
+        <name>devicemappingRepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.devicemappingRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="53" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a16b5dbbe3de4ccd83901e66f7c26df2a" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_b_r_m_utility" kindref="compound">BRMUtility</ref></type>
+        <definition>BRMUtility com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.brmutility</definition>
+        <argsstring></argsstring>
+        <name>brmutility</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.brmutility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="56" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a9b34b393ee2831f3884829bcafec9778" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo" kindref="compound">DeviceMappingRepo</ref></type>
+        <definition>DeviceMappingRepo com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.devicemappingrepo</definition>
+        <argsstring></argsstring>
+        <name>devicemappingrepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.devicemappingrepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="59" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a642a84da651b2bf250358ff778182c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.createDeviceMapping</definition>
+        <argsstring>(String request)</argsstring>
+        <name>createDeviceMapping</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.createDeviceMapping</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1a67d77538fad2716048bcb73415dec0b2">createDeviceMapping</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="64" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="64" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a923f6ec1e021a7faf1c262ee721cd264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.dLinkDevice</definition>
+        <argsstring>(String request)</argsstring>
+        <name>dLinkDevice</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.dLinkDevice</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1a446e6a4ac70a4210fcc4ef0c7a57092d">dLinkDevice</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="115" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="115" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a2553cc3bace82fa81644cb0dba1fbbd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.getDeviceMapping</definition>
+        <argsstring>(String request)</argsstring>
+        <name>getDeviceMapping</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.getDeviceMapping</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1a41b671d9824b4245b5464d1074f62fdf">getDeviceMapping</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="216" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="216" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ad2bf72910fcfa52632d8e10f9eb319f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.updatewarehouseforinventory</definition>
+        <argsstring>(String request)</argsstring>
+        <name>updatewarehouseforinventory</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.updatewarehouseforinventory</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1a6969d5c41fd5fd3798de1349ee24b428">updatewarehouseforinventory</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="254" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="254" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ab63ca884266d66eafd7b450cd1d06dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.createCreditInvoice</definition>
+        <argsstring>(String request)</argsstring>
+        <name>createCreditInvoice</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.createCreditInvoice</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1ac67342d5426505d1788569bf59691741">createCreditInvoice</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="288" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="288" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a93126cfa059d5797e6a629cfd89ac378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.getdevicemappingDetails</definition>
+        <argsstring>(String request)</argsstring>
+        <name>getdevicemappingDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService.getdevicemappingDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service_1aadbd55e78e52c4b78ce45c7bb42b1e21">getdevicemappingDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="327" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="327" bodyend="358"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.service.IDeviceMappingService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.service.impl.DeviceMappingService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>subscriberutil</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>devicemappingRepo</edgelabel>
+          <edgelabel>devicemappingrepo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>brmutility</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>brmQueryClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>com.sterlite.cal.brm.core.util.BRMUtility</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_b_r_m_utility"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.ChargeDetailsRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_charge_details_repo"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRelRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_rel_repo"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_repo"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.service.IDeviceMappingService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1_i_device_mapping_service"/>
+      </node>
+      <node id="16">
+        <label>com.sterlite.cal.brm.subscriber.utils.ChargesDetailsMapper</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_charges_details_mapper"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>devicemappingRepo</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>creditInvoiceRepo</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>chargeDetailsRepo</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>environment</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>chargesDetailsMapper</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>creditInvoiceRelRepo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="9">
+        <label>Environment</label>
+      </node>
+      <node id="15">
+        <label>JpaRepository&lt; ChargeDetails, Long &gt;</label>
+      </node>
+      <node id="13">
+        <label>JpaRepository&lt; CreditInvoice, Long &gt;</label>
+      </node>
+      <node id="19">
+        <label>JpaRepository&lt; CreditInvoiceRel, Long &gt;</label>
+      </node>
+      <node id="11">
+        <label>JpaRepository&lt; DeviceMapping, Long &gt;</label>
+      </node>
+      <node id="17">
+        <label>RowMapper&lt; DeviceChargesDetails &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" line="41" column="7" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/service/impl/DeviceMappingService.java" bodystart="41" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a16b5dbbe3de4ccd83901e66f7c26df2a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>brmutility</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ab63ca884266d66eafd7b450cd1d06dab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>createCreditInvoice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a642a84da651b2bf250358ff778182c0c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>createDeviceMapping</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ad6369731559d1057288c5e7bffaf22ea" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>devicemappingRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a9b34b393ee2831f3884829bcafec9778" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>devicemappingrepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a923f6ec1e021a7faf1c262ee721cd264" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>dLinkDevice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a2553cc3bace82fa81644cb0dba1fbbd6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>getDeviceMapping</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a93126cfa059d5797e6a629cfd89ac378" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>getdevicemappingDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a3f23ec12a4294ac7d2ead77cca926c7a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a5cd5c3586c5465162130e438d6e48b93" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1a0650f2024664982e931eb229845c4d94" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>subscriberutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1ad2bf72910fcfa52632d8e10f9eb319f0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>updatewarehouseforinventory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1service_1_1impl_1_1_device_mapping_service_1aedff1d01a5bec56c15fdb6201685f58c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::service::impl::DeviceMappingService</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

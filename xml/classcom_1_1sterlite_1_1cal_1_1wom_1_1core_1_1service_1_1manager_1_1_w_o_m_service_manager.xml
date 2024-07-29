@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1_1_w_o_m_service" prot="private">com::sterlite::cal::wom::core::service::manager::WOMServiceManager::WOMService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9c1659128d89fffcc4a71bc126d61b83" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.wom.core.service.manager.WOMServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(WOMServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="27" column="30" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9488b5ca4a91ad015d9074b205b4f546" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="28" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aa1359b21d7384e98be4c432deff99a1b" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="29" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a1060036cf84fc9df5b8da427677d59d6" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="30" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a8c8a601c67db5b43869c7f81ff6a866e" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="31" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a181cb4aa91e6c81574a2e00469853e30" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.wom.core.service.manager.WOMServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="32" column="23" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a62e8e1335982e02e8f1574e2b15e8fa5" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.wom.core.service.manager.WOMServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="35" column="28" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a56d6866bd5bbba7218cc6e4b1002e9f1" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, WOMService &gt;</type>
+        <definition>Map&lt;String, WOMService&gt; com.sterlite.cal.wom.core.service.manager.WOMServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="37" column="13" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a24df02a4b2ca285a9c5b5b3d5778a1cf" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.wom.core.service.manager.WOMServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="38" column="13" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aad3f9088fe64763336f471a406d29ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.wom.core.service.manager.WOMServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="41" column="13" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1adbe68fa8d8c9e97a85da4b9f3f491390" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.wom.core.service.manager.WOMServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="87" column="18" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="87" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a264c7a329ec8e8139116f5a1d2805381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="100" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="100" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aa4c5da641f2df6066dd2df26c87c2dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="122" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="122" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9099e65eeb0070aeba7353899cf851bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="144" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="144" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a0d5ad49210c31c1e4f66392fdd8f7221" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="160" column="15" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="160" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a6d68d6c7b9d3cb6e1bb0b4ec5bca6eb7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.wom.core.service.manager.WOMServiceManager.loadWOMService</definition>
+        <argsstring>()</argsstring>
+        <name>loadWOMService</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.loadWOMService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="51" column="14" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="51" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a05ba7d7678c34bd3089461a82e88a7f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.wom.core.service.manager.WOMServiceManager.loadWOMServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadWOMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.loadWOMServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="74" column="14" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="74" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1ab4f7c71c18ca0e90498831a250f67e0b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.wom.core.service.manager.WOMServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.wom.core.service.manager.WOMServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="218" column="26" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="218" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" line="25" column="7" bodyfile="repository/wom-core/src/main/java/com/sterlite/cal/wom/core/service/manager/WOMServiceManager.java" bodystart="25" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a24df02a4b2ca285a9c5b5b3d5778a1cf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a62e8e1335982e02e8f1574e2b15e8fa5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aa4c5da641f2df6066dd2df26c87c2dfd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9099e65eeb0070aeba7353899cf851bd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a264c7a329ec8e8139116f5a1d2805381" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a0d5ad49210c31c1e4f66392fdd8f7221" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1adbe68fa8d8c9e97a85da4b9f3f491390" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1ab4f7c71c18ca0e90498831a250f67e0b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aa1359b21d7384e98be4c432deff99a1b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a1060036cf84fc9df5b8da427677d59d6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9488b5ca4a91ad015d9074b205b4f546" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a8c8a601c67db5b43869c7f81ff6a866e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1aad3f9088fe64763336f471a406d29ae5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a6d68d6c7b9d3cb6e1bb0b4ec5bca6eb7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>loadWOMService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a05ba7d7678c34bd3089461a82e88a7f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>loadWOMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a9c1659128d89fffcc4a71bc126d61b83" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a181cb4aa91e6c81574a2e00469853e30" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1service_1_1manager_1_1_w_o_m_service_manager_1a56d6866bd5bbba7218cc6e4b1002e9f1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::wom::core::service::manager::WOMServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_budget_details_repo_8java" kind="file" language="Java">
+    <compoundname>BudgetDetailsRepo.java</compoundname>
+    <innerclass refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" prot="public">com::sterlite::cal::cbm::repositories::BudgetDetailsRepo</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories">com::sterlite::cal::cbm::repositories</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.cbm.repositories;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.math.BigDecimal;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.Modifying;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.Query;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.repository.query.Param;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.transaction.annotation.Transactional;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.cbm.dataobjects.BudgetDetails;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref><sp/><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;BudgetDetails,<sp/>Long&gt;{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;select<sp/>sum(budgetAmount)<sp/>from<sp/><sp/>BudgetDetails<sp/>BD<sp/>where<sp/>BD.serviceInstance=?1<sp/>and<sp/>BD.contractId=?2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>BigDecimal<sp/>findTotalBudgetBySI(String<sp/>serviceInstance,String<sp/>contractId);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;select<sp/>sum(budgetBalance)<sp/>from<sp/><sp/>BudgetDetails<sp/>BD<sp/>where<sp/>BD.serviceInstance=?1<sp/>and<sp/>BD.contractId=?2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>BigDecimal<sp/>findTotalBudgetBySIForExpiry(String<sp/>serviceInstance,String<sp/>contractId);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;select<sp/>BD<sp/>from<sp/><sp/>BudgetDetails<sp/>BD<sp/>where<sp/>BD.serviceInstance=?1<sp/>and<sp/>BD.contractId=?2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;BudgetDetails&gt;<sp/>findBudgetDetailstBySI(String<sp/>serviceInstance,String<sp/>contractId);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;select<sp/>BD<sp/>from<sp/><sp/>BudgetDetails<sp/>BD<sp/>where<sp/>BD.serviceInstance=?1<sp/>and<sp/>BD.budgetBalance<sp/>=0<sp/>and<sp/>BD.budgetExpired!=0&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;BudgetDetails&gt;<sp/>findBudgetDetailstBySIForExpiry(String<sp/>serviceInstance);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>@Transactional</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;update<sp/>BudgetDetails<sp/>bd<sp/>set<sp/>bd.budgetBalance<sp/>=<sp/>0<sp/>,<sp/>bd.budgetForfeit=:budgetBalance<sp/>,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;bd.updatedDate<sp/>=<sp/>SYSDATE<sp/><sp/>where<sp/>bd.serviceInstance<sp/>=<sp/><sp/>:serviceInstance<sp/>and<sp/>bd.category=<sp/>:category&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>@Modifying</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateBudBal(@Param(</highlight><highlight class="stringliteral">&quot;budgetBalance&quot;</highlight><highlight class="normal">)<sp/>BigDecimal<sp/>budgetBalance<sp/>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@Param(</highlight><highlight class="stringliteral">&quot;serviceInstance&quot;</highlight><highlight class="normal">)<sp/>String<sp/>serviceInstance<sp/>,@Param(</highlight><highlight class="stringliteral">&quot;category&quot;</highlight><highlight class="normal">)<sp/>String<sp/>category);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>@Query(</highlight><highlight class="stringliteral">&quot;select<sp/>BD<sp/>from<sp/><sp/>BudgetDetails<sp/>BD<sp/>where<sp/>BD.contractId=?1<sp/>and<sp/>BD.category<sp/>in<sp/>?2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;BudgetDetails&gt;<sp/>findBudgetForCategoryByContractId(String<sp/>contractId,<sp/>List&lt;String&gt;<sp/>category);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;BudgetDetails&gt;<sp/>findByContractId(String<sp/>contractId);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/repositories/BudgetDetailsRepo.java"/>
+  </compounddef>
+</doxygen>

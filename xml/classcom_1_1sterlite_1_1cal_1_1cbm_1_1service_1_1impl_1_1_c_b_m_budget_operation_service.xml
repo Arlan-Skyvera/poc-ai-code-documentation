@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.service.ICBMBudgetOperationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a4eba5e2373f90febef84f58fff35a949" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMBudgetOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="42" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a1feb758d88b4feff23508ea351ec8873" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbr</definition>
+        <argsstring></argsstring>
+        <name>cbr</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="44" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a65df34cd300e9a48144c30fb8f0ce9fc" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1validators_1_1_budget_validator" kindref="compound">BudgetValidator</ref></type>
+        <definition>BudgetValidator com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="47" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a6a0c5afb3d118f544c134434982fc4c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="50" column="21" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a8ed144282d43f95a0afaf2dbb898b7a8" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1integration_1_1_i_c_b_m_integration_service" kindref="compound">ICBMIntegrationService</ref></type>
+        <definition>ICBMIntegrationService com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbmIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>cbmIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbmIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="59" column="32" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1af85bbfad9b750bd3559f9f4cd49ec57f" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_matrix_repo" kindref="compound">ContractBudgetMatrixRepo</ref></type>
+        <definition>ContractBudgetMatrixRepo com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractBudgetMatrixRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudgetMatrixRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractBudgetMatrixRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="62" column="34" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a254197c4d4cba3c5833b3a306e2d4900" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo" kindref="compound">CategoryMasterRepo</ref></type>
+        <definition>CategoryMasterRepo com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.categoryRepo</definition>
+        <argsstring></argsstring>
+        <name>categoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.categoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="65" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac6350959821c2a905c948f0dd11674a7" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref></type>
+        <definition>BudgetDetailsRepo com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.budgetdetailsRepo</definition>
+        <argsstring></argsstring>
+        <name>budgetdetailsRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.budgetdetailsRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="68" column="27" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a5373eb88b044ecf16e670b2f255b94ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service" kindref="compound">CBMContractOperationService</ref></type>
+        <definition>CBMContractOperationService com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbmContractService</definition>
+        <argsstring></argsstring>
+        <name>cbmContractService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.cbmContractService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="72" column="37" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a9890191f3ab989b7e5737a5d9d7982fb" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractRelationRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRelationRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractRelationRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="78" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a71fcfd5109e5369251b1e01b8a99c975" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository" kindref="compound">ContractRepository</ref></type>
+        <definition>ContractRepository com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractMasterRepo</definition>
+        <argsstring></argsstring>
+        <name>contractMasterRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractMasterRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="53" column="20" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a17dc81cfd8543a9073dcd9f56ac261d6" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository" kindref="compound">ContractBudgetHistoryRepository</ref></type>
+        <definition>ContractBudgetHistoryRepository com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractBudHistoryRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudHistoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.contractBudHistoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="56" column="33" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ade5dc555c0dd73a448ffe1a4f5eb86ec" prot="package" static="no" mutable="no">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.sumOfAllBudgetBalance</definition>
+        <argsstring></argsstring>
+        <name>sumOfAllBudgetBalance</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.sumOfAllBudgetBalance</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="75" column="8" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac9c42f49d34c9ac5470eb00e5006b25a" prot="package" static="no" mutable="no">
+        <type>Map&lt; String, Double &gt;</type>
+        <definition>Map&lt;String,Double&gt; com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.categoryBudgetMap</definition>
+        <argsstring></argsstring>
+        <name>categoryBudgetMap</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.categoryBudgetMap</qualifiedname>
+        <initializer>=new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="80" column="5" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ad9f1162e5d578df8a33cc5f7ea2b2c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudget</definition>
+        <argsstring>(BudgetRequest budgetRequest, Pageable pageable)</argsstring>
+        <name>getBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudget</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1abc5806d253262d020224f7e076dc3e32">getBudget</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref></type>
+          <declname>budgetRequest</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="82" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="82" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1af6566951860b57b4d6f85c39ff970701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudget</definition>
+        <argsstring>(ConsumeBudgetRequest requestObj)</argsstring>
+        <name>consumeBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudget</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a7b996eda73a2156cc3940d049e384df1">consumeBudget</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="301" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="301" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a5b8a3c34c57bc7ab30e21cf6cd97a217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateRequest</definition>
+        <argsstring>(ConsumeBudgetRequest requestObj)</argsstring>
+        <name>validateRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateRequest</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="414" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="414" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a3a8eb3c735138fa778fe13075ab26f5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.maintainHistory</definition>
+        <argsstring>(String serviceIntance, ConsumeBudgetRequest requestObj, double currBudgetBalance, double finalBudget, double consumedBudget, String category)</argsstring>
+        <name>maintainHistory</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.maintainHistory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceIntance</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>currBudgetBalance</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>finalBudget</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>consumedBudget</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="842" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="842" bodyend="858"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a4d6e376655a46dc845db85c8380a752e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetForSI</definition>
+        <argsstring>(BudgetForSiRequest requestObj, QuotationForPlanBRMRequest quoteRequest)</argsstring>
+        <name>getBudgetForSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetForSI</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1ab93da50862c607d156d558a2e2292c1e">getBudgetForSI</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_for_si_request" kindref="compound">BudgetForSiRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="861" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="861" bodyend="945"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a3881697a591b761d3a4ae42adb50d90c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateRequestforBudgetForSI</definition>
+        <argsstring>(BudgetForSiRequest requestObj)</argsstring>
+        <name>validateRequestforBudgetForSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateRequestforBudgetForSI</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_for_si_request" kindref="compound">BudgetForSiRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="947" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="947" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a558dff5cb511667c29a101bb343c24f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_response" kindref="compound">QuotationForPlanBRMResponse</ref></type>
+        <definition>QuotationForPlanBRMResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getQuotationForPlan</definition>
+        <argsstring>(QuotationForPlanBRMRequest quoteRequest)</argsstring>
+        <name>getQuotationForPlan</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getQuotationForPlan</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_quotation_for_plan_b_r_m_request" kindref="compound">QuotationForPlanBRMRequest</ref></type>
+          <declname>quoteRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="959" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="959" bodyend="968"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1aa543d32e748d670c38d6f3e6072f463c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_coefficient_response" kindref="compound">BudgetCoefficientResponse</ref></type>
+        <definition>BudgetCoefficientResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetCoefficient</definition>
+        <argsstring>()</argsstring>
+        <name>getBudgetCoefficient</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetCoefficient</qualifiedname>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="970" column="34" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="970" bodyend="987"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a237175f0b99721554bfade3094224fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getCategoryMaster</definition>
+        <argsstring>()</argsstring>
+        <name>getCategoryMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getCategoryMaster</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a5cc1213593420b77c901167112aacf4e">getCategoryMaster</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="990" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="990" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1adb62e93db751bdfc2c349e55c0c9a3ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetByIdentifier</definition>
+        <argsstring>(BudgetRequest budgetRequest, Pageable pageable)</argsstring>
+        <name>getBudgetByIdentifier</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getBudgetByIdentifier</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service_1a37fa6860c92b5b061c96fbb4c158ba70">getBudgetByIdentifier</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_budget_request" kindref="compound">BudgetRequest</ref></type>
+          <declname>budgetRequest</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="1042" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="1042" bodyend="1301"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a96984736bba76ee6f19ed3dfab129a5a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.createIFRSFORBudgetConsumption</definition>
+        <argsstring>(String contractId)</argsstring>
+        <name>createIFRSFORBudgetConsumption</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.createIFRSFORBudgetConsumption</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <exceptions> throws NullPointerException</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="365" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="365" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a445404ff49a47b7ec43ceeb19a287ead" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.checkBalanceForCategory</definition>
+        <argsstring>(List&lt; BudgetDetails &gt; records)</argsstring>
+        <name>checkBalanceForCategory</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.checkBalanceForCategory</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_budget_details" kindref="compound">BudgetDetails</ref> &gt;</type>
+          <declname>records</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="471" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="471" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ace313f2e3f2d89eb1ca2d537ee14ebd3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateBudgetDetails</definition>
+        <argsstring>(List&lt; BudgetDetails &gt; budgetDetailList, ConsumeBudgetRequest requestObj)</argsstring>
+        <name>validateBudgetDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.validateBudgetDetails</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_budget_details" kindref="compound">BudgetDetails</ref> &gt;</type>
+          <declname>budgetDetailList</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="497" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="497" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac7c0c8bf217a40906e8ab576eee35340" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudgetCalculationForMultipleSI</definition>
+        <argsstring>(List&lt; BudgetDetails &gt; budgetList, ConsumeBudgetRequest requestObj)</argsstring>
+        <name>consumeBudgetCalculationForMultipleSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudgetCalculationForMultipleSI</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_budget_details" kindref="compound">BudgetDetails</ref> &gt;</type>
+          <declname>budgetList</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="565" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="565" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a971a064b187cbac2ad0f74c0327a7af3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudgetCalculation</definition>
+        <argsstring>(List&lt; BudgetDetails &gt; budgetList, ConsumeBudgetRequest requestObj)</argsstring>
+        <name>consumeBudgetCalculation</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.consumeBudgetCalculation</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_budget_details" kindref="compound">BudgetDetails</ref> &gt;</type>
+          <declname>budgetList</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_consume_budget_request" kindref="compound">ConsumeBudgetRequest</ref></type>
+          <declname>requestObj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="729" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="729" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a840cadde042192a735fd93f35b72d988" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.datetoString</definition>
+        <argsstring>(Date input)</argsstring>
+        <name>datetoString</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.datetoString</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="1019" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="1019" bodyend="1022"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a0db8fab0833bd9fc4e30d7e8a14c73e2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.isMultipleSIConsumption</definition>
+        <argsstring>(List&lt; BudgetDetails &gt; budgetDetails)</argsstring>
+        <name>isMultipleSIConsumption</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.isMultipleSIConsumption</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_budget_details" kindref="compound">BudgetDetails</ref> &gt;</type>
+          <declname>budgetDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="1024" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="1024" bodyend="1039"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1aee3cb208e3b9fb657e4d8506db12e8b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.addAllBudgets</definition>
+        <argsstring>(String budgetsAsString)</argsstring>
+        <name>addAllBudgets</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.addAllBudgets</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>budgetsAsString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="1303" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="1303" bodyend="1320"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a59e68974dd1e96a3b175c74beb254da5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_matrix" kindref="compound">ContractBudgetMatrix</ref></type>
+        <definition>ContractBudgetMatrix com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getContractBudgetMatrix</definition>
+        <argsstring>(ContractMaster contractMaster)</argsstring>
+        <name>getContractBudgetMatrix</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService.getContractBudgetMatrix</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractMaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="1322" column="30" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="1322" bodyend="1337"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMBudgetOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMBudgetOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>contractMasterRepo</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>contractBudHistoryRepo</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>categoryBudgetMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetHistoryRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.cbm.repositories.ContractRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMBudgetOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="8">
+        <label>Map&lt; String, Double &gt;</label>
+      </node>
+      <node id="7">
+        <label>JpaRepository&lt; ContractBudgetHistoryMaster, Long &gt;</label>
+      </node>
+      <node id="5">
+        <label>JpaRepository&lt; ContractMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" line="40" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMBudgetOperationService.java" bodystart="40" bodyend="1338"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1aee3cb208e3b9fb657e4d8506db12e8b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>addAllBudgets</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac6350959821c2a905c948f0dd11674a7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>budgetdetailsRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac9c42f49d34c9ac5470eb00e5006b25a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>categoryBudgetMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a254197c4d4cba3c5833b3a306e2d4900" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>categoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a5373eb88b044ecf16e670b2f255b94ee" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>cbmContractService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a8ed144282d43f95a0afaf2dbb898b7a8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>cbmIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a1feb758d88b4feff23508ea351ec8873" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>cbr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a445404ff49a47b7ec43ceeb19a287ead" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>checkBalanceForCategory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1af6566951860b57b4d6f85c39ff970701" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>consumeBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a971a064b187cbac2ad0f74c0327a7af3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>consumeBudgetCalculation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ac7c0c8bf217a40906e8ab576eee35340" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>consumeBudgetCalculationForMultipleSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1af85bbfad9b750bd3559f9f4cd49ec57f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>contractBudgetMatrixRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a17dc81cfd8543a9073dcd9f56ac261d6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>contractBudHistoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a71fcfd5109e5369251b1e01b8a99c975" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>contractMasterRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a9890191f3ab989b7e5737a5d9d7982fb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>contractRelationRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a96984736bba76ee6f19ed3dfab129a5a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>createIFRSFORBudgetConsumption</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a840cadde042192a735fd93f35b72d988" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>datetoString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ad9f1162e5d578df8a33cc5f7ea2b2c80" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1adb62e93db751bdfc2c349e55c0c9a3ba" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getBudgetByIdentifier</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1aa543d32e748d670c38d6f3e6072f463c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getBudgetCoefficient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a4d6e376655a46dc845db85c8380a752e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getBudgetForSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a237175f0b99721554bfade3094224fa6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getCategoryMaster</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a59e68974dd1e96a3b175c74beb254da5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getContractBudgetMatrix</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a558dff5cb511667c29a101bb343c24f3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>getQuotationForPlan</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a0db8fab0833bd9fc4e30d7e8a14c73e2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>isMultipleSIConsumption</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a4eba5e2373f90febef84f58fff35a949" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a3a8eb3c735138fa778fe13075ab26f5b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>maintainHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ade5dc555c0dd73a448ffe1a4f5eb86ec" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>sumOfAllBudgetBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a6a0c5afb3d118f544c134434982fc4c4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>utils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1ace313f2e3f2d89eb1ca2d537ee14ebd3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>validateBudgetDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a5b8a3c34c57bc7ab30e21cf6cd97a217" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>validateRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a3881697a591b761d3a4ae42adb50d90c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>validateRequestforBudgetForSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_budget_operation_service_1a65df34cd300e9a48144c30fb8f0ce9fc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMBudgetOperationService</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

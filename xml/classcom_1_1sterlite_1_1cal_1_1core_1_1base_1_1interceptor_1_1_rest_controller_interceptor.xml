@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::interceptor::RestControllerInterceptor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HandlerInterceptor</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1a82d88d3605275ae1e875f302c7dc35d6" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(RestControllerInterceptor.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" line="14" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1a327f5322c0d314ebcb0eb3e59b9b700f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.preHandle</definition>
+        <argsstring>(HttpServletRequest request, HttpServletResponse response, Object handler)</argsstring>
+        <name>preHandle</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.preHandle</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>handler</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" line="17" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1ac0976888e6876fb62f0544b48e2133ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.postHandle</definition>
+        <argsstring>(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)</argsstring>
+        <name>postHandle</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.postHandle</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>ModelAndView</type>
+          <declname>modelAndView</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" line="25" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1af796a2da8e673df47fb9cd97ce639885" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.afterCompletion</definition>
+        <argsstring>(HttpServletRequest request, HttpServletResponse response, Object handler, Exception exception)</argsstring>
+        <name>afterCompletion</name>
+        <qualifiedname>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor.afterCompletion</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>exception</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" line="33" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" bodystart="33" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HandlerInterceptor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.interceptor.RestControllerInterceptor</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HandlerInterceptor</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" line="12" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/interceptor/RestControllerInterceptor.java" bodystart="12" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1af796a2da8e673df47fb9cd97ce639885" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptor</scope><name>afterCompletion</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1a82d88d3605275ae1e875f302c7dc35d6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptor</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1ac0976888e6876fb62f0544b48e2133ad" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptor</scope><name>postHandle</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_rest_controller_interceptor_1a327f5322c0d314ebcb0eb3e59b9b700f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::interceptor::RestControllerInterceptor</scope><name>preHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

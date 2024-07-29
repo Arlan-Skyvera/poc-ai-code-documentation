@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::zkoss::zul::AbstractListModel&lt; T &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">org::zkoss::zul::ext::Sortable&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1acb75aa3e9f4aaf6c158a2ebe9327d421" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="255" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="255" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ada2dee7e16ac64016f7826a1645ab917" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.startPageNumber</definition>
+        <argsstring></argsstring>
+        <name>startPageNumber</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.startPageNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="256" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1af90ddc79b14f3b4e1b8de923712538b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.totalPageSize</definition>
+        <argsstring></argsstring>
+        <name>totalPageSize</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.totalPageSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="257" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a5ed3e979419d37c033789af62147429b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.itemStartNumber</definition>
+        <argsstring></argsstring>
+        <name>itemStartNumber</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.itemStartNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="258" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a44de6288961b0e996232ab46ff1b44b1" prot="private" static="no" mutable="no">
+        <type>Object[]</type>
+        <definition>Object [] com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="260" column="20" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ab1093f2d54fe3cbdbd3f099b4f560266" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.orderBy</definition>
+        <argsstring></argsstring>
+        <name>orderBy</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.orderBy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="261" column="20" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1aea7f11e35f7afe4e547f7618a74338d1" prot="private" static="no" mutable="no">
+        <type>List&lt; T &gt;</type>
+        <definition>List&lt;T&gt; com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.items</qualifiedname>
+        <initializer>= new ArrayList&lt;T&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="265" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="265" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a57694ec7843fe70d3700fc964c06a69d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.PagingListModel</definition>
+        <argsstring>(int startPageNumber)</argsstring>
+        <name>PagingListModel</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.PagingListModel</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>startPageNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="267" column="8" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="267" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1accf6095ed42136cc275cb5a4f4ed5402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getTotalSize</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalSize</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getTotalSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="280" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="280" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1aedd73b34d25bd3291ee775ca9d6c1ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getElementAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>getElementAt</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getElementAt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="285" column="10" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a5bacb59f74691d52d41ebc30154eb4bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="290" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a37f7000200b7daed43974a7f7cb28a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getStartPageNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getStartPageNumber</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getStartPageNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="294" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1af5188b0e20ba75042306b2ab19a1ea63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.get_totalPageSize</definition>
+        <argsstring>()</argsstring>
+        <name>get_totalPageSize</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.get_totalPageSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="298" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="298" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a4677e93f87193dfc155aa43c142b52a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getItemStartNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getItemStartNumber</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getItemStartNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="302" column="12" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a1f9cceb76deed8a1ee7de89397213abc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.sort</definition>
+        <argsstring>(Comparator comparator, boolean flag)</argsstring>
+        <name>sort</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.sort</qualifiedname>
+        <param>
+          <type>Comparator</type>
+          <declname>comparator</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="307" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="307" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a29f0ffcc6a0291df457ab87c6d904546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getSortDirection</definition>
+        <argsstring>(Comparator&lt; T &gt; arg0)</argsstring>
+        <name>getSortDirection</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getSortDirection</qualifiedname>
+        <param>
+          <type>Comparator&lt; T &gt;</type>
+          <declname>arg0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="316" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="316" bodyend="318"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ab830c0ac803b2496bbfd30965de20273" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract List&lt; T &gt;</type>
+        <definition>abstract List&lt; T &gt; com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;.getPageData</definition>
+        <argsstring>(int itemStartNumber, int pageSize)</argsstring>
+        <name>getPageData</name>
+        <qualifiedname>com.sterlite.cal.ui.core.BaseComposer.PagingListModel.getPageData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>itemStartNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pageSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="277" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractListModel&lt; T &gt;</label>
+      </node>
+      <node id="3">
+        <label>Sortable&lt; T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ui.core.BaseComposer.PagingListModel&lt; T &gt;</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractListModel&lt; T &gt;</label>
+      </node>
+      <node id="3">
+        <label>Sortable&lt; T &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" line="250" column="20" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/ui/core/BaseComposer.java" bodystart="250" bodyend="319"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a44de6288961b0e996232ab46ff1b44b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>cache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1af5188b0e20ba75042306b2ab19a1ea63" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>get_totalPageSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1aedd73b34d25bd3291ee775ca9d6c1ad2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getElementAt</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a4677e93f87193dfc155aa43c142b52a2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getItemStartNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ab830c0ac803b2496bbfd30965de20273" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getPageData</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a5bacb59f74691d52d41ebc30154eb4bc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a29f0ffcc6a0291df457ab87c6d904546" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getSortDirection</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a37f7000200b7daed43974a7f7cb28a17" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getStartPageNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1accf6095ed42136cc275cb5a4f4ed5402" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>getTotalSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1aea7f11e35f7afe4e547f7618a74338d1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>items</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a5ed3e979419d37c033789af62147429b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>itemStartNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ab1093f2d54fe3cbdbd3f099b4f560266" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>orderBy</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a57694ec7843fe70d3700fc964c06a69d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>PagingListModel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1acb75aa3e9f4aaf6c158a2ebe9327d421" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1a1f9cceb76deed8a1ee7de89397213abc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>sort</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1ada2dee7e16ac64016f7826a1645ab917" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>startPageNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1_1_paging_list_model_1af90ddc79b14f3b4e1b8de923712538b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ui::core::BaseComposer::PagingListModel</scope><name>totalPageSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

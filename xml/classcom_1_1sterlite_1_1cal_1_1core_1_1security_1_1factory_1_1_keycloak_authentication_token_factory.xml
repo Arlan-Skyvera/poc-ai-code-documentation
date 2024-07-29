@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a5b15b0887fe0207ed9764d8da35827b6" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="37" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a2c4fc46245ff0c458bb387ccc89b08b8" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_BASEURL</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_BASEURL</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_BASEURL</qualifiedname>
+        <initializer>= &quot;sso.keycloak.url&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="39" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a6bbe5d9b9bf368510f1e2932d9ca81c0" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_REALM</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_REALM</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_REALM</qualifiedname>
+        <initializer>= &quot;sso.keycloak.realm.name&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="40" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a47c4e2d789172f87bc41e5a6280f6b55" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_CLIENT_ID</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_CLIENT_ID</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_CLIENT_ID</qualifiedname>
+        <initializer>= &quot;sso.keycloak.api.client.id&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="41" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a22c87d55ba488235da98f97d29758ba3" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_SECRET</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_SECRET</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.KEYCLOAK_SECRET</qualifiedname>
+        <initializer>= &quot;sso.keycloak.api.client.id.secret&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="42" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1af605f6deb25ed97c1c50f388e765b0fd" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_ERROR_ATTRIBUTE</definition>
+        <argsstring></argsstring>
+        <name>INVALID_REQUEST_ERROR_ATTRIBUTE</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_ERROR_ATTRIBUTE</qualifiedname>
+        <initializer>= &quot;Inavlid Request_Error_Attribute&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="43" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ab0bdaec60a50b05bb4990edbf15145f8" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_AUTH_TOKEN_MISSING</definition>
+        <argsstring></argsstring>
+        <name>INVALID_REQUEST_AUTH_TOKEN_MISSING</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_AUTH_TOKEN_MISSING</qualifiedname>
+        <initializer>= &quot;Inavlid Request Auth Token Missing&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="44" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ae63bf3adeff5e9581c86842cb0e06cbf" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_AUTH_TOKEN_INVALID</definition>
+        <argsstring></argsstring>
+        <name>INVALID_REQUEST_AUTH_TOKEN_INVALID</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.INVALID_REQUEST_AUTH_TOKEN_INVALID</qualifiedname>
+        <initializer>= &quot;Inavlid Request Auth Token Invalid&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="45" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a6edccc58eb0a0aa6684d5533db0c8800" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.MANDATORY_PARAMETER_AUTHORIZATION_MISSING</definition>
+        <argsstring></argsstring>
+        <name>MANDATORY_PARAMETER_AUTHORIZATION_MISSING</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.MANDATORY_PARAMETER_AUTHORIZATION_MISSING</qualifiedname>
+        <initializer>= &quot;Mandatory parameter Authorization is missing&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="46" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ae98ac18802fc808a4f85b7ffcdc78dde" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.AUTHORIZATION_TOKEN_INVALID</definition>
+        <argsstring></argsstring>
+        <name>AUTHORIZATION_TOKEN_INVALID</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.AUTHORIZATION_TOKEN_INVALID</qualifiedname>
+        <initializer>= &quot;Authorization token is invalid&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="47" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a097038166c0575c6c515e492b8a6b9d3" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.AUTHENTICATION_TOKEN_EXPIRED</definition>
+        <argsstring></argsstring>
+        <name>AUTHENTICATION_TOKEN_EXPIRED</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.AUTHENTICATION_TOKEN_EXPIRED</qualifiedname>
+        <initializer>= &quot;Authorization token is expired&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="48" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a2ba390ff9a17fae9211f9ea8be57a76c" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.REDIRECT_UNAUTHORIZED</definition>
+        <argsstring></argsstring>
+        <name>REDIRECT_UNAUTHORIZED</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.REDIRECT_UNAUTHORIZED</qualifiedname>
+        <initializer>= &quot;/unAutherized&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="49" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a1f65c483502677f499ec3e8c988dda54" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(KeycloakAuthenticationTokenFactory.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="51" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a7da7e830df429c186ea587e37514ad3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.doFilterInternal</definition>
+        <argsstring>(final HttpServletRequest request, final HttpServletResponse response, final FilterChain chain)</argsstring>
+        <name>doFilterInternal</name>
+        <qualifiedname>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory.doFilterInternal</qualifiedname>
+        <param>
+          <type>final HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>final HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>final FilterChain</type>
+          <declname>chain</declname>
+        </param>
+        <exceptions> throws ServletException, IOException 	</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="53" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="53" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sagar.patel </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.factory.KeycloakAuthenticationTokenFactory</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" line="33" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/factory/KeycloakAuthenticationTokenFactory.java" bodystart="34" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a097038166c0575c6c515e492b8a6b9d3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>AUTHENTICATION_TOKEN_EXPIRED</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ae98ac18802fc808a4f85b7ffcdc78dde" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>AUTHORIZATION_TOKEN_INVALID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a7da7e830df429c186ea587e37514ad3a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>doFilterInternal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a5b15b0887fe0207ed9764d8da35827b6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ae63bf3adeff5e9581c86842cb0e06cbf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>INVALID_REQUEST_AUTH_TOKEN_INVALID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1ab0bdaec60a50b05bb4990edbf15145f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>INVALID_REQUEST_AUTH_TOKEN_MISSING</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1af605f6deb25ed97c1c50f388e765b0fd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>INVALID_REQUEST_ERROR_ATTRIBUTE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a2c4fc46245ff0c458bb387ccc89b08b8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>KEYCLOAK_BASEURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a47c4e2d789172f87bc41e5a6280f6b55" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>KEYCLOAK_CLIENT_ID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a6bbe5d9b9bf368510f1e2932d9ca81c0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>KEYCLOAK_REALM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a22c87d55ba488235da98f97d29758ba3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>KEYCLOAK_SECRET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a1f65c483502677f499ec3e8c988dda54" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a6edccc58eb0a0aa6684d5533db0c8800" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>MANDATORY_PARAMETER_AUTHORIZATION_MISSING</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory_1a2ba390ff9a17fae9211f9ea8be57a76c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::factory::KeycloakAuthenticationTokenFactory</scope><name>REDIRECT_UNAUTHORIZED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

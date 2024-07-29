@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::base::BaseTest</compoundname>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_test" prot="public" virt="non-virtual">com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptorTest</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_test" prot="public" virt="non-virtual">com.sterlite.cal.core.security.controller.AuthenticationControllerTest</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test" prot="public" virt="non-virtual">com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactoryTest</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_test" prot="public" virt="non-virtual">com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationServiceTest</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_authentication_service_test" prot="public" virt="non-virtual">com.sterlite.cal.core.security.service.AuthenticationServiceTest</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test" prot="public" virt="non-virtual">com.sterlite.cal.core.security.util.JwtTokenUtilTest</derivedcompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a0ebd6c0cfe72daa6294c18f644780424" prot="private" static="yes" mutable="no">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt;String,String&gt; com.sterlite.cal.base.BaseTest.propertyHolderMap</definition>
+        <argsstring></argsstring>
+        <name>propertyHolderMap</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.propertyHolderMap</qualifiedname>
+        <initializer>= new HashMap&lt;String, String&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="15" column="20" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a587bbb5a6da52836d6c27ddbcbcd7925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.base.BaseTest.BaseTest</definition>
+        <argsstring>()</argsstring>
+        <name>BaseTest</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.BaseTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="17" column="8" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="17" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a15155a7c3c6a60bff6036760f774fa6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Response</type>
+        <definition>Response com.sterlite.cal.base.BaseTest.doPost</definition>
+        <argsstring>(String uri, String request, Map&lt; String, String &gt; headers)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="44" column="18" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a38e27fbcb12617b4b4b262b56d4a1587" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Response</type>
+        <definition>Response com.sterlite.cal.base.BaseTest.doPatch</definition>
+        <argsstring>(String uri, String request, Map&lt; String, String &gt; headers)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="48" column="18" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="48" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a33b5802b23cd5b8e47921cecfc6e99cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.base.BaseTest.getPropertyValueFromMap</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getPropertyValueFromMap</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.getPropertyValueFromMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="32" column="22" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1af802cb5678f2e16b4411282c6cf57f1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.base.BaseTest.putPropertyIntoMap</definition>
+        <argsstring>(String key, String value)</argsstring>
+        <name>putPropertyIntoMap</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.putPropertyIntoMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="36" column="20" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a7d0e593ddbaf2eabff8ea982acc861cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>static Map&lt; String, String &gt; com.sterlite.cal.base.BaseTest.getPropertyHolderMap</definition>
+        <argsstring>()</argsstring>
+        <name>getPropertyHolderMap</name>
+        <qualifiedname>com.sterlite.cal.base.BaseTest.getPropertyHolderMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="40" column="19" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.base.BaseTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.interceptor.RequestResponseLoggingInterceptorTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1interceptor_1_1_request_response_logging_interceptor_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.security.controller.AuthenticationControllerTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1controller_1_1_authentication_controller_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.security.factory.JwtAuthenticationTokenFactoryTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationServiceTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.security.service.AuthenticationServiceTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_authentication_service_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.core.security.util.JwtTokenUtilTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" line="13" column="7" bodyfile="repository/core/src/test/java/com/sterlite/cal/base/BaseTest.java" bodystart="13" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a587bbb5a6da52836d6c27ddbcbcd7925" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>BaseTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a38e27fbcb12617b4b4b262b56d4a1587" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a15155a7c3c6a60bff6036760f774fa6c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a7d0e593ddbaf2eabff8ea982acc861cd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>getPropertyHolderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a33b5802b23cd5b8e47921cecfc6e99cc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>getPropertyValueFromMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a0ebd6c0cfe72daa6294c18f644780424" prot="private" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>propertyHolderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1af802cb5678f2e16b4411282c6cf57f1b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::base::BaseTest</scope><name>putPropertyIntoMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::utils::CommonUtils</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ad67708f1d23bf33c9af8bb0b46602531" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.cbm.utils.CommonUtils.DATE_FORMAT</definition>
+        <argsstring></argsstring>
+        <name>DATE_FORMAT</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.DATE_FORMAT</qualifiedname>
+        <initializer>= &quot;dd/MM/yyyy&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="30" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa8e4759d8831fbf321a7165bd2ad97a5" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.utils.CommonUtils.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CommonUtils.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="32" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a46e432d64fcef2c72342549fcdf67268" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.cbm.utils.CommonUtils.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="35" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a653d3cea6dfec6bbcad2f187a61d94f2" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_category_master_repo" kindref="compound">CategoryMasterRepo</ref></type>
+        <definition>CategoryMasterRepo com.sterlite.cal.cbm.utils.CommonUtils.categoryRepo</definition>
+        <argsstring></argsstring>
+        <name>categoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.categoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="38" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a6d2042834cb1efb397994961aee3176e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.utils.CommonUtils.stringToDate</definition>
+        <argsstring>(String input)</argsstring>
+        <name>stringToDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.stringToDate</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>input</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="40" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a09904889a4340dd4244f1fc610f2bd61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.CommonUtils.dateToString</definition>
+        <argsstring>(Date input)</argsstring>
+        <name>dateToString</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.dateToString</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="48" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a186b71c35e396b4a521c8fda4874dbd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Calendar</type>
+        <definition>Calendar com.sterlite.cal.cbm.utils.CommonUtils.dateToCalendar</definition>
+        <argsstring>(Date date)</argsstring>
+        <name>dateToCalendar</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.dateToCalendar</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="57" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa5f0ed0d76547b8d88afaebef98b7c3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.utils.CommonUtils.calendarToDate</definition>
+        <argsstring>(Calendar calendar)</argsstring>
+        <name>calendarToDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calendarToDate</qualifiedname>
+        <param>
+          <type>Calendar</type>
+          <declname>calendar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="67" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a1a1ef122518ed74a4e2461494837797d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.sterlite.cal.cbm.utils.CommonUtils.getMinorUnit</definition>
+        <argsstring>()</argsstring>
+        <name>getMinorUnit</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getMinorUnit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="75" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="75" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3d38e287ee85221792c565a0a6d4e1cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.sterlite.cal.cbm.utils.CommonUtils.getMinorAmount</definition>
+        <argsstring>(double amount, int minorunit)</argsstring>
+        <name>getMinorAmount</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getMinorAmount</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minorunit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="92" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3ff6377fcfc5f5d049f8e8eccf27964b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.utils.CommonUtils.getMajorAmount</definition>
+        <argsstring>(double amount, int minorunit)</argsstring>
+        <name>getMajorAmount</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getMajorAmount</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minorunit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="97" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ab62a6b02ebd91669f6634e50d385621e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.CommonUtils.datetoString</definition>
+        <argsstring>(Date input)</argsstring>
+        <name>datetoString</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.datetoString</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="102" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae09b16c649fcd7d130581adbf30c82f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.cbm.utils.CommonUtils.calculateRemainingMonthsBetweenTwoDates</definition>
+        <argsstring>(Date startDate, Date endDate)</argsstring>
+        <name>calculateRemainingMonthsBetweenTwoDates</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calculateRemainingMonthsBetweenTwoDates</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>Date</type>
+          <declname>endDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="107" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="107" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae32060786bbb8b0349543891991122ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.sterlite.cal.cbm.utils.CommonUtils.calculateRemainingMonthsBetweenTwoDatesForPenalty</definition>
+        <argsstring>(Date startDate, Date endDate)</argsstring>
+        <name>calculateRemainingMonthsBetweenTwoDatesForPenalty</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calculateRemainingMonthsBetweenTwoDatesForPenalty</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>Date</type>
+          <declname>endDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="155" column="12" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="155" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a5479d7b16dccb1bbefd632149535591d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.utils.CommonUtils.calculateStartDate</definition>
+        <argsstring>(String startDate)</argsstring>
+        <name>calculateStartDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calculateStartDate</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>startDate</declname>
+        </param>
+        <exceptions> throws ParseException 	</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="209" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="209" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1abdad48b9bc8a50e372337d2d25391c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.utils.CommonUtils.calculateEndDate</definition>
+        <argsstring>(Date date)</argsstring>
+        <name>calculateEndDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calculateEndDate</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="221" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="221" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a5a1c7d63de499ac284fac24f46f7e915" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.cbm.utils.CommonUtils.getObject</definition>
+        <argsstring>(String className)</argsstring>
+        <name>getObject</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="230" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae02128bc47857393de614fb4fc1eaeb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pageable</type>
+        <definition>Pageable com.sterlite.cal.cbm.utils.CommonUtils.getPageable</definition>
+        <argsstring>()</argsstring>
+        <name>getPageable</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getPageable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="235" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ada711ab861107af5c15f1ed37579d79c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.cbm.utils.CommonUtils.getCustomerDetailsForDnotification</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getCustomerDetailsForDnotification</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getCustomerDetailsForDnotification</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="241" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="241" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a7fcd820cef8c29dea38892c2fa570ad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.sterlite.cal.cbm.utils.CommonUtils.calculateDays</definition>
+        <argsstring>(Date startDate, Date endDate)</argsstring>
+        <name>calculateDays</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.calculateDays</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>Date</type>
+          <declname>endDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="262" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa337f9b8ce717c0067cbc66e71c7cd88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.CommonUtils.getProductCode</definition>
+        <argsstring>(String packageName, String productTypeID)</argsstring>
+        <name>getProductCode</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getProductCode</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>packageName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="269" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="269" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ab708e1bb841284aa63689fd04d1beef8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.utils.CommonUtils.getProductCodeForDiscount</definition>
+        <argsstring>(String discountName)</argsstring>
+        <name>getProductCodeForDiscount</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.getProductCodeForDiscount</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>discountName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="297" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="297" bodyend="322"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3d91fb2eb9d63f892171ddab80908408" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_category_master_v_o" kindref="compound">CategoryMasterVO</ref> &gt;</type>
+        <definition>static List&lt; CategoryMasterVO &gt; com.sterlite.cal.cbm.utils.CommonUtils.prepareCategoryMasterVOFromList</definition>
+        <argsstring>(List&lt; CategoryMaster &gt; categorymaster)</argsstring>
+        <name>prepareCategoryMasterVOFromList</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.prepareCategoryMasterVOFromList</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_category_master" kindref="compound">CategoryMaster</ref> &gt;</type>
+          <declname>categorymaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="324" column="20" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="324" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aedf2cc3b5db5a7bad6d551a09923abde" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_category_master_v_o" kindref="compound">CategoryMasterVO</ref></type>
+        <definition>static CategoryMasterVO com.sterlite.cal.cbm.utils.CommonUtils.prepareCategoryMasterVO</definition>
+        <argsstring>(CategoryMaster categorymaster)</argsstring>
+        <name>prepareCategoryMasterVO</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.CommonUtils.prepareCategoryMasterVO</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_category_master" kindref="compound">CategoryMaster</ref></type>
+          <declname>categorymaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="333" column="32" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="333" bodyend="351"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.utils.CommonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" line="28" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/CommonUtils.java" bodystart="28" bodyend="352"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a46e432d64fcef2c72342549fcdf67268" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a7fcd820cef8c29dea38892c2fa570ad6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calculateDays</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1abdad48b9bc8a50e372337d2d25391c0c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calculateEndDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae09b16c649fcd7d130581adbf30c82f6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calculateRemainingMonthsBetweenTwoDates</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae32060786bbb8b0349543891991122ef" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calculateRemainingMonthsBetweenTwoDatesForPenalty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a5479d7b16dccb1bbefd632149535591d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calculateStartDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa5f0ed0d76547b8d88afaebef98b7c3c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>calendarToDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a653d3cea6dfec6bbcad2f187a61d94f2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>categoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ad67708f1d23bf33c9af8bb0b46602531" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>DATE_FORMAT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a186b71c35e396b4a521c8fda4874dbd3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>dateToCalendar</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a09904889a4340dd4244f1fc610f2bd61" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>dateToString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ab62a6b02ebd91669f6634e50d385621e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>datetoString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ada711ab861107af5c15f1ed37579d79c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getCustomerDetailsForDnotification</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3ff6377fcfc5f5d049f8e8eccf27964b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getMajorAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3d38e287ee85221792c565a0a6d4e1cb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getMinorAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a1a1ef122518ed74a4e2461494837797d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getMinorUnit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a5a1c7d63de499ac284fac24f46f7e915" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ae02128bc47857393de614fb4fc1eaeb3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getPageable</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa337f9b8ce717c0067cbc66e71c7cd88" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getProductCode</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1ab708e1bb841284aa63689fd04d1beef8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>getProductCodeForDiscount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aa8e4759d8831fbf321a7165bd2ad97a5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1aedf2cc3b5db5a7bad6d551a09923abde" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>prepareCategoryMasterVO</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a3d91fb2eb9d63f892171ddab80908408" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>prepareCategoryMasterVOFromList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils_1a6d2042834cb1efb397994961aee3176e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::CommonUtils</scope><name>stringToDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

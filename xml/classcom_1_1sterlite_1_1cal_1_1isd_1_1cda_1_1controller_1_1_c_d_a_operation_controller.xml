@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::cda::controller::CDAOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a7f40ae3d5dac531fec465adb26ce467a" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.cda.controller.CDAOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CDAOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="28" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a03a05f4442a9c93665a0fe347f00a852" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager" kindref="compound">CDAServiceManager</ref></type>
+        <definition>CDAServiceManager com.sterlite.cal.isd.cda.controller.CDAOperationController.cdaMgr</definition>
+        <argsstring></argsstring>
+        <name>cdaMgr</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.cdaMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="31" column="27" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a48118a4d85816bebad99231dec2c5a71" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.cda.controller.CDAOperationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="34" column="19" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a3683fdd780f30b522e1d34655534efcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.cda.controller.CDAOperationController.doPost</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.doPost</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="39" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="39" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1aa6f5793b1afa13cb2f0259264eb087cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.cda.controller.CDAOperationController.orderValidateOld</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>orderValidateOld</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.orderValidateOld</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="71" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="71" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a614d2a6c6a849df1d3f4d59ebb66245f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.cda.controller.CDAOperationController.calculateBACharges</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>calculateBACharges</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.calculateBACharges</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="136" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1abb2686916b9cee9f053df574c0bce805" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.isd.cda.controller.CDAOperationController.orderValidateForCDAAndLPSG</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>orderValidateForCDAAndLPSG</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.controller.CDAOperationController.orderValidateForCDAAndLPSG</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="143" column="15" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="143" bodyend="186"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.cda.controller.CDAOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.cda.controller.CDAOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" line="26" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/controller/CDAOperationController.java" bodystart="26" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a614d2a6c6a849df1d3f4d59ebb66245f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>calculateBACharges</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a03a05f4442a9c93665a0fe347f00a852" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>cdaMgr</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a3683fdd780f30b522e1d34655534efcb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a48118a4d85816bebad99231dec2c5a71" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1a7f40ae3d5dac531fec465adb26ce467a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1abb2686916b9cee9f053df574c0bce805" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>orderValidateForCDAAndLPSG</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1controller_1_1_c_d_a_operation_controller_1aa6f5793b1afa13cb2f0259264eb087cb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>orderValidateOld</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::controller::CDAOperationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

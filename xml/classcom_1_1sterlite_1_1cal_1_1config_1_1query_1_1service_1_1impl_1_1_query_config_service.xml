@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::config::query::service::impl::QueryConfigService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1inter_1_1_i_query_config_service" prot="public" virt="non-virtual">com.sterlite.cal.config.query.service.inter.IQueryConfigService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1a9d9ae426934cd6dea4a7b9343bc49c98" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.config.query.service.impl.QueryConfigService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.config.query.service.impl.QueryConfigService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(QueryConfigService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" line="18" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1a4e66c0ec2e0ec36b040c5b5f626edab5" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1repository_1_1_query_config_repository" kindref="compound">QueryConfigRepository</ref></type>
+        <definition>QueryConfigRepository com.sterlite.cal.config.query.service.impl.QueryConfigService.queryConfigRepository</definition>
+        <argsstring></argsstring>
+        <name>queryConfigRepository</name>
+        <qualifiedname>com.sterlite.cal.config.query.service.impl.QueryConfigService.queryConfigRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" line="20" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1aa905f4b6e6bcbb0fb69adfcf220fea5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; Long, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref> &gt;</type>
+        <definition>Map&lt; Long, QueryConfig &gt; com.sterlite.cal.config.query.service.impl.QueryConfigService.getQueryConfigByIdCacheMap</definition>
+        <argsstring>()</argsstring>
+        <name>getQueryConfigByIdCacheMap</name>
+        <qualifiedname>com.sterlite.cal.config.query.service.impl.QueryConfigService.getQueryConfigByIdCacheMap</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1inter_1_1_i_query_config_service_1a27613d8f4c827a6cbbba036567bcec09">getQueryConfigByIdCacheMap</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" line="23" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" bodystart="23" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1aace522be7a8d5f55c3fd3af7a610194b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref> &gt;</type>
+        <definition>Map&lt; String, QueryConfig &gt; com.sterlite.cal.config.query.service.impl.QueryConfigService.getQueryConfigByAliasCacheMap</definition>
+        <argsstring>()</argsstring>
+        <name>getQueryConfigByAliasCacheMap</name>
+        <qualifiedname>com.sterlite.cal.config.query.service.impl.QueryConfigService.getQueryConfigByAliasCacheMap</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1inter_1_1_i_query_config_service_1acda1bda2af08c1ec8f3bd7bea8eee903">getQueryConfigByAliasCacheMap</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" line="38" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" bodystart="38" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.config.query.service.impl.QueryConfigService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.config.query.service.inter.IQueryConfigService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1inter_1_1_i_query_config_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.config.query.service.impl.QueryConfigService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>queryConfigRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.config.query.repository.QueryConfigRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1repository_1_1_query_config_repository"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.config.query.service.inter.IQueryConfigService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1inter_1_1_i_query_config_service"/>
+      </node>
+      <node id="4">
+        <label>JpaRepository&lt; QueryConfig, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" line="16" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/query/service/impl/QueryConfigService.java" bodystart="16" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1aace522be7a8d5f55c3fd3af7a610194b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::config::query::service::impl::QueryConfigService</scope><name>getQueryConfigByAliasCacheMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1aa905f4b6e6bcbb0fb69adfcf220fea5d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::config::query::service::impl::QueryConfigService</scope><name>getQueryConfigByIdCacheMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1a9d9ae426934cd6dea4a7b9343bc49c98" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::query::service::impl::QueryConfigService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1service_1_1impl_1_1_query_config_service_1a4e66c0ec2e0ec36b040c5b5f626edab5" prot="package" virt="non-virtual"><scope>com::sterlite::cal::config::query::service::impl::QueryConfigService</scope><name>queryConfigRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

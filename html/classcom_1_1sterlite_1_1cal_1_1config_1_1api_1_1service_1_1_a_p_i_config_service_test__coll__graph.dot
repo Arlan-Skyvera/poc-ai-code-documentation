@@ -1,0 +1,24 @@
+digraph "com.sterlite.cal.config.api.service.APIConfigServiceTest"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="com.sterlite.cal.config.api.service.\lAPIConfigServiceTest",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" apiConfigService",fontcolor="grey" ];
+  Node2 [id="Node000002",label="com.sterlite.cal.config.api.service.impl.\lAPIConfigService",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1impl_1_1_a_p_i_config_service.html",tooltip=" "];
+  Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="com.sterlite.cal.config.api.service.inter.\lIAPIConfigService",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1service_1_1inter_1_1_i_a_p_i_config_service.html",tooltip=" "];
+  Node4 -> Node2 [id="edge3_Node000002_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" apiConfigRepository",fontcolor="grey" ];
+  Node4 [id="Node000004",label="com.sterlite.cal.config.api.repository.\lAPIConfigRepository",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1repository_1_1_a_p_i_config_repository.html",tooltip=" "];
+  Node5 -> Node4 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="JpaRepository\< APIConfig,\l Long \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [id="edge5_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" apiConfigRepository",fontcolor="grey" ];
+  Node6 -> Node1 [id="edge6_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" apiConfigs",fontcolor="grey" ];
+  Node6 [id="Node000006",label="List\< com.sterlite.cal.config.api.dataobject.\lAPIConfig \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [id="edge7_Node000001_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" apiConfig",fontcolor="grey" ];
+  Node7 [id="Node000007",label="com.sterlite.cal.config.api.dataobject.\lAPIConfig",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config.html",tooltip=" "];
+  Node8 -> Node7 [id="edge8_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

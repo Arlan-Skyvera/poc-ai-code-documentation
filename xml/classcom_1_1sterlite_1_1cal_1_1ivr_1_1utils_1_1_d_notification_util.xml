@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::utils::DNotificationUtil</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a4901212716e12c817e2b81ec1d1739c3" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.utils.DNotificationUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DNotificationUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="24" column="30" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a7a9fc9429b6a713730fc265e8a0e004f" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ivr.utils.DNotificationUtil.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="35" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a73085d470995bc4472a24d58bccc270f" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.ivr.utils.DNotificationUtil.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="27" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a3e3b204034974477c18cc7acd7175dd8" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.utils.DNotificationUtil.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="30" column="11" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a130011016007c66706ccd3cb5709027c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_i_v_r_util" kindref="compound">IVRUtil</ref></type>
+        <definition>IVRUtil com.sterlite.cal.ivr.utils.DNotificationUtil.iverUtil</definition>
+        <argsstring></argsstring>
+        <name>iverUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.iverUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="33" column="17" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a85fafa441b2d8637d52bfecaa7bd8680" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.ivr.utils.DNotificationUtil.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="38" column="30" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1acc969a3bdfb2a48381beaacaf44ec054" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.utils.DNotificationUtil.dNotificationTokenURL</definition>
+        <argsstring></argsstring>
+        <name>dNotificationTokenURL</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.dNotificationTokenURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="41" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a8a353459fdd2f7a2620b10f32e6de90a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.utils.DNotificationUtil.dNotificationUrl</definition>
+        <argsstring></argsstring>
+        <name>dNotificationUrl</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.dNotificationUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="45" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aadd372040af0d5543a59b64fa2210d47" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.utils.DNotificationUtil.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="47" column="18" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="47" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a5a918898f2d1be3251cf8a5e2c982dd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.utils.DNotificationUtil.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="60" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1afceef1f61280be67e18640c607debb7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.ivr.utils.DNotificationUtil.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="78" column="12" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aacba0029f41ee25d4151a70edde4ab54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.ivr.utils.DNotificationUtil.getObject</definition>
+        <argsstring>(String className)</argsstring>
+        <name>getObject</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.getObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="84" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aed34e64167ac96c5b5d382c7fdd18b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.utils.DNotificationUtil.getdNotificationToken</definition>
+        <argsstring>()</argsstring>
+        <name>getdNotificationToken</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.getdNotificationToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="90" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="90" bodyend="123"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1af38d640c231f53a1c17f4c09fd60461b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.ivr.utils.DNotificationUtil.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="66" column="11" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a23ca656409e24f90a927fa195bdcea52" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.ivr.utils.DNotificationUtil.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="72" column="11" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="72" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1afa1aa26d5050b16ea0f3bdc92de01b35" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_d_notification_token_request" kindref="compound">DNotificationTokenRequest</ref></type>
+        <definition>DNotificationTokenRequest com.sterlite.cal.ivr.utils.DNotificationUtil.prepareTokenRequest</definition>
+        <argsstring>()</argsstring>
+        <name>prepareTokenRequest</name>
+        <qualifiedname>com.sterlite.cal.ivr.utils.DNotificationUtil.prepareTokenRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="125" column="35" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="125" bodyend="151"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.utils.DNotificationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.utils.DNotificationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" line="22" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/utils/DNotificationUtil.java" bodystart="22" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1acc969a3bdfb2a48381beaacaf44ec054" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>dNotificationTokenURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a8a353459fdd2f7a2620b10f32e6de90a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>dNotificationUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a73085d470995bc4472a24d58bccc270f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a85fafa441b2d8637d52bfecaa7bd8680" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aed34e64167ac96c5b5d382c7fdd18b05" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getdNotificationToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a23ca656409e24f90a927fa195bdcea52" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aacba0029f41ee25d4151a70edde4ab54" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a5a918898f2d1be3251cf8a5e2c982dd4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1aadd372040af0d5543a59b64fa2210d47" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a130011016007c66706ccd3cb5709027c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>iverUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a3e3b204034974477c18cc7acd7175dd8" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a7a9fc9429b6a713730fc265e8a0e004f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1a4901212716e12c817e2b81ec1d1739c3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1af38d640c231f53a1c17f4c09fd60461b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1afceef1f61280be67e18640c607debb7c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util_1afa1aa26d5050b16ea0f3bdc92de01b35" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>prepareTokenRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::utils::DNotificationUtil</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::BRMRestClient</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a05b349836a1554b85e31905e0b053389" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.BRMRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BRMRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="31" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a3e4f6b8c06e2fa3cd78420da94455ccc" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.BRMRestClient.IP_ADDRESS</definition>
+        <argsstring></argsstring>
+        <name>IP_ADDRESS</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.IP_ADDRESS</qualifiedname>
+        <initializer>= &quot;10.121.28.92&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="33" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a3188266f75fc9869f1b99a3a36b6619e" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.BRMRestClient.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="34" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a4bc610d42498502e637feecbe6471dd2" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.restclient.BRMRestClient.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="36" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a9077a5b66fac587224c66eb03f9957dc" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.baseUrl</definition>
+        <argsstring></argsstring>
+        <name>baseUrl</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.baseUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The base url. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="41" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1aa91eabecc9c3cfd317710aa1d2f2245f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.brmUsername</definition>
+        <argsstring></argsstring>
+        <name>brmUsername</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.brmUsername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="44" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a5b69fd78ed645ed8a034b40e49c3f4e5" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.brmPassword</definition>
+        <argsstring></argsstring>
+        <name>brmPassword</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.brmPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="47" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8f2f91c18d500eaa1de996981b9387c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.core.base.restclient.BRMRestClient.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="50" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a958528bbcf991873e7cec92fc4544c30" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="53" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="53" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a7e9af604f4fb7cf143df70d68050bcd7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="67" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8f7184e89d0fbdffd086716923d13112" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BRMRestClient.getBRMToken</definition>
+        <argsstring>()</argsstring>
+        <name>getBRMToken</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.getBRMToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="156" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="156" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a6fba6d70a1ff75eeb9b8394d0d537b08" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="73" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a5329ce432bd0412845d87ffb9049a0a6" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="79" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8c31c4c8157f2ea972f1016de5fd5e3a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="85" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a771862f24e03dae3c7081c2b15335490" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="91" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1addb393fa1e10fda34ac1f1fe86c1ca39" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="96" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a0de7ec18f432c45715c36cf1c18137a3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BRMRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="101" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="101" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1ac7a9e0a3a450212877aafc70723638c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.core.base.restclient.BRMRestClient.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BRMRestClient.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="107" column="12" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="107" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Class BRMRestUtil.</para>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="3">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" line="29" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BRMRestClient.java" bodystart="29" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a9077a5b66fac587224c66eb03f9957dc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>baseUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a5b69fd78ed645ed8a034b40e49c3f4e5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>brmPassword</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1aa91eabecc9c3cfd317710aa1d2f2245f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>brmUsername</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a771862f24e03dae3c7081c2b15335490" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1addb393fa1e10fda34ac1f1fe86c1ca39" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a4bc610d42498502e637feecbe6471dd2" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8f2f91c18d500eaa1de996981b9387c4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8f7184e89d0fbdffd086716923d13112" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>getBRMToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a5329ce432bd0412845d87ffb9049a0a6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a7e9af604f4fb7cf143df70d68050bcd7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a958528bbcf991873e7cec92fc4544c30" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a3e4f6b8c06e2fa3cd78420da94455ccc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>IP_ADDRESS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a3188266f75fc9869f1b99a3a36b6619e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a05b349836a1554b85e31905e0b053389" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a8c31c4c8157f2ea972f1016de5fd5e3a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a6fba6d70a1ff75eeb9b8394d0d537b08" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1ac7a9e0a3a450212877aafc70723638c0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client_1a0de7ec18f432c45715c36cf1c18137a3" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::core::base::restclient::BRMRestClient</scope><name>putForObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

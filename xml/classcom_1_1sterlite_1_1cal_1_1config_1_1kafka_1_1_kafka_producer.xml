@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::config::kafka::KafkaProducer</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a0b780076d6db81b2b136e937e623e6f0" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.config.kafka.KafkaProducer.MODULE_NAME</definition>
+        <argsstring></argsstring>
+        <name>MODULE_NAME</name>
+        <qualifiedname>com.sterlite.cal.config.kafka.KafkaProducer.MODULE_NAME</qualifiedname>
+        <initializer>= &quot;TKAL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="18" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1ab45af61bb3cb9ba4d60c9e950210f1e0" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.config.kafka.KafkaProducer.CLASS_NAME</definition>
+        <argsstring></argsstring>
+        <name>CLASS_NAME</name>
+        <qualifiedname>com.sterlite.cal.config.kafka.KafkaProducer.CLASS_NAME</qualifiedname>
+        <initializer>= KafkaProducer.class.getSimpleName()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="19" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a42756dbf17eabbefe68c76338b807e2b" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.sterlite.cal.config.kafka.KafkaProducer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.config.kafka.KafkaProducer.LOGGER</qualifiedname>
+        <initializer>= LoggerFactory.getLogger(KafkaProducer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="20" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1ab5f3147ebae1edd6058f01d6ad2456dd" prot="private" static="no" mutable="no">
+        <type>KafkaTemplate&lt; String, String &gt;</type>
+        <definition>KafkaTemplate&lt;String, String&gt; com.sterlite.cal.config.kafka.KafkaProducer.kafkaTemplate</definition>
+        <argsstring></argsstring>
+        <name>kafkaTemplate</name>
+        <qualifiedname>com.sterlite.cal.config.kafka.KafkaProducer.kafkaTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="23" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a44a1df5e6a8777eafdadf5901c2bf621" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.config.kafka.KafkaProducer.send</definition>
+        <argsstring>(String topic, String payload, int kafkaMaxResponseWait)</argsstring>
+        <name>send</name>
+        <qualifiedname>com.sterlite.cal.config.kafka.KafkaProducer.send</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kafkaMaxResponseWait</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="25" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="25" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" line="16" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/config/kafka/KafkaProducer.java" bodystart="16" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1ab45af61bb3cb9ba4d60c9e950210f1e0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::kafka::KafkaProducer</scope><name>CLASS_NAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1ab5f3147ebae1edd6058f01d6ad2456dd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::kafka::KafkaProducer</scope><name>kafkaTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a42756dbf17eabbefe68c76338b807e2b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::kafka::KafkaProducer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a0b780076d6db81b2b136e937e623e6f0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::config::kafka::KafkaProducer</scope><name>MODULE_NAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1config_1_1kafka_1_1_kafka_producer_1a44a1df5e6a8777eafdadf5901c2bf621" prot="public" virt="non-virtual"><scope>com::sterlite::cal::config::kafka::KafkaProducer</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

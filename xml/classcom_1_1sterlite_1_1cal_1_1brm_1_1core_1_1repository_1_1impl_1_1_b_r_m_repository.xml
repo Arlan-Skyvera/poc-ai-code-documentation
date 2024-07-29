@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::core::repository::impl::BRMRepository</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" prot="public" virt="non-virtual">com.sterlite.cal.brm.core.repository.IBRMRepository</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a5cf77f93f0c2743062517212d475492d" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.core.repository.impl.BRMRepository.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BRMRepository.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="21" column="29" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aa9cc7b97802d77f141a1e698538c129f" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client" kindref="compound">BRMQueryClient</ref></type>
+        <definition>BRMQueryClient com.sterlite.cal.brm.core.repository.impl.BRMRepository.brmQueryClient</definition>
+        <argsstring></argsstring>
+        <name>brmQueryClient</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.brmQueryClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="24" column="16" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aba0e2eb34dc02e1b30c882b7b14ce751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.repository.impl.BRMRepository.getResultByQuery</definition>
+        <argsstring>(Map&lt; String, Object &gt; parameterMap, QueryConfig queryConfig)</argsstring>
+        <name>getResultByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.getResultByQuery</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1a7dcf4290f5e0ca2c5d7f6a53c953c4bd">getResultByQuery</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="27" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="27" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a8091366c1f220b986d5a72eddc096db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.repository.impl.BRMRepository.updateByQuery</definition>
+        <argsstring>(Map&lt; String, Object &gt; parameterMap, QueryConfig queryConfig)</argsstring>
+        <name>updateByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.updateByQuery</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1a4930601307c834708c8ed9b82dc1e1ec">updateByQuery</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="40" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="40" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1abf87499a7af1b7885fcd435b4d220dd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForMapForSingleRecord</definition>
+        <argsstring>(Map&lt; String, Object &gt; parameterMap, QueryConfig queryConfig)</argsstring>
+        <name>queryForMapForSingleRecord</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForMapForSingleRecord</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1aa105321ef5aeb4dd1358bccc8f410429">queryForMapForSingleRecord</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="56" column="12" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a6ab1c3429a7ebab208f274489f682de4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForListMultipleRecords</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, QueryConfig queryConfig)</argsstring>
+        <name>queryForListMultipleRecords</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForListMultipleRecords</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1ac762bc7005989b06748f4eecdb1c740d">queryForListMultipleRecords</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="74" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="74" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a4253d631f2c3048521bf036afd045c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForListMultipleRecords</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap, String queryToBeExecuted, String dataSource)</argsstring>
+        <name>queryForListMultipleRecords</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.queryForListMultipleRecords</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1adf90cfced7adebe64ee24de2031bfd25">queryForListMultipleRecords</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>queryToBeExecuted</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dataSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="93" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="93" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a35ab19827c1658fb38bed36de1d7ef08" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.brm.core.repository.impl.BRMRepository.getObjectByQuery</definition>
+        <argsstring>(Map&lt; String, Object &gt; parameterMap, QueryConfig queryConfig, RowMapper&lt; T &gt; rowMapper)</argsstring>
+        <name>getObjectByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.getObjectByQuery</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1af2bb155cbf2d72fbf7e3368413b19177">getObjectByQuery</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <param>
+          <type>RowMapper&lt; T &gt;</type>
+          <declname>rowMapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="107" column="11" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="107" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aa061ec4cfca9ef65e4e865acb5e03430" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; List&lt; T &gt;</type>
+        <definition>public&lt; T &gt; List&lt; T &gt; com.sterlite.cal.brm.core.repository.impl.BRMRepository.getListByQuery</definition>
+        <argsstring>(Map&lt; String, Object &gt; parameterMap, QueryConfig queryConfig, RowMapper&lt; T &gt; rowMapper)</argsstring>
+        <name>getListByQuery</name>
+        <qualifiedname>com.sterlite.cal.brm.core.repository.impl.BRMRepository.getListByQuery</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository_1aa03fb69b39e6e671788d97e18c03da98">getListByQuery</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1query_1_1dataobject_1_1_query_config" kindref="compound">QueryConfig</ref></type>
+          <declname>queryConfig</declname>
+        </param>
+        <param>
+          <type>RowMapper&lt; T &gt;</type>
+          <declname>rowMapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="120" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="120" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>brmQueryClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="6">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" line="19" column="7" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/repository/impl/BRMRepository.java" bodystart="19" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aa9cc7b97802d77f141a1e698538c129f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>brmQueryClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aa061ec4cfca9ef65e4e865acb5e03430" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>getListByQuery</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a35ab19827c1658fb38bed36de1d7ef08" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>getObjectByQuery</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1aba0e2eb34dc02e1b30c882b7b14ce751" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>getResultByQuery</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a5cf77f93f0c2743062517212d475492d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a6ab1c3429a7ebab208f274489f682de4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>queryForListMultipleRecords</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a4253d631f2c3048521bf036afd045c7b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>queryForListMultipleRecords</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1abf87499a7af1b7885fcd435b4d220dd5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>queryForMapForSingleRecord</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository_1a8091366c1f220b986d5a72eddc096db0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::repository::impl::BRMRepository</scope><name>updateByQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

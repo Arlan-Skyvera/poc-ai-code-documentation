@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::util::JwtTokenUtilTest</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test" prot="public" virt="non-virtual">com.sterlite.cal.base.BaseTest</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a85f58e307abafe27143a3fef4483055d" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.util.JwtTokenUtilTest.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(JwtTokenUtilTest.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="41" column="30" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a54db990b13411a2b72f0a01880dac0c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util" kindref="compound">JwtTokenUtil</ref></type>
+        <definition>JwtTokenUtil com.sterlite.cal.core.security.util.JwtTokenUtilTest.jwtTokenUtil</definition>
+        <argsstring></argsstring>
+        <name>jwtTokenUtil</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.jwtTokenUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="44" column="22" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a380277d05c2347d7712a37728e6c8b31" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user" kindref="compound">JwtUser</ref></type>
+        <definition>JwtUser com.sterlite.cal.core.security.util.JwtTokenUtilTest.user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="46" column="17" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a0c0987413d718ab06991c93654f3b468" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.security.util.JwtTokenUtilTest.token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.token</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="47" column="16" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ab6893498e2c6c60b0789cf842d308cfb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.security.util.JwtTokenUtilTest.tokenIp</definition>
+        <argsstring></argsstring>
+        <name>tokenIp</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.tokenIp</qualifiedname>
+        <initializer>= &quot;0:0:0:0:0:0:0:1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="48" column="16" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a8037e10ec4327a079d50e3581387b565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="51" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ad77fd9dac9006eacea8221f195ee4594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test01GenerateToken</definition>
+        <argsstring>()</argsstring>
+        <name>test01GenerateToken</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test01GenerateToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="62" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="62" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a0af73962aa69bd1e9c1e525fd12d3b85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test02ValidateTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test02ValidateTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test02ValidateTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="83" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="83" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ac6bcaff265ecc9fc2624e4a28068c56c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test03RefreshTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test03RefreshTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test03RefreshTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="96" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1abf1be984bc0ff03ca41b607cdd485097" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test04CanTokenBeRefreshedTest</definition>
+        <argsstring>()</argsstring>
+        <name>test04CanTokenBeRefreshedTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test04CanTokenBeRefreshedTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="110" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="110" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a7c1444794c4db853d092e3cb1caed6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test05GetIpAddressFromTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test05GetIpAddressFromTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test05GetIpAddressFromTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="128" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="128" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ac44cb3ee384f53d452b77c9c781ea197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test06getAuthoritiesFromTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test06getAuthoritiesFromTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test06getAuthoritiesFromTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="143" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="143" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a1676773faf11f0013ae653ec9c72c183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test07getAudienceFromTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test07getAudienceFromTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test07getAudienceFromTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="157" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="157" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a27c0434028d31f0bcec7669c16e0935d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test08GetExpirationDateFromTokenTest</definition>
+        <argsstring>()</argsstring>
+        <name>test08GetExpirationDateFromTokenTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test08GetExpirationDateFromTokenTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="170" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="170" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a205fc84d0ed9276a0d853f0f20226b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test09IsTokenExpiredTest</definition>
+        <argsstring>()</argsstring>
+        <name>test09IsTokenExpiredTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test09IsTokenExpiredTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="183" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="183" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a18cc4c32a57cf79ccef7f3e7fc47850d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.util.JwtTokenUtilTest.test10CanTokenBeRefreshedIgnoreTokenExpirationFailsTest</definition>
+        <argsstring>()</argsstring>
+        <name>test10CanTokenBeRefreshedIgnoreTokenExpirationFailsTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.util.JwtTokenUtilTest.test10CanTokenBeRefreshedIgnoreTokenExpirationFailsTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="196" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="196" bodyend="211"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.util.JwtTokenUtilTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.base.BaseTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.util.JwtTokenUtilTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.base.BaseTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" line="39" column="7" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/util/JwtTokenUtilTest.java" bodystart="39" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a587bbb5a6da52836d6c27ddbcbcd7925" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>BaseTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a38e27fbcb12617b4b4b262b56d4a1587" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a15155a7c3c6a60bff6036760f774fa6c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a7d0e593ddbaf2eabff8ea982acc861cd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>getPropertyHolderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1a33b5802b23cd5b8e47921cecfc6e99cc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>getPropertyValueFromMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a8037e10ec4327a079d50e3581387b565" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a54db990b13411a2b72f0a01880dac0c9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>jwtTokenUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a85f58e307abafe27143a3fef4483055d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1base_1_1_base_test_1af802cb5678f2e16b4411282c6cf57f1b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>putPropertyIntoMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ad77fd9dac9006eacea8221f195ee4594" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test01GenerateToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a0af73962aa69bd1e9c1e525fd12d3b85" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test02ValidateTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ac6bcaff265ecc9fc2624e4a28068c56c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test03RefreshTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1abf1be984bc0ff03ca41b607cdd485097" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test04CanTokenBeRefreshedTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a7c1444794c4db853d092e3cb1caed6a8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test05GetIpAddressFromTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ac44cb3ee384f53d452b77c9c781ea197" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test06getAuthoritiesFromTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a1676773faf11f0013ae653ec9c72c183" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test07getAudienceFromTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a27c0434028d31f0bcec7669c16e0935d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test08GetExpirationDateFromTokenTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a205fc84d0ed9276a0d853f0f20226b93" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test09IsTokenExpiredTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a18cc4c32a57cf79ccef7f3e7fc47850d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>test10CanTokenBeRefreshedIgnoreTokenExpirationFailsTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a0c0987413d718ab06991c93654f3b468" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>token</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1ab6893498e2c6c60b0789cf842d308cfb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>tokenIp</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_jwt_token_util_test_1a380277d05c2347d7712a37728e6c8b31" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::util::JwtTokenUtilTest</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

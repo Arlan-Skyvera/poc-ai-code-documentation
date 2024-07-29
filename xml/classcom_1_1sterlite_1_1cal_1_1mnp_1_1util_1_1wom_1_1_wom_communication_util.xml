@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a3e9dd9aa8f2c4422aeb3d3ce2fdae590" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(WomCommunicationUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="56" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a6a6abdf5ec56dfb351cf823cd58b2236" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.PREFIX_VAL</definition>
+        <argsstring></argsstring>
+        <name>PREFIX_VAL</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.PREFIX_VAL</qualifiedname>
+        <initializer>=&quot;355&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="58" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1abf1731e0c63d0d23ba3300f4ef97a46f" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="61" column="19" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1acfa935c2211ae61338b52f4e621996b9" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1wom_1_1core_1_1integration_1_1_i_w_o_m_operation_integration_service" kindref="compound">IWOMOperationIntegrationService</ref></type>
+        <definition>IWOMOperationIntegrationService com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.womIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>womIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.womIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="69" column="41" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ae455d786947c625e66fa0ed751f57803" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client" kindref="compound">CRMRestClient</ref></type>
+        <definition>CRMRestClient com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.crmRestClient</definition>
+        <argsstring></argsstring>
+        <name>crmRestClient</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.crmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="73" column="23" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1aa108e0295e45a3db58bd1e9b34e2b7de" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1integration_1_1impl_1_1_m_n_p_integration_service" kindref="compound">MNPIntegrationService</ref></type>
+        <definition>MNPIntegrationService com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.mnpIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>mnpIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.mnpIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="76" column="31" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a22570afa5df23058c4e5c10795c5b1aa" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.accessKey</definition>
+        <argsstring></argsstring>
+        <name>accessKey</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.accessKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="80" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1abbf1ae5519d81acf431ba2abba6b3ed5" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1common_1_1_n_p_util_function" kindref="compound">NPUtilFunction</ref></type>
+        <definition>NPUtilFunction com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.npUtil</definition>
+        <argsstring></argsstring>
+        <name>npUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.npUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="84" column="24" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1afe0b87069504715c8972949b6106bbf7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.pccURL</definition>
+        <argsstring></argsstring>
+        <name>pccURL</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.pccURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="87" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a546d1d3feea2cc36fbb47d9e25e67781" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getMonetaryAPIURL</definition>
+        <argsstring></argsstring>
+        <name>getMonetaryAPIURL</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getMonetaryAPIURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="89" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1af8089d3593bc78dd8349777e9027cf59" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1_m_n_p_util" kindref="compound">MNPUtil</ref></type>
+        <definition>MNPUtil com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.mnpUtil</definition>
+        <argsstring></argsstring>
+        <name>mnpUtil</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.mnpUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="66" column="9" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a24fefb87444d06be06a29883b463d568" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.callToWOMForNPPortOut</definition>
+        <argsstring>(Object npRequestObject)</argsstring>
+        <name>callToWOMForNPPortOut</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.callToWOMForNPPortOut</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>npRequestObject</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="94" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="94" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a840360818feaf4a0f05e3952a693d38b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt; String &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNumbersFromPortingdetails</definition>
+        <argsstring>(Portingdetails portingdetails)</argsstring>
+        <name>getNumbersFromPortingdetails</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNumbersFromPortingdetails</qualifiedname>
+        <param>
+          <type>Portingdetails</type>
+          <declname>portingdetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="981" column="13" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="981" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a5c7cf950db787cced76aa4146304700b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.callToWOMForUpdateOrder</definition>
+        <argsstring>(Object requestObject)</argsstring>
+        <name>callToWOMForUpdateOrder</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.callToWOMForUpdateOrder</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>requestObject</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1172" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1172" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1adedc7a8563d79c9c49bce67bb61f2873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNPRequestMobileFixType</definition>
+        <argsstring>(Portingdetails portingdetails)</argsstring>
+        <name>getNPRequestMobileFixType</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNPRequestMobileFixType</qualifiedname>
+        <param>
+          <type>Portingdetails</type>
+          <declname>portingdetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1256" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1256" bodyend="1302"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1af41792f30c5407e178f804249895efd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNPRequestChargingPattern</definition>
+        <argsstring>(Portingdetails portingdetails)</argsstring>
+        <name>getNPRequestChargingPattern</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getNPRequestChargingPattern</qualifiedname>
+        <param>
+          <type>Portingdetails</type>
+          <declname>portingdetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1304" column="15" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1304" bodyend="1350"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ad520dc036f2527fc289c5d12e47dd09c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItems</definition>
+        <argsstring>(Nprequestforportout nprequestforportout, Map&lt; String, Object &gt; customMap)</argsstring>
+        <name>prepareOrderLineItems</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItems</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1portout_1_1nprequest_1_1_nprequestforportout" kindref="compound">Nprequestforportout</ref></type>
+          <declname>nprequestforportout</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="258" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="258" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a33303bc0338765f3b99ea411cb6f8796" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPAbort</definition>
+        <argsstring>(Npabort npAbort)</argsstring>
+        <name>prepareOrderLineItemForNPAbort</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPAbort</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1npabort_1_1_npabort" kindref="compound">Npabort</ref></type>
+          <declname>npAbort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="357" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="357" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a5eb71e4345f988952c28e8e3d0b68c26" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPBroadcast</definition>
+        <argsstring>(Npbroadcast npbroadcast)</argsstring>
+        <name>prepareOrderLineItemForNPBroadcast</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPBroadcast</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1broadcast_1_1_npbroadcast" kindref="compound">Npbroadcast</ref></type>
+          <declname>npbroadcast</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>-<mdash/>end -----------<mdash/></para>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="409" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="409" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a29c9b7a967f6216619e3ade69ea2b041" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPExec</definition>
+        <argsstring>(Npexec exec)</argsstring>
+        <name>prepareOrderLineItemForNPExec</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPExec</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1npexec_1_1_npexec" kindref="compound">Npexec</ref></type>
+          <declname>exec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="536" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="536" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a2bb26ba819d5626a675b6850fa89a52c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.ProductWrapperData &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.ProductWrapperData &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getProductWrapperDatas</definition>
+        <argsstring>(Map&lt; String, Object &gt; customMap, String number)</argsstring>
+        <name>getProductWrapperDatas</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getProductWrapperDatas</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="611" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="611" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a78d884243f56c8fa479007e7fec91c44" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareNPResponseOrder</definition>
+        <argsstring>(Map&lt; String, Object &gt; customMap, List&lt; NPPortOutWOMOrder.OrderLineItems &gt; listOfOrderLineItems, Nprequestforportout nprequestforportout, List&lt; String &gt; numbers)</argsstring>
+        <name>prepareNPResponseOrder</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareNPResponseOrder</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <param>
+          <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+          <declname>listOfOrderLineItems</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1portout_1_1nprequest_1_1_nprequestforportout" kindref="compound">Nprequestforportout</ref></type>
+          <declname>nprequestforportout</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>numbers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="631" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="631" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a46eb46c913da027ca22170e981ee44d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareValidationOrder</definition>
+        <argsstring>(Map&lt; String, Object &gt; customMap, List&lt; NPPortOutWOMOrder.OrderLineItems &gt; listOfOrderLineItems, Nprequestforportout nprequestforportout, List&lt; String &gt; numbers, String npRequestMobileFixType, String npRequestChargingPattern)</argsstring>
+        <name>prepareValidationOrder</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareValidationOrder</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <param>
+          <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+          <declname>listOfOrderLineItems</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1portout_1_1nprequest_1_1_nprequestforportout" kindref="compound">Nprequestforportout</ref></type>
+          <declname>nprequestforportout</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>npRequestMobileFixType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>npRequestChargingPattern</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="766" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="766" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a71a3b7b28f6d47f4420b7d2269edbb2d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareCRMOrder</definition>
+        <argsstring>(Map&lt; String, Object &gt; customMap, List&lt; NPPortOutWOMOrder.OrderLineItems &gt; listOfOrderLineItems, Nprequestforportout nprequestforportout, List&lt; String &gt; numbers)</argsstring>
+        <name>prepareCRMOrder</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareCRMOrder</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>customMap</declname>
+        </param>
+        <param>
+          <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+          <declname>listOfOrderLineItems</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1portout_1_1nprequest_1_1_nprequestforportout" kindref="compound">Nprequestforportout</ref></type>
+          <declname>nprequestforportout</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>numbers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="824" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="824" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ae9486c6932f2681a9c383f9a137512fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPDisconnect</definition>
+        <argsstring>(Npdisconnect npDisconnect)</argsstring>
+        <name>prepareOrderLineItemForNPDisconnect</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNPDisconnect</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1repat_1_1valueobjects_1_1npdisconnect_1_1_npdisconnect" kindref="compound">Npdisconnect</ref></type>
+          <declname>npDisconnect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>-<mdash/>end -----------<mdash/></para>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1047" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1047" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a143148c0dd109921697bb1363b9e761f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; NPPortOutWOMOrder.OrderLineItems &gt;</type>
+        <definition>List&lt; NPPortOutWOMOrder.OrderLineItems &gt; com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNpcancelled</definition>
+        <argsstring>(Npcancelledbycrdc npcancel)</argsstring>
+        <name>prepareOrderLineItemForNpcancelled</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.prepareOrderLineItemForNpcancelled</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1npcancelledbycrdc_1_1_npcancelledbycrdc" kindref="compound">Npcancelledbycrdc</ref></type>
+          <declname>npcancel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1351" column="14" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1351" bodyend="1411"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1adc042a354dc0795e524cf9a5d5e87614" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getServiceTypeForFixed</definition>
+        <argsstring>(List&lt; String &gt; numbers)</argsstring>
+        <name>getServiceTypeForFixed</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.getServiceTypeForFixed</qualifiedname>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>numbers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1426" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1426" bodyend="1448"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1aee505593c22380c0711fcde935022b32" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.changeNumber</definition>
+        <argsstring>(String originalNo, String prefixVal)</argsstring>
+        <name>changeNumber</name>
+        <qualifiedname>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil.changeNumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>originalNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>prefixVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="1413" column="23" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="1413" bodyend="1424"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.util.wom.WomCommunicationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mnpUtil</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.mnp.repositories.MNPPortoutRelRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_portout_rel_repo"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.mnp.repositories.MNPPortoutRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_portout_repo"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.mnp.repositories.MNPRelationRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_relation_repo"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.mnp.repositories.MNPRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_m_n_p_repository"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.mnp.repositories.RepatReceiveRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_receive_repo"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.mnp.repositories.RepatReturnRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1mnp_1_1repositories_1_1_repat_return_repo"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.mnp.util.MNPUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1_m_n_p_util"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mnpRepo</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>relationRepo</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>repatreturnRepo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>repatreceiveRepo</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mnpPortOutRepo</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mnpRelPortOutRepo</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>JpaRepository&lt; MNPMaster, Long &gt;</label>
+      </node>
+      <node id="13">
+        <label>JpaRepository&lt; MNPPortoutMaster, Long &gt;</label>
+      </node>
+      <node id="15">
+        <label>JpaRepository&lt; MNPPortoutRelation, Long &gt;</label>
+      </node>
+      <node id="7">
+        <label>JpaRepository&lt; MNPRelation, Long &gt;</label>
+      </node>
+      <node id="11">
+        <label>JpaRepository&lt; RepatReceiveMaster, Long &gt;</label>
+      </node>
+      <node id="9">
+        <label>JpaRepository&lt; RepatReturnMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" line="52" column="7" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/util/wom/WomCommunicationUtil.java" bodystart="52" bodyend="1449"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a22570afa5df23058c4e5c10795c5b1aa" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>accessKey</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a24fefb87444d06be06a29883b463d568" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>callToWOMForNPPortOut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a5c7cf950db787cced76aa4146304700b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>callToWOMForUpdateOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1aee505593c22380c0711fcde935022b32" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>changeNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ae455d786947c625e66fa0ed751f57803" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>crmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a546d1d3feea2cc36fbb47d9e25e67781" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getMonetaryAPIURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1af41792f30c5407e178f804249895efd8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getNPRequestChargingPattern</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1adedc7a8563d79c9c49bce67bb61f2873" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getNPRequestMobileFixType</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a840360818feaf4a0f05e3952a693d38b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getNumbersFromPortingdetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a2bb26ba819d5626a675b6850fa89a52c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getProductWrapperDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1adc042a354dc0795e524cf9a5d5e87614" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>getServiceTypeForFixed</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1abf1731e0c63d0d23ba3300f4ef97a46f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a3e9dd9aa8f2c4422aeb3d3ce2fdae590" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1aa108e0295e45a3db58bd1e9b34e2b7de" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>mnpIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1af8089d3593bc78dd8349777e9027cf59" prot="package" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>mnpUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1abbf1ae5519d81acf431ba2abba6b3ed5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>npUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1afe0b87069504715c8972949b6106bbf7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>pccURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a6a6abdf5ec56dfb351cf823cd58b2236" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>PREFIX_VAL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a71a3b7b28f6d47f4420b7d2269edbb2d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareCRMOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a78d884243f56c8fa479007e7fec91c44" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareNPResponseOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a33303bc0338765f3b99ea411cb6f8796" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItemForNPAbort</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a5eb71e4345f988952c28e8e3d0b68c26" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItemForNPBroadcast</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a143148c0dd109921697bb1363b9e761f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItemForNpcancelled</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ae9486c6932f2681a9c383f9a137512fb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItemForNPDisconnect</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a29c9b7a967f6216619e3ade69ea2b041" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItemForNPExec</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1ad520dc036f2527fc289c5d12e47dd09c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareOrderLineItems</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1a46eb46c913da027ca22170e981ee44d2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>prepareValidationOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1util_1_1wom_1_1_wom_communication_util_1acfa935c2211ae61338b52f4e621996b9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::util::wom::WomCommunicationUtil</scope><name>womIntegrationService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

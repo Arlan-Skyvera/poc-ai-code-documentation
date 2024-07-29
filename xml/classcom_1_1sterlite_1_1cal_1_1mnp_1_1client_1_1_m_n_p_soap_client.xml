@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::mnp::client::MNPSoapClient</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a2db62160291b58ca4130ea527a14bdfa" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.mnp.client.MNPSoapClient.LOG</definition>
+        <argsstring></argsstring>
+        <name>LOG</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.LOG</qualifiedname>
+        <initializer>= ILogger.getInstant(MNPSoapClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="23" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ab5b7c3f5b0ef37d3e1279cb361014756" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.esbserviceURL</definition>
+        <argsstring></argsstring>
+        <name>esbserviceURL</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.esbserviceURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="26" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a6693b300e0968d6ff0500165e85f7800" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpRequest</definition>
+        <argsstring></argsstring>
+        <name>soapActionnpRequest</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="29" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a807dac55c3fa71f6fefa8ee87981038f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpExec</definition>
+        <argsstring></argsstring>
+        <name>soapActionnpExec</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpExec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="32" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ad4460ffa5707eeb49b33d4eafaf8bdbc" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpAbort</definition>
+        <argsstring></argsstring>
+        <name>soapActionnpAbort</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpAbort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="35" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ad2149a0e926c2428fee5745b7bda4f33" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpBroadcast</definition>
+        <argsstring></argsstring>
+        <name>soapActionnpBroadcast</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnpBroadcast</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="38" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a7539d711d3eb06974ac1d2d285d66402" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.esbNPDisconnect</definition>
+        <argsstring></argsstring>
+        <name>esbNPDisconnect</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.esbNPDisconnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="44" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a9d68605ed10cff66ba8622ad678318f2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.esbNPNumberInfo</definition>
+        <argsstring></argsstring>
+        <name>esbNPNumberInfo</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.esbNPNumberInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="47" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a42912a8e24c635c124835e2799f5d7a6" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.esbNPGatePoll</definition>
+        <argsstring></argsstring>
+        <name>esbNPGatePoll</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.esbNPGatePoll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="50" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a3c03c3ccd2c62b4bd31fe4631b823f58" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.esbNPRoutingInfo</definition>
+        <argsstring></argsstring>
+        <name>esbNPRoutingInfo</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.esbNPRoutingInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="53" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a76ba1a8287f09da6a033c5bd0edbe721" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdiscrejected</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPdiscrejected</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdiscrejected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="60" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1acd893e6361cead80f8142a14e5a06bf8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdeactdone</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPdeactdone</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdeactdone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="63" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1aaa01b3fde160a1d1b92446cf413f2808" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdiscaccepted</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPdiscaccepted</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdiscaccepted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="66" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a5404c37ac7fb683bb65b63934f696aba" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdeactivatedReturn</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPdeactivatedReturn</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdeactivatedReturn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="69" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a53313561fa4a05412f8dab24bad403bb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnNPdisconnected</definition>
+        <argsstring></argsstring>
+        <name>soapActionnNPdisconnected</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionnNPdisconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="72" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1aa286da8b56c68a423f7192a80a3fdc93" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPresponseforportout</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPresponseforportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPresponseforportout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="77" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a51a50b5d98b00f32a4d143c9f0c10f1f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPReadyforportout</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPReadyforportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPReadyforportout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="80" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ac53cc16e8b20b78367e2990bf711409c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPAbortactivatedportout</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPAbortactivatedportout</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPAbortactivatedportout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="83" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a1407f4f582196d14342396152cf8b4e8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdone</definition>
+        <argsstring></argsstring>
+        <name>soapActionNPdone</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.soapActionNPdone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="86" column="16" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a5af488eb8187fdc5f27aeb720ee5348c" prot="private" static="no" mutable="no">
+        <type>Jaxb2Marshaller</type>
+        <definition>Jaxb2Marshaller com.sterlite.cal.mnp.client.MNPSoapClient.jaxBMarshaller</definition>
+        <argsstring></argsstring>
+        <name>jaxBMarshaller</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.jaxBMarshaller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="93" column="25" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a0f8655c9d17e48c8fd2fe42659711fc8" prot="private" static="no" mutable="no">
+        <type>WebServiceTemplate</type>
+        <definition>WebServiceTemplate com.sterlite.cal.mnp.client.MNPSoapClient.webServiceTemplate</definition>
+        <argsstring></argsstring>
+        <name>webServiceTemplate</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.webServiceTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="95" column="28" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a8090cc4a550a134742b544c20260a231" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1_npsoapserverresponse" kindref="compound">Npsoapserverresponse</ref></type>
+        <definition>Npsoapserverresponse com.sterlite.cal.mnp.client.MNPSoapClient.getNpSoapServerResponse</definition>
+        <argsstring>(Object request, String requestType)</argsstring>
+        <name>getNpSoapServerResponse</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.getNpSoapServerResponse</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>-----<mdash/>end ---<mdash/></para>
+<para>-----<mdash/>end ---<mdash/></para>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="100" column="29" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="100" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a865775d3d0a8595e29689d91b1c43577" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1_npsoapserverresponse" kindref="compound">Npsoapserverresponse</ref></type>
+        <definition>Npsoapserverresponse com.sterlite.cal.mnp.client.MNPSoapClient.getNPSOAPServerResponseForRepat</definition>
+        <argsstring>(Npsoapserverresponse npsoapserverresponse, Object request, String requestType)</argsstring>
+        <name>getNPSOAPServerResponseForRepat</name>
+        <qualifiedname>com.sterlite.cal.mnp.client.MNPSoapClient.getNPSOAPServerResponseForRepat</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1service_1_1value_objects_1_1_npsoapserverresponse" kindref="compound">Npsoapserverresponse</ref></type>
+          <declname>npsoapserverresponse</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="185" column="30" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="185" bodyend="214"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.mnp.client.MNPSoapClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOG</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" line="21" column="7" bodyfile="repository/mnp/src/main/java/com/sterlite/cal/mnp/client/MNPSoapClient.java" bodystart="21" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a7539d711d3eb06974ac1d2d285d66402" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>esbNPDisconnect</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a42912a8e24c635c124835e2799f5d7a6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>esbNPGatePoll</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a9d68605ed10cff66ba8622ad678318f2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>esbNPNumberInfo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a3c03c3ccd2c62b4bd31fe4631b823f58" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>esbNPRoutingInfo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ab5b7c3f5b0ef37d3e1279cb361014756" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>esbserviceURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a8090cc4a550a134742b544c20260a231" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>getNpSoapServerResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a865775d3d0a8595e29689d91b1c43577" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>getNPSOAPServerResponseForRepat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a5af488eb8187fdc5f27aeb720ee5348c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>jaxBMarshaller</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a2db62160291b58ca4130ea527a14bdfa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>LOG</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a53313561fa4a05412f8dab24bad403bb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionnNPdisconnected</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ad4460ffa5707eeb49b33d4eafaf8bdbc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionnpAbort</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ac53cc16e8b20b78367e2990bf711409c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPAbortactivatedportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1ad2149a0e926c2428fee5745b7bda4f33" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionnpBroadcast</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1acd893e6361cead80f8142a14e5a06bf8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPdeactdone</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a5404c37ac7fb683bb65b63934f696aba" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPdeactivatedReturn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1aaa01b3fde160a1d1b92446cf413f2808" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPdiscaccepted</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a76ba1a8287f09da6a033c5bd0edbe721" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPdiscrejected</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a1407f4f582196d14342396152cf8b4e8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPdone</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a807dac55c3fa71f6fefa8ee87981038f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionnpExec</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a51a50b5d98b00f32a4d143c9f0c10f1f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPReadyforportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a6693b300e0968d6ff0500165e85f7800" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionnpRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1aa286da8b56c68a423f7192a80a3fdc93" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>soapActionNPresponseforportout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1mnp_1_1client_1_1_m_n_p_soap_client_1a0f8655c9d17e48c8fd2fe42659711fc8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::mnp::client::MNPSoapClient</scope><name>webServiceTemplate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

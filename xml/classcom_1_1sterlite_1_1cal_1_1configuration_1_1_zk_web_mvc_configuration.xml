@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::configuration::ZkWebMvcConfiguration</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">WebMvcConfigurer</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1ab53d603da02fa1d25f69f2ca4b894c74" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.configuration.ZkWebMvcConfiguration.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(ZkWebMvcConfiguration.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="20" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a79b9f0e2bdeec667e4f85b881ce62d46" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties" kindref="compound">ZkProperties</ref></type>
+        <definition>final ZkProperties com.sterlite.cal.configuration.ZkWebMvcConfiguration.zkProperties</definition>
+        <argsstring></argsstring>
+        <name>zkProperties</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.zkProperties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="22" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1ae0ee3e6532dd09ff6c7ab957abbaf258" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.configuration.ZkWebMvcConfiguration.ZkWebMvcConfiguration</definition>
+        <argsstring>(ZkProperties zkProperties)</argsstring>
+        <name>ZkWebMvcConfiguration</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.ZkWebMvcConfiguration</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_properties" kindref="compound">ZkProperties</ref></type>
+          <declname>zkProperties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="24" column="8" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a86534ab4c31c26fc4eeb374e8be87bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkWebMvcConfiguration.configureViewResolvers</definition>
+        <argsstring>(ViewResolverRegistry registry)</argsstring>
+        <name>configureViewResolvers</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.configureViewResolvers</qualifiedname>
+        <param>
+          <type>ViewResolverRegistry</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="29" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1aba6b638d9407a68b1c23685d75d05127" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.ZkWebMvcConfiguration.addResourceHandlers</definition>
+        <argsstring>(ResourceHandlerRegistry registry)</argsstring>
+        <name>addResourceHandlers</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.addResourceHandlers</qualifiedname>
+        <param>
+          <type>ResourceHandlerRegistry</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="63" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="63" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a2bf09c349aebc69bb5b26dfa8d29cfa5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ViewResolver</type>
+        <definition>ViewResolver com.sterlite.cal.configuration.ZkWebMvcConfiguration.zkViewResolver</definition>
+        <argsstring>()</argsstring>
+        <name>zkViewResolver</name>
+        <qualifiedname>com.sterlite.cal.configuration.ZkWebMvcConfiguration.zkViewResolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="40" column="24" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="40" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.configuration.ZkWebMvcConfiguration</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>WebMvcConfigurer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.configuration.ZkWebMvcConfiguration</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>WebMvcConfigurer</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" line="19" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/ZkWebMvcConfiguration.java" bodystart="19" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1aba6b638d9407a68b1c23685d75d05127" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>addResourceHandlers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a86534ab4c31c26fc4eeb374e8be87bae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>configureViewResolvers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1ab53d603da02fa1d25f69f2ca4b894c74" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a79b9f0e2bdeec667e4f85b881ce62d46" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>zkProperties</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1a2bf09c349aebc69bb5b26dfa8d29cfa5" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>zkViewResolver</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1_zk_web_mvc_configuration_1ae0ee3e6532dd09ff6c7ab957abbaf258" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::ZkWebMvcConfiguration</scope><name>ZkWebMvcConfiguration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

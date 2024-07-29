@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::configuration::zats::ZatsSpringBootContextLoaderListener</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ContextLoaderListener</basecompoundref>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listene3db790374fb8f8c226792896df294c0f" prot="public">com::sterlite::cal::configuration::zats::ZatsSpringBootContextLoaderListener::ZatsSpringBootServletInitializer</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a0c083bd6f6486ae0077ea4f3914d40db" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(ZatsSpringBootContextLoaderListener.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" line="20" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a730b948c5c5aa40e86d2588d9077185d" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.CONTEXT_CONFIG_LOCATION</definition>
+        <argsstring></argsstring>
+        <name>CONTEXT_CONFIG_LOCATION</name>
+        <qualifiedname>com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.CONTEXT_CONFIG_LOCATION</qualifiedname>
+        <initializer>= &quot;contextConfigLocation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" line="21" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a3f2034f05c93c1fd4d8f2dce7b879d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.contextInitialized</definition>
+        <argsstring>(ServletContextEvent sce)</argsstring>
+        <name>contextInitialized</name>
+        <qualifiedname>com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener.contextInitialized</qualifiedname>
+        <param>
+          <type>ServletContextEvent</type>
+          <declname>sce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" line="24" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" bodystart="24" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>experimental ContextLoaderListener to load a spring boot application context using ZATS&apos; embedded jetty </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ContextLoaderListener</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.configuration.zats.ZatsSpringBootContextLoaderListener</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ContextLoaderListener</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" line="18" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/configuration/zats/ZatsSpringBootContextLoaderListener.java" bodystart="18" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a730b948c5c5aa40e86d2588d9077185d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::zats::ZatsSpringBootContextLoaderListener</scope><name>CONTEXT_CONFIG_LOCATION</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a3f2034f05c93c1fd4d8f2dce7b879d35" prot="public" virt="non-virtual"><scope>com::sterlite::cal::configuration::zats::ZatsSpringBootContextLoaderListener</scope><name>contextInitialized</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1configuration_1_1zats_1_1_zats_spring_boot_context_loader_listener_1a0c083bd6f6486ae0077ea4f3914d40db" prot="private" virt="non-virtual"><scope>com::sterlite::cal::configuration::zats::ZatsSpringBootContextLoaderListener</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

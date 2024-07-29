@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">OncePerRequestFilter</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a9f7cb273e2e562e2bce55af91686c453" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(AuthenticationTokenFilter.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="38" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a7302349403164bc09799c4010ee67668" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="43" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1ad43c12d853348de8ff99feac0e3dd4d4" prot="private" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="41" column="21" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a33f2e10bab670de338d7c78eeb7fc858" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_jwt_authentication_token_factory" kindref="compound">JwtAuthenticationTokenFactory</ref></type>
+        <definition>JwtAuthenticationTokenFactory com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.jwtAuthenticationTokenFactory</definition>
+        <argsstring></argsstring>
+        <name>jwtAuthenticationTokenFactory</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.jwtAuthenticationTokenFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="46" column="39" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a2d13394482eb8ed915097bf7e8a13f19" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1factory_1_1_keycloak_authentication_token_factory" kindref="compound">KeycloakAuthenticationTokenFactory</ref></type>
+        <definition>KeycloakAuthenticationTokenFactory com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.keycloakAuthenticationTokenFactory</definition>
+        <argsstring></argsstring>
+        <name>keycloakAuthenticationTokenFactory</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.keycloakAuthenticationTokenFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="49" column="44" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1ab6b2e3007ec7beed037c7ddbaef536a3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.doFilterInternal</definition>
+        <argsstring>(HttpServletRequest request, HttpServletResponse response, FilterChain chain)</argsstring>
+        <name>doFilterInternal</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.doFilterInternal</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>FilterChain</type>
+          <declname>chain</declname>
+        </param>
+        <exceptions> throws ServletException, IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="52" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="52" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a5d77fb38aaf116539e270b9bfbfbcbc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.getAPIConfig</definition>
+        <argsstring>(String method, String requestPath)</argsstring>
+        <name>getAPIConfig</name>
+        <qualifiedname>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter.getAPIConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="95" column="19" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="95" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+<simplesect kind="since"><para>April 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OncePerRequestFilter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.filter.AuthenticationTokenFilter</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OncePerRequestFilter</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" line="36" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/security/filter/AuthenticationTokenFilter.java" bodystart="36" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1ab6b2e3007ec7beed037c7ddbaef536a3" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>doFilterInternal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1ad43c12d853348de8ff99feac0e3dd4d4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a5d77fb38aaf116539e270b9bfbfbcbc0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>getAPIConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a33f2e10bab670de338d7c78eeb7fc858" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>jwtAuthenticationTokenFactory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a7302349403164bc09799c4010ee67668" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a2d13394482eb8ed915097bf7e8a13f19" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>keycloakAuthenticationTokenFactory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1filter_1_1_authentication_token_filter_1a9f7cb273e2e562e2bce55af91686c453" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::security::filter::AuthenticationTokenFilter</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

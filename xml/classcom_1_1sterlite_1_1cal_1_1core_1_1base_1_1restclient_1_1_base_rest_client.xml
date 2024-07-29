@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::restclient::BaseRestClient</compoundname>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1payment_1_1service_1_1impl_1_1_payment_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.payment.service.impl.PaymentOperationService</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract" prot="public" virt="non-virtual">com.sterlite.cal.cbm.utils.DNotificationUtilContract</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BRMRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.CRMRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.CampaignRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_ln_r_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.LnRRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.PCCRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_r_m_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.PRMRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.WOMRestClient</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util" prot="public" virt="non-virtual">com.sterlite.cal.dNotification.util.DNoticiationUtil</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util" prot="public" virt="non-virtual">com.sterlite.cal.ivr.utils.DNotificationUtil</derivedcompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a36c877be1c0cfeb057393776bc90685f" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.restclient.BaseRestClient.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BaseRestClient.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="29" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aa73b63d523ad52cef22f1c066f112456" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.sterlite.cal.core.base.restclient.BaseRestClient.apiLogger</definition>
+        <argsstring></argsstring>
+        <name>apiLogger</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.apiLogger</qualifiedname>
+        <initializer>= LogManager.getLogger(&quot;event-api-log&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="30" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aced82792bd71526e6835265844201455" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int com.sterlite.cal.core.base.restclient.BaseRestClient.INTERNAL_SERVER_ERROR_CODE</definition>
+        <argsstring></argsstring>
+        <name>INTERNAL_SERVER_ERROR_CODE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.INTERNAL_SERVER_ERROR_CODE</qualifiedname>
+        <initializer>= 500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="31" column="26" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a3a3c958f29b6b65013943e4f08d33d14" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.restclient.BaseRestClient.INTERNAL_SERVER_ERROR_MESSAGE</definition>
+        <argsstring></argsstring>
+        <name>INTERNAL_SERVER_ERROR_MESSAGE</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.INTERNAL_SERVER_ERROR_MESSAGE</qualifiedname>
+        <initializer>= &quot;Internal Server Error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="32" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a751328316f6341f3c04d92f4f03a1a8e" prot="private" static="no" mutable="no">
+        <type>RestTemplate</type>
+        <definition>RestTemplate com.sterlite.cal.core.base.restclient.BaseRestClient.restTemplate</definition>
+        <argsstring></argsstring>
+        <name>restTemplate</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.restTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="35" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a33c7fa334ee906107b8ce34401e63f1f" prot="private" static="no" mutable="no">
+        <type>RestTemplate</type>
+        <definition>RestTemplate com.sterlite.cal.core.base.restclient.BaseRestClient.restPatchTemplate</definition>
+        <argsstring></argsstring>
+        <name>restPatchTemplate</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.restPatchTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="38" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final&lt; T &gt; T</type>
+        <definition>final&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="40" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="40" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final&lt; T &gt; T</type>
+        <definition>final&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.patchForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>patchForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.patchForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="99" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="99" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final&lt; T &gt; T</type>
+        <definition>final&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.putForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>putForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.putForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="125" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="125" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final&lt; T &gt; T</type>
+        <definition>final&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="152" column="20" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="152" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="67" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="67" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.core.base.restclient.BaseRestClient.deleteForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>deleteForObject</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.deleteForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="177" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="177" bodyend="201"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a77268012a0a2af5d0063886198727683" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>static final void com.sterlite.cal.core.base.restclient.BaseRestClient.setHttpHeaders</definition>
+        <argsstring>(HttpHeaders headers, Map&lt; String, String &gt; requestHeaderParameters)</argsstring>
+        <name>setHttpHeaders</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.setHttpHeaders</qualifiedname>
+        <param>
+          <type>HttpHeaders</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>requestHeaderParameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="203" column="27" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="203" bodyend="213"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1af36831395bfa92f8ff37bacb1eb778d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.restclient.BaseRestClient.getURI</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>getURI</name>
+        <qualifiedname>com.sterlite.cal.core.base.restclient.BaseRestClient.getURI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="216" column="16" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="216" bodyend="233"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.payment.service.impl.PaymentOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1payment_1_1service_1_1impl_1_1_payment_operation_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.subscriber.integration.impl.SubscriberOperationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1integration_1_1impl_1_1_subscriber_operation_integration_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.cbm.utils.DNotificationUtilContract</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_d_notification_util_contract"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.restclient.CRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.core.base.restclient.CampaignRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_campaign_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.core.base.restclient.LnRRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_ln_r_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.core.base.restclient.PCCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.core.base.restclient.PRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_r_m_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>com.sterlite.cal.core.base.restclient.WOMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.core.security.integrationImpl.AuthenticationIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1integration_impl_1_1_authentication_integration_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>com.sterlite.cal.dNotification.util.DNoticiationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>com.sterlite.cal.ivr.utils.DNotificationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_d_notification_util"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" line="27" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/restclient/BaseRestClient.java" bodystart="27" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aa73b63d523ad52cef22f1c066f112456" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>apiLogger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1af36831395bfa92f8ff37bacb1eb778d2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>getURI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aced82792bd71526e6835265844201455" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>INTERNAL_SERVER_ERROR_CODE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a3a3c958f29b6b65013943e4f08d33d14" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>INTERNAL_SERVER_ERROR_MESSAGE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a36c877be1c0cfeb057393776bc90685f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a33c7fa334ee906107b8ce34401e63f1f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>restPatchTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a751328316f6341f3c04d92f4f03a1a8e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>restTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a77268012a0a2af5d0063886198727683" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::restclient::BaseRestClient</scope><name>setHttpHeaders</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

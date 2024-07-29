@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::creditlimit::respository::CreditLimitRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; CreditLimitEntity, Integer &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a1db0534160ad7ac4382de5b622103a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1creditlimit_1_1dataobjects_1_1_credit_limit_entity" kindref="compound">CreditLimitEntity</ref></type>
+        <definition>CreditLimitEntity com.sterlite.cal.creditlimit.respository.CreditLimitRepository.getCreditLimitByAccountNumber</definition>
+        <argsstring>(@Param(&quot;accountNumber&quot;) String accountNumber)</argsstring>
+        <name>getCreditLimitByAccountNumber</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.respository.CreditLimitRepository.getCreditLimitByAccountNumber</qualifiedname>
+        <param>
+          <type>@Param(&quot;accountNumber&quot;) String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/respository/CreditLimitRepository.java" line="15" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a96b5bcec31a8d72faa1d3db61342a6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.creditlimit.respository.CreditLimitRepository.updateCreditLimit</definition>
+        <argsstring>(@Param(&quot;accountNumber&quot;) String accountNumber, @Param(&quot;usedCR&quot;) double usedCR)</argsstring>
+        <name>updateCreditLimit</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.respository.CreditLimitRepository.updateCreditLimit</qualifiedname>
+        <param>
+          <type>@Param(&quot;accountNumber&quot;) String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;usedCR&quot;) double</type>
+          <declname>usedCR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/respository/CreditLimitRepository.java" line="20" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a7a8d5079eb6ed06d8364b28b07fa9c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.creditlimit.respository.CreditLimitRepository.updateCreditLimitCap</definition>
+        <argsstring>(@Param(&quot;accountNumber&quot;) String accountNumber, @Param(&quot;creditLimitCap&quot;) double creditLimitCap)</argsstring>
+        <name>updateCreditLimitCap</name>
+        <qualifiedname>com.sterlite.cal.creditlimit.respository.CreditLimitRepository.updateCreditLimitCap</qualifiedname>
+        <param>
+          <type>@Param(&quot;accountNumber&quot;) String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;creditLimitCap&quot;) double</type>
+          <declname>creditLimitCap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/respository/CreditLimitRepository.java" line="25" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.creditlimit.respository.CreditLimitRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; CreditLimitEntity, Integer &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.creditlimit.respository.CreditLimitRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; CreditLimitEntity, Integer &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/respository/CreditLimitRepository.java" line="12" column="18" bodyfile="repository/creditlimit/src/main/java/com/sterlite/cal/creditlimit/respository/CreditLimitRepository.java" bodystart="12" bodyend="28"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a1db0534160ad7ac4382de5b622103a48" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::respository::CreditLimitRepository</scope><name>getCreditLimitByAccountNumber</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a96b5bcec31a8d72faa1d3db61342a6ae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::respository::CreditLimitRepository</scope><name>updateCreditLimit</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1creditlimit_1_1respository_1_1_credit_limit_repository_1a7a8d5079eb6ed06d8364b28b07fa9c31" prot="public" virt="non-virtual"><scope>com::sterlite::cal::creditlimit::respository::CreditLimitRepository</scope><name>updateCreditLimitCap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

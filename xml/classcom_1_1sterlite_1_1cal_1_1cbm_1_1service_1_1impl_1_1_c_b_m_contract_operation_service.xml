@@ -1,0 +1,1898 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.cbm.service.ICBMContractOperationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1abe93e98266747408dd0ae26ad0fd00d5" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.impl.CBMContractOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMContractOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="55" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aeef8050975c60a46f03c0edc8ebd9031" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.ACTIVE</definition>
+        <argsstring></argsstring>
+        <name>ACTIVE</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.ACTIVE</qualifiedname>
+        <initializer>= &quot;ACTIVE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="56" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab5eccba9f4e4484aaa6404905c0dd9c6" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_repository" kindref="compound">ContractRepository</ref></type>
+        <definition>ContractRepository com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="58" column="28" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a1be9d2c42d05329b399a03df728f373c" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_info_repo" kindref="compound">ContractBudgetInfoRepo</ref></type>
+        <definition>ContractBudgetInfoRepo com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cbRepo</definition>
+        <argsstring></argsstring>
+        <name>cbRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cbRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="61" column="32" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aca1439dbbe36cd8b863fb1e972c18251" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_relation_repo" kindref="compound">ContractBudgetRelationRepo</ref></type>
+        <definition>ContractBudgetRelationRepo com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractRelationRepo</definition>
+        <argsstring></argsstring>
+        <name>contractRelationRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractRelationRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="64" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a363faf1b00a86f14142247eabc494d72" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_matrix_repo" kindref="compound">ContractBudgetMatrixRepo</ref></type>
+        <definition>ContractBudgetMatrixRepo com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cbmRepo</definition>
+        <argsstring></argsstring>
+        <name>cbmRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cbmRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="67" column="34" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5f9842bf58fbac3dde49b171852e1bbc" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_history_repository" kindref="compound">ContractHistoryRepository</ref></type>
+        <definition>ContractHistoryRepository com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractHistoryRepo</definition>
+        <argsstring></argsstring>
+        <name>contractHistoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractHistoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="70" column="35" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac2316f005c6ff780801e3b78b725387c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1validators_1_1_contract_validator" kindref="compound">ContractValidator</ref></type>
+        <definition>ContractValidator com.sterlite.cal.cbm.service.impl.CBMContractOperationService.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="73" column="27" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa94fef53f890d3b01f4dfcb0a05d87fd" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.cbm.service.impl.CBMContractOperationService.utils</definition>
+        <argsstring></argsstring>
+        <name>utils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.utils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="76" column="21" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0ec2848d8aa63127a2ddb994b422978c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_brm_common_utils" kindref="compound">BrmCommonUtils</ref></type>
+        <definition>BrmCommonUtils com.sterlite.cal.cbm.service.impl.CBMContractOperationService.brmCommonUtils</definition>
+        <argsstring></argsstring>
+        <name>brmCommonUtils</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.brmCommonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="79" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a66d3c5214a5c8b1162eda8c6f402303b" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service" kindref="compound">ICBMContractOperationService</ref></type>
+        <definition>ICBMContractOperationService com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractService</definition>
+        <argsstring></argsstring>
+        <name>contractService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="82" column="38" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6c73f502bae6f04250436a55343fa1d5" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_budget_operation_service" kindref="compound">ICBMBudgetOperationService</ref></type>
+        <definition>ICBMBudgetOperationService com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetService</definition>
+        <argsstring></argsstring>
+        <name>budgetService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="85" column="36" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a2b189b0063937d634e3c865dab8f5c7f" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_penalty_operation_service" kindref="compound">ICBMPenaltyOperationService</ref></type>
+        <definition>ICBMPenaltyOperationService com.sterlite.cal.cbm.service.impl.CBMContractOperationService.penaltyService</definition>
+        <argsstring></argsstring>
+        <name>penaltyService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.penaltyService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="88" column="37" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9acd32a689185701a084e7c81f0a94c2" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_d_nofication_i_v_r_service_contract" kindref="compound">DNoficationIVRServiceContract</ref></type>
+        <definition>DNoficationIVRServiceContract com.sterlite.cal.cbm.service.impl.CBMContractOperationService.dnotificationService</definition>
+        <argsstring></argsstring>
+        <name>dnotificationService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.dnotificationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="91" column="39" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3d7dd36a23a8a3b2bfd3d5a639749040" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_budget_details_repo" kindref="compound">BudgetDetailsRepo</ref></type>
+        <definition>BudgetDetailsRepo com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetdetailsRepo</definition>
+        <argsstring></argsstring>
+        <name>budgetdetailsRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetdetailsRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="94" column="27" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3ed16aaa543592348cc45d887bf050aa" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor12MonthsDuration</definition>
+        <argsstring></argsstring>
+        <name>renewEligibilityFor12MonthsDuration</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor12MonthsDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="100" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8180877f28b1099bf6de986b26b1ab08" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor24MonthsDuration</definition>
+        <argsstring></argsstring>
+        <name>renewEligibilityFor24MonthsDuration</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor24MonthsDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="103" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad4f5f109da27ece927a2be57f7d08c59" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor12MonthsForB2B</definition>
+        <argsstring></argsstring>
+        <name>renewEligibilityFor12MonthsForB2B</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor12MonthsForB2B</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="106" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a49ebd50acfb9188d04c8a79c54be3e24" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor24MonthsForB2B</definition>
+        <argsstring></argsstring>
+        <name>renewEligibilityFor24MonthsForB2B</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewEligibilityFor24MonthsForB2B</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="109" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a26f949e712bbe205172759c47db62bb6" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.cbm.service.impl.CBMContractOperationService.kafkaSendMessageEnable</definition>
+        <argsstring></argsstring>
+        <name>kafkaSendMessageEnable</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.kafkaSendMessageEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="112" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aceb1b3c6e84cc72ee4ec0797622909dc" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.cbm.service.impl.CBMContractOperationService.kafkaIntegrationEnable</definition>
+        <argsstring></argsstring>
+        <name>kafkaIntegrationEnable</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.kafkaIntegrationEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="115" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1afe447a951007c027508764780b59f10c" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_budget_util" kindref="compound">BudgetUtil</ref></type>
+        <definition>BudgetUtil com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetUtil</definition>
+        <argsstring></argsstring>
+        <name>budgetUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.budgetUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="118" column="20" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab704f5a7930b2ab54771dbe53b142b59" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util" kindref="compound">IFRSUtil</ref></type>
+        <definition>IFRSUtil com.sterlite.cal.cbm.service.impl.CBMContractOperationService.infrsUtil</definition>
+        <argsstring></argsstring>
+        <name>infrsUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.infrsUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="121" column="18" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad0914957164c8b776502a1e5ca08d11e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.service.impl.CBMContractOperationService.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="126" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5bd92801d16e7a7fad94d2e0696c6716" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1audit_1_1util_1_1_persist_kafka_service" kindref="compound">PersistKafkaService</ref></type>
+        <definition>PersistKafkaService com.sterlite.cal.cbm.service.impl.CBMContractOperationService.persistKafkaService</definition>
+        <argsstring></argsstring>
+        <name>persistKafkaService</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.persistKafkaService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="129" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a51d1fa51c662ea0db6f24c0106db2418" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository" kindref="compound">ContractBudgetHistoryRepository</ref></type>
+        <definition>ContractBudgetHistoryRepository com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractBudHistoryRepo</definition>
+        <argsstring></argsstring>
+        <name>contractBudHistoryRepo</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractBudHistoryRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="97" column="33" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5ab2c721b3fffe2f802b111296da6ef4" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.cbm.service.impl.CBMContractOperationService.expiryCheck</definition>
+        <argsstring></argsstring>
+        <name>expiryCheck</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.expiryCheck</qualifiedname>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="123" column="9" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1adb8a11b878924b3790353b18296237ba" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client" kindref="compound">CRMRestClient</ref></type>
+        <definition>CRMRestClient com.sterlite.cal.cbm.service.impl.CBMContractOperationService.crmRestClient</definition>
+        <argsstring></argsstring>
+        <name>crmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.crmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="132" column="15" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="132" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6403c67b6260e525febdf4a7a64460c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createOrUpdateContract</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>createOrUpdateContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createOrUpdateContract</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1aa4a9a619e70434af066fb9532bb65374">createOrUpdateContract</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="137" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="137" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae13eac3a0b758315198d780206d00f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractStatus</definition>
+        <argsstring>(ContractStatus status)</argsstring>
+        <name>updateContractStatus</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractStatus</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a39ec2133bb4eeb82095694a56999738e">updateContractStatus</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_status" kindref="compound">ContractStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1104" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1104" bodyend="1176"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a4ecdd7f9dd3f824e1b801896c3720cb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDetails</definition>
+        <argsstring>(ContractRequest contract)</argsstring>
+        <name>getContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1ac0a271a651b8b8ea6f50d2c5dc916fba">getContractDetails</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1326" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1326" bodyend="1359"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae38f036637888640701391a4a70e59b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractBudgetValue</definition>
+        <argsstring>(ContractAndBudget contractAndBudgetRequest)</argsstring>
+        <name>getContractBudgetValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractBudgetValue</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1aa047c60cea764d8844a9b57df75a45db">getContractBudgetValue</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_and_budget" kindref="compound">ContractAndBudget</ref></type>
+          <declname>contractAndBudgetRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1362" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1362" bodyend="1403"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa1ff607e4168cf3d3eb78d84804d135f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractByCA</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>getContractByCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractByCA</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a27a6d69d90c9ac14defc9264c0f10ec2">getContractByCA</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1406" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1406" bodyend="1438"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0769c9a1bb2307966ac96793529861a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getMSISDNByContract</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>getMSISDNByContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getMSISDNByContract</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1ac0d00516d9fc1229e7116192d49e351a">getMSISDNByContract</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1441" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1441" bodyend="1472"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a2e76d14f5bb22ba14230c013af50eba0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.performRenewal</definition>
+        <argsstring>(ContractRequest renewalRequest)</argsstring>
+        <name>performRenewal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.performRenewal</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a69c9db79c12f426dee004cdb341b7cb3">performRenewal</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>renewalRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1476" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1476" bodyend="1540"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8fe463120fbc3659e3afc7d979ded3ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateContract</definition>
+        <argsstring>(ContractTerminationRequest terminationRequest)</argsstring>
+        <name>terminateContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateContract</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a4c63cd5be6ed7b3ecd38cc83fb3f4db3">terminateContract</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_termination_request" kindref="compound">ContractTerminationRequest</ref></type>
+          <declname>terminationRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1544" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1544" bodyend="1701"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6eed82efbf403022505a811e94ae036c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractByCASI</definition>
+        <argsstring>(ContractListRequest contractList)</argsstring>
+        <name>getContractByCASI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractByCASI</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1ade115395e482696358eed1a7bbb6711b">getContractByCASI</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_list_request" kindref="compound">ContractListRequest</ref></type>
+          <declname>contractList</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2696" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2696" bodyend="2759"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7d2969e03dde55b0b5e9d9992bbf70e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractIdByMsisdn</definition>
+        <argsstring>(MssidnRequest mssidnRequest)</argsstring>
+        <name>getContractIdByMsisdn</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractIdByMsisdn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a95a429c396e611bfd6670cf60156237f">getContractIdByMsisdn</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_mssidn_request" kindref="compound">MssidnRequest</ref></type>
+          <declname>mssidnRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2774" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2774" bodyend="2804"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a23dd05fb078c5cccb049c72445afe720" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDateByMsisdn</definition>
+        <argsstring>(MssidnRequest mssidnRequest)</argsstring>
+        <name>getContractDateByMsisdn</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDateByMsisdn</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a651baae7e0746b5a98b560c2098c3390">getContractDateByMsisdn</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_mssidn_request" kindref="compound">MssidnRequest</ref></type>
+          <declname>mssidnRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2807" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2807" bodyend="2857"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa59f648c599a14667c295fa9f045e412" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getOldNewContractAndBudget</definition>
+        <argsstring>(NewOldContractAndBudgetRequestVo contractRequest)</argsstring>
+        <name>getOldNewContractAndBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getOldNewContractAndBudget</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1ad22f31ebd9d7f3942a006556509de16f">getOldNewContractAndBudget</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_new_old_contract_and_budget_request_vo" kindref="compound">NewOldContractAndBudgetRequestVo</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2860" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2860" bodyend="3032"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5ed6a721fad2769f34cacddda79c4364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateBillingAccount</definition>
+        <argsstring>(TerminateBillingAccountRequest request)</argsstring>
+        <name>terminateBillingAccount</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateBillingAccount</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a3ad84564aa0510ab9ae92931589a9fe9">terminateBillingAccount</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_terminate_billing_account_request" kindref="compound">TerminateBillingAccountRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3126" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3126" bodyend="3207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af9f4fe9c7a593c51e3c31106cfecbf27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.searchContractDetails</definition>
+        <argsstring>(SearchContractRequest contract)</argsstring>
+        <name>searchContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.searchContractDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1ada5d354bb08d91c12570e065a508ecdf">searchContractDetails</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_search_contract_request" kindref="compound">SearchContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3238" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3238" bodyend="3315"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9e6988a51591026c0b06c429ec8915e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cancelContractOrServiceInstance</definition>
+        <argsstring>(ContractServiceCancelRequest contract)</argsstring>
+        <name>cancelContractOrServiceInstance</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.cancelContractOrServiceInstance</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a842ca6decc3eb35ae4b64378b7e446b7">cancelContractOrServiceInstance</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_service_cancel_request" kindref="compound">ContractServiceCancelRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>-----------<mdash/>end ---------------------------<mdash/></para>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3318" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3318" bodyend="3482"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac1d5465c180debc51653e65ec3206220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.checkEligibilityForRenewal</definition>
+        <argsstring>(ContractRequest eligibilityRequest)</argsstring>
+        <name>checkEligibilityForRenewal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.checkEligibilityForRenewal</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a13792c82f5add48e528a6544ae30a1f8">checkEligibilityForRenewal</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>eligibilityRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3485" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3485" bodyend="3539"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a04b25d8eba2e00740d3295eb2b7e551f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.savecontractRelation</definition>
+        <argsstring>(ContractMaster contractmaster, ServiceInstanceDetails si, ContractRequest contractrequest)</argsstring>
+        <name>savecontractRelation</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.savecontractRelation</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractmaster</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref></type>
+          <declname>si</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractrequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4270" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4270" bodyend="4336"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa681c9a97a08fe77a480063f9aeaca04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecordTrmntn</definition>
+        <argsstring>(ContractRequest contractRequest, ContractMaster contractMaster)</argsstring>
+        <name>createIFRSRecordTrmntn</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecordTrmntn</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractMaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4340" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4340" bodyend="4462"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a15d2a87581cd82772606bf648274bbb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRS</definition>
+        <argsstring>(String request)</argsstring>
+        <name>createIFRS</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a881378d5bec7f0507fb62b11620d9776">createIFRS</reimplements>
+        <param>
+          <type>String</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4465" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4465" bodyend="4520"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a66d624093abef0a0c293b61bda7c197c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getMajorOrMinor</definition>
+        <argsstring>(String jsonRequest)</argsstring>
+        <name>getMajorOrMinor</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getMajorOrMinor</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a128d33e279e0800d2c85ca453cc122a2">getMajorOrMinor</reimplements>
+        <param>
+          <type>String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4523" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4523" bodyend="4546"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a4c7c20785f291d5dbe66af5d207fd86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.allocateBudget</definition>
+        <argsstring>(AllocateBudgetRequest contractRequest)</argsstring>
+        <name>allocateBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.allocateBudget</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service_1a05982006aa3c838ddff207285c7f76ce">allocateBudget</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4550" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4550" bodyend="4606"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa8bee6d6ea9ae3da8eb555dcefd16577" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveAnnexure</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>saveAnnexure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveAnnexure</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="319" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="319" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a69c9a8530f0734a0a13d6b109d06a851" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractTypeBudgetDetails</definition>
+        <argsstring>(String contractId, List&lt; String &gt; serviceInstaceInRequest)</argsstring>
+        <name>updateContractTypeBudgetDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractTypeBudgetDetails</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contractId</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>serviceInstaceInRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="660" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="660" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9b552bc7eb873cbac104515442035e30" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.addingNonZeroBudgetForSerivceInstances</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>addingNonZeroBudgetForSerivceInstances</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.addingNonZeroBudgetForSerivceInstances</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="698" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="698" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9224b60d82172f4ba929de4ed7b5fb57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveAnnexureForPortout</definition>
+        <argsstring>(ContractRequest contractRequest, ServiceInstanceDetails si, List&lt; String &gt; contractidList)</argsstring>
+        <name>saveAnnexureForPortout</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveAnnexureForPortout</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref></type>
+          <declname>si</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>contractidList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="730" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="730" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa4b176061bd63fc8f5a78bb58280f8af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.savingContractHistory</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>savingContractHistory</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.savingContractHistory</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="923" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="923" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a99861593da0c897092e4829a74eedf1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateAnnexure</definition>
+        <argsstring>(ContractRequest contractRequest, ContractMaster annexure)</argsstring>
+        <name>updateAnnexure</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateAnnexure</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>annexure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="954" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="954" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a423b38ab325fde7b7acb8de513c52723" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_response_details" kindref="compound">ContractResponseDetails</ref></type>
+        <definition>ContractResponseDetails com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getResponse</definition>
+        <argsstring>(ContractMaster cm)</argsstring>
+        <name>getResponse</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getResponse</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="989" column="33" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="989" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a76c147370dc52bc69caa22d0ad602b8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_response_details" kindref="compound">ContractResponseDetails</ref> &gt;</type>
+        <definition>List&lt; ContractResponseDetails &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getResponseForPortout</definition>
+        <argsstring>(List&lt; ContractMaster &gt; contractmaster, ContractRequest contractRequest)</argsstring>
+        <name>getResponseForPortout</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getResponseForPortout</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>contractmaster</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1026" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1026" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0330af2399239ddaf8385692890cc578" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateAnnexureForPortout</definition>
+        <argsstring>(ContractRequest contractRequest, ContractMaster annexure, ServiceInstanceDetails si)</argsstring>
+        <name>updateAnnexureForPortout</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateAnnexureForPortout</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>annexure</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref></type>
+          <declname>si</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1069" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1069" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad724beb2fbedd0c074e61a526f60e2ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateCrmForContractStatus</definition>
+        <argsstring>(ContractStatus status)</argsstring>
+        <name>updateCrmForContractStatus</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateCrmForContractStatus</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_status" kindref="compound">ContractStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1178" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1178" bodyend="1190"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af4d236580e8d5dac12c3910d8d2adb58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateFromExistingContracts</definition>
+        <argsstring>(ContractStatus status)</argsstring>
+        <name>terminateFromExistingContracts</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateFromExistingContracts</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_status" kindref="compound">ContractStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1192" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1192" bodyend="1229"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae946159e3f5fe18c880a10c9d8c5da37" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.update</definition>
+        <argsstring>(ContractStatus status)</argsstring>
+        <name>update</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.update</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_status" kindref="compound">ContractStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1231" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1231" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5af2805e722f80db7b1ca7afc3f9a82d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateContract</definition>
+        <argsstring>(List&lt; ContractMaster &gt; terminateContracts, Object terminationRequest)</argsstring>
+        <name>terminateContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateContract</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>terminateContracts</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>terminationRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1703" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1703" bodyend="1782"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad0ca479244657b16306c1ba6272a4cbf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateSpecificSI</definition>
+        <argsstring>(List&lt; ContractMaster &gt; terminateContracts, Object request)</argsstring>
+        <name>terminateSpecificSI</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateSpecificSI</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>terminateContracts</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1784" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1784" bodyend="1813"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad032d78d2392b264c19550e38236c190" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateEntireContract</definition>
+        <argsstring>(List&lt; ContractMaster &gt; terminateContracts, Object request)</argsstring>
+        <name>terminateEntireContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.terminateEntireContract</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>terminateContracts</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1815" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1815" bodyend="1842"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae94fc1d185bcc5c8d57e12d3adde029f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewContract</definition>
+        <argsstring>(List&lt; ContractMaster &gt; contractMasterList, ContractRequest contractRequest)</argsstring>
+        <name>renewContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.renewContract</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>contractMasterList</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1844" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1844" bodyend="1962"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7c4f204ba017db7ffc1a3824d2e7c7a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.sendDnotification</definition>
+        <argsstring>(List&lt; Map&lt; String, Object &gt; &gt; listOfAcccountDetailsMap, ContractMaster contractMaster)</argsstring>
+        <name>sendDnotification</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.sendDnotification</qualifiedname>
+        <param>
+          <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+          <declname>listOfAcccountDetailsMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractMaster</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="1965" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="1965" bodyend="2034"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae8dc1bbc47f80ece008dc132c22291e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_details" kindref="compound">ContractDetails</ref></type>
+        <definition>ContractDetails com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDetails</definition>
+        <argsstring>(List&lt; ContractMaster &gt; contractMasterList)</argsstring>
+        <name>getContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractDetails</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>contractMasterList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2036" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2036" bodyend="2134"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7a7f1196cf96f6fd53164499fa893bae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractAndBudget</definition>
+        <argsstring>(ContractAndBudget contractAndBudget)</argsstring>
+        <name>calculateContractAndBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractAndBudget</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_and_budget" kindref="compound">ContractAndBudget</ref></type>
+          <declname>contractAndBudget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2136" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2136" bodyend="2156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3abea2c49401ac0041b123eeed302bfe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractValue</definition>
+        <argsstring>(ContractRequest contractRequest)</argsstring>
+        <name>calculateContractValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractValue</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2158" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2158" bodyend="2172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1adaf4599b67365988e6808040e8f9f7ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractValue</definition>
+        <argsstring>(AllocateBudgetRequest contractRequest)</argsstring>
+        <name>calculateContractValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateContractValue</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2174" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2174" bodyend="2188"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a28ab591ba41eb5a49ce55c370233ecd6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveContractMaster</definition>
+        <argsstring>(ContractRequest contract)</argsstring>
+        <name>saveContractMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveContractMaster</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2190" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2190" bodyend="2273"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a51ba68b508bf0792f9b570dc07a5d360" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>Set&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudget</definition>
+        <argsstring>(ContractRequest contract, ContractMaster cm, boolean flowFalg)</argsstring>
+        <name>calculateBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudget</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>flowFalg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2277" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2277" bodyend="2398"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab422764188b3371cabad4e2a88b70b5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>Set&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudget</definition>
+        <argsstring>(AllocateBudgetRequest contract, ContractMaster cm, boolean flowFalg)</argsstring>
+        <name>calculateBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudget</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>flowFalg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2400" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2400" bodyend="2521"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1afbae0702265e352061853f338cb70e22" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_budget_relation" kindref="compound">ContractBudgetRelation</ref> &gt;</type>
+        <definition>Set&lt; ContractBudgetRelation &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudgetForPortout</definition>
+        <argsstring>(ContractRequest contract, ContractMaster cm, boolean flowFalg, ServiceInstanceDetails si)</argsstring>
+        <name>calculateBudgetForPortout</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateBudgetForPortout</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>flowFalg</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_service_instance_details" kindref="compound">ServiceInstanceDetails</ref></type>
+          <declname>si</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2523" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2523" bodyend="2642"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad2c5fb242bdd502b842f6430bf27f899" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractMaster</definition>
+        <argsstring>(ContractRequest contract, ContractMaster cm)</argsstring>
+        <name>updateContractMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.updateContractMaster</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2644" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2644" bodyend="2682"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9768a4c92fd32544c1e01bf7a47949b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.cbm.service.impl.CBMContractOperationService.stringToDate</definition>
+        <argsstring>(String input)</argsstring>
+        <name>stringToDate</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.stringToDate</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>input</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2684" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2684" bodyend="2687"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a75839abe254abad53ed8e25670607ccd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cbm.service.impl.CBMContractOperationService.datetoString</definition>
+        <argsstring>(Date input)</argsstring>
+        <name>datetoString</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.datetoString</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2689" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2689" bodyend="2692"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0f247e55d22afa21c50184c6ba7da43a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_details" kindref="compound">ContractDetails</ref> &gt;</type>
+        <definition>List&lt; ContractDetails &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractListUsingCA</definition>
+        <argsstring>(String customerAccountNumber)</argsstring>
+        <name>contractListUsingCA</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.contractListUsingCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>customerAccountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="2762" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="2762" bodyend="2771"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7d1c86e1f88e0552ceb659b65ff49d9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Double &gt;</type>
+        <definition>Map&lt; String, Double &gt; com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateNewBudget</definition>
+        <argsstring>(List&lt; Mrc &gt; mrcDetails, Double budgetCoefficient, Long duration)</argsstring>
+        <name>calculateNewBudget</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateNewBudget</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_mrc" kindref="compound">Mrc</ref> &gt;</type>
+          <declname>mrcDetails</declname>
+        </param>
+        <param>
+          <type>Double</type>
+          <declname>budgetCoefficient</declname>
+        </param>
+        <param>
+          <type>Long</type>
+          <declname>duration</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3034" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3034" bodyend="3050"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a81dd4ba35ac7df09f11b5ef24e48a6cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateNewContractValue</definition>
+        <argsstring>(NewOldContractAndBudgetRequestVo contractRequest, List&lt; ContractMaster &gt; existingContractList)</argsstring>
+        <name>calculateNewContractValue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateNewContractValue</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_new_old_contract_and_budget_request_vo" kindref="compound">NewOldContractAndBudgetRequestVo</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref> &gt;</type>
+          <declname>existingContractList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3052" column="16" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3052" bodyend="3123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a40b20da695ca2c82ef04aa192d4a8ad5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.validateTerminateBARequest</definition>
+        <argsstring>(TerminateBillingAccountRequest request)</argsstring>
+        <name>validateTerminateBARequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.validateTerminateBARequest</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_terminate_billing_account_request" kindref="compound">TerminateBillingAccountRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3209" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3209" bodyend="3235"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9dd8baebd9be8cd3abf0563c498fe35e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateEligibility</definition>
+        <argsstring>(ContractMaster contractDetails)</argsstring>
+        <name>calculateEligibility</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.calculateEligibility</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3541" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3541" bodyend="3608"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8b7d271b7386e384fd3d111237e37378" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.service.impl.CBMContractOperationService.checkRequiredParameters</definition>
+        <argsstring>(ContractRequest eligibilityRequest)</argsstring>
+        <name>checkRequiredParameters</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.checkRequiredParameters</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>eligibilityRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3610" column="25" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3610" bodyend="3620"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aea40d6b953dd94f42ab7623c146abe27" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecord</definition>
+        <argsstring>(ContractRequest contractRequest, ContractMaster contractMaster)</argsstring>
+        <name>createIFRSRecord</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecord</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractMaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3624" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3624" bodyend="3918"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a354000325e4901cc56a959a1ab46cc15" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecord</definition>
+        <argsstring>(AllocateBudgetRequest contractRequest, ContractMaster contractMaster)</argsstring>
+        <name>createIFRSRecord</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.createIFRSRecord</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>contractMaster</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="3921" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="3921" bodyend="4065"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac23d32d79f2e0cd7499c872fbf3f4e91" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.conditionalDataForStatusIDAndEndDateOFPreviousContract</definition>
+        <argsstring>(ContractRequest contractRequest, Map&lt; String, Object &gt; dataMap, ContractMaster previousContract)</argsstring>
+        <name>conditionalDataForStatusIDAndEndDateOFPreviousContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.conditionalDataForStatusIDAndEndDateOFPreviousContract</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>previousContract</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4068" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4068" bodyend="4094"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a644008079b9904167ed5aa218a189250" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.conditionalDataForStatusIDAndEndDateOFPreviousContract</definition>
+        <argsstring>(AllocateBudgetRequest contractRequest, Map&lt; String, Object &gt; dataMap, ContractMaster previousContract)</argsstring>
+        <name>conditionalDataForStatusIDAndEndDateOFPreviousContract</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.conditionalDataForStatusIDAndEndDateOFPreviousContract</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>previousContract</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4097" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4097" bodyend="4123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af76d90dfc9cf4f914231b4921c192ffa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractPositionStatusIDForRenewal</definition>
+        <argsstring>(ContractMaster previousContract)</argsstring>
+        <name>getContractPositionStatusIDForRenewal</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.getContractPositionStatusIDForRenewal</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>previousContract</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4126" column="17" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4126" bodyend="4151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a422afbccf39b850ee7c2e270390de28b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.setCommonStaticFieldsForIFRS</definition>
+        <argsstring>(ContractRequest contractRequest, Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>setCommonStaticFieldsForIFRS</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.setCommonStaticFieldsForIFRS</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4153" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4153" bodyend="4209"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a93a243348bd29c533895833903565a71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.setCommonStaticFieldsForIFRS</definition>
+        <argsstring>(AllocateBudgetRequest contractRequest, Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>setCommonStaticFieldsForIFRS</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.setCommonStaticFieldsForIFRS</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contractRequest</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4212" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4212" bodyend="4267"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1abbcf796b443ee5ebed7f77a01e5e4057" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveContractBudgetMaster</definition>
+        <argsstring>(AllocateBudgetRequest contract, ContractMaster cm)</argsstring>
+        <name>saveContractBudgetMaster</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.impl.CBMContractOperationService.saveContractBudgetMaster</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_allocate_budget_request" kindref="compound">AllocateBudgetRequest</ref></type>
+          <declname>contract</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1dataobjects_1_1_contract_master" kindref="compound">ContractMaster</ref></type>
+          <declname>cm</declname>
+        </param>
+        <exceptions> throws ParseException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="4608" column="14" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="4608" bodyend="4686"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMContractOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMContractOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.impl.CBMContractOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>contractBudHistoryRepo</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>crmRestClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.cbm.repositories.ContractBudgetHistoryRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1repositories_1_1_contract_budget_history_repository"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cbm.service.ICBMContractOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_i_c_b_m_contract_operation_service"/>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.restclient.CRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="8">
+        <label>Environment</label>
+      </node>
+      <node id="5">
+        <label>JpaRepository&lt; ContractBudgetHistoryMaster, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" line="53" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/service/impl/CBMContractOperationService.java" bodystart="53" bodyend="4689"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aeef8050975c60a46f03c0edc8ebd9031" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>ACTIVE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9b552bc7eb873cbac104515442035e30" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>addingNonZeroBudgetForSerivceInstances</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a4c7c20785f291d5dbe66af5d207fd86b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>allocateBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0ec2848d8aa63127a2ddb994b422978c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>brmCommonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3d7dd36a23a8a3b2bfd3d5a639749040" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>budgetdetailsRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6c73f502bae6f04250436a55343fa1d5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>budgetService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1afe447a951007c027508764780b59f10c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>budgetUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a51ba68b508bf0792f9b570dc07a5d360" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab422764188b3371cabad4e2a88b70b5f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1afbae0702265e352061853f338cb70e22" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateBudgetForPortout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7a7f1196cf96f6fd53164499fa893bae" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateContractAndBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3abea2c49401ac0041b123eeed302bfe" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateContractValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1adaf4599b67365988e6808040e8f9f7ca" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateContractValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9dd8baebd9be8cd3abf0563c498fe35e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateEligibility</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7d1c86e1f88e0552ceb659b65ff49d9f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateNewBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a81dd4ba35ac7df09f11b5ef24e48a6cd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>calculateNewContractValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9e6988a51591026c0b06c429ec8915e4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>cancelContractOrServiceInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a363faf1b00a86f14142247eabc494d72" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>cbmRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a1be9d2c42d05329b399a03df728f373c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>cbRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac1d5465c180debc51653e65ec3206220" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>checkEligibilityForRenewal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8b7d271b7386e384fd3d111237e37378" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>checkRequiredParameters</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac23d32d79f2e0cd7499c872fbf3f4e91" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>conditionalDataForStatusIDAndEndDateOFPreviousContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a644008079b9904167ed5aa218a189250" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>conditionalDataForStatusIDAndEndDateOFPreviousContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a51d1fa51c662ea0db6f24c0106db2418" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractBudHistoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5f9842bf58fbac3dde49b171852e1bbc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractHistoryRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0f247e55d22afa21c50184c6ba7da43a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractListUsingCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aca1439dbbe36cd8b863fb1e972c18251" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractRelationRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab5eccba9f4e4484aaa6404905c0dd9c6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a66d3c5214a5c8b1162eda8c6f402303b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>contractService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a15d2a87581cd82772606bf648274bbb5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>createIFRS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aea40d6b953dd94f42ab7623c146abe27" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>createIFRSRecord</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a354000325e4901cc56a959a1ab46cc15" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>createIFRSRecord</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa681c9a97a08fe77a480063f9aeaca04" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>createIFRSRecordTrmntn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6403c67b6260e525febdf4a7a64460c1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>createOrUpdateContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1adb8a11b878924b3790353b18296237ba" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>crmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a75839abe254abad53ed8e25670607ccd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>datetoString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9acd32a689185701a084e7c81f0a94c2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>dnotificationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5ab2c721b3fffe2f802b111296da6ef4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>expiryCheck</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae38f036637888640701391a4a70e59b7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractBudgetValue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa1ff607e4168cf3d3eb78d84804d135f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractByCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a6eed82efbf403022505a811e94ae036c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractByCASI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a23dd05fb078c5cccb049c72445afe720" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractDateByMsisdn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a4ecdd7f9dd3f824e1b801896c3720cb9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae8dc1bbc47f80ece008dc132c22291e3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7d2969e03dde55b0b5e9d9992bbf70e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractIdByMsisdn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af76d90dfc9cf4f914231b4921c192ffa" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getContractPositionStatusIDForRenewal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a66d624093abef0a0c293b61bda7c197c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getMajorOrMinor</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0769c9a1bb2307966ac96793529861a7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getMSISDNByContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa59f648c599a14667c295fa9f045e412" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getOldNewContractAndBudget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a423b38ab325fde7b7acb8de513c52723" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a76c147370dc52bc69caa22d0ad602b8b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>getResponseForPortout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ab704f5a7930b2ab54771dbe53b142b59" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>infrsUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad0914957164c8b776502a1e5ca08d11e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aceb1b3c6e84cc72ee4ec0797622909dc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>kafkaIntegrationEnable</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a26f949e712bbe205172759c47db62bb6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>kafkaSendMessageEnable</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1abe93e98266747408dd0ae26ad0fd00d5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a2b189b0063937d634e3c865dab8f5c7f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>penaltyService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a2e76d14f5bb22ba14230c013af50eba0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>performRenewal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5bd92801d16e7a7fad94d2e0696c6716" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>persistKafkaService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae94fc1d185bcc5c8d57e12d3adde029f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>renewContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a3ed16aaa543592348cc45d887bf050aa" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>renewEligibilityFor12MonthsDuration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad4f5f109da27ece927a2be57f7d08c59" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>renewEligibilityFor12MonthsForB2B</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8180877f28b1099bf6de986b26b1ab08" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>renewEligibilityFor24MonthsDuration</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a49ebd50acfb9188d04c8a79c54be3e24" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>renewEligibilityFor24MonthsForB2B</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa8bee6d6ea9ae3da8eb555dcefd16577" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>saveAnnexure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9224b60d82172f4ba929de4ed7b5fb57" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>saveAnnexureForPortout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1abbcf796b443ee5ebed7f77a01e5e4057" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>saveContractBudgetMaster</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a28ab591ba41eb5a49ce55c370233ecd6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>saveContractMaster</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a04b25d8eba2e00740d3295eb2b7e551f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>savecontractRelation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa4b176061bd63fc8f5a78bb58280f8af" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>savingContractHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af9f4fe9c7a593c51e3c31106cfecbf27" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>searchContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a7c4f204ba017db7ffc1a3824d2e7c7a2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>sendDnotification</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a422afbccf39b850ee7c2e270390de28b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>setCommonStaticFieldsForIFRS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a93a243348bd29c533895833903565a71" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>setCommonStaticFieldsForIFRS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a9768a4c92fd32544c1e01bf7a47949b5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>stringToDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5ed6a721fad2769f34cacddda79c4364" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateBillingAccount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a8fe463120fbc3659e3afc7d979ded3ef" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a5af2805e722f80db7b1ca7afc3f9a82d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad032d78d2392b264c19550e38236c190" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateEntireContract</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1af4d236580e8d5dac12c3910d8d2adb58" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateFromExistingContracts</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad0ca479244657b16306c1ba6272a4cbf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>terminateSpecificSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae946159e3f5fe18c880a10c9d8c5da37" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>update</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a99861593da0c897092e4829a74eedf1b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateAnnexure</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a0330af2399239ddaf8385692890cc578" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateAnnexureForPortout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad2c5fb242bdd502b842f6430bf27f899" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateContractMaster</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ae13eac3a0b758315198d780206d00f68" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateContractStatus</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a69c9a8530f0734a0a13d6b109d06a851" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateContractTypeBudgetDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ad724beb2fbedd0c074e61a526f60e2ff" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>updateCrmForContractStatus</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1aa94fef53f890d3b01f4dfcb0a05d87fd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>utils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1a40b20da695ca2c82ef04aa192d4a8ad5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>validateTerminateBARequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1impl_1_1_c_b_m_contract_operation_service_1ac2316f005c6ff780801e3b78b725387c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::impl::CBMContractOperationService</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

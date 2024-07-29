@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::security::service::UserDetailServiceTest</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1ac35e0c3897448965f3f3609e54a41f89" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service" kindref="compound">UserDetailService</ref></type>
+        <definition>UserDetailService com.sterlite.cal.core.security.service.UserDetailServiceTest.userDetailService</definition>
+        <argsstring></argsstring>
+        <name>userDetailService</name>
+        <qualifiedname>com.sterlite.cal.core.security.service.UserDetailServiceTest.userDetailService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" line="19" column="19" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1ae7168a1655fa2539946461473387fe8d" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user" kindref="compound">JwtUser</ref></type>
+        <definition>JwtUser com.sterlite.cal.core.security.service.UserDetailServiceTest.jwtUser</definition>
+        <argsstring></argsstring>
+        <name>jwtUser</name>
+        <qualifiedname>com.sterlite.cal.core.security.service.UserDetailServiceTest.jwtUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" line="21" column="9" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1a2e3a9a8ff4718d2b8b58016db8a87c9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.security.service.UserDetailServiceTest.test01LoadUserByUsernameTest</definition>
+        <argsstring>()</argsstring>
+        <name>test01LoadUserByUsernameTest</name>
+        <qualifiedname>com.sterlite.cal.core.security.service.UserDetailServiceTest.test01LoadUserByUsernameTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" line="24" column="13" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" bodystart="24" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.security.service.UserDetailServiceTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>userDetailService</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>jwtUser</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.security.serviceImpl.UserDetailService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_impl_1_1_user_detail_service"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.security.valueobject.JwtUser</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_jwt_user"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UserDetails</label>
+      </node>
+      <node id="3">
+        <label>UserDetailsService</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" line="16" column="7" bodyfile="repository/core/src/test/java/com/sterlite/cal/core/security/service/UserDetailServiceTest.java" bodystart="16" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1ae7168a1655fa2539946461473387fe8d" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::service::UserDetailServiceTest</scope><name>jwtUser</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1a2e3a9a8ff4718d2b8b58016db8a87c9f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::security::service::UserDetailServiceTest</scope><name>test01LoadUserByUsernameTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1service_1_1_user_detail_service_test_1ac35e0c3897448965f3f3609e54a41f89" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::security::service::UserDetailServiceTest</scope><name>userDetailService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

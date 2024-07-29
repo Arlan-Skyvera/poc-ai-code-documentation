@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_c_r_m_rest_client_test_8java" kind="file" language="Java">
+    <compoundname>CRMRestClientTest.java</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client_test" prot="public">com::sterlite::cal::core::base::restclient::CRMRestClientTest</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient">com::sterlite::cal::core::base::restclient</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.core.base.restclient;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*@RunWith(PowerMockRunner.class)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">@PowerMockRunnerDelegate(SpringRunner.class)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">@SpringBootTest(webEnvironment<sp/>=<sp/>WebEnvironment.MOCK)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">@PowerMockIgnore({&quot;javax.*.*&quot;,<sp/>&quot;com.sun.*&quot;,<sp/>&quot;org.xml.*&quot;})*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client_test" kindref="compound">CRMRestClientTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@InjectMocks<sp/>CRMRestClient<sp/>crmRestClient;</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@Mock<sp/>BaseRestClient<sp/>baseRestClient;</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@Mock<sp/>Environment<sp/>env;</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@Mock<sp/>JsonUtils<sp/>jsonutil;</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>//@PrepareForTest({<sp/>SecurityContextHolder.class})</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@Test<sp/>public<sp/>void<sp/>postForObjectTest()<sp/>{<sp/>String<sp/>uri<sp/>=</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>&quot;http://localhost/postForObject&quot;;<sp/>String<sp/>request<sp/>=</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>&quot;{\\n\&quot;userIdentifier\&quot;<sp/>:<sp/>\&quot;jiva\&quot;,\n<sp/><sp/><sp/><sp/>\&quot;password\&quot;<sp/>:<sp/>\&quot;test123\&quot;,\n<sp/><sp/>\&quot;ipAddress\&quot;<sp/>:<sp/>\&quot;10.121.28.92\&quot;,\n<sp/><sp/><sp/><sp/>\&quot;source\&quot;:<sp/>\&quot;CRM\&quot;,\n<sp/><sp/><sp/><sp/>\&quot;referenceId\&quot;:<sp/>\&quot;1234\&quot;\n}&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>;<sp/>String<sp/>jsonRequest<sp/>=</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>&quot;{\\n\&quot;userIdentifier\&quot;<sp/>:<sp/>\&quot;jiva\&quot;,\n<sp/>\&quot;username\&quot;<sp/>:<sp/>\&quot;jiva\&quot;,\n<sp/>\&quot;accessKey\&quot;<sp/>:<sp/>\&quot;1234\&quot;,\n<sp/><sp/><sp/>\&quot;password\&quot;<sp/>:<sp/>\&quot;test123\&quot;,\n<sp/><sp/>\&quot;ipAddress\&quot;<sp/>:<sp/>\&quot;10.121.28.92\&quot;,\n<sp/><sp/><sp/><sp/>\&quot;source\&quot;:<sp/>\&quot;CRM\&quot;,\n<sp/><sp/><sp/><sp/>\&quot;referenceId\&quot;:<sp/>\&quot;1234\&quot;\n}&quot;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>;<sp/>Map&lt;String,Object&gt;<sp/>jsonObject<sp/>=<sp/>new<sp/>LinkedHashMap&lt;&gt;();<sp/>//JwtUser<sp/>user<sp/>=<sp/>new</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>JwtUser(&quot;SS02&quot;,<sp/>&quot;Sam&quot;,<sp/>&quot;sysadmin&quot;,<sp/>null,<sp/>true,new</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Date(),&quot;s.sam@gmail.com&quot;,null,&quot;0&quot;);<sp/>when(jsonutil.getObjectFromJson(request,</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>LinkedHashMap.class)).thenReturn((LinkedHashMap)<sp/>jsonObject);</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>when(jsonutil.getJsonFromObject(jsonObject)).thenReturn(jsonRequest);</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>when(env.getProperty(&quot;crm.api.generateAuthTokenForStaff&quot;)).thenReturn(</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>&quot;system/generateAuthTokenForStaff&quot;);<sp/>when().thenReturn();<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/core/src/test/java/com/sterlite/cal/core/base/restclient/CRMRestClientTest.java"/>
+  </compounddef>
+</doxygen>

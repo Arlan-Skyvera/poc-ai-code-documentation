@@ -1,0 +1,740 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::security::controller::MainLayoutComposer</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer" prot="public" virt="non-virtual">com.sterlite.cal.ui.core.BaseComposer</basecompoundref>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1_1_main_menu_item" prot="public">com::sterlite::cal::security::controller::MainLayoutComposer::MainMenuItem</innerclass>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1_1_menu_item_tree_node" prot="package">com::sterlite::cal::security::controller::MainLayoutComposer::MenuItemTreeNode</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ad5814bda40ab9c01116a478be6699108" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.security.controller.MainLayoutComposer.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(MainLayoutComposer.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="53" column="30" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a1fbc83fe8aad7fb19ecd93c23c4db06d" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.sterlite.cal.security.controller.MainLayoutComposer.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.serialVersionUID</qualifiedname>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="55" column="27" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a1c5a96ee3cfea827a2e8d2e92314b35f" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.security.controller.MainLayoutComposer.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.MODULE</qualifiedname>
+        <initializer>= &quot;_MainLayoutComposer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="84" column="29" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a414554e0ac4e1535ed623f8f90852bb5" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.security.controller.MainLayoutComposer.TASK_TYPE_ID</definition>
+        <argsstring></argsstring>
+        <name>TASK_TYPE_ID</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.TASK_TYPE_ID</qualifiedname>
+        <initializer>= &quot;_TaskTypeIdId&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="56" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a2ee526ddc5f04dfb842f195d7cf49c5b" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.security.controller.MainLayoutComposer.TASK_STEP_ID</definition>
+        <argsstring></argsstring>
+        <name>TASK_STEP_ID</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.TASK_STEP_ID</qualifiedname>
+        <initializer>= &quot;_TaskStepIdId&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="57" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ae043eae4e3773b55d314bb1103fd3669" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.security.controller.MainLayoutComposer.IMAGE_ICON</definition>
+        <argsstring></argsstring>
+        <name>IMAGE_ICON</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.IMAGE_ICON</qualifiedname>
+        <initializer>= &quot;_ImageIcon&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="81" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1af5ce063bf3bbb720569a7d084268d3e7" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.security.controller.MainLayoutComposer.ACTIVE_IMAGE_ICON</definition>
+        <argsstring></argsstring>
+        <name>ACTIVE_IMAGE_ICON</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.ACTIVE_IMAGE_ICON</qualifiedname>
+        <initializer>= &quot;_ActiveImageIcon&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="82" column="28" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a6efb15657a4b27c651cbf605955d449a" prot="protected" static="no" mutable="no">
+        <type>Div</type>
+        <definition>Div com.sterlite.cal.security.controller.MainLayoutComposer.moduleContent</definition>
+        <argsstring></argsstring>
+        <name>moduleContent</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.moduleContent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="59" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a45a5467c365fd2d84c9187d2fc5648a7" prot="private" static="no" mutable="no">
+        <type>Panelchildren</type>
+        <definition>Panelchildren com.sterlite.cal.security.controller.MainLayoutComposer.leftNavPanelChildren</definition>
+        <argsstring></argsstring>
+        <name>leftNavPanelChildren</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.leftNavPanelChildren</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="61" column="23" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a825c862a9c367669d32115cc980f4bd4" prot="private" static="no" mutable="no">
+        <type>Tabbox</type>
+        <definition>Tabbox com.sterlite.cal.security.controller.MainLayoutComposer.leftNavTab</definition>
+        <argsstring></argsstring>
+        <name>leftNavTab</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.leftNavTab</qualifiedname>
+        <initializer>= new Tabbox()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="62" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1afd606e17cc8adb305d62c5cbd47cc27e" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt;String, Object&gt; com.sterlite.cal.security.controller.MainLayoutComposer.mainComposerParams</definition>
+        <argsstring></argsstring>
+        <name>mainComposerParams</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.mainComposerParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="63" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0e7ba727541a3a7e3478ad7cd88a521f" prot="private" static="no" mutable="no">
+        <type>MenuItemTreeNode</type>
+        <definition>MenuItemTreeNode com.sterlite.cal.security.controller.MainLayoutComposer.rootMenu</definition>
+        <argsstring></argsstring>
+        <name>rootMenu</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.rootMenu</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="64" column="26" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aef6b3da8ecce1a4a5e800cd95ca3ab7c" prot="private" static="no" mutable="no">
+        <type>MenuItemTreeNode</type>
+        <definition>MenuItemTreeNode com.sterlite.cal.security.controller.MainLayoutComposer.level1Menu</definition>
+        <argsstring></argsstring>
+        <name>level1Menu</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.level1Menu</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="65" column="26" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1adf26e396575a480cfdb78ef330afbe16" prot="private" static="no" mutable="no">
+        <type>LinkedList</type>
+        <definition>LinkedList com.sterlite.cal.security.controller.MainLayoutComposer.leafMenuCache</definition>
+        <argsstring></argsstring>
+        <name>leafMenuCache</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.leafMenuCache</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="66" column="20" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a65c76416c6a0d0fb40f1fff122a4ba1a" prot="private" static="no" mutable="no">
+        <type>Tabpanel</type>
+        <definition>Tabpanel com.sterlite.cal.security.controller.MainLayoutComposer.tabPannel</definition>
+        <argsstring></argsstring>
+        <name>tabPannel</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.tabPannel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="67" column="18" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ac4d9a3aac3449850e5b68aff9d23ed9c" prot="private" static="no" mutable="no">
+        <type>Tabpanels</type>
+        <definition>Tabpanels com.sterlite.cal.security.controller.MainLayoutComposer.tabPanels</definition>
+        <argsstring></argsstring>
+        <name>tabPanels</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.tabPanels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="68" column="19" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a2d7f318f73e04df2cd3469ebe1423f4f" prot="private" static="no" mutable="no">
+        <type>West</type>
+        <definition>West com.sterlite.cal.security.controller.MainLayoutComposer.westPanel</definition>
+        <argsstring></argsstring>
+        <name>westPanel</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.westPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="69" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aebe12e4550ff43314894c8d129e51295" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label com.sterlite.cal.security.controller.MainLayoutComposer.userLabel</definition>
+        <argsstring></argsstring>
+        <name>userLabel</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.userLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="70" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a86cb12e174e2376c490f7c5347cd1018" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label com.sterlite.cal.security.controller.MainLayoutComposer.lastLoginLabel</definition>
+        <argsstring></argsstring>
+        <name>lastLoginLabel</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.lastLoginLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="71" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a12015a0820be86e2bffffafe9ea4f1fb" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.homeImg</definition>
+        <argsstring></argsstring>
+        <name>homeImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.homeImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="72" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a3c74e69c59ce40c9acb584edfad62f72" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.backImg</definition>
+        <argsstring></argsstring>
+        <name>backImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.backImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="73" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a5ddf909a6560ad80b2eac0b24100b16a" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.forwardImg</definition>
+        <argsstring></argsstring>
+        <name>forwardImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.forwardImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="74" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a8d6185ef9f1c65dec75742bf64861511" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.refreshImg</definition>
+        <argsstring></argsstring>
+        <name>refreshImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.refreshImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="75" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1abe3ab888a95123c05fdeee471680cded" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.stopImg</definition>
+        <argsstring></argsstring>
+        <name>stopImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.stopImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="76" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aeb8f4e911c41154d0815a13b42329f19" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image com.sterlite.cal.security.controller.MainLayoutComposer.printImg</definition>
+        <argsstring></argsstring>
+        <name>printImg</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.printImg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="77" column="15" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa5b5f7f86d55c451f355b78cc5c0a7f8" prot="private" static="no" mutable="no">
+        <type>Div</type>
+        <definition>Div com.sterlite.cal.security.controller.MainLayoutComposer.topNavDiv</definition>
+        <argsstring></argsstring>
+        <name>topNavDiv</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.topNavDiv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="78" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a8dc7aa6dc4f2de9c7a2bc388341a833d" prot="private" static="no" mutable="no">
+        <type>List&lt; A &gt;</type>
+        <definition>List&lt;A&gt; com.sterlite.cal.security.controller.MainLayoutComposer.moduleGroupAnchorList</definition>
+        <argsstring></argsstring>
+        <name>moduleGroupAnchorList</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.moduleGroupAnchorList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="80" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a4cd9596aa32fb50b81ce0d6cd84d37c1" prot="private" static="no" mutable="no">
+        <type>A</type>
+        <definition>A com.sterlite.cal.security.controller.MainLayoutComposer.selectedA</definition>
+        <argsstring></argsstring>
+        <name>selectedA</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.selectedA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="85" column="11" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a45959a0d0cf286b25ffc0ed5065dba31" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.security.controller.MainLayoutComposer.strCurrentTarget</definition>
+        <argsstring></argsstring>
+        <name>strCurrentTarget</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.strCurrentTarget</qualifiedname>
+        <initializer>= &quot;user-home.zul&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="87" column="16" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0b7736b8e3f2e7a8a5e45ac27a4516d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.createTopNavigationPanel</definition>
+        <argsstring>()</argsstring>
+        <name>createTopNavigationPanel</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.createTopNavigationPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Ending Logic for Home Tab</para>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="89" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="89" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a502356cef9dc81d5b95afd35a45297c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.mouseOutAnchorList</definition>
+        <argsstring>()</argsstring>
+        <name>mouseOutAnchorList</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.mouseOutAnchorList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="271" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="271" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa5acb37e0001785de941468d99dd4b81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.mouseOverAnchorList</definition>
+        <argsstring>(A selectedAnchor)</argsstring>
+        <name>mouseOverAnchorList</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.mouseOverAnchorList</qualifiedname>
+        <param>
+          <type>A</type>
+          <declname>selectedAnchor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="285" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="285" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa20111c20aa1d82b9a35d4a6711bd8ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.doLogout</definition>
+        <argsstring>()</argsstring>
+        <name>doLogout</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.doLogout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="393" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="393" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0e6af4717b9ccf769c31f684000464fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.redirect</definition>
+        <argsstring>(String target)</argsstring>
+        <name>redirect</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.redirect</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="430" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="430" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a969b294b4be8525e9e676fd8924da2db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.setHeaderLabels</definition>
+        <argsstring>()</argsstring>
+        <name>setHeaderLabels</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.setHeaderLabels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="499" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="499" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a6a2a5b3d012464538d9b573b6aae8735" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.addHeaderEventListers</definition>
+        <argsstring>()</argsstring>
+        <name>addHeaderEventListers</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.addHeaderEventListers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="511" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="511" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa9ca3e7f940d1fc46b8d00115cb7aaaa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.refresh</definition>
+        <argsstring>(String target)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.refresh</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="628" column="14" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="628" bodyend="643"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ac7f4b5d8889278423f71a496d1991fe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.createMenu</definition>
+        <argsstring>(String panel)</argsstring>
+        <name>createMenu</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.createMenu</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>panel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="300" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="300" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa81aab7a5453f76b4d707bfbbcbd265d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Menupopup</type>
+        <definition>Menupopup com.sterlite.cal.security.controller.MainLayoutComposer.createMenuitems</definition>
+        <argsstring>(List&lt; String &gt; systemActionData, Menupopup level1XMenuPopup)</argsstring>
+        <name>createMenuitems</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.createMenuitems</qualifiedname>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>systemActionData</declname>
+        </param>
+        <param>
+          <type>Menupopup</type>
+          <declname>level1XMenuPopup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="402" column="18" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="402" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ae60898ee5528bbcf85ea764dcc52e448" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.security.controller.MainLayoutComposer.afterCompose</definition>
+        <argsstring>(Window comp)</argsstring>
+        <name>afterCompose</name>
+        <qualifiedname>com.sterlite.cal.security.controller.MainLayoutComposer.afterCompose</qualifiedname>
+        <reimplements refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5401e38a16f8ca995759eb2909ed571b">afterCompose</reimplements>
+        <param>
+          <type>Window</type>
+          <declname>comp</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="666" column="13" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="666" bodyend="687"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.security.controller.MainLayoutComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.security.controller.MainLayoutComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>moduleContent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ui.core.BaseComposer</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>moduleContent</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>webActiveSessionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Map&lt; String, HttpSession &gt;</label>
+      </node>
+      <node id="3">
+        <label>GenericForwardComposer&lt; Window &gt;</label>
+      </node>
+      <node id="4">
+        <label>Div</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" line="47" column="7" bodyfile="repository/cal-web/src/main/java/com/sterlite/cal/security/controller/MainLayoutComposer.java" bodystart="47" bodyend="688"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1af5ce063bf3bbb720569a7d084268d3e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>ACTIVE_IMAGE_ICON</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a6a2a5b3d012464538d9b573b6aae8735" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>addHeaderEventListers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ae60898ee5528bbcf85ea764dcc52e448" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>afterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a3c74e69c59ce40c9acb584edfad62f72" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>backImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5fdb680b51a250fcecc9066b760fedfa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>BD_SESSION_CONTEXT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ac7f4b5d8889278423f71a496d1991fe7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>createMenu</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa81aab7a5453f76b4d707bfbbcbd265d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>createMenuitems</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0b7736b8e3f2e7a8a5e45ac27a4516d4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>createTopNavigationPanel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a93d97d60f4594f36e5b923895f7e05cd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>DATE_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1adbdffde58fe05090464b19ed21537acd" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>DATE_TIME_FORMAT_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8984241cb433b2cc33f09d6fdf70e179" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>doAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a18b709d13f8a7790e8e7c4f3659bd1ab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>doBeforeCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa20111c20aa1d82b9a35d4a6711bd8ee" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>doLogout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1aea4116169b63115bbca90ab64f290938" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::ui::core::BaseComposer."><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>doLogout</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a5ddf909a6560ad80b2eac0b24100b16a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>forwardImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a045936c3e11992e99b3d9ba8f1614b24" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>getContextPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3a8c4c0affa7386f007ccf5e04ac103c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>getDateFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a3f1aee09263be734cfcebdee467a1236" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>getDateTimeFormat</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a82bd0f32f9d1259d626d1d0d6df5483e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>getPageSize</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a12015a0820be86e2bffffafe9ea4f1fb" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>homeImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ae043eae4e3773b55d314bb1103fd3669" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>IMAGE_ICON</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a16ad46ef687a92c421d3f41e0b3f7eb0" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>internalAfterCompose</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a86cb12e174e2376c490f7c5347cd1018" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>lastLoginLabel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1adf26e396575a480cfdb78ef330afbe16" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>leafMenuCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a45a5467c365fd2d84c9187d2fc5648a7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>leftNavPanelChildren</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a825c862a9c367669d32115cc980f4bd4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>leftNavTab</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aef6b3da8ecce1a4a5e800cd95ca3ab7c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>level1Menu</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ad5814bda40ab9c01116a478be6699108" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1afd606e17cc8adb305d62c5cbd47cc27e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>mainComposerParams</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a1c5a96ee3cfea827a2e8d2e92314b35f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a6efb15657a4b27c651cbf605955d449a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>moduleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a8dc7aa6dc4f2de9c7a2bc388341a833d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>moduleGroupAnchorList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a502356cef9dc81d5b95afd35a45297c1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>mouseOutAnchorList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa5acb37e0001785de941468d99dd4b81" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>mouseOverAnchorList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8a4ce8e3e873e2c576ddabdb72c8c04d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>onClick$btnCancel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8f930d6c84802dcb8ce425d93e02f183" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>PAGESIZE_ALIASNAME</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aeb8f4e911c41154d0815a13b42329f19" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>printImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0e6af4717b9ccf769c31f684000464fc" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>redirect</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa9ca3e7f940d1fc46b8d00115cb7aaaa" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>refresh</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a8d6185ef9f1c65dec75742bf64861511" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>refreshImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a5ce1b4378f4508679a728efa0e4cd0d4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>resetComponents</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a0e7ba727541a3a7e3478ad7cd88a521f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>rootMenu</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a4cd9596aa32fb50b81ce0d6cd84d37c1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>selectedA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a1fbc83fe8aad7fb19ecd93c23c4db06d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a969b294b4be8525e9e676fd8924da2db" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>setHeaderLabels</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a0e72589eca883923a14f421d10800049" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>setModuleContent</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a31094789c9609d04c28ae93bf173b522" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>showSuccessDialog</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a8d0c2703eaadac0cb5202962982c3453" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>sortComboBoxDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a2d73bbbbfaca3321d9259cc91404c144" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>sortComboDatas</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1abe3ab888a95123c05fdeee471680cded" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>stopImg</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a45959a0d0cf286b25ffc0ed5065dba31" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>strCurrentTarget</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a22ba9bfa942d29771cf4e4399c773bc9" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>SYSTEMPARAMETER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1ac4d9a3aac3449850e5b68aff9d23ed9c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>tabPanels</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a65c76416c6a0d0fb40f1fff122a4ba1a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>tabPannel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a2ee526ddc5f04dfb842f195d7cf49c5b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>TASK_STEP_ID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a414554e0ac4e1535ed623f8f90852bb5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>TASK_TYPE_ID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aa5b5f7f86d55c451f355b78cc5c0a7f8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>topNavDiv</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1aebe12e4550ff43314894c8d129e51295" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>userLabel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ui_1_1core_1_1_base_composer_1a6aa086bf1197e04bc86e1ca91caf4def" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>webActiveSessionMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1security_1_1controller_1_1_main_layout_composer_1a2d7f318f73e04df2cd3469ebe1423f4f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::security::controller::MainLayoutComposer</scope><name>westPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

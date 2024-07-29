@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1_1_b_r_m_service" prot="private">com::sterlite::cal::brm::core::service::manager::BRMServiceManager::BRMService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a37b0c8b27d4b2eaab8a565dcea9499f9" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.core.service.manager.BRMServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BRMServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="27" column="30" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1af46a5e81ec0b024f4c11021a456b5998" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="28" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a6f5b8a2b37bd42957f30955b8418c799" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="29" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a6211cc7d7c737d7bd59cc596727082a0" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="30" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a7755af809f622094eb0dd4ae69d895d2" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="31" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ae1e2789c41e9077633c8cf1c0e1c2be8" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_DELETE</definition>
+        <argsstring></argsstring>
+        <name>HTTP_DELETE</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.HTTP_DELETE</qualifiedname>
+        <initializer>= &quot;DELETE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="32" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a42119774f25fab556123f21e6ecac307" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="33" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ad0c523522215ebca605191200d3a8562" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.core.service.manager.BRMServiceManager.METHOD_LITERAL</definition>
+        <argsstring></argsstring>
+        <name>METHOD_LITERAL</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.METHOD_LITERAL</qualifiedname>
+        <initializer>= &quot;method :&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="34" column="23" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a90089a71d9cb34f420ef36aaa9fcce7c" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.brm.core.service.manager.BRMServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="37" column="28" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a01b9687edf8d65c4c20de9872c6c7a3a" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, BRMService &gt;</type>
+        <definition>Map&lt;String, BRMService&gt; com.sterlite.cal.brm.core.service.manager.BRMServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="39" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a77700672087527503dee965d4e8bc74f" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.brm.core.service.manager.BRMServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="40" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1aba2dead9e5fcab429495742c8e048bbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.service.manager.BRMServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="43" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ad8851db6e4460cd1c22466ea21bcd2d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.brm.core.service.manager.BRMServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="100" column="18" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="100" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a52f43efda8c457ade70e39e1c94a671e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="114" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="114" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a27088a1dd8c808d0b23ed06b98d7e0e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="140" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="140" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a91a4a4e11d4aad92b013aa6c74c7757c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="164" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="164" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ade58263e70cbda15a149c49ef0ec160e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doDelete</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doDelete</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doDelete</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="189" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="189" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ac9e0df9729c7918bfa318d9b57208031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="215" column="15" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="215" bodyend="241"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a3c91be7d9ab62e99820010c8dac913c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.service.manager.BRMServiceManager.loadBRMService</definition>
+        <argsstring>()</argsstring>
+        <name>loadBRMService</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.loadBRMService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="53" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="53" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a60d884ef7360384092d4c04c7b96604e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.core.service.manager.BRMServiceManager.loadBRMServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.loadBRMServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="83" column="14" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="83" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1afb5385f8af502e93be53dc57b596c8ce" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.brm.core.service.manager.BRMServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.brm.core.service.manager.BRMServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="277" column="26" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="277" bodyend="297"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" line="25" column="7" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/brm/core/service/manager/BRMServiceManager.java" bodystart="25" bodyend="298"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a77700672087527503dee965d4e8bc74f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a90089a71d9cb34f420ef36aaa9fcce7c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ade58263e70cbda15a149c49ef0ec160e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>doDelete</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a27088a1dd8c808d0b23ed06b98d7e0e1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a91a4a4e11d4aad92b013aa6c74c7757c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a52f43efda8c457ade70e39e1c94a671e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ac9e0df9729c7918bfa318d9b57208031" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ad8851db6e4460cd1c22466ea21bcd2d7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1afb5385f8af502e93be53dc57b596c8ce" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ae1e2789c41e9077633c8cf1c0e1c2be8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>HTTP_DELETE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a6f5b8a2b37bd42957f30955b8418c799" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a6211cc7d7c737d7bd59cc596727082a0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1af46a5e81ec0b024f4c11021a456b5998" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a7755af809f622094eb0dd4ae69d895d2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1aba2dead9e5fcab429495742c8e048bbb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a3c91be7d9ab62e99820010c8dac913c3" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>loadBRMService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a60d884ef7360384092d4c04c7b96604e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>loadBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a37b0c8b27d4b2eaab8a565dcea9499f9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1ad0c523522215ebca605191200d3a8562" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>METHOD_LITERAL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a42119774f25fab556123f21e6ecac307" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager_1a01b9687edf8d65c4c20de9872c6c7a3a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::core::service::manager::BRMServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

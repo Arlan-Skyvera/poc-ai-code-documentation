@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1ab98e6fc8b4370f797191917799dd516a" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1_i_c_d_a_operation_service" kindref="compound">ICDAOperationService</ref></type>
+        <definition>ICDAOperationService com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.cdaService</definition>
+        <argsstring></argsstring>
+        <name>cdaService</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.cdaService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="27" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1afc8dcb7ee9e6560d7a5df7c1594af9a1" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CDAServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="28" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1af04e64e6bc49e8877b6d18aab8305241" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="30" column="11" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a308a3d52b0387ee7104c43285a4b7039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="32" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="32" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a9e0961a692ac7162ff5a7fa200f7785d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.orderValidateOld</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>orderValidateOld</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.orderValidateOld</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="64" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="64" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1ac7018b4c8edf97edc5ea8333d1fc7e42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.getBillingAccountCharges</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>getBillingAccountCharges</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.getBillingAccountCharges</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="116" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="116" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a86e66e0b9a7a9dd26d6e393940242456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.orderValidateForCDAAndLPSG</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>orderValidateForCDAAndLPSG</name>
+        <qualifiedname>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager.orderValidateForCDAAndLPSG</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="145" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="145" bodyend="174"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.cda.service.manager.CDAServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" line="24" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/cda/service/manager/CDAServiceManager.java" bodystart="24" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1ab98e6fc8b4370f797191917799dd516a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>cdaService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a308a3d52b0387ee7104c43285a4b7039" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1ac7018b4c8edf97edc5ea8333d1fc7e42" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>getBillingAccountCharges</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1af04e64e6bc49e8877b6d18aab8305241" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1afc8dcb7ee9e6560d7a5df7c1594af9a1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a86e66e0b9a7a9dd26d6e393940242456" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>orderValidateForCDAAndLPSG</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1service_1_1manager_1_1_c_d_a_service_manager_1a9e0961a692ac7162ff5a7fa200f7785d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::cda::service::manager::CDAServiceManager</scope><name>orderValidateOld</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

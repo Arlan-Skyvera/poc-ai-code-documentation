@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service" prot="public" virt="non-virtual">com.sterlite.cal.ivr.service.IVRAddOnSubscriptionService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a424c0bfb2a2d6d245161935ab324a444" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(SubscriptionServiceImpl.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="37" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aa353821a0006516b19d011891a5c2976" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_i_v_r_util" kindref="compound">IVRUtil</ref></type>
+        <definition>IVRUtil com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.ivrUtil</definition>
+        <argsstring></argsstring>
+        <name>ivrUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.ivrUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="39" column="17" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1abbf359000882cbd5533aa80a2d0ff37a" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_product_service" kindref="compound">IVRProductService</ref></type>
+        <definition>IVRProductService com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.productService</definition>
+        <argsstring></argsstring>
+        <name>productService</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="42" column="27" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a4eb3ac4cd41b767086e594a420e5dd78" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_d_nofication_i_v_r_service" kindref="compound">DNoficationIVRService</ref></type>
+        <definition>DNoficationIVRService com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.dNotificationService</definition>
+        <argsstring></argsstring>
+        <name>dNotificationService</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.dNotificationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="45" column="31" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a62d3c9fb80837f69ec35f0e978dd259c" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_w_o_m_service" kindref="compound">IVRWOMService</ref></type>
+        <definition>IVRWOMService com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.womService</definition>
+        <argsstring></argsstring>
+        <name>womService</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.womService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="48" column="23" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a32163f82ccb13a857d25a37f25cba925" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_common_utils" kindref="compound">CommonUtils</ref></type>
+        <definition>CommonUtils com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.commonUtil</definition>
+        <argsstring></argsstring>
+        <name>commonUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.commonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="51" column="21" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a2c75b3fdb451b324edeaa2905fa60e50" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="57" column="19" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aed025e22dc56cb9f2129e602a9032ea7" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_brm_common_utils" kindref="compound">BrmCommonUtils</ref></type>
+        <definition>BrmCommonUtils com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.brmCommonUtils</definition>
+        <argsstring></argsstring>
+        <name>brmCommonUtils</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.brmCommonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="54" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a497b497c9cc163537b166fb6d450917c" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client" kindref="compound">CRMRestClient</ref></type>
+        <definition>CRMRestClient com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.crmRestClient</definition>
+        <argsstring></argsstring>
+        <name>crmRestClient</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.crmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="60" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1adfd5550c44c0179a486bcdd86893cc48" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util" kindref="compound">SubscriberUtil</ref></type>
+        <definition>SubscriberUtil com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.subscriberUtil</definition>
+        <argsstring></argsstring>
+        <name>subscriberUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.subscriberUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="63" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aaea2619f4bacca5ed84875dafe5c7bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.perform</definition>
+        <argsstring>(Map&lt; String, Object &gt; serviceDetailMap, SubscribeAddOnRequest ivrAddOnRequest)</argsstring>
+        <name>perform</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.perform</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service_1a5c4f9b4a2db59eeed7dff7592e051f33">perform</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>serviceDetailMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_subscribe_add_on_request" kindref="compound">SubscribeAddOnRequest</ref></type>
+          <declname>ivrAddOnRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="66" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="66" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aee3c5032775f5599317cd207c67f852c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductNameByProductID</definition>
+        <argsstring>(String productID)</argsstring>
+        <name>getProductNameByProductID</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductNameByProductID</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service_1a9294a8666a70cde506d8f886182ebe7c">getProductNameByProductID</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productID</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException, <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1195" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1195" bodyend="1205"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a891241e45cae59d439530065b2921b52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProfileId</definition>
+        <argsstring>(ProductDetails productResponse)</argsstring>
+        <name>getProfileId</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProfileId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service_1ab06492ee1d63dbdfb713eb236748a057">getProfileId</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref></type>
+          <declname>productResponse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1207" column="12" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1207" bodyend="1232"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a50111036fc6fafd18bd42e69adb79af7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>Boolean com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.isAddonCompatible</definition>
+        <argsstring>(Map&lt; String, Object &gt; serviceDetailMap, SubscribeAddOnRequest ivrAddOnByPartnerRequest)</argsstring>
+        <name>isAddonCompatible</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.isAddonCompatible</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service_1a51315a084aba6112b4b6513d922ab12b">isAddonCompatible</reimplements>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>serviceDetailMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_subscribe_add_on_request" kindref="compound">SubscribeAddOnRequest</ref></type>
+          <declname>ivrAddOnByPartnerRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1235" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1235" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a631ee472a5cbd0d23895447c5e397458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_customer_profile_response_v_o" kindref="compound">CustomerProfileResponseVO</ref></type>
+        <definition>CustomerProfileResponseVO com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getCustomerProfile</definition>
+        <argsstring>(CustomerDataVO requestData)</argsstring>
+        <name>getCustomerProfile</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getCustomerProfile</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_customer_data_v_o" kindref="compound">CustomerDataVO</ref></type>
+          <declname>requestData</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>, InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1443" column="34" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1443" bodyend="1464"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a72cf1345f3464631cd083f70c9c52c5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref></type>
+        <definition>OrderLineItems com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getCDAOLI</definition>
+        <argsstring>(String serviceType, List&lt; ProductSpecification &gt; bundledProductOffering, String msisdn, Map&lt; String, Object &gt; serviceDetailMap)</argsstring>
+        <name>getCDAOLI</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getCDAOLI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>bundledProductOffering</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>serviceDetailMap</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="565" column="24" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="565" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a6aa2606baa7acc2ef37dbd9f73fb7717" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.settingServiceDetails</definition>
+        <argsstring>(ProductDetails productResponse, OrderLineItems order, boolean isBasePlan, Map&lt; String, String &gt; charValueMap)</argsstring>
+        <name>settingServiceDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.settingServiceDetails</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref></type>
+          <declname>productResponse</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref></type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isBasePlan</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>charValueMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="599" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="599" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ada6f90752c0c86bb2140ebbde232c149" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref> &gt;</type>
+        <definition>List&lt; OrderLineItems &gt; com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setWOMOrder</definition>
+        <argsstring>(List&lt; OrderLineItems &gt; orderLineItemsList, List&lt; ProductSpecification &gt; productList, String serviceType, String serviceInstanceNo, String customerSegment, List&lt; ViewDebitDocumentItemChargeVO &gt; itemChargeList, String bundleName, String msisdn, String subscriptionId, String bundleId, String bundleVersion, List&lt; ProductDetails &gt; extraBenefitsOfAddOnProductDetails)</argsstring>
+        <name>setWOMOrder</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setWOMOrder</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref> &gt;</type>
+          <declname>orderLineItemsList</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>productList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>customerSegment</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_view_debit_document_item_charge_v_o" kindref="compound">ViewDebitDocumentItemChargeVO</ref> &gt;</type>
+          <declname>itemChargeList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>subscriptionId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleVersion</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref> &gt;</type>
+          <declname>extraBenefitsOfAddOnProductDetails</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="731" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="731" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a9a1afa9524ce01799a81d89538b37bf5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setCompatibityCheckWOMOrder</definition>
+        <argsstring>(List&lt; OrderLineItems &gt; orderLineItemsList, List&lt; ProductSpecification &gt; productList, String serviceType, String serviceInstanceNo, List&lt; ViewDebitDocumentItemChargeVO &gt; itemChargeList, String bundleName, String msisdn, String subscriptionId, String bundleId, String bundleVersion, boolean isBundled, List&lt; ProductDetails &gt; extraBenefitsOfAddOnProductDetails)</argsstring>
+        <name>setCompatibityCheckWOMOrder</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setCompatibityCheckWOMOrder</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref> &gt;</type>
+          <declname>orderLineItemsList</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>productList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNo</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_view_debit_document_item_charge_v_o" kindref="compound">ViewDebitDocumentItemChargeVO</ref> &gt;</type>
+          <declname>itemChargeList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>subscriptionId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleVersion</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isBundled</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_details" kindref="compound">ProductDetails</ref> &gt;</type>
+          <declname>extraBenefitsOfAddOnProductDetails</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="915" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="915" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aad2cce0493262a31baded21aaa570624" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setCrmOrder</definition>
+        <argsstring>(OrderLineItems orderLineItem, List&lt; ProductSpecification &gt; spoPackageList, String serviceType, String serviceInstanceNo, String bundleId, String bundleVersion, String msisdn, String bundleName, List&lt; ViewDebitDocumentItemChargeVO &gt; itemChargeList, String isBundled)</argsstring>
+        <name>setCrmOrder</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.setCrmOrder</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_order_line_items" kindref="compound">OrderLineItems</ref></type>
+          <declname>orderLineItem</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>spoPackageList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleVersion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleName</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_view_debit_document_item_charge_v_o" kindref="compound">ViewDebitDocumentItemChargeVO</ref> &gt;</type>
+          <declname>itemChargeList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>isBundled</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1018" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1018" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a3fc950afb53af05fa0cb8fb78f97602f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.createCRMRequest</definition>
+        <argsstring>(CRMCreateOrderVo crmCreateOrder, String serviceType, String serviceInstanceNo, List&lt; ProductSpecification &gt; productList, String bundleId, String bundleVersion, String msisdn, String bundleName, List&lt; ViewDebitDocumentItemChargeVO &gt; itemChargeList, String isBundled)</argsstring>
+        <name>createCRMRequest</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.createCRMRequest</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_c_r_m_create_order_vo" kindref="compound">CRMCreateOrderVo</ref></type>
+          <declname>crmCreateOrder</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNo</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>productList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleVersion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleName</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1cda_1_1valueobject_1_1_view_debit_document_item_charge_v_o" kindref="compound">ViewDebitDocumentItemChargeVO</ref> &gt;</type>
+          <declname>itemChargeList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>isBundled</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1042" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1042" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ae525c7823ff142ad1695eec80b9ba014" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; String &gt;</type>
+        <definition>List&lt; String &gt; com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductListForCompatability</definition>
+        <argsstring>(List&lt; AlternateProductOfferingProposalVO &gt; products)</argsstring>
+        <name>getProductListForCompatability</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductListForCompatability</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_alternate_product_offering_proposal_v_o" kindref="compound">AlternateProductOfferingProposalVO</ref> &gt;</type>
+          <declname>products</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1145" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1145" bodyend="1147"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a2ca63637355a8f4bdf58fb451405c5b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductForBPO</definition>
+        <argsstring>(List&lt; AlternateProductOfferingProposalVO &gt; products, String packageName)</argsstring>
+        <name>getProductForBPO</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductForBPO</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_alternate_product_offering_proposal_v_o" kindref="compound">AlternateProductOfferingProposalVO</ref> &gt;</type>
+          <declname>products</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>packageName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1149" column="16" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1149" bodyend="1158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a8d0721ffbe4cee09de937dad23758ad8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getBundledIDAndName</definition>
+        <argsstring>(List&lt; AlternateProductOfferingProposalVO &gt; products, String packageName)</argsstring>
+        <name>getBundledIDAndName</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getBundledIDAndName</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_alternate_product_offering_proposal_v_o" kindref="compound">AlternateProductOfferingProposalVO</ref> &gt;</type>
+          <declname>products</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>packageName</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1160" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1160" bodyend="1172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ae0eeae4b31d7ee7d35c801251f9e3fde" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_wrapper_data" kindref="compound">ProductWrapperData</ref> &gt;</type>
+        <definition>List&lt; ProductWrapperData &gt; com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductWrapperDataList</definition>
+        <argsstring>(String alias, String name, String Value)</argsstring>
+        <name>getProductWrapperDataList</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.getProductWrapperDataList</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Value</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1174" column="14" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1174" bodyend="1192"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a439fa47d1ff8f06696e514897af3f115" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_compatibity_check_v_o" kindref="compound">CompatibityCheckVO</ref></type>
+        <definition>CompatibityCheckVO com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.requestToGetExtraBenifitsWithAddon</definition>
+        <argsstring>(SubscribeAddOnRequest ivrAddOnRequest, List&lt; ProductSpecification &gt; productList, String serviceType, String serviceInstanceNo, String bundleName, String bundleId, String bundleVersion, boolean isBundled)</argsstring>
+        <name>requestToGetExtraBenifitsWithAddon</name>
+        <qualifiedname>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl.requestToGetExtraBenifitsWithAddon</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_subscribe_add_on_request" kindref="compound">SubscribeAddOnRequest</ref></type>
+          <declname>ivrAddOnRequest</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+          <declname>productList</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bundleVersion</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>isBundled</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="1369" column="28" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="1369" bodyend="1441"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRAddOnSubscriptionService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.serviceImpl.impl.SubscriptionServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>brmCommonUtils</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>crmRestClient</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>subscriberUtil</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>brmQueryClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.brm.core.util.BrmCommonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1util_1_1_brm_common_utils"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.ChargeDetailsRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_charge_details_repo"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRelRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_rel_repo"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_repo"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>com.sterlite.cal.brm.subscriber.utils.ChargesDetailsMapper</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_charges_details_mapper"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>devicemappingRepo</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creditInvoiceRepo</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>chargeDetailsRepo</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>environment</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>chargesDetailsMapper</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>creditInvoiceRelRepo</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.CRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_c_r_m_rest_client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.ivr.service.IVRAddOnSubscriptionService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1service_1_1_i_v_r_add_on_subscription_service"/>
+      </node>
+      <node id="7">
+        <label>Environment</label>
+      </node>
+      <node id="19">
+        <label>JpaRepository&lt; ChargeDetails, Long &gt;</label>
+      </node>
+      <node id="17">
+        <label>JpaRepository&lt; CreditInvoice, Long &gt;</label>
+      </node>
+      <node id="23">
+        <label>JpaRepository&lt; CreditInvoiceRel, Long &gt;</label>
+      </node>
+      <node id="15">
+        <label>JpaRepository&lt; DeviceMapping, Long &gt;</label>
+      </node>
+      <node id="21">
+        <label>RowMapper&lt; DeviceChargesDetails &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" line="35" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/serviceImpl/impl/SubscriptionServiceImpl.java" bodystart="35" bodyend="1465"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aed025e22dc56cb9f2129e602a9032ea7" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>brmCommonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a32163f82ccb13a857d25a37f25cba925" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>commonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a3fc950afb53af05fa0cb8fb78f97602f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>createCRMRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a497b497c9cc163537b166fb6d450917c" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>crmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a4eb3ac4cd41b767086e594a420e5dd78" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>dNotificationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a8d0721ffbe4cee09de937dad23758ad8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getBundledIDAndName</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a72cf1345f3464631cd083f70c9c52c5f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getCDAOLI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a631ee472a5cbd0d23895447c5e397458" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getCustomerProfile</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a2ca63637355a8f4bdf58fb451405c5b5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getProductForBPO</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ae525c7823ff142ad1695eec80b9ba014" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getProductListForCompatability</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aee3c5032775f5599317cd207c67f852c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getProductNameByProductID</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ae0eeae4b31d7ee7d35c801251f9e3fde" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getProductWrapperDataList</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a891241e45cae59d439530065b2921b52" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>getProfileId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a50111036fc6fafd18bd42e69adb79af7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>isAddonCompatible</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aa353821a0006516b19d011891a5c2976" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>ivrUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a2c75b3fdb451b324edeaa2905fa60e50" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a424c0bfb2a2d6d245161935ab324a444" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aaea2619f4bacca5ed84875dafe5c7bde" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>perform</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1abbf359000882cbd5533aa80a2d0ff37a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>productService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a439fa47d1ff8f06696e514897af3f115" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>requestToGetExtraBenifitsWithAddon</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a9a1afa9524ce01799a81d89538b37bf5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>setCompatibityCheckWOMOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1aad2cce0493262a31baded21aaa570624" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>setCrmOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a6aa2606baa7acc2ef37dbd9f73fb7717" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>settingServiceDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1ada6f90752c0c86bb2140ebbde232c149" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>setWOMOrder</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1adfd5550c44c0179a486bcdd86893cc48" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>subscriberUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1service_impl_1_1impl_1_1_subscription_service_impl_1a62d3c9fb80837f69ec35f0e978dd259c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::serviceImpl::impl::SubscriptionServiceImpl</scope><name>womService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

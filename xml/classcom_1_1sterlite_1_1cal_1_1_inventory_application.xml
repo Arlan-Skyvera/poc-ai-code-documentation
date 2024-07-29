@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1_inventory_application" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::InventoryApplication</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a701824a63e74a9a250dd45fd9d711531" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.InventoryApplication.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.InventoryApplication.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(InventoryApplication.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" line="21" column="30" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a23c0027e0f14e1cdce5da1e33b985f6b" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager" kindref="compound">BRMServiceManager</ref></type>
+        <definition>BRMServiceManager com.sterlite.cal.InventoryApplication.brmServiceManager</definition>
+        <argsstring></argsstring>
+        <name>brmServiceManager</name>
+        <qualifiedname>com.sterlite.cal.InventoryApplication.brmServiceManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" line="24" column="19" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a0bbcc44d823e4ff0496b3476ae66c6f1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.InventoryApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.InventoryApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" line="26" column="20" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" bodystart="26" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a303942042531c51a5563dcd55ce43d07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.InventoryApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.InventoryApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" line="35" column="13" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" bodystart="35" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+<simplesect kind="since"><para>April 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.InventoryApplication</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1_inventory_application"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brmServiceManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.service.manager.BRMServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" line="19" column="7" bodyfile="repository/brm-inventory/src/main/java/com/sterlite/cal/InventoryApplication.java" bodystart="19" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a23c0027e0f14e1cdce5da1e33b985f6b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::InventoryApplication</scope><name>brmServiceManager</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a303942042531c51a5563dcd55ce43d07" prot="public" virt="non-virtual"><scope>com::sterlite::cal::InventoryApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a701824a63e74a9a250dd45fd9d711531" prot="private" virt="non-virtual"><scope>com::sterlite::cal::InventoryApplication</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_inventory_application_1a0bbcc44d823e4ff0496b3476ae66c6f1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::InventoryApplication</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

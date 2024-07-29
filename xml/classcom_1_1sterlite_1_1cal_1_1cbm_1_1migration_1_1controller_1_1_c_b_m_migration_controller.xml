@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1ab838f33e73d0e598bab3d90f63a479ab" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.migration.controller.CBMMigrationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.migration.controller.CBMMigrationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CBMMigrationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" line="22" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a7a0832cc5c1e8cc7fa97efeacf38beb1" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1service_1_1_i_c_b_m_migration_service" kindref="compound">ICBMMigrationService</ref></type>
+        <definition>ICBMMigrationService com.sterlite.cal.cbm.migration.controller.CBMMigrationController.service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>com.sterlite.cal.cbm.migration.controller.CBMMigrationController.service</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" line="25" column="22" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a8b5a650f260e4a7809a511625292821d" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.migration.controller.CBMMigrationController.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.migration.controller.CBMMigrationController.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" line="29" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a48f0e044f76c12bcb5aa65819e2885ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.cbm.migration.controller.CBMMigrationController.pullContractDetails</definition>
+        <argsstring>(@RequestBody String jsonRequest)</argsstring>
+        <name>pullContractDetails</name>
+        <qualifiedname>com.sterlite.cal.cbm.migration.controller.CBMMigrationController.pullContractDetails</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" line="33" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" bodystart="33" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.migration.controller.CBMMigrationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.migration.controller.CBMMigrationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.cbm.migration.service.ICBMMigrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1service_1_1_i_c_b_m_migration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" line="20" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/migration/controller/CBMMigrationController.java" bodystart="20" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a8b5a650f260e4a7809a511625292821d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1ab838f33e73d0e598bab3d90f63a479ab" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a48f0e044f76c12bcb5aa65819e2885ef" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>pullContractDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1migration_1_1controller_1_1_c_b_m_migration_controller_1a7a0832cc5c1e8cc7fa97efeacf38beb1" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>service</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::cbm::migration::controller::CBMMigrationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

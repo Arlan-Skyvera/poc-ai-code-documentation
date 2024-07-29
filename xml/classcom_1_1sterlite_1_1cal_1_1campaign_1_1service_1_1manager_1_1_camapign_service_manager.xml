@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1_1_camapign_service" prot="private">com::sterlite::cal::campaign::service::manager::CamapignServiceManager::CamapignService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ab5eacabb7f3341344cc1d44857c1d4fe" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.campaign.service.manager.CamapignServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CamapignServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="25" column="30" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a5873ae309db2380d6cc731f19b161512" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="26" column="23" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae2f59489c083eba82a0bab6079eb1531" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="27" column="23" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae305358e7b5fdcf2c76a8b66e9acc86a" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="28" column="23" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a9a03d7de190bb9f2d7206b5abe3969e0" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="29" column="23" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ac18e0efb02620c15a2c956e7693d5c4d" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.service.manager.CamapignServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="30" column="23" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1adf3d39ee4f1232b2c4b9b8f5cf400dac" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.campaign.service.manager.CamapignServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="33" column="28" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1af917b7b70caac15cbabaa18444f77395" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, CamapignService &gt;</type>
+        <definition>Map&lt;String, CamapignService&gt; com.sterlite.cal.campaign.service.manager.CamapignServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="35" column="13" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a7f6ec6fd72829102c36a7303f4bf6f6e" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.campaign.service.manager.CamapignServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="36" column="13" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a26de74e5f48e1f0aee7af86721c7bd36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.campaign.service.manager.CamapignServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="39" column="13" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ac19c373365193b5a625f72fdbf1f5356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.campaign.service.manager.CamapignServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="85" column="18" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae114cb24b58595e65c6f2f750acd338c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="98" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="98" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a4d05806deb5358aa008246369d84366c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="120" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="120" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a2a290bf7070412f5e24468b74279220d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="142" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="142" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a0c29b5852e22dbf8ca454474daaf65a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="158" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="158" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ab855e1f6dc0d7361275a21622b6d6ec0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.campaign.service.manager.CamapignServiceManager.loadCamapignService</definition>
+        <argsstring>()</argsstring>
+        <name>loadCamapignService</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.loadCamapignService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="49" column="14" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="49" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae46253b6cb4eb459dba959b15ed23539" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.campaign.service.manager.CamapignServiceManager.loadCamapignServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadCamapignServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.loadCamapignServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="72" column="14" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="72" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1abde75c2602c9adac580381d9a22f28c5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.campaign.service.manager.CamapignServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.campaign.service.manager.CamapignServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="216" column="26" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="216" bodyend="233"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" line="24" column="7" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/service/manager/CamapignServiceManager.java" bodystart="24" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a7f6ec6fd72829102c36a7303f4bf6f6e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1adf3d39ee4f1232b2c4b9b8f5cf400dac" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a4d05806deb5358aa008246369d84366c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a2a290bf7070412f5e24468b74279220d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae114cb24b58595e65c6f2f750acd338c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a0c29b5852e22dbf8ca454474daaf65a2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ac19c373365193b5a625f72fdbf1f5356" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1abde75c2602c9adac580381d9a22f28c5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae2f59489c083eba82a0bab6079eb1531" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae305358e7b5fdcf2c76a8b66e9acc86a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a5873ae309db2380d6cc731f19b161512" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a9a03d7de190bb9f2d7206b5abe3969e0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1a26de74e5f48e1f0aee7af86721c7bd36" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ab855e1f6dc0d7361275a21622b6d6ec0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>loadCamapignService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ae46253b6cb4eb459dba959b15ed23539" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>loadCamapignServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ab5eacabb7f3341344cc1d44857c1d4fe" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1ac18e0efb02620c15a2c956e7693d5c4d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager_1af917b7b70caac15cbabaa18444f77395" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::service::manager::CamapignServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a56882d106756f99ec3d9334e1df8ceb9" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(RequestResponseLoggingAspect.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="45" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a64e5c76392044d5db0cd35d5db20b65d" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.apiLogger</definition>
+        <argsstring></argsstring>
+        <name>apiLogger</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.apiLogger</qualifiedname>
+        <initializer>= LogManager.getLogger(&quot;event-api-log&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="46" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a394af717861f36391697e81acf6d5241" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.SOURCE_TOKEN</definition>
+        <argsstring></argsstring>
+        <name>SOURCE_TOKEN</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.SOURCE_TOKEN</qualifiedname>
+        <initializer>= &quot;source&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="47" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aaab369f41908defb89e4ece1775c238a" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.REFERENCEID_TOKEN</definition>
+        <argsstring></argsstring>
+        <name>REFERENCEID_TOKEN</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.REFERENCEID_TOKEN</qualifiedname>
+        <initializer>= &quot;referenceId&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="48" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a6504477560ee146822e901f90e964122" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.API_AUDIT_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>API_AUDIT_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.API_AUDIT_ENABLE</qualifiedname>
+        <initializer>= &quot;api.audit.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="65" column="29" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a7d35d97efff47bf00a7f3885d6170651" prot="package" static="no" mutable="no">
+        <type>JmsTemplate</type>
+        <definition>JmsTemplate com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.jmsTemplate</definition>
+        <argsstring></argsstring>
+        <name>jmsTemplate</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.jmsTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="51" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a4c3975fa93a2628d67c1499ca8b64574" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="54" column="11" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a2d57a1c30b17d7ffc1657e6a49ac4394" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="57" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1ac6714ea4e635561a6109aadeb5b7662f" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_persist_audit_service" kindref="compound">IPersistAuditService</ref></type>
+        <definition>IPersistAuditService com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.persistAuditService</definition>
+        <argsstring></argsstring>
+        <name>persistAuditService</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.persistAuditService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="60" column="22" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1af9ab7805b7b328808a9247ec2a495883" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1valueobject_1_1_start_time_request_bean" kindref="compound">StartTimeRequestBean</ref></type>
+        <definition>StartTimeRequestBean com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.startTimeRequestBean</definition>
+        <argsstring></argsstring>
+        <name>startTimeRequestBean</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.startTimeRequestBean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="63" column="30" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a371f1fc21d6fe2d2eb9fa8a96891901a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.generateRequestLogs</definition>
+        <argsstring>(ProceedingJoinPoint pjp)</argsstring>
+        <name>generateRequestLogs</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.generateRequestLogs</qualifiedname>
+        <param>
+          <type>ProceedingJoinPoint</type>
+          <declname>pjp</declname>
+        </param>
+        <exceptions> throws Throwable</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="70" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="70" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a75cbdd5381519894afca65084d904a34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.traceParameterMap</definition>
+        <argsstring>(Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>traceParameterMap</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.traceParameterMap</qualifiedname>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="135" column="15" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1af1ce7d7c2f115e280c2183fc5d88b734" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.setSourceDetails</definition>
+        <argsstring>(String jsonRequest)</argsstring>
+        <name>setSourceDetails</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.setSourceDetails</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>jsonRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="259" column="13" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="259" bodyend="271"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a1eec152f2b3e44b74c4c25bfd6dd004e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>StringBuilder</type>
+        <definition>StringBuilder com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.logRequest</definition>
+        <argsstring>(ProceedingJoinPoint pjp)</argsstring>
+        <name>logRequest</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.logRequest</qualifiedname>
+        <param>
+          <type>ProceedingJoinPoint</type>
+          <declname>pjp</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="92" column="23" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="92" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aec0369c0ee9f7bfcdc71362238d6450b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.logResponse</definition>
+        <argsstring>(Object output, Long elapsedTime, StringBuilder requestSB, ProceedingJoinPoint pjp)</argsstring>
+        <name>logResponse</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.logResponse</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>Long</type>
+          <declname>elapsedTime</declname>
+        </param>
+        <param>
+          <type>StringBuilder</type>
+          <declname>requestSB</declname>
+        </param>
+        <param>
+          <type>ProceedingJoinPoint</type>
+          <declname>pjp</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Rest Response <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="153" column="14" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="153" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aea70be123b91dfc8964c4ac9a2e0fa2f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.auditRequest</definition>
+        <argsstring>(HttpServletRequest request, ProceedingJoinPoint pjp)</argsstring>
+        <name>auditRequest</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.auditRequest</qualifiedname>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>ProceedingJoinPoint</type>
+          <declname>pjp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pjp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="216" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="216" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1ac781840963cdcaa149c89b74c8f5321f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.auditResponse</definition>
+        <argsstring>(Object output, HttpServletResponse response)</argsstring>
+        <name>auditResponse</name>
+        <qualifiedname>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect.auditResponse</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>HttpServletResponse</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="240" column="18" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="240" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.core.base.aspect.RequestResponseLoggingAspect</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>jmsTemplate</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>persistAuditService</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.audit.service.IPersistAuditService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1audit_1_1service_1_1_i_persist_audit_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>Environment</label>
+      </node>
+      <node id="2">
+        <label>JmsTemplate</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" line="42" column="7" bodyfile="repository/core/src/main/java/com/sterlite/cal/core/base/aspect/RequestResponseLoggingAspect.java" bodystart="42" bodyend="272"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a6504477560ee146822e901f90e964122" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>API_AUDIT_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a64e5c76392044d5db0cd35d5db20b65d" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>apiLogger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aea70be123b91dfc8964c4ac9a2e0fa2f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>auditRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1ac781840963cdcaa149c89b74c8f5321f" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>auditResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a2d57a1c30b17d7ffc1657e6a49ac4394" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a371f1fc21d6fe2d2eb9fa8a96891901a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>generateRequestLogs</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a7d35d97efff47bf00a7f3885d6170651" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>jmsTemplate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a4c3975fa93a2628d67c1499ca8b64574" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a56882d106756f99ec3d9334e1df8ceb9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a1eec152f2b3e44b74c4c25bfd6dd004e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>logRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aec0369c0ee9f7bfcdc71362238d6450b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>logResponse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1ac6714ea4e635561a6109aadeb5b7662f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>persistAuditService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1aaab369f41908defb89e4ece1775c238a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>REFERENCEID_TOKEN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1af1ce7d7c2f115e280c2183fc5d88b734" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>setSourceDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a394af717861f36391697e81acf6d5241" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>SOURCE_TOKEN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1af9ab7805b7b328808a9247ec2a495883" prot="private" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>startTimeRequestBean</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1aspect_1_1_request_response_logging_aspect_1a75cbdd5381519894afca65084d904a34" prot="public" virt="non-virtual"><scope>com::sterlite::cal::core::base::aspect::RequestResponseLoggingAspect</scope><name>traceParameterMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

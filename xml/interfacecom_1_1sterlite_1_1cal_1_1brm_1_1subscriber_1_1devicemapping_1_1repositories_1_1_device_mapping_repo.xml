@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; DeviceMapping, Long &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a211c344d1bb1178eaf058abc0ac96a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumber</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>findByserviceInstanceNumber</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="16" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a2969d8e467208981c4eab4c8e89ed0e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndSerialNumberAndImei</definition>
+        <argsstring>(Collection&lt; String &gt; serialNumbers, Collection&lt; String &gt; imeis, String serviceInstanceNumber)</argsstring>
+        <name>findByserviceInstanceNumberAndSerialNumberAndImei</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndSerialNumberAndImei</qualifiedname>
+        <param>
+          <type>Collection&lt; String &gt;</type>
+          <declname>serialNumbers</declname>
+        </param>
+        <param>
+          <type>Collection&lt; String &gt;</type>
+          <declname>imeis</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="19" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1ad7da64ba0f81ee6ebce2a8aefd390597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndSerialNumber</definition>
+        <argsstring>(Collection&lt; String &gt; serialNumbers, String serviceInstanceNumber)</argsstring>
+        <name>findByserviceInstanceNumberAndSerialNumber</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndSerialNumber</qualifiedname>
+        <param>
+          <type>Collection&lt; String &gt;</type>
+          <declname>serialNumbers</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="23" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1afc65902d1472c7957f4d3c6f9a531c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndImei</definition>
+        <argsstring>(Collection&lt; String &gt; imeis, String serviceInstanceNumber)</argsstring>
+        <name>findByserviceInstanceNumberAndImei</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findByserviceInstanceNumberAndImei</qualifiedname>
+        <param>
+          <type>Collection&lt; String &gt;</type>
+          <declname>imeis</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="26" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a0ea3d396ced177e4ebf1eea7aa80b8f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Page&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>Page&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMapping</definition>
+        <argsstring>(String SINo, String imei, String orderNo, String serialNo, String invoiceNo, Pageable pageable)</argsstring>
+        <name>findDeviceMapping</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMapping</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>SINo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>imei</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>orderNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serialNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <param>
+          <type>Pageable</type>
+          <declname>pageable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="29" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1aaa9364e0f788a5f2ab1bd1908c9df9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingRecords</definition>
+        <argsstring>(String SINo, String imei, String orderNo, String serialNo, String invoiceNo)</argsstring>
+        <name>findDeviceMappingRecords</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingRecords</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>SINo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>imei</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>orderNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serialNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1adbf111786c97203720bed2816fd07a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findCphid</definition>
+        <argsstring>(String serviceInstanceNumber, String productId, String productVersion)</argsstring>
+        <name>findCphid</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findCphid</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a598eddd966826cee884fb5c509d2138c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingForGuestUserPartialReversal</definition>
+        <argsstring>(String SINo, String invoiceNo, String productId, String productName, String productVersion, String serialNo)</argsstring>
+        <name>findDeviceMappingForGuestUserPartialReversal</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingForGuestUserPartialReversal</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>SINo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productVersion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serialNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="38" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1ac2d3d9627d06bbe854452284647e2154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref> &gt;</type>
+        <definition>List&lt; DeviceMapping &gt; com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingForGuestUserFullReversal</definition>
+        <argsstring>(String SINo, String invoiceNo, String serialNo)</argsstring>
+        <name>findDeviceMappingForGuestUserFullReversal</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo.findDeviceMappingForGuestUserFullReversal</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>SINo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serialNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="41" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; DeviceMapping, Long &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; DeviceMapping, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" line="13" column="18" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/devicemapping/repositories/DeviceMappingRepo.java" bodystart="13" bodyend="42"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a211c344d1bb1178eaf058abc0ac96a47" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findByserviceInstanceNumber</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1afc65902d1472c7957f4d3c6f9a531c22" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findByserviceInstanceNumberAndImei</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1ad7da64ba0f81ee6ebce2a8aefd390597" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findByserviceInstanceNumberAndSerialNumber</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a2969d8e467208981c4eab4c8e89ed0e6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findByserviceInstanceNumberAndSerialNumberAndImei</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1adbf111786c97203720bed2816fd07a1d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findCphid</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a0ea3d396ced177e4ebf1eea7aa80b8f7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findDeviceMapping</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1ac2d3d9627d06bbe854452284647e2154" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findDeviceMappingForGuestUserFullReversal</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1a598eddd966826cee884fb5c509d2138c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findDeviceMappingForGuestUserPartialReversal</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo_1aaa9364e0f788a5f2ab1bd1908c9df9ae" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::devicemapping::repositories::DeviceMappingRepo</scope><name>findDeviceMappingRecords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

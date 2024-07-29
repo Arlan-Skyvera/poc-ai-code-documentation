@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::campaign::controller::CampaignOperationController</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller" prot="public" virt="non-virtual">com.sterlite.cal.core.base.controller.BaseController</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a1bc0e3186cf9a979b019b647856ef4cf" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.campaign.controller.CampaignOperationController.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CampaignOperationController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="26" column="30" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a083068949e28f838f503935a66a4fa7f" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager" kindref="compound">CamapignServiceManager</ref></type>
+        <definition>CamapignServiceManager com.sterlite.cal.campaign.controller.CampaignOperationController.campServiceManager</definition>
+        <argsstring></argsstring>
+        <name>campServiceManager</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.campServiceManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="28" column="25" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a77dc2582731c824dd19237ba2ea2bf3e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.controller.CampaignOperationController.baseRequestPath</definition>
+        <argsstring></argsstring>
+        <name>baseRequestPath</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.baseRequestPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="31" column="16" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a37a61a11cc264d545cda6d7361fa06b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.controller.CampaignOperationController.doPost</definition>
+        <argsstring>( @RequestBody String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.doPost</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="34" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="34" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a09d23e257c40804490b305d6aac2f083" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.controller.CampaignOperationController.doGet</definition>
+        <argsstring>()</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.doGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="57" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="57" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1aef6553753c00c72e37e99baf8c28cb4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.controller.CampaignOperationController.performPatchRMOperation</definition>
+        <argsstring>( @RequestBody String requestJson)</argsstring>
+        <name>performPatchRMOperation</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.performPatchRMOperation</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="81" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1ad4e99cf1be865b161ae55506dcb6ec88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.campaign.controller.CampaignOperationController.performPutRMOperation</definition>
+        <argsstring>( @RequestBody String requestJson)</argsstring>
+        <name>performPutRMOperation</name>
+        <qualifiedname>com.sterlite.cal.campaign.controller.CampaignOperationController.performPutRMOperation</qualifiedname>
+        <param>
+          <type>@RequestBody String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="92" column="15" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="92" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.campaign.controller.CampaignOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.campaign.controller.CampaignOperationController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>campServiceManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.campaign.service.manager.CamapignServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1service_1_1manager_1_1_camapign_service_manager"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.controller.BaseController</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" line="24" column="7" bodyfile="repository/campaign/src/main/java/com/sterlite/cal/campaign/controller/CampaignOperationController.java" bodystart="24" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a77dc2582731c824dd19237ba2ea2bf3e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>baseRequestPath</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a083068949e28f838f503935a66a4fa7f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>campServiceManager</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a09d23e257c40804490b305d6aac2f083" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a37a61a11cc264d545cda6d7361fa06b9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a5ab9c9237c9e92726123ba96b290afd4" prot="package" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1a1bc0e3186cf9a979b019b647856ef4cf" prot="private" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1aef6553753c00c72e37e99baf8c28cb4a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>performPatchRMOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1campaign_1_1controller_1_1_campaign_operation_controller_1ad4e99cf1be865b161ae55506dcb6ec88" prot="public" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>performPutRMOperation</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1controller_1_1_base_controller_1a2668b1ae7adb5535a32232f46f956951" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::campaign::controller::CampaignOperationController</scope><name>setReferenceIdentifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

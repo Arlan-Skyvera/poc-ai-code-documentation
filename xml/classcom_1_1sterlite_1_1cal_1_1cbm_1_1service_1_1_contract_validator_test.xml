@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::service::ContractValidatorTest</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a480a566a97bb3336aa9cfde0394e8149" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.service.ContractValidatorTest.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(ContractValidatorTest.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="36" column="29" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ac1729c5c2c06cb46f1358dbdec67257b" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1validators_1_1_contract_validator" kindref="compound">ContractValidator</ref></type>
+        <definition>ContractValidator com.sterlite.cal.cbm.service.ContractValidatorTest.validator</definition>
+        <argsstring></argsstring>
+        <name>validator</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="38" column="27" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a93dc8e29fde21efb4491952e00b32859" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cbm.service.ContractValidatorTest.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="41" column="19" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a13286b461eafdedbcf557185a28c8446" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref></type>
+        <definition>ContractRequest com.sterlite.cal.cbm.service.ContractValidatorTest.request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.request</qualifiedname>
+        <initializer>= new <ref refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request" kindref="compound">ContractRequest</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="42" column="17" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a33a2c7f63c5a6346fe12654f4fbb0599" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="45" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="45" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a7ea97dda6c257015027ae2d036c15657" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractOrderNoTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractOrderNoTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractOrderNoTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="63" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab09ee23d7f05964d387fc756bd9031f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractOrderTypeTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractOrderTypeTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractOrderTypeTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="72" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a4f55983bf820b68c7c7a6c85eeb415c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractIDTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractIDTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractIDTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="81" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a72d82fae9ceb85990912cf047e207613" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractMultTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractMultTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractMultTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="90" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a2f017bba82633210dc5595e25c623fe9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractSubjectTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractSubjectTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractSubjectTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="99" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a67293e61822e87adaefefaaee3439ac5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractBudgetCoefficientTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractBudgetCoefficientTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractBudgetCoefficientTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="108" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a66abe12c1db227ee77608ae60893882e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractCATest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractCATest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractCATest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="117" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ac226b3e4ebf13441b0105b32cdc80571" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractRollOverTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractRollOverTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractRollOverTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="126" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="126" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0ba1fb862df5adda60f79707ac519ef8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractCustTypeSegTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractCustTypeSegTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractCustTypeSegTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="135" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="135" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0b74562b7c352563ef482d98d0cd7ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractDurationTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractDurationTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractDurationTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="145" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="145" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ae6e0a98dea12bb1307433b6502707c81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractStartDateTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractStartDateTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractStartDateTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="154" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aef550d71de2e0938ed7a5f9ef7a7e7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractIPTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateContractIPTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateContractIPTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="163" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0ba654cef67a2ea46615f2b24c232393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateSITest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSITest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateSITest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="172" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="172" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0b22e19e2cf279a388f833d5004ca5bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateSINumberTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSINumberTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateSINumberTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="181" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="181" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0dd82f4dd57b15f4e39f0fe86dac9f84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIMSISDNTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSIMSISDNTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIMSISDNTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="191" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="191" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aa0fbdb6da6b61dc9b7df957c574dcf76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIPlanTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSIPlanTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIPlanTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="200" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="200" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a046bee2b4b4592f2456c1e0e8102bd60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIBATest</definition>
+        <argsstring>()</argsstring>
+        <name>validateSIBATest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateSIBATest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="209" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1acdaae9bd3a6e20cc631759ae854bba12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateMRCTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateMRCTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateMRCTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="218" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="218" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1abcf9365475d156e4192ac7e8a317afd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateMRCValueTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateMRCValueTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateMRCValueTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="227" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="227" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a68e4a4ff4cf86c699246cd763212b37f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateConversionAndValuesTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateConversionAndValuesTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateConversionAndValuesTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="236" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="236" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a923caa9a278056806036f0b96f8b1d3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateEnumValueTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateEnumValueTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateEnumValueTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="246" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="246" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab535aeebdafde0e6c6a1ee9dc53fb665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateContractIDTest</definition>
+        <argsstring>()</argsstring>
+        <name>updateStatusValidateContractIDTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateContractIDTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="255" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="255" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a6592b3a2dd5a11b7c9c8b0105cc75f70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateOrderNoCTest</definition>
+        <argsstring>()</argsstring>
+        <name>updateStatusValidateOrderNoCTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateOrderNoCTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="266" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="266" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a6ecf66f5c377f69a2d5910da7d198e17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateStatusTest</definition>
+        <argsstring>()</argsstring>
+        <name>updateStatusValidateStatusTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.updateStatusValidateStatusTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="277" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="277" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aad6e28825ee774f565246e2fab62c943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateGetContractTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetContractTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateGetContractTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="288" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="288" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aca298788449e3b0f5464e1d0e135a734" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.validateGetContractAndBudgetTest</definition>
+        <argsstring>()</argsstring>
+        <name>validateGetContractAndBudgetTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.validateGetContractAndBudgetTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="297" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="297" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a1b292c3988ee29244184761336d85a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.checkNumberConversionTest</definition>
+        <argsstring>()</argsstring>
+        <name>checkNumberConversionTest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.checkNumberConversionTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="306" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a80ec7ad2617343879659e9fa2d7c0ff4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.isValidDateTestFalse</definition>
+        <argsstring>()</argsstring>
+        <name>isValidDateTestFalse</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.isValidDateTestFalse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="313" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a60084c0c0ecfda6a5912e1875854c6cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.isValidDateTestTrue</definition>
+        <argsstring>()</argsstring>
+        <name>isValidDateTestTrue</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.isValidDateTestTrue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="320" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab35103712387c3b4b40d407b7adcf943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.service.ContractValidatorTest.testValidatorForCancelRequest</definition>
+        <argsstring>()</argsstring>
+        <name>testValidatorForCancelRequest</name>
+        <qualifiedname>com.sterlite.cal.cbm.service.ContractValidatorTest.testValidatorForCancelRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="327" column="13" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="327" bodyend="340"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.service.ContractValidatorTest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>request</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.cbm.valueobject.ContractRequest</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1valueobject_1_1_contract_request"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.base.valueobject.BaseVO</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_base_v_o"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="5">
+        <label>Serializable</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" line="34" column="7" bodyfile="repository/cbm/src/test/java/com/sterlite/cal/cbm/service/ContractValidatorTest.java" bodystart="34" bodyend="341"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a1b292c3988ee29244184761336d85a17" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>checkNumberConversionTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a33a2c7f63c5a6346fe12654f4fbb0599" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a80ec7ad2617343879659e9fa2d7c0ff4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>isValidDateTestFalse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a60084c0c0ecfda6a5912e1875854c6cc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>isValidDateTestTrue</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a93dc8e29fde21efb4491952e00b32859" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a480a566a97bb3336aa9cfde0394e8149" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a13286b461eafdedbcf557185a28c8446" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>request</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab35103712387c3b4b40d407b7adcf943" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>testValidatorForCancelRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab535aeebdafde0e6c6a1ee9dc53fb665" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>updateStatusValidateContractIDTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a6592b3a2dd5a11b7c9c8b0105cc75f70" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>updateStatusValidateOrderNoCTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a6ecf66f5c377f69a2d5910da7d198e17" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>updateStatusValidateStatusTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a67293e61822e87adaefefaaee3439ac5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractBudgetCoefficientTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a66abe12c1db227ee77608ae60893882e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractCATest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0ba1fb862df5adda60f79707ac519ef8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractCustTypeSegTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0b74562b7c352563ef482d98d0cd7ac3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractDurationTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a4f55983bf820b68c7c7a6c85eeb415c2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractIDTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aef550d71de2e0938ed7a5f9ef7a7e7fc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractIPTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a72d82fae9ceb85990912cf047e207613" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractMultTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a7ea97dda6c257015027ae2d036c15657" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractOrderNoTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ab09ee23d7f05964d387fc756bd9031f2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractOrderTypeTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ac226b3e4ebf13441b0105b32cdc80571" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractRollOverTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ae6e0a98dea12bb1307433b6502707c81" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractStartDateTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a2f017bba82633210dc5595e25c623fe9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateContractSubjectTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a68e4a4ff4cf86c699246cd763212b37f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateConversionAndValuesTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a923caa9a278056806036f0b96f8b1d3e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateEnumValueTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aca298788449e3b0f5464e1d0e135a734" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateGetContractAndBudgetTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aad6e28825ee774f565246e2fab62c943" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateGetContractTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1acdaae9bd3a6e20cc631759ae854bba12" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateMRCTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1abcf9365475d156e4192ac7e8a317afd4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateMRCValueTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a046bee2b4b4592f2456c1e0e8102bd60" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateSIBATest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0dd82f4dd57b15f4e39f0fe86dac9f84" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateSIMSISDNTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0b22e19e2cf279a388f833d5004ca5bf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateSINumberTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1aa0fbdb6da6b61dc9b7df957c574dcf76" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateSIPlanTest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1a0ba654cef67a2ea46615f2b24c232393" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validateSITest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1service_1_1_contract_validator_test_1ac1729c5c2c06cb46f1358dbdec67257b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::service::ContractValidatorTest</scope><name>validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

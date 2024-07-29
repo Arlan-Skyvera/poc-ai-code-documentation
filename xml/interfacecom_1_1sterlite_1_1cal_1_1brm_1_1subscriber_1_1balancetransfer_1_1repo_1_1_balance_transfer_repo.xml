@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo" kind="interface" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::balancetransfer::repo::BalanceTransferRepo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; BalanceTransferDetail, String &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a252c86366348d877bf80803e2b6b71ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1data_objects_1_1_balance_transfer_detail" kindref="compound">BalanceTransferDetail</ref> &gt;</type>
+        <definition>List&lt; BalanceTransferDetail &gt; com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForDebitedSpecific</definition>
+        <argsstring>(@Param(&quot;donorSIAccount&quot;) String donorSIAccount, @Param(&quot;receiverMSISDN&quot;) String receiverMSISDN, @Param(&quot;fromDate&quot;) String fromDate, @Param(&quot;toDate&quot;) String toDate)</argsstring>
+        <name>findAllForDebitedSpecific</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForDebitedSpecific</qualifiedname>
+        <param>
+          <type>@Param(&quot;donorSIAccount&quot;) String</type>
+          <declname>donorSIAccount</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;receiverMSISDN&quot;) String</type>
+          <declname>receiverMSISDN</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;fromDate&quot;) String</type>
+          <declname>fromDate</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;toDate&quot;) String</type>
+          <declname>toDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" line="16" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a7aabceea8ce449d6fa13b1aebde56d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1data_objects_1_1_balance_transfer_detail" kindref="compound">BalanceTransferDetail</ref> &gt;</type>
+        <definition>List&lt; BalanceTransferDetail &gt; com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForCreditedSpecific</definition>
+        <argsstring>(@Param(&quot;donorMSISDN&quot;) String donorMSISDN, @Param(&quot;receiverSIAccount&quot;) String receiverSIAccount, @Param(&quot;fromDate&quot;) String fromDate, @Param(&quot;toDate&quot;) String toDate)</argsstring>
+        <name>findAllForCreditedSpecific</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForCreditedSpecific</qualifiedname>
+        <param>
+          <type>@Param(&quot;donorMSISDN&quot;) String</type>
+          <declname>donorMSISDN</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;receiverSIAccount&quot;) String</type>
+          <declname>receiverSIAccount</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;fromDate&quot;) String</type>
+          <declname>fromDate</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;toDate&quot;) String</type>
+          <declname>toDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" line="21" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a8d657dc1b945b602f956fa1dcb422315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1data_objects_1_1_balance_transfer_detail" kindref="compound">BalanceTransferDetail</ref> &gt;</type>
+        <definition>List&lt; BalanceTransferDetail &gt; com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForDebited</definition>
+        <argsstring>(@Param(&quot;donorSIAccount&quot;) String donorSIAccount, @Param(&quot;fromDate&quot;) String fromDate, @Param(&quot;toDate&quot;) String toDate)</argsstring>
+        <name>findAllForDebited</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForDebited</qualifiedname>
+        <param>
+          <type>@Param(&quot;donorSIAccount&quot;) String</type>
+          <declname>donorSIAccount</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;fromDate&quot;) String</type>
+          <declname>fromDate</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;toDate&quot;) String</type>
+          <declname>toDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" line="26" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a465f5d660fd9073b1ede829eacde6f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1data_objects_1_1_balance_transfer_detail" kindref="compound">BalanceTransferDetail</ref> &gt;</type>
+        <definition>List&lt; BalanceTransferDetail &gt; com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForCredited</definition>
+        <argsstring>(@Param(&quot;receiverSIAccount&quot;) String receiverSIAccount, @Param(&quot;fromDate&quot;) String fromDate, @Param(&quot;toDate&quot;) String toDate)</argsstring>
+        <name>findAllForCredited</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo.findAllForCredited</qualifiedname>
+        <param>
+          <type>@Param(&quot;receiverSIAccount&quot;) String</type>
+          <declname>receiverSIAccount</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;fromDate&quot;) String</type>
+          <declname>fromDate</declname>
+        </param>
+        <param>
+          <type>@Param(&quot;toDate&quot;) String</type>
+          <declname>toDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" line="31" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; BalanceTransferDetail, String &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.balancetransfer.repo.BalanceTransferRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; BalanceTransferDetail, String &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" line="11" column="18" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/balancetransfer/repo/BalanceTransferRepo.java" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a465f5d660fd9073b1ede829eacde6f9d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::balancetransfer::repo::BalanceTransferRepo</scope><name>findAllForCredited</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a7aabceea8ce449d6fa13b1aebde56d56" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::balancetransfer::repo::BalanceTransferRepo</scope><name>findAllForCreditedSpecific</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a8d657dc1b945b602f956fa1dcb422315" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::balancetransfer::repo::BalanceTransferRepo</scope><name>findAllForDebited</name></member>
+      <member refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1balancetransfer_1_1repo_1_1_balance_transfer_repo_1a252c86366348d877bf80803e2b6b71ad" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::balancetransfer::repo::BalanceTransferRepo</scope><name>findAllForDebitedSpecific</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

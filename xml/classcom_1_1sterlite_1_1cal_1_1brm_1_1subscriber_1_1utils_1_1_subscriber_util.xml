@@ -1,0 +1,1465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae858f85e2cebbc5a0a037cae9df43a7e" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(SubscriberUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="54" column="30" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac1d49974d47ca61a38f32752ccdfc79a" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.DATE_FORMAT</definition>
+        <argsstring></argsstring>
+        <name>DATE_FORMAT</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.DATE_FORMAT</qualifiedname>
+        <initializer>= &quot;yyyy-MM-dd HH:mm:ss&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="55" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aeab3d7c0c9fbe47042e94227ce4a27b1" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.GET_ACCOUNTDETAILS_BYNSI</definition>
+        <argsstring></argsstring>
+        <name>GET_ACCOUNTDETAILS_BYNSI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.GET_ACCOUNTDETAILS_BYNSI</qualifiedname>
+        <initializer>= &quot;customerManagementApi/serviceInstance/getAccountDetailsByNSI&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="84" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6e5051d343aa08544f1761a7fb1809be" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository" kindref="compound">BRMRepository</ref></type>
+        <definition>BRMRepository com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="58" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a607a0f0d523abf0dc09255425df4e19e" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo" kindref="compound">DeviceMappingRepo</ref></type>
+        <definition>DeviceMappingRepo com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.devicemappingRepo</definition>
+        <argsstring></argsstring>
+        <name>devicemappingRepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.devicemappingRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="61" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a824ef8d8715ad09fa3600adbc0bd62f0" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_repo" kindref="compound">CreditInvoiceRepo</ref></type>
+        <definition>CreditInvoiceRepo com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.creditInvoiceRepo</definition>
+        <argsstring></argsstring>
+        <name>creditInvoiceRepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.creditInvoiceRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="64" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5013611ca3dea05974229ce8d0d6a87f" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_charge_details_repo" kindref="compound">ChargeDetailsRepo</ref></type>
+        <definition>ChargeDetailsRepo com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.chargeDetailsRepo</definition>
+        <argsstring></argsstring>
+        <name>chargeDetailsRepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.chargeDetailsRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="67" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab337d1ed312cfaa423897c7182f91ea0" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.environment</definition>
+        <argsstring></argsstring>
+        <name>environment</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.environment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="70" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7dc129b4868b5f08ce0c646aff7db32e" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_charges_details_mapper" kindref="compound">ChargesDetailsMapper</ref></type>
+        <definition>ChargesDetailsMapper com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.chargesDetailsMapper</definition>
+        <argsstring></argsstring>
+        <name>chargesDetailsMapper</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.chargesDetailsMapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="73" column="22" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8e70fa7352fe52a978ab12557cb81382" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_rel_repo" kindref="compound">CreditInvoiceRelRepo</ref></type>
+        <definition>CreditInvoiceRelRepo com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.creditInvoiceRelRepo</definition>
+        <argsstring></argsstring>
+        <name>creditInvoiceRelRepo</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.creditInvoiceRelRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="76" column="23" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0f332b4aa57a5de47cb7196ff3a4d9b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="79" column="23" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6958f329b55e4bba93db934ec4362bb6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="82" column="19" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1af4e6d99f78df6bded84ba914417f3c2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getBAFromCA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getBAFromCA</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getBAFromCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="86" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="86" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac46bfb9a99657e8fe022224d008483e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchAccountAddress</definition>
+        <argsstring>(String addressId)</argsstring>
+        <name>fetchAccountAddress</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchAccountAddress</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>addressId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="105" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="105" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aedff7574124d49648ba93a8befed174a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSAFromCA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getSAFromCA</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSAFromCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="126" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="126" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aef93303c009e72dfd46a3fba5f442a26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getObject</definition>
+        <argsstring>(String className)</argsstring>
+        <name>getObject</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="148" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4a444a08f9a6130e092d8cc51c603434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIbyMSISDN</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getSIbyMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIbyMSISDN</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="153" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="153" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8a0568801e983a472f371c002e7246de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAllAccountsBySI</definition>
+        <argsstring>(String servicInstanceNumber)</argsstring>
+        <name>getAllAccountsBySI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAllAccountsBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>servicInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="174" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="174" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5c51455963d3fe1ed00ae85260f9ad47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIFromBA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getSIFromBA</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIFromBA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="195" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="195" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4dbf8904c2e6eb1ac35b63577513caa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.dateToString</definition>
+        <argsstring>(Date input)</argsstring>
+        <name>dateToString</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.dateToString</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="215" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="215" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa5528420c14a3b56c9b3e65e6c081fb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.dateToStringForDB</definition>
+        <argsstring>(Date input, String timeString)</argsstring>
+        <name>dateToStringForDB</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.dateToStringForDB</qualifiedname>
+        <param>
+          <type>Date</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>timeString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="223" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="223" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa109da8046fa3d3fe478e949271d8a59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Date</type>
+        <definition>Date com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.stringToDate</definition>
+        <argsstring>(String input)</argsstring>
+        <name>stringToDate</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.stringToDate</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>input</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="233" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5c96dcd9667740f0c940b710e9196278" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getInventoryNoAndMSISDNUsingSI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>getInventoryNoAndMSISDNUsingSI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getInventoryNoAndMSISDNUsingSI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="241" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="241" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a777461b2586f97be86f5ac904c6e0e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIFromCA</definition>
+        <argsstring>(String customerAccountNumber)</argsstring>
+        <name>getSIFromCA</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIFromCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>customerAccountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="260" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="260" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7005c549bcaf8d306d3d07beb0749c7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAccountIDBySI</definition>
+        <argsstring>(String servicInstanceNumber)</argsstring>
+        <name>getAccountIDBySI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAccountIDBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>servicInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="279" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="279" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa972ab0e745981a6afe20c0142a99889" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.checkSplitBillCount</definition>
+        <argsstring>(String oldsiaccountid)</argsstring>
+        <name>checkSplitBillCount</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.checkSplitBillCount</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>oldsiaccountid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="300" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="300" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa3f039f62d902a391cb4dee6473b8ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMinorUnit</definition>
+        <argsstring>()</argsstring>
+        <name>getMinorUnit</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMinorUnit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="321" column="17" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="321" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad677ba5b5e43f7e8da2670159b33e5cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMinorAmount</definition>
+        <argsstring>(double amount, int minorunit)</argsstring>
+        <name>getMinorAmount</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMinorAmount</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minorunit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="333" column="14" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad3e4dfafe17279745b4d787a834371e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMajorAmount</definition>
+        <argsstring>(double amount, int minorunit)</argsstring>
+        <name>getMajorAmount</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMajorAmount</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minorunit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="338" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aec72a46d23680ba44c64eb69d0ad0821" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNFromSI</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap)</argsstring>
+        <name>getMSISDNFromSI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNFromSI</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="344" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="344" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a74377c85f178e2ed6285e362491a3273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNFromSIForSingleMSISDN</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap)</argsstring>
+        <name>getMSISDNFromSIForSingleMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNFromSIForSingleMSISDN</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="363" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="363" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab311f448d0589457a5aa6e4202251c34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TypeReference&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_remaining_e_m_i_response_object" kindref="compound">RemainingEMIResponseObject</ref> &gt;</type>
+        <definition>TypeReference&lt; RemainingEMIResponseObject &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getTypeReference</definition>
+        <argsstring>()</argsstring>
+        <name>getTypeReference</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getTypeReference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="388" column="22" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0848dd25cc148b9cbfd83c07f3dd3d33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchingActiveSIWithMSISDNBasedONSI</definition>
+        <argsstring>(String serviceInstanceNumber)</argsstring>
+        <name>fetchingActiveSIWithMSISDNBasedONSI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchingActiveSIWithMSISDNBasedONSI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstanceNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="393" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="393" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a97a0d558f3223fb311954e08343d3182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAnySIbyMSISDN</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getAnySIbyMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAnySIbyMSISDN</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="411" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="411" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1abc0867732de389609f4868d87d924d8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIbyMSISDNandStatus</definition>
+        <argsstring>(String msisdn, String statusid)</argsstring>
+        <name>getSIbyMSISDNandStatus</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIbyMSISDNandStatus</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>statusid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="433" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="433" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab574a4422c6c5fdfe8b6c5607cba0dc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAccountStatusIdBySI</definition>
+        <argsstring>(String status)</argsstring>
+        <name>getAccountStatusIdBySI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getAccountStatusIdBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="454" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="454" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae21016522e89f3eeb60b805baa26ff93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveDataDeviceMapping</definition>
+        <argsstring>(DeviceMappingVO devicemappingVO, String productId)</argsstring>
+        <name>saveDataDeviceMapping</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveDataDeviceMapping</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_v_o" kindref="compound">DeviceMappingVO</ref></type>
+          <declname>devicemappingVO</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="475" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="475" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a05752debdf7a0a9cfb2fd34b0e09dd18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.validateViewDeviceMappingRequest</definition>
+        <argsstring>(ViewDeviceMappingRequest request)</argsstring>
+        <name>validateViewDeviceMappingRequest</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.validateViewDeviceMappingRequest</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_view_device_mapping_request" kindref="compound">ViewDeviceMappingRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="499" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="499" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac132a8eeffca9d1eb69bf67a21a87b8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_respone" kindref="compound">DeviceMappingRespone</ref></type>
+        <definition>DeviceMappingRespone com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceMapping</definition>
+        <argsstring>(ViewDeviceMappingRequest request)</argsstring>
+        <name>getDeviceMapping</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceMapping</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_view_device_mapping_request" kindref="compound">ViewDeviceMappingRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="515" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="515" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8846eeacb20bd47fa9bc7cab2ff09887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_charges_details" kindref="compound">DeviceChargesDetails</ref> &gt;</type>
+        <definition>List&lt; DeviceChargesDetails &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceChargesDetails</definition>
+        <argsstring>(String invoiceNo, String cphid)</argsstring>
+        <name>getDeviceChargesDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceChargesDetails</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>cphid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="598" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="598" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a71e46ac65decb2f82e6957b94953bc65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_charges_details" kindref="compound">DeviceChargesDetails</ref> &gt;</type>
+        <definition>List&lt; DeviceChargesDetails &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceChargesDetailsForFullReversal</definition>
+        <argsstring>(String invoiceNo)</argsstring>
+        <name>getDeviceChargesDetailsForFullReversal</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDeviceChargesDetailsForFullReversal</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>invoiceNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="629" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="629" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad8bd70bda4352e8ffb93ff7e766814d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_v_o" kindref="compound">DeviceMappingVO</ref></type>
+        <definition>DeviceMappingVO com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.prepareDeviceMappingVO</definition>
+        <argsstring>(DeviceMapping deviceMapping)</argsstring>
+        <name>prepareDeviceMappingVO</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.prepareDeviceMappingVO</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref></type>
+          <declname>deviceMapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="658" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="658" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5f06cab959203f8f1b50d6e51ca0a1c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_details" kindref="compound">DeviceMappingDetails</ref></type>
+        <definition>DeviceMappingDetails com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.prepareDeviceMappingDetails</definition>
+        <argsstring>(DeviceMappingVO deviceMappingVO, DeviceChargesDetails charges)</argsstring>
+        <name>prepareDeviceMappingDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.prepareDeviceMappingDetails</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_v_o" kindref="compound">DeviceMappingVO</ref></type>
+          <declname>deviceMappingVO</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_charges_details" kindref="compound">DeviceChargesDetails</ref></type>
+          <declname>charges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="681" column="29" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="681" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1afc976b4f4f7b8b0b128d8b43c5117dbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.updateWarehouse</definition>
+        <argsstring>(InventoryWareHouseVO inventoryWareHouseVO)</argsstring>
+        <name>updateWarehouse</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.updateWarehouse</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_inventory_ware_house_v_o" kindref="compound">InventoryWareHouseVO</ref></type>
+          <declname>inventoryWareHouseVO</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="721" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="721" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7f68085db6fb5d6d37dad04f20073698" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.createCreditInvoice</definition>
+        <argsstring>(CreditInvoiceRequest creditInvoiceRequest)</argsstring>
+        <name>createCreditInvoice</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.createCreditInvoice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_credit_invoice_request" kindref="compound">CreditInvoiceRequest</ref></type>
+          <declname>creditInvoiceRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="752" column="24" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="752" bodyend="858"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a16c433ace3b07526668d55b7260e8063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_charges_details" kindref="compound">DeviceChargesDetails</ref> &gt;</type>
+        <definition>List&lt; DeviceChargesDetails &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getchargeDeatilsForguestUser</definition>
+        <argsstring>(DeviceMapping devMapping)</argsstring>
+        <name>getchargeDeatilsForguestUser</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getchargeDeatilsForguestUser</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_device_mapping" kindref="compound">DeviceMapping</ref></type>
+          <declname>devMapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="860" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="860" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae25b06a07e352e545a7fd57e92f1d9cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_credit_invoice" kindref="compound">CreditInvoice</ref></type>
+        <definition>CreditInvoice com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveCreditInvoice</definition>
+        <argsstring>(CreditInvoiceRequest creditInvoiceRequest)</argsstring>
+        <name>saveCreditInvoice</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveCreditInvoice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_credit_invoice_request" kindref="compound">CreditInvoiceRequest</ref></type>
+          <declname>creditInvoiceRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="894" column="22" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="894" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad2b4451bdf4ac6f79e00e021d27e0d25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveCreditInvoiceRel</definition>
+        <argsstring>(DeviceChargesDetails deviceChargesDetails, String productId, String productName, String productVersion, String cphid, CreditInvoice creditInvoice)</argsstring>
+        <name>saveCreditInvoiceRel</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.saveCreditInvoiceRel</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_charges_details" kindref="compound">DeviceChargesDetails</ref></type>
+          <declname>deviceChargesDetails</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>productVersion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>cphid</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1model_1_1_credit_invoice" kindref="compound">CreditInvoice</ref></type>
+          <declname>creditInvoice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="904" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="904" bodyend="926"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4b5e9cede6f19c7675910d8bf5560e06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_search_credit_note_response_v_o" kindref="compound">SearchCreditNoteResponseVO</ref></type>
+        <definition>SearchCreditNoteResponseVO com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.searchCreditNote</definition>
+        <argsstring>(String brmURI, SearchCreditNoteInfo searchCreditNoteRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>searchCreditNote</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.searchCreditNote</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_search_credit_note_info" kindref="compound">SearchCreditNoteInfo</ref></type>
+          <declname>searchCreditNoteRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="928" column="35" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="928" bodyend="935"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a44540cade13da2d230189f102fc428b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_debit_note_response" kindref="compound">DebitNoteResponse</ref></type>
+        <definition>DebitNoteResponse com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDebitDocumentSummary</definition>
+        <argsstring>(String brmURI, GetDebitDocumentSummaryRequestVO debitDocumentSummaryRequest, String authTypeId, Map&lt; String, String &gt; headers)</argsstring>
+        <name>getDebitDocumentSummary</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDebitDocumentSummary</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1valueobject_1_1_get_debit_document_summary_request_v_o" kindref="compound">GetDebitDocumentSummaryRequestVO</ref></type>
+          <declname>debitDocumentSummaryRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>headers</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="937" column="26" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="937" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0854bd557ca1b67c9a32ef5a4817e6f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDebitDocumentNumberFromDebitDocId</definition>
+        <argsstring>(long debitDocumentId)</argsstring>
+        <name>getDebitDocumentNumberFromDebitDocId</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getDebitDocumentNumberFromDebitDocId</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>debitDocumentId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="946" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="946" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8cb9fc85a4f9793a8a33d66605484405" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_device_mapping_response_v_o" kindref="compound">DeviceMappingResponseVO</ref></type>
+        <definition>DeviceMappingResponseVO com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getdevicemappingDetails</definition>
+        <argsstring>(GetDeviceMappingDetailsRequest request)</argsstring>
+        <name>getdevicemappingDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getdevicemappingDetails</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1valueobject_1_1_get_device_mapping_details_request" kindref="compound">GetDeviceMappingDetailsRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="966" column="32" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="966" bodyend="1013"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab1af7ba330565e6d20cda1c919d32ba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.stringIsNumeric</definition>
+        <argsstring>(String strNum)</argsstring>
+        <name>stringIsNumeric</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.stringIsNumeric</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>strNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1015" column="16" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1015" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a9bc2dbbc8a397b3cc509d492db26df0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchSINumber</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>fetchSINumber</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchSINumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1029" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1029" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a904d4b0711750e87b416bfee6128f73b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchPaymentDetails</definition>
+        <argsstring>(Map&lt; String, Object &gt; paramMap)</argsstring>
+        <name>fetchPaymentDetails</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.fetchPaymentDetails</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>paramMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1052" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1052" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aad3bf6bfc2f182b374ad4f19a0984dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getCustomerName</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getCustomerName</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getCustomerName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1071" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1071" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a28f5ac994f502c9c8873bae8360ba602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.validateBAAndDocumentNumber</definition>
+        <argsstring>(String debitDocumentNumber)</argsstring>
+        <name>validateBAAndDocumentNumber</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.validateBAAndDocumentNumber</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>debitDocumentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1092" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1092" bodyend="1111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a065e435a91beff17c2fe10f1f310534c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getRegularInvoiceDocumentTypeId</definition>
+        <argsstring>()</argsstring>
+        <name>getRegularInvoiceDocumentTypeId</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getRegularInvoiceDocumentTypeId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1113" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1113" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a3f5d9655dd1c876514a2b76c65c55a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.checkMsisdnIsValid</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>checkMsisdnIsValid</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.checkMsisdnIsValid</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1131" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1131" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6ed902a796f536c6718a87c6b552938e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getBaForMsisdn</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getBaForMsisdn</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getBaForMsisdn</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1152" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1152" bodyend="1165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a02391a67903130d6ed4f8fef90d8a2c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getPaymentNumbers</definition>
+        <argsstring>(String manualReceiptNumber, List&lt; String &gt; accountNumbers, String channelname, String channelalias)</argsstring>
+        <name>getPaymentNumbers</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getPaymentNumbers</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>manualReceiptNumber</declname>
+        </param>
+        <param>
+          <type>List&lt; String &gt;</type>
+          <declname>accountNumbers</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>channelname</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>channelalias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1167" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1167" bodyend="1199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1afb6ed0ea1acd94543ba5bf802a434992" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNOnlyFromSI</definition>
+        <argsstring>(String serviceInstance)</argsstring>
+        <name>getMSISDNOnlyFromSI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNOnlyFromSI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1201" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1201" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a222d1237ce04b04706efb64af16fa2f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getCAfromMSISDN</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getCAfromMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getCAfromMSISDN</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1230" column="15" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1230" bodyend="1257"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1acdfede6306cba4d2a2b6ed072ee19604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getChargingPatternbyMSISDN</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getChargingPatternbyMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getChargingPatternbyMSISDN</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1259" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1259" bodyend="1278"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1adeb37f39426c7dc47f87903e051c63c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIByCA</definition>
+        <argsstring>(String customerAccountNumber, String page, String limit)</argsstring>
+        <name>getSIByCA</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getSIByCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>customerAccountNumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1280" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1280" bodyend="1311"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5d774ffbcd199b9e4e3f58994d3bb4c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getNoOfSIs</definition>
+        <argsstring>(String customerAccountNumber)</argsstring>
+        <name>getNoOfSIs</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getNoOfSIs</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>customerAccountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1313" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1313" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a65f62d92b113c9b5c1204b552599a3fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, Object &gt;</type>
+        <definition>Map&lt; String, Object &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getActiveAndDeactiveSIbyMSISDN</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getActiveAndDeactiveSIbyMSISDN</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getActiveAndDeactiveSIbyMSISDN</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1332" column="12" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1332" bodyend="1351"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac72dd470115f64cac5ff5f811a9a1b06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNBySI</definition>
+        <argsstring>(String msisdn)</argsstring>
+        <name>getMSISDNBySI</name>
+        <qualifiedname>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil.getMSISDNBySI</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msisdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="1353" column="13" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="1353" bodyend="1373"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.brm.subscriber.utils.SubscriberUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>devicemappingRepo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>creditInvoiceRepo</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>chargeDetailsRepo</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>environment</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>chargesDetailsMapper</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>creditInvoiceRelRepo</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.brm.core.client.BRMQueryClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1client_1_1_b_r_m_query_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>brmPersistenceConfig</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>com.sterlite.cal.brm.core.config.BRMPersistenceConfig</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1config_1_1_b_r_m_persistence_config"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.repository.impl.BRMRepository</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1impl_1_1_b_r_m_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>brmQueryClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.ChargeDetailsRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_charge_details_repo"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRelRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_rel_repo"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.CreditInvoiceRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_credit_invoice_repo"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.brm.subscriber.devicemapping.repositories.DeviceMappingRepo</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1devicemapping_1_1repositories_1_1_device_mapping_repo"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>com.sterlite.cal.brm.subscriber.utils.ChargesDetailsMapper</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_charges_details_mapper"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="7">
+        <label>Environment</label>
+      </node>
+      <node id="13">
+        <label>JpaRepository&lt; ChargeDetails, Long &gt;</label>
+      </node>
+      <node id="11">
+        <label>JpaRepository&lt; CreditInvoice, Long &gt;</label>
+      </node>
+      <node id="17">
+        <label>JpaRepository&lt; CreditInvoiceRel, Long &gt;</label>
+      </node>
+      <node id="9">
+        <label>JpaRepository&lt; DeviceMapping, Long &gt;</label>
+      </node>
+      <node id="15">
+        <label>RowMapper&lt; DeviceChargesDetails &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" line="52" column="7" bodyfile="repository/brm-subscriber/src/main/java/com/sterlite/cal/brm/subscriber/utils/SubscriberUtil.java" bodystart="52" bodyend="1374"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6e5051d343aa08544f1761a7fb1809be" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0f332b4aa57a5de47cb7196ff3a4d9b8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5013611ca3dea05974229ce8d0d6a87f" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>chargeDetailsRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7dc129b4868b5f08ce0c646aff7db32e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>chargesDetailsMapper</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a3f5d9655dd1c876514a2b76c65c55a42" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>checkMsisdnIsValid</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa972ab0e745981a6afe20c0142a99889" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>checkSplitBillCount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7f68085db6fb5d6d37dad04f20073698" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>createCreditInvoice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8e70fa7352fe52a978ab12557cb81382" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>creditInvoiceRelRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a824ef8d8715ad09fa3600adbc0bd62f0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>creditInvoiceRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac1d49974d47ca61a38f32752ccdfc79a" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>DATE_FORMAT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4dbf8904c2e6eb1ac35b63577513caa0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>dateToString</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa5528420c14a3b56c9b3e65e6c081fb5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>dateToStringForDB</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a607a0f0d523abf0dc09255425df4e19e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>devicemappingRepo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab337d1ed312cfaa423897c7182f91ea0" prot="package" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>environment</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac46bfb9a99657e8fe022224d008483e3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>fetchAccountAddress</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0848dd25cc148b9cbfd83c07f3dd3d33" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>fetchingActiveSIWithMSISDNBasedONSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a904d4b0711750e87b416bfee6128f73b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>fetchPaymentDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a9bc2dbbc8a397b3cc509d492db26df0a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>fetchSINumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aeab3d7c0c9fbe47042e94227ce4a27b1" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>GET_ACCOUNTDETAILS_BYNSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a7005c549bcaf8d306d3d07beb0749c7f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getAccountIDBySI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab574a4422c6c5fdfe8b6c5607cba0dc6" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getAccountStatusIdBySI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a65f62d92b113c9b5c1204b552599a3fd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getActiveAndDeactiveSIbyMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8a0568801e983a472f371c002e7246de" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getAllAccountsBySI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a97a0d558f3223fb311954e08343d3182" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getAnySIbyMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6ed902a796f536c6718a87c6b552938e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getBaForMsisdn</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1af4e6d99f78df6bded84ba914417f3c2a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getBAFromCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a222d1237ce04b04706efb64af16fa2f9" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getCAfromMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a16c433ace3b07526668d55b7260e8063" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getchargeDeatilsForguestUser</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1acdfede6306cba4d2a2b6ed072ee19604" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getChargingPatternbyMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aad3bf6bfc2f182b374ad4f19a0984dbb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getCustomerName</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a0854bd557ca1b67c9a32ef5a4817e6f7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getDebitDocumentNumberFromDebitDocId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a44540cade13da2d230189f102fc428b0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getDebitDocumentSummary</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8846eeacb20bd47fa9bc7cab2ff09887" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getDeviceChargesDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a71e46ac65decb2f82e6957b94953bc65" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getDeviceChargesDetailsForFullReversal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac132a8eeffca9d1eb69bf67a21a87b8a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getDeviceMapping</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a8cb9fc85a4f9793a8a33d66605484405" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getdevicemappingDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5c96dcd9667740f0c940b710e9196278" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getInventoryNoAndMSISDNUsingSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad3e4dfafe17279745b4d787a834371e7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMajorAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad677ba5b5e43f7e8da2670159b33e5cf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMinorAmount</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa3f039f62d902a391cb4dee6473b8ac2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMinorUnit</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ac72dd470115f64cac5ff5f811a9a1b06" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMSISDNBySI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aec72a46d23680ba44c64eb69d0ad0821" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMSISDNFromSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a74377c85f178e2ed6285e362491a3273" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMSISDNFromSIForSingleMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1afb6ed0ea1acd94543ba5bf802a434992" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getMSISDNOnlyFromSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5d774ffbcd199b9e4e3f58994d3bb4c5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getNoOfSIs</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aef93303c009e72dfd46a3fba5f442a26" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a02391a67903130d6ed4f8fef90d8a2c7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getPaymentNumbers</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a065e435a91beff17c2fe10f1f310534c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getRegularInvoiceDocumentTypeId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aedff7574124d49648ba93a8befed174a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSAFromCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1adeb37f39426c7dc47f87903e051c63c8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSIByCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4a444a08f9a6130e092d8cc51c603434" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSIbyMSISDN</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1abc0867732de389609f4868d87d924d8f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSIbyMSISDNandStatus</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5c51455963d3fe1ed00ae85260f9ad47" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSIFromBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a777461b2586f97be86f5ac904c6e0e4a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getSIFromCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab311f448d0589457a5aa6e4202251c34" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>getTypeReference</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a6958f329b55e4bba93db934ec4362bb6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae858f85e2cebbc5a0a037cae9df43a7e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a5f06cab959203f8f1b50d6e51ca0a1c4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>prepareDeviceMappingDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad8bd70bda4352e8ffb93ff7e766814d1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>prepareDeviceMappingVO</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae25b06a07e352e545a7fd57e92f1d9cf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>saveCreditInvoice</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ad2b4451bdf4ac6f79e00e021d27e0d25" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>saveCreditInvoiceRel</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ae21016522e89f3eeb60b805baa26ff93" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>saveDataDeviceMapping</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a4b5e9cede6f19c7675910d8bf5560e06" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>searchCreditNote</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1ab1af7ba330565e6d20cda1c919d32ba1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>stringIsNumeric</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1aa109da8046fa3d3fe478e949271d8a59" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>stringToDate</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1afc976b4f4f7b8b0b128d8b43c5117dbd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>updateWarehouse</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a28f5ac994f502c9c8873bae8360ba602" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>validateBAAndDocumentNumber</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1subscriber_1_1utils_1_1_subscriber_util_1a05752debdf7a0a9cfb2fd34b0e09dd18" prot="public" virt="non-virtual"><scope>com::sterlite::cal::brm::subscriber::utils::SubscriberUtil</scope><name>validateViewDeviceMappingRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

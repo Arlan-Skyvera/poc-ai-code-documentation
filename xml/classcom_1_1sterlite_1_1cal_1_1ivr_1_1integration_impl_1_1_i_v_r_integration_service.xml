@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service" prot="public" virt="non-virtual">com.sterlite.cal.ivr.integration.IIVRIntegrationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a02c8761a4478b0c0f4f1833232a110c2" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IVRIntegrationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="42" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a5507175bbb9b3f0932f567543f9b6e43" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client" kindref="compound">PCCRestClient</ref></type>
+        <definition>PCCRestClient com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.pccRestClient</definition>
+        <argsstring></argsstring>
+        <name>pccRestClient</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.pccRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="45" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a55588aa81487e4401ff9cfa93d75b516" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client" kindref="compound">WOMRestClient</ref></type>
+        <definition>WOMRestClient com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.womRestClient</definition>
+        <argsstring></argsstring>
+        <name>womRestClient</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.womRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="60" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a6b428c410d2072d0cf4609467242b975" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="48" column="23" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a32132bdfe18b6820dcd61a687a6e1b66" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_u_p_c_rest_client" kindref="compound">UPCRestClient</ref></type>
+        <definition>UPCRestClient com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.upcRestClient</definition>
+        <argsstring></argsstring>
+        <name>upcRestClient</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.upcRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="51" column="23" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a78d1f14a50d9608c3a68a8e438301a74" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.jsonUtil</definition>
+        <argsstring></argsstring>
+        <name>jsonUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.jsonUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="54" column="19" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a8809bf28f3ce06d66a5218d3a1724462" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1utils_1_1_i_v_r_util" kindref="compound">IVRUtil</ref></type>
+        <definition>IVRUtil com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.iverUtil</definition>
+        <argsstring></argsstring>
+        <name>iverUtil</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.iverUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="57" column="17" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a4e54f545cce427e4ea2d7f7f1a08574c" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.INTERNAL_SERVER_ERROR_CODE</definition>
+        <argsstring></argsstring>
+        <name>INTERNAL_SERVER_ERROR_CODE</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.INTERNAL_SERVER_ERROR_CODE</qualifiedname>
+        <initializer>= 500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="62" column="26" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a1123bc18f162d6ad4066a676ee1465d4" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.INTERNAL_SERVER_ERROR_MESSAGE</definition>
+        <argsstring></argsstring>
+        <name>INTERNAL_SERVER_ERROR_MESSAGE</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.INTERNAL_SERVER_ERROR_MESSAGE</qualifiedname>
+        <initializer>= &quot;Internal Server Error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="63" column="29" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a40ebef06c272d043ea2c42e5d7775077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_monetory_balance_response" kindref="compound">GetMonetoryBalanceResponse</ref></type>
+        <definition>GetMonetoryBalanceResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getMonetaryBalance</definition>
+        <argsstring>(String sbRequestURI, GetMonetoryBalanceRequest getMonetoryBalanceRequest, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getMonetaryBalance</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getMonetaryBalance</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1aa95b9853f882d8ee98a16df85aecda10">getMonetaryBalance</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_monetory_balance_request" kindref="compound">GetMonetoryBalanceRequest</ref></type>
+          <declname>getMonetoryBalanceRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="66" column="35" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="66" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a05bc3b449d6d898dec2728383d4274fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_monetory_balance_response" kindref="compound">GetMonetoryBalanceResponse</ref></type>
+        <definition>GetMonetoryBalanceResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getMonetaryBalanceUsingAlternateId</definition>
+        <argsstring>(String sbRequestURI, GetMonetoryBalanceRequest getMonetoryBalanceRequest, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getMonetaryBalanceUsingAlternateId</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getMonetaryBalanceUsingAlternateId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a7fd80d1068303f3022130604fdb0cc51">getMonetaryBalanceUsingAlternateId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_monetory_balance_request" kindref="compound">GetMonetoryBalanceRequest</ref></type>
+          <declname>getMonetoryBalanceRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="93" column="35" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="93" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aa9f72d92a2cb56951e8f8ba7880000d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_update_monetory_balance_response" kindref="compound">UpdateMonetoryBalanceResponse</ref></type>
+        <definition>UpdateMonetoryBalanceResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.updateMonetaryBalance</definition>
+        <argsstring>(String sbRequestURI, UpdateMonetoryBalanceRequest updateMonetoryBalanceRequest, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>updateMonetaryBalance</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.updateMonetaryBalance</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1ac97b73e88fa45a81e6b53b03e0943273">updateMonetaryBalance</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_update_monetory_balance_request" kindref="compound">UpdateMonetoryBalanceRequest</ref></type>
+          <declname>updateMonetoryBalanceRequest</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="120" column="38" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="120" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aaec3c64e0e0a672fa265a3f24c92de8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_do_recharge_response" kindref="compound">DoRechargeResponse</ref></type>
+        <definition>DoRechargeResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.doRecharge</definition>
+        <argsstring>(String brmURI, String requestJason, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>doRecharge</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.doRecharge</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1abec8e3ce048f2024a80feff16271df76">doRecharge</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJason</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="146" column="27" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="146" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a49eac863c4aff8f5795e55594cb10224" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_service_instance_history_response" kindref="compound">ServiceInstanceHistoryResponse</ref></type>
+        <definition>ServiceInstanceHistoryResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getServiceInstanceHistory</definition>
+        <argsstring>(String brmURI, String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>getServiceInstanceHistory</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getServiceInstanceHistory</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1aeff9891780ffbfcfedb116456f8adab1">getServiceInstanceHistory</reimplements>
+        <param>
+          <type>String</type>
+          <declname>brmURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="161" column="39" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="161" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af6385029887dd7cb1f9174a58520f98c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_s_i_details_response" kindref="compound">SIDetailsResponse</ref></type>
+        <definition>SIDetailsResponse com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getSIDetailsFromSI</definition>
+        <argsstring>(String sbRequestURI, String sINumber, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getSIDetailsFromSI</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getSIDetailsFromSI</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a91a5075d2ef93656e6ffcff02bc252c8">getSIDetailsFromSI</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sINumber</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="176" column="26" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="176" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a0af684a3815c43b0bc4168671f09881c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_voice_message_non_monetory_r_n_c_balance_v_o" kindref="compound">VoiceMessageNonMonetoryRNCBalanceVO</ref></type>
+        <definition>VoiceMessageNonMonetoryRNCBalanceVO com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAddonWiseNonMonetaryBalanceUsingAlternateId</definition>
+        <argsstring>(String sbRequestURI, GetAddonWiseQuotaRequest request, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getAddonWiseNonMonetaryBalanceUsingAlternateId</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAddonWiseNonMonetaryBalanceUsingAlternateId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a273d0d1475971d25cc134f1827211d21">getAddonWiseNonMonetaryBalanceUsingAlternateId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_addon_wise_quota_request" kindref="compound">GetAddonWiseQuotaRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="197" column="44" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="197" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a369261b96bd82d93c17ec74b3f1f08aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_voice_message_non_monetory_r_n_c_balance_v_o" kindref="compound">VoiceMessageNonMonetoryRNCBalanceVO</ref></type>
+        <definition>VoiceMessageNonMonetoryRNCBalanceVO com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAddonWiseNonMonetaryBalanceUsingSubscriberId</definition>
+        <argsstring>(String sbRequestURI, GetAddonWiseQuotaRequest request, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getAddonWiseNonMonetaryBalanceUsingSubscriberId</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAddonWiseNonMonetaryBalanceUsingSubscriberId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a84ff5f1daa9919a9fdc5e9f7bcbac646">getAddonWiseNonMonetaryBalanceUsingSubscriberId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_addon_wise_quota_request" kindref="compound">GetAddonWiseQuotaRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="224" column="44" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="224" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af6d5628370f525a80a05b084cfe9ffbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_non_monetory_data_balance_v_o" kindref="compound">NonMonetoryDataBalanceVO</ref></type>
+        <definition>NonMonetoryDataBalanceVO com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getDataBalanceNonMonetoryUsingAlternateId</definition>
+        <argsstring>(String sbRequestURI, GetAddonWiseQuotaRequest request, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getDataBalanceNonMonetoryUsingAlternateId</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getDataBalanceNonMonetoryUsingAlternateId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a19a88dc6b89bfc0fa64d92ed03c02768">getDataBalanceNonMonetoryUsingAlternateId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_addon_wise_quota_request" kindref="compound">GetAddonWiseQuotaRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="252" column="33" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="252" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a07f2ac4937a76c9215a6778cfb94915b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_non_monetory_data_balance_v_o" kindref="compound">NonMonetoryDataBalanceVO</ref></type>
+        <definition>NonMonetoryDataBalanceVO com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getDataBalanceNonMonetoryUsingSubscriberId</definition>
+        <argsstring>(String sbRequestURI, GetAddonWiseQuotaRequest request, String sbAuthenticationTypeId, Map&lt; String, String &gt; sbHeader)</argsstring>
+        <name>getDataBalanceNonMonetoryUsingSubscriberId</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getDataBalanceNonMonetoryUsingSubscriberId</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1ad1bf07dd8e5ff354ab3742b8d4bb85eb">getDataBalanceNonMonetoryUsingSubscriberId</reimplements>
+        <param>
+          <type>String</type>
+          <declname>sbRequestURI</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_get_addon_wise_quota_request" kindref="compound">GetAddonWiseQuotaRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>sbAuthenticationTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>sbHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="278" column="33" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="278" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1adf4e1f70d4f36618874f17083c244ed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+        <definition>List&lt; ProductSpecification &gt; com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.checkCompatibility</definition>
+        <argsstring>(String productRequest)</argsstring>
+        <name>checkCompatibility</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.checkCompatibility</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a552365d1ba421f46b886072ed25ef0d4">checkCompatibility</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="304" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="304" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1acf5bd1fc95aae3134ca906373587271a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1valueobject_1_1_product_specification" kindref="compound">ProductSpecification</ref> &gt;</type>
+        <definition>List&lt; ProductSpecification &gt; com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.checkCompatibilityTwo</definition>
+        <argsstring>(String productofferReuest)</argsstring>
+        <name>checkCompatibilityTwo</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.checkCompatibilityTwo</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a605b4f69229cbc34f7161fab189adf4f">checkCompatibilityTwo</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productofferReuest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="333" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="333" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a2ea751167dcd81875560b0fd861bfce4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LinkedHashMap&lt; String, Object &gt;</type>
+        <definition>LinkedHashMap&lt; String, Object &gt; com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getProductDetails</definition>
+        <argsstring>(String productID)</argsstring>
+        <name>getProductDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getProductDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1aa482cf2ec6654228f50d8798a56437c0">getProductDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productID</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="365" column="22" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="365" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a768d1fafda493ac414e5d3f64722057e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.createOderAtWOM</definition>
+        <argsstring>(CreateSubscriptionOrder createSubscriptionOrder)</argsstring>
+        <name>createOderAtWOM</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.createOderAtWOM</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a59a62a95f430c2bef850a4ca35d373f9">createOderAtWOM</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1subscription_1_1valueobject_1_1_create_subscription_order" kindref="compound">CreateSubscriptionOrder</ref></type>
+          <declname>createSubscriptionOrder</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="395" column="15" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="395" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aea62d0172ffbc3c4c56163c66e1d530c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; LinkedHashMap&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; LinkedHashMap&lt; String, Object &gt; &gt; com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAllProductDetails</definition>
+        <argsstring>(String commaSeperatedProductID)</argsstring>
+        <name>getAllProductDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getAllProductDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1a130c579020a500b01151bd2bb7ac52cb">getAllProductDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>commaSeperatedProductID</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="401" column="13" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="401" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af093fd3640195c719d58b2e854d5acdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LinkedHashMap&lt; String, Object &gt;</type>
+        <definition>LinkedHashMap&lt; String, Object &gt; com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getLatestProductDetails</definition>
+        <argsstring>(String productID)</argsstring>
+        <name>getLatestProductDetails</name>
+        <qualifiedname>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService.getLatestProductDetails</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service_1ad041d79d85331824495d905e35ae3e34">getLatestProductDetails</reimplements>
+        <param>
+          <type>String</type>
+          <declname>productID</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="428" column="22" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="428" bodyend="454"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.ivr.integration.IIVRIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.ivr.integrationImpl.IVRIntegrationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pccRestClient</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>womRestClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.restclient.PCCRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_p_c_c_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.core.base.restclient.WOMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_w_o_m_rest_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.ivr.integration.IIVRIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1ivr_1_1integration_1_1_i_i_v_r_integration_service"/>
+      </node>
+      <node id="6">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" line="40" column="7" bodyfile="repository/ivr/src/main/java/com/sterlite/cal/ivr/integrationImpl/IVRIntegrationService.java" bodystart="40" bodyend="455"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a6b428c410d2072d0cf4609467242b975" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1adf4e1f70d4f36618874f17083c244ed3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>checkCompatibility</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1acf5bd1fc95aae3134ca906373587271a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>checkCompatibilityTwo</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a768d1fafda493ac414e5d3f64722057e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>createOderAtWOM</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aaec3c64e0e0a672fa265a3f24c92de8b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>doRecharge</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a0af684a3815c43b0bc4168671f09881c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getAddonWiseNonMonetaryBalanceUsingAlternateId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a369261b96bd82d93c17ec74b3f1f08aa" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getAddonWiseNonMonetaryBalanceUsingSubscriberId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aea62d0172ffbc3c4c56163c66e1d530c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getAllProductDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af6d5628370f525a80a05b084cfe9ffbf" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getDataBalanceNonMonetoryUsingAlternateId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a07f2ac4937a76c9215a6778cfb94915b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getDataBalanceNonMonetoryUsingSubscriberId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af093fd3640195c719d58b2e854d5acdc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getLatestProductDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a40ebef06c272d043ea2c42e5d7775077" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getMonetaryBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a05bc3b449d6d898dec2728383d4274fd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getMonetaryBalanceUsingAlternateId</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a2ea751167dcd81875560b0fd861bfce4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getProductDetails</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a49eac863c4aff8f5795e55594cb10224" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getServiceInstanceHistory</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1af6385029887dd7cb1f9174a58520f98c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>getSIDetailsFromSI</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a4e54f545cce427e4ea2d7f7f1a08574c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>INTERNAL_SERVER_ERROR_CODE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a1123bc18f162d6ad4066a676ee1465d4" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>INTERNAL_SERVER_ERROR_MESSAGE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a8809bf28f3ce06d66a5218d3a1724462" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>iverUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a78d1f14a50d9608c3a68a8e438301a74" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>jsonUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a02c8761a4478b0c0f4f1833232a110c2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a5507175bbb9b3f0932f567543f9b6e43" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>pccRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a32132bdfe18b6820dcd61a687a6e1b66" prot="private" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>upcRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1aa9f72d92a2cb56951e8f8ba7880000d8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>updateMonetaryBalance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1ivr_1_1integration_impl_1_1_i_v_r_integration_service_1a55588aa81487e4401ff9cfa93d75b516" prot="package" virt="non-virtual"><scope>com::sterlite::cal::ivr::integrationImpl::IVRIntegrationService</scope><name>womRestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

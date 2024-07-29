@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::BRMCoreApplication</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a21f6461b3a53bd736de59e22a5f57e85" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.BRMCoreApplication.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.BRMCoreApplication.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(BRMCoreApplication.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" line="21" column="30" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1aa1b2583218fbb8fe81cc930fb8196287" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager" kindref="compound">BRMServiceManager</ref></type>
+        <definition>BRMServiceManager com.sterlite.cal.BRMCoreApplication.brmServiceManager</definition>
+        <argsstring></argsstring>
+        <name>brmServiceManager</name>
+        <qualifiedname>com.sterlite.cal.BRMCoreApplication.brmServiceManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" line="24" column="19" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a9ab4dfe32ab276b5bbff3b0e8bb7999a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.sterlite.cal.BRMCoreApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.sterlite.cal.BRMCoreApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" line="26" column="20" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" bodystart="26" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a4cbbda2e19f2d58f72d944fd53b55f8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.BRMCoreApplication.loadCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadCache</name>
+        <qualifiedname>com.sterlite.cal.BRMCoreApplication.loadCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" line="35" column="13" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" bodystart="35" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jiva.karamta </para>
+</simplesect>
+<simplesect kind="since"><para>April 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.BRMCoreApplication</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>brmServiceManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.brm.core.service.manager.BRMServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1service_1_1manager_1_1_b_r_m_service_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" line="19" column="7" bodyfile="repository/brm-core/src/main/java/com/sterlite/cal/BRMCoreApplication.java" bodystart="19" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1aa1b2583218fbb8fe81cc930fb8196287" prot="package" virt="non-virtual"><scope>com::sterlite::cal::BRMCoreApplication</scope><name>brmServiceManager</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a4cbbda2e19f2d58f72d944fd53b55f8e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::BRMCoreApplication</scope><name>loadCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a21f6461b3a53bd736de59e22a5f57e85" prot="private" virt="non-virtual"><scope>com::sterlite::cal::BRMCoreApplication</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1_b_r_m_core_application_1a9ab4dfe32ab276b5bbff3b0e8bb7999a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::BRMCoreApplication</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

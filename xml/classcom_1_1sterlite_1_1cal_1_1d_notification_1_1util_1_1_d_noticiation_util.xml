@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::dNotification::util::DNoticiationUtil</compoundname>
+    <basecompoundref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client" prot="public" virt="non-virtual">com.sterlite.cal.core.base.restclient.BaseRestClient</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af1bc3b0ff1df2a5d12213e89561525c7" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.dNotification.util.DNoticiationUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(DNoticiationUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="35" column="30" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1abca096228502ac3539132af356a28108" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.sterlite.cal.dNotification.util.DNoticiationUtil.apiLogger</definition>
+        <argsstring></argsstring>
+        <name>apiLogger</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.apiLogger</qualifiedname>
+        <initializer>= LogManager.getLogger(&quot;event-api-log&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="36" column="29" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a36fa37eeafe08ee4e409c7b3f8ba0ae5" prot="private" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String com.sterlite.cal.dNotification.util.DNoticiationUtil.KEYCLOAK_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>KEYCLOAK_ENABLE</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.KEYCLOAK_ENABLE</qualifiedname>
+        <initializer>= &quot;sso.keycloak.enable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="53" column="29" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a6c8d13970974d2491280f73e0973165c" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.dNotification.util.DNoticiationUtil.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="39" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ae372b3e69896970f873dc6c276c2f9fd" prot="package" static="no" mutable="no">
+        <type>Environment</type>
+        <definition>Environment com.sterlite.cal.dNotification.util.DNoticiationUtil.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.env</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="42" column="13" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a359c99d3c4e5619eb78aa1f4d1a3b0dd" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.dNotification.util.DNoticiationUtil.jsonutil</definition>
+        <argsstring></argsstring>
+        <name>jsonutil</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.jsonutil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="45" column="11" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a009249fc6d37c1357ba3687b040e5604" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.DNotificationTokenURL</definition>
+        <argsstring></argsstring>
+        <name>DNotificationTokenURL</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.DNotificationTokenURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="48" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a9cea1a74c37dacafdd8b9becae64d4db" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1security_1_1util_1_1_generate_machine_token" kindref="compound">GenerateMachineToken</ref></type>
+        <definition>GenerateMachineToken com.sterlite.cal.dNotification.util.DNoticiationUtil.generateMachineToken</definition>
+        <argsstring></argsstring>
+        <name>generateMachineToken</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.generateMachineToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="51" column="30" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a3608fe882914176adc52548b2067a276" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp1</definition>
+        <argsstring></argsstring>
+        <name>AdditionalProp1</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp1</qualifiedname>
+        <initializer>= &quot;CAL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="56" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af1d9f2161a9cd0c9f41bd093f48a237e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp2</definition>
+        <argsstring></argsstring>
+        <name>AdditionalProp2</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp2</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="57" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a353ccca8f8e48f2f55a62d63e84720cd" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp3</definition>
+        <argsstring></argsstring>
+        <name>AdditionalProp3</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.AdditionalProp3</qualifiedname>
+        <initializer>= &quot;string&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="58" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a9ec962d1a1822a7d80decbb06b668604" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.IPAddress</definition>
+        <argsstring></argsstring>
+        <name>IPAddress</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.IPAddress</qualifiedname>
+        <initializer>= &quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="59" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1aab442db4c1a6aefc713ac3c11fa675d8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.Password</qualifiedname>
+        <initializer>= &quot;sysadmin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="60" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a84721a8f91275d91d138659e0c3b542e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.Token</definition>
+        <argsstring></argsstring>
+        <name>Token</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.Token</qualifiedname>
+        <initializer>= &quot;string&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="61" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af6e4fbf5125ca7ffc25f9707e01c9005" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.Username</qualifiedname>
+        <initializer>= &quot;admin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="62" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ac4f856f8d0190348202ff757fba8fa0c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.dNotificationUrl</definition>
+        <argsstring></argsstring>
+        <name>dNotificationUrl</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.dNotificationUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="133" column="16" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a369e54cec91d3568274a3e28b5fb5f38" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.sterlite.cal.dNotification.util.DNoticiationUtil.DNoticiationUtil</definition>
+        <argsstring>()</argsstring>
+        <name>DNoticiationUtil</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.DNoticiationUtil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="64" column="9" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1aa1d832f7489895a77f09944fc3a0eeb0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1valueobject_1_1_d_notification_token_request" kindref="compound">DNotificationTokenRequest</ref></type>
+        <definition>DNotificationTokenRequest com.sterlite.cal.dNotification.util.DNoticiationUtil.prepareTokenRequest</definition>
+        <argsstring>()</argsstring>
+        <name>prepareTokenRequest</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.prepareTokenRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="215" column="35" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="215" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1acda51eda2e5ee05edfae69e89fd88ea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.dNotification.util.DNoticiationUtil.getBAFromCA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getBAFromCA</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getBAFromCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="68" column="13" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="68" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ab08d67492f16b63bf1a4341200e2406b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.dNotification.util.DNoticiationUtil.getSIFromBA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getSIFromBA</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getSIFromBA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="88" column="13" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="88" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ac100d89219e7f2e112ba207dc064a6f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, Object &gt; &gt;</type>
+        <definition>List&lt; Map&lt; String, Object &gt; &gt; com.sterlite.cal.dNotification.util.DNoticiationUtil.getSAFromCA</definition>
+        <argsstring>(String accountNumber)</argsstring>
+        <name>getSAFromCA</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getSAFromCA</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="109" column="13" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="109" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a5622a291c2fc9098a1401561e0a4bd92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.getURL</definition>
+        <argsstring>(String requestURl)</argsstring>
+        <name>getURL</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getURL</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="135" column="15" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ade0eda1f081429e81055e935f4f700c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.getProperty</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getProperty</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getProperty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="148" column="15" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a83dcf0754d1ec03940bdd0760a17e98d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt; String, String &gt; com.sterlite.cal.dNotification.util.DNoticiationUtil.prePareHeaderMap</definition>
+        <argsstring>(String authTypeId, Map&lt; String, String &gt; header)</argsstring>
+        <name>prePareHeaderMap</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.prePareHeaderMap</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="169" column="12" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ab47aa6596102869de1f0c08a065fdfe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.dNotification.util.DNoticiationUtil.getObject</definition>
+        <argsstring>(String className)</argsstring>
+        <name>getObject</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <exceptions> throws InstantiationException, IllegalAccessException, ClassNotFoundException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="175" column="15" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a80c607ab60c1ce1db330e4a3f1acdcc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.dNotification.util.DNoticiationUtil.getDnotificationToken</definition>
+        <argsstring>()</argsstring>
+        <name>getDnotificationToken</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getDnotificationToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="180" column="15" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="180" bodyend="213"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a869cc60989adcc1fa0dc8d4fca214bf9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.dNotification.util.DNoticiationUtil.postForObject</definition>
+        <argsstring>(String uri, Object request, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>postForObject</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.postForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Object</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="154" column="11" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="154" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a1d4fc3ca67f2cac5dff7dc5a073fda31" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>public&lt; T &gt; T</type>
+        <definition>public&lt; T &gt; T com.sterlite.cal.dNotification.util.DNoticiationUtil.getForObject</definition>
+        <argsstring>(String uri, Map&lt; String, String[]&gt; parameterMap, Class&lt; T &gt; responseType, String authTypeId, Map&lt; String, String &gt; header, String operationAlias)</argsstring>
+        <name>getForObject</name>
+        <qualifiedname>com.sterlite.cal.dNotification.util.DNoticiationUtil.getForObject</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <param>
+          <type>Class&lt; T &gt;</type>
+          <declname>responseType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>authTypeId</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>operationAlias</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref>  </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="161" column="11" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="161" bodyend="167"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.dNotification.util.DNoticiationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.dNotification.util.DNoticiationUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brmRepository</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>jsonutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.brm.core.repository.IBRMRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="4">
+        <label>Environment</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" line="33" column="7" bodyfile="repository/dNotification/src/main/java/com/sterlite/cal/dNotification/util/DNoticiationUtil.java" bodystart="33" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a3608fe882914176adc52548b2067a276" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>AdditionalProp1</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af1d9f2161a9cd0c9f41bd093f48a237e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>AdditionalProp2</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a353ccca8f8e48f2f55a62d63e84720cd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>AdditionalProp3</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1abca096228502ac3539132af356a28108" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>apiLogger</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a6c8d13970974d2491280f73e0973165c" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a62fc9324d3a3c79e6c4edda9baca7c2a" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1adea7fdca024a9eaf809e2f7d0cd69b6a" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>deleteForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a369e54cec91d3568274a3e28b5fb5f38" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>DNoticiationUtil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a009249fc6d37c1357ba3687b040e5604" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>DNotificationTokenURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ac4f856f8d0190348202ff757fba8fa0c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>dNotificationUrl</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ae372b3e69896970f873dc6c276c2f9fd" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>env</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a9cea1a74c37dacafdd8b9becae64d4db" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>generateMachineToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1acda51eda2e5ee05edfae69e89fd88ea2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getBAFromCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a80c607ab60c1ce1db330e4a3f1acdcc7" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getDnotificationToken</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a1d4fc3ca67f2cac5dff7dc5a073fda31" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeaff1f8be0bfb45a1d2a1cd2eb0726f6" prot="package" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ab47aa6596102869de1f0c08a065fdfe8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ade0eda1f081429e81055e935f4f700c3" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getProperty</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ac100d89219e7f2e112ba207dc064a6f1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getSAFromCA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1ab08d67492f16b63bf1a4341200e2406b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getSIFromBA</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a5622a291c2fc9098a1401561e0a4bd92" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>getURL</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a9ec962d1a1822a7d80decbb06b668604" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>IPAddress</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a359c99d3c4e5619eb78aa1f4d1a3b0dd" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>jsonutil</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a36fa37eeafe08ee4e409c7b3f8ba0ae5" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>KEYCLOAK_ENABLE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af1bc3b0ff1df2a5d12213e89561525c7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1aab442db4c1a6aefc713ac3c11fa675d8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>Password</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1aeae0d1836f70f8b29bec2edda3c6ae61" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>patchForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a869cc60989adcc1fa0dc8d4fca214bf9" prot="package" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a7bf244044466b990c41c2398b087f448" prot="protected" virt="non-virtual" ambiguityscope="com::sterlite::cal::core::base::restclient::BaseRestClient."><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>postForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a83dcf0754d1ec03940bdd0760a17e98d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>prePareHeaderMap</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1aa1d832f7489895a77f09944fc3a0eeb0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>prepareTokenRequest</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client_1a6ec5009fd03cc8655797f07d1202bf2d" prot="protected" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>putForObject</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1a84721a8f91275d91d138659e0c3b542e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>Token</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1d_notification_1_1util_1_1_d_noticiation_util_1af6e4fbf5125ca7ffc25f9707e01c9005" prot="private" virt="non-virtual"><scope>com::sterlite::cal::dNotification::util::DNoticiationUtil</scope><name>Username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

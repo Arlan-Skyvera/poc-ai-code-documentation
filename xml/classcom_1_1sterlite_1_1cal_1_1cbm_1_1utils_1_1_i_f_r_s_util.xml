@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cbm::utils::IFRSUtil</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1aa157f0a218c18aae3e74ef961463a1f0" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cbm.utils.IFRSUtil.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.IFRSUtil.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IFRSUtil.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="19" column="29" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a1aaa599c410d50eb8d220de4f848c2dd" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1repository_1_1_i_b_r_m_repository" kindref="compound">IBRMRepository</ref></type>
+        <definition>IBRMRepository com.sterlite.cal.cbm.utils.IFRSUtil.brmRepository</definition>
+        <argsstring></argsstring>
+        <name>brmRepository</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.IFRSUtil.brmRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="21" column="24" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1af236442a11ca43bcb77f0825b640f46f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.utils.IFRSUtil.createIFRSRecord</definition>
+        <argsstring>(Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>createIFRSRecord</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.IFRSUtil.createIFRSRecord</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="24" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a41d01bd22d24293afeca2267807f51df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BigDecimal</type>
+        <definition>BigDecimal com.sterlite.cal.cbm.utils.IFRSUtil.getNextSequenceVal</definition>
+        <argsstring>()</argsstring>
+        <name>getNextSequenceVal</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.IFRSUtil.getNextSequenceVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="38" column="19" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="38" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a67c896e7b9fcf0e4cfe5dde272fbb943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cbm.utils.IFRSUtil.updateIFRSByEPOSID</definition>
+        <argsstring>(Map&lt; String, Object &gt; dataMap)</argsstring>
+        <name>updateIFRSByEPOSID</name>
+        <qualifiedname>com.sterlite.cal.cbm.utils.IFRSUtil.updateIFRSByEPOSID</qualifiedname>
+        <param>
+          <type>Map&lt; String, Object &gt;</type>
+          <declname>dataMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="63" column="13" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="63" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cbm.utils.IFRSUtil</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" line="18" column="7" bodyfile="repository/cbm/src/main/java/com/sterlite/cal/cbm/utils/IFRSUtil.java" bodystart="18" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a1aaa599c410d50eb8d220de4f848c2dd" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::IFRSUtil</scope><name>brmRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1af236442a11ca43bcb77f0825b640f46f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::IFRSUtil</scope><name>createIFRSRecord</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a41d01bd22d24293afeca2267807f51df" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::IFRSUtil</scope><name>getNextSequenceVal</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1aa157f0a218c18aae3e74ef961463a1f0" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::IFRSUtil</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cbm_1_1utils_1_1_i_f_r_s_util_1a67c896e7b9fcf0e4cfe5dde272fbb943" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cbm::utils::IFRSUtil</scope><name>updateIFRSByEPOSID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

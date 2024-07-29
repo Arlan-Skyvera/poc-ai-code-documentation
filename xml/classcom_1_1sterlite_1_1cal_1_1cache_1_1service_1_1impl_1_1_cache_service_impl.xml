@@ -1,0 +1,730 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::cache::service::impl::CacheServiceImpl</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service" prot="public" virt="non-virtual">com.sterlite.cal.cache.service.ICacheService</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a3c066342eacdb434d9a14facecd8a19b" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.cache.service.impl.CacheServiceImpl.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(CacheServiceImpl.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Constant logger. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="43" column="30" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac273cccf41bfd1906e841cc78605880b" prot="private" static="no" mutable="no">
+        <type>HazelcastInstance</type>
+        <definition>HazelcastInstance com.sterlite.cal.cache.service.impl.CacheServiceImpl.hazelcastInstance</definition>
+        <argsstring></argsstring>
+        <name>hazelcastInstance</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.hazelcastInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The hazelcast instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="48" column="27" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a0ee76476b8798dd920a2dd0d703bd632" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1util_1_1_cache_util" kindref="compound">CacheUtil</ref></type>
+        <definition>CacheUtil com.sterlite.cal.cache.service.impl.CacheServiceImpl.util</definition>
+        <argsstring></argsstring>
+        <name>util</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.util</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="67" column="19" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5b13d2dbb72b94d5431e81767f231581" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1repository_1_1_a_p_i_config_repository" kindref="compound">APIConfigRepository</ref></type>
+        <definition>APIConfigRepository com.sterlite.cal.cache.service.impl.CacheServiceImpl.apiConfigRepository</definition>
+        <argsstring></argsstring>
+        <name>apiConfigRepository</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.apiConfigRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="51" column="21" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a96829ab98653d673e945863c39003b3c" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1repository_1_1_query_config_repository" kindref="compound">QueryConfigRepository</ref></type>
+        <definition>QueryConfigRepository com.sterlite.cal.cache.service.impl.CacheServiceImpl.queryConfigRepository</definition>
+        <argsstring></argsstring>
+        <name>queryConfigRepository</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.queryConfigRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="55" column="23" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae1ac7bc1116ef6962d6059463d160059" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client" kindref="compound">BRMRestClient</ref></type>
+        <definition>BRMRestClient com.sterlite.cal.cache.service.impl.CacheServiceImpl.brmRestClient</definition>
+        <argsstring></argsstring>
+        <name>brmRestClient</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.brmRestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="58" column="15" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a0c9b983a5c8f3a91463df8baf64a7cb6" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1integration_1_1_i_b_r_m_operation_integration_service" kindref="compound">IBRMOperationIntegrationService</ref></type>
+        <definition>IBRMOperationIntegrationService com.sterlite.cal.cache.service.impl.CacheServiceImpl.brmOperationIntegrationService</definition>
+        <argsstring></argsstring>
+        <name>brmOperationIntegrationService</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.brmOperationIntegrationService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="61" column="33" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac4cd947a0f2ec8f1280e2649c482720e" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.cache.service.impl.CacheServiceImpl.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="64" column="11" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac44237b5c81ae6870e99fd67ac59686f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IMap&lt; Object, Object &gt;</type>
+        <definition>IMap&lt; Object, Object &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCache</definition>
+        <argsstring>(String key)</argsstring>
+        <name>getCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCache</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1ac7c1bc9c265a6090109dc4e3c1f2ce31">getCache</reimplements>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the cache.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the cache </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="70" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="70" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5ded46a9d18937f729785fd0257a834a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCacheSpecific</definition>
+        <argsstring>(String type, String value)</argsstring>
+        <name>loadCacheSpecific</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCacheSpecific</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1ae53111b9ca24466218a8b7c5efb2e0d0">loadCacheSpecific</reimplements>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method is used to load cache of a particular type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- String </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- String, applicable for Process Flow only </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String - response Message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="84" column="15" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae9d84f981dd1baab8071ec4af9f13737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadAPIConfigCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadAPIConfigCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadAPIConfigCache</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1ad071e71268da95993f9c6443e64b3359">loadAPIConfigCache</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load API Config Cache, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="93" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="93" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1aa2e70fee22d24f740ef39aabcc0a177a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadQueryConfigByIdCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadQueryConfigByIdCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadQueryConfigByIdCache</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1abd2022197fcb0d1e97fdea8ebdf8362c">loadQueryConfigByIdCache</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Query Config Cache By ID, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="116" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="116" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1af316b7bb57c94da263e1e758254b7edc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadQueryConfigByAliasCache</definition>
+        <argsstring>()</argsstring>
+        <name>loadQueryConfigByAliasCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadQueryConfigByAliasCache</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a48af2dcc1ed0e58e1c36ae7adc3cdef9">loadQueryConfigByAliasCache</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Query Config Cache By Alias, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="131" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="131" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5f917771fe730bdc9775ca37966cd57c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadProductCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadProductCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadProductCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a1274b8534399d64597d5422f887eaadd">loadProductCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Product Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="146" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="146" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a2783f8f5c85f7625e4e4bfd37446f588" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadBESystemParamConfigCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadBESystemParamConfigCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadBESystemParamConfigCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a09ca8a17efbd2c3169866fc1dd992574">loadBESystemParamConfigCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load BE System Parameter Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="188" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="188" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7b2c36ea0b4029c88dfd78883ad1ed7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadDepositTypeCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadDepositTypeCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadDepositTypeCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a75674626634e1d63651f8ef63b0db163">loadDepositTypeCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Deposit Type Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="231" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="231" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a9ac5242f0862be1f902a8662a63d0727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadProductSpecificationsCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadProductSpecificationsCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadProductSpecificationsCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a9491160d1b8e96ae1093a1d2f904cc9f">loadProductSpecificationsCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Product Specifications Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="274" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="274" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a92caadc2284d06771ff68fd9d5a258b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCurrencyCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadCurrencyCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCurrencyCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1aef7554347ec49b9dc663d91ad76e8bb9">loadCurrencyCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Currency Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="317" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="317" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1afded0f26de8089c313827016a00228e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadTaxCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadTaxCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadTaxCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a2efd02b64665df2b3d2b122225abe945">loadTaxCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="335" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="335" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a92414cfdb190064ed4682abde23a5d8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadSystemParameterCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadSystemParameterCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadSystemParameterCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a87d03246164714d48e4494436e7297d4">loadSystemParameterCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load System Parameter Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="403" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="403" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a69acf4fc2e55660962114198b77f7481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCompanyCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadCompanyCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadCompanyCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a284be07c67937f826f01dc84ef3ee59f">loadCompanyCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Company Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="446" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="446" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7d3aa2dd0b25bd1a25f8b092b3b3c2dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadInstituteMasterCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadInstituteMasterCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadInstituteMasterCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1afdca7d3396f355808cfc67f4d800807c">loadInstituteMasterCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Institute Master Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="490" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="490" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a104cb82a607d64d0e3f7ef00237c6261" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadPaymentModeByAliasCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadPaymentModeByAliasCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadPaymentModeByAliasCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a01fb2ee6ed5be330a213c85ea59b5967">loadPaymentModeByAliasCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Payment Mode By Alias Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="533" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="533" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1afd68ca9ff9fa58e085d7776263ac99eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadPaymentModeCacheFromBSS</definition>
+        <argsstring>()</argsstring>
+        <name>loadPaymentModeCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadPaymentModeCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1a5ee6d95377605b6de61444309decbcd0">loadPaymentModeCacheFromBSS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Payment Mode Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="575" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="575" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a4982abab2a5da687c47cc6fd1391e1be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_staff_data" kindref="compound">StaffData</ref> &gt;</type>
+        <definition>List&lt; StaffData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadStaffCacheFromBSS</definition>
+        <argsstring>(String username)</argsstring>
+        <name>loadStaffCacheFromBSS</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.loadStaffCacheFromBSS</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service_1aba3c2290759ea18fe3e5a32201fcca46">loadStaffCacheFromBSS</reimplements>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Staff Cache from BSS, method used during server startup to load all Caches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="593" column="13" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="593" bodyend="700"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a72359a4ff443c4df57b8fb602867d002" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_offer_specification_data" kindref="compound">OfferSpecificationData</ref> &gt;</type>
+        <definition>Map&lt; String, OfferSpecificationData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getProductCache</definition>
+        <argsstring>()</argsstring>
+        <name>getProductCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getProductCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="160" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="160" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a784ee1b0058ba8d60a4c85b6af89cd94" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_b_e_system_param_data" kindref="compound">BESystemParamData</ref> &gt;</type>
+        <definition>Map&lt; String, BESystemParamData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getBESystemParamConfigCache</definition>
+        <argsstring>()</argsstring>
+        <name>getBESystemParamConfigCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getBESystemParamConfigCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="204" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="204" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7fa76e07a79c3d76d19a5de26a77a867" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_deposit_type" kindref="compound">DepositType</ref> &gt;</type>
+        <definition>Map&lt; String, DepositType &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getDepositTypeCache</definition>
+        <argsstring>()</argsstring>
+        <name>getDepositTypeCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getDepositTypeCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="247" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="247" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a2c2ccdd7e181e3a9de61a8834adc35e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_product_specifications" kindref="compound">ProductSpecifications</ref> &gt;</type>
+        <definition>Map&lt; String, ProductSpecifications &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getProductSpecificationsCache</definition>
+        <argsstring>()</argsstring>
+        <name>getProductSpecificationsCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getProductSpecificationsCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="290" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="290" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a1cfb7f61fac12034146b0d3a9f9902f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_currency_data" kindref="compound">CurrencyData</ref> &gt;</type>
+        <definition>Map&lt; String, CurrencyData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCurrencyCache</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrencyCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCurrencyCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="351" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="351" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae673279f4940bce1137ffdc67890e393" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_currency_data" kindref="compound">CurrencyData</ref> &gt;</type>
+        <definition>Map&lt; String, CurrencyData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getTaxCache</definition>
+        <argsstring>()</argsstring>
+        <name>getTaxCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getTaxCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="376" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="376" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a91f18ae196a28535fc0682c8f98414ed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_system_parameter_custom_data" kindref="compound">SystemParameterCustomData</ref> &gt;</type>
+        <definition>Map&lt; String, SystemParameterCustomData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getSystemParameterCache</definition>
+        <argsstring>()</argsstring>
+        <name>getSystemParameterCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getSystemParameterCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="419" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="419" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a388a77cce2505c1562d32304abaa17be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_company_wrapper_data" kindref="compound">CompanyWrapperData</ref> &gt;</type>
+        <definition>Map&lt; String, CompanyWrapperData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCompanyCache</definition>
+        <argsstring>()</argsstring>
+        <name>getCompanyCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getCompanyCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="462" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="462" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a64eca592f155166db8026664e456ea2c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_institute_master_data" kindref="compound">InstituteMasterData</ref> &gt;</type>
+        <definition>Map&lt; String, InstituteMasterData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getInstituteMasterCache</definition>
+        <argsstring>()</argsstring>
+        <name>getInstituteMasterCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getInstituteMasterCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="506" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="506" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ada75b658245e89ab60fc75d1ccdfb998" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_payment_mode_data" kindref="compound">PaymentModeData</ref> &gt;</type>
+        <definition>Map&lt; String, PaymentModeData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getPaymentModeByAliasCache</definition>
+        <argsstring>()</argsstring>
+        <name>getPaymentModeByAliasCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getPaymentModeByAliasCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="548" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="548" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7eb3967554d7278e5da99cecb24d4fc7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1brm_1_1cache_1_1valueobject_1_1_payment_mode_data" kindref="compound">PaymentModeData</ref> &gt;</type>
+        <definition>Map&lt; String, PaymentModeData &gt; com.sterlite.cal.cache.service.impl.CacheServiceImpl.getPaymentModeCache</definition>
+        <argsstring>()</argsstring>
+        <name>getPaymentModeCache</name>
+        <qualifiedname>com.sterlite.cal.cache.service.impl.CacheServiceImpl.getPaymentModeCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="704" column="14" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="704" bodyend="727"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class <ref refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl" kindref="compound">CacheServiceImpl</ref>. Implementation class of CacheService interface </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.cache.service.impl.CacheServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cache.service.ICacheService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.cache.service.impl.CacheServiceImpl</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>apiConfigRepository</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>queryConfigRepository</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>brmRestClient</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>brmOperationIntegrationService</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>com.sterlite.cal.brm.core.integration.IBRMOperationIntegrationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1brm_1_1core_1_1integration_1_1_i_b_r_m_operation_integration_service"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.cache.service.ICacheService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1_i_cache_service"/>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.config.api.repository.APIConfigRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1api_1_1repository_1_1_a_p_i_config_repository"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>com.sterlite.cal.config.query.repository.QueryConfigRepository</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1config_1_1query_1_1repository_1_1_query_config_repository"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>com.sterlite.cal.core.base.restclient.BRMRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_b_r_m_rest_client"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>env</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>com.sterlite.cal.core.base.restclient.BaseRestClient</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1restclient_1_1_base_rest_client"/>
+      </node>
+      <node id="11">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+      <node id="9">
+        <label>Environment</label>
+      </node>
+      <node id="4">
+        <label>JpaRepository&lt; APIConfig, Long &gt;</label>
+      </node>
+      <node id="6">
+        <label>JpaRepository&lt; QueryConfig, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" line="40" column="7" bodyfile="repository/cacheservice/src/main/java/com/sterlite/cal/cache/service/impl/CacheServiceImpl.java" bodystart="40" bodyend="728"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5b13d2dbb72b94d5431e81767f231581" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>apiConfigRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a0c9b983a5c8f3a91463df8baf64a7cb6" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>brmOperationIntegrationService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae1ac7bc1116ef6962d6059463d160059" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>brmRestClient</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a784ee1b0058ba8d60a4c85b6af89cd94" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getBESystemParamConfigCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac44237b5c81ae6870e99fd67ac59686f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a388a77cce2505c1562d32304abaa17be" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getCompanyCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a1cfb7f61fac12034146b0d3a9f9902f2" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getCurrencyCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7fa76e07a79c3d76d19a5de26a77a867" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getDepositTypeCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a64eca592f155166db8026664e456ea2c" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getInstituteMasterCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ada75b658245e89ab60fc75d1ccdfb998" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getPaymentModeByAliasCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7eb3967554d7278e5da99cecb24d4fc7" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getPaymentModeCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a72359a4ff443c4df57b8fb602867d002" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getProductCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a2c2ccdd7e181e3a9de61a8834adc35e9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getProductSpecificationsCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a91f18ae196a28535fc0682c8f98414ed" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getSystemParameterCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae673279f4940bce1137ffdc67890e393" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>getTaxCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac273cccf41bfd1906e841cc78605880b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>hazelcastInstance</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ac4cd947a0f2ec8f1280e2649c482720e" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1ae9d84f981dd1baab8071ec4af9f13737" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadAPIConfigCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a2783f8f5c85f7625e4e4bfd37446f588" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadBESystemParamConfigCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5ded46a9d18937f729785fd0257a834a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadCacheSpecific</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a69acf4fc2e55660962114198b77f7481" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadCompanyCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a92caadc2284d06771ff68fd9d5a258b8" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadCurrencyCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7b2c36ea0b4029c88dfd78883ad1ed7f" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadDepositTypeCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a7d3aa2dd0b25bd1a25f8b092b3b3c2dc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadInstituteMasterCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a104cb82a607d64d0e3f7ef00237c6261" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadPaymentModeByAliasCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1afd68ca9ff9fa58e085d7776263ac99eb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadPaymentModeCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a5f917771fe730bdc9775ca37966cd57c" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadProductCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a9ac5242f0862be1f902a8662a63d0727" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadProductSpecificationsCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1af316b7bb57c94da263e1e758254b7edc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadQueryConfigByAliasCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1aa2e70fee22d24f740ef39aabcc0a177a" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadQueryConfigByIdCache</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a4982abab2a5da687c47cc6fd1391e1be" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadStaffCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a92414cfdb190064ed4682abde23a5d8d" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadSystemParameterCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1afded0f26de8089c313827016a00228e5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>loadTaxCacheFromBSS</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a3c066342eacdb434d9a14facecd8a19b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a96829ab98653d673e945863c39003b3c" prot="package" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>queryConfigRepository</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1cache_1_1service_1_1impl_1_1_cache_service_impl_1a0ee76476b8798dd920a2dd0d703bd632" prot="private" virt="non-virtual"><scope>com::sterlite::cal::cache::service::impl::CacheServiceImpl</scope><name>util</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::prm::service::manager::PRMServiceManager</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1_1_p_r_m_service" prot="private">com::sterlite::cal::prm::service::manager::PRMServiceManager::PRMService</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a3c1b76d1ebad0355aa6724c198231293" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.prm.service.manager.PRMServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(PRMServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="27" column="30" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a33708f4445bca952d2f21d39be2ffa0b" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_POST</definition>
+        <argsstring></argsstring>
+        <name>HTTP_POST</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_POST</qualifiedname>
+        <initializer>= &quot;POST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="28" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a6000d4a5725a8a53919214a612029c97" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_GET</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_GET</qualifiedname>
+        <initializer>= &quot;GET&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="29" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aa4c6a7cb581a904f6938ce3d448b3176" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_PATCH</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PATCH</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_PATCH</qualifiedname>
+        <initializer>= &quot;PATCH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="30" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a592a30ee2b0523fc9413bff3890d50f6" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_PUT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_PUT</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.HTTP_PUT</qualifiedname>
+        <initializer>= &quot;PUT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="31" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aef53a1cf4154333f43560cde2d8b105e" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.sterlite.cal.prm.service.manager.PRMServiceManager.MODULE</definition>
+        <argsstring></argsstring>
+        <name>MODULE</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.MODULE</qualifiedname>
+        <initializer>= &quot;BRM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="32" column="23" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a6c7427e58c1687ca766a77dd1cdf3758" prot="private" static="no" mutable="no">
+        <type>ApplicationContext</type>
+        <definition>ApplicationContext com.sterlite.cal.prm.service.manager.PRMServiceManager.applicationContext</definition>
+        <argsstring></argsstring>
+        <name>applicationContext</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.applicationContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="35" column="28" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aadafb1a5c2e949ccc12c4de5650d5f24" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, PRMService &gt;</type>
+        <definition>Map&lt;String, PRMService&gt; com.sterlite.cal.prm.service.manager.PRMServiceManager.myServices</definition>
+        <argsstring></argsstring>
+        <name>myServices</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.myServices</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="37" column="13" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ae30413b67db37410eae119a926cda013" prot="private" static="no" mutable="no">
+        <type>Map&lt; String, <ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref> &gt;</type>
+        <definition>Map&lt;String, APIConfig&gt; com.sterlite.cal.prm.service.manager.PRMServiceManager.apiAgainService</definition>
+        <argsstring></argsstring>
+        <name>apiAgainService</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.apiAgainService</qualifiedname>
+        <initializer>= new HashMap&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="38" column="13" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a1b64336731b6744a2df8468498714fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.prm.service.manager.PRMServiceManager.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="41" column="13" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a894ea2b97790f82b0dd0c3a328b67a4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>APIConfig com.sterlite.cal.prm.service.manager.PRMServiceManager.getBRMServiceConfig</definition>
+        <argsstring>(String requestMethod, String requestURI)</argsstring>
+        <name>getBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.getBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestMethod</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="88" column="18" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="88" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a036e71ed3ebd3b8b7756071ab46e93bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.prm.service.manager.PRMServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="101" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="101" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a5bd4324dcc2cc13b42534af92091e703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.prm.service.manager.PRMServiceManager.doGet</definition>
+        <argsstring>(String requestURI, Map&lt; String, String[]&gt; parameterMap)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>Map&lt; String, String[]&gt;</type>
+          <declname>parameterMap</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="123" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="123" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a8ce0b2a9ab4e8d032c12df6219f1dff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.prm.service.manager.PRMServiceManager.doPatch</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPatch</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.doPatch</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="145" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="145" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ab55cd5bc53ea616774aff789951732a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object com.sterlite.cal.prm.service.manager.PRMServiceManager.doPut</definition>
+        <argsstring>(String requestURI, String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="161" column="15" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="161" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a300414bfebb6e8d6bbfc4c4fec310bc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.prm.service.manager.PRMServiceManager.loadPRMService</definition>
+        <argsstring>()</argsstring>
+        <name>loadPRMService</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.loadPRMService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="51" column="14" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="51" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a4e01f7704c1894b9422f20e95e2cd3ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sterlite.cal.prm.service.manager.PRMServiceManager.loadPRMServiceConfig</definition>
+        <argsstring>()</argsstring>
+        <name>loadPRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.loadPRMServiceConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="75" column="14" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="75" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ad09b8bd95db58b083481ebdee4e4e1b8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1config_1_1api_1_1dataobject_1_1_a_p_i_config" kindref="compound">APIConfig</ref></type>
+        <definition>static APIConfig com.sterlite.cal.prm.service.manager.PRMServiceManager.getDefaultBRMServiceConfig</definition>
+        <argsstring>(String httpMethod)</argsstring>
+        <name>getDefaultBRMServiceConfig</name>
+        <qualifiedname>com.sterlite.cal.prm.service.manager.PRMServiceManager.getDefaultBRMServiceConfig</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>httpMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="219" column="26" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="219" bodyend="236"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" line="25" column="7" bodyfile="repository/prm-core/src/main/java/com/sterlite/cal/prm/service/manager/PRMServiceManager.java" bodystart="25" bodyend="237"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ae30413b67db37410eae119a926cda013" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>apiAgainService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a6c7427e58c1687ca766a77dd1cdf3758" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>applicationContext</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a5bd4324dcc2cc13b42534af92091e703" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a8ce0b2a9ab4e8d032c12df6219f1dff5" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>doPatch</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a036e71ed3ebd3b8b7756071ab46e93bb" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ab55cd5bc53ea616774aff789951732a1" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a894ea2b97790f82b0dd0c3a328b67a4e" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>getBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1ad09b8bd95db58b083481ebdee4e4e1b8" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>getDefaultBRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a6000d4a5725a8a53919214a612029c97" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>HTTP_GET</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aa4c6a7cb581a904f6938ce3d448b3176" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>HTTP_PATCH</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a33708f4445bca952d2f21d39be2ffa0b" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>HTTP_POST</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a592a30ee2b0523fc9413bff3890d50f6" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>HTTP_PUT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a1b64336731b6744a2df8468498714fe2" prot="public" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>init</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a300414bfebb6e8d6bbfc4c4fec310bc0" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>loadPRMService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a4e01f7704c1894b9422f20e95e2cd3ba" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>loadPRMServiceConfig</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1a3c1b76d1ebad0355aa6724c198231293" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>LOGGER</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aef53a1cf4154333f43560cde2d8b105e" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>MODULE</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1prm_1_1service_1_1manager_1_1_p_r_m_service_manager_1aadafb1a5c2e949ccc12c4de5650d5f24" prot="private" virt="non-virtual"><scope>com::sterlite::cal::prm::service::manager::PRMServiceManager</scope><name>myServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

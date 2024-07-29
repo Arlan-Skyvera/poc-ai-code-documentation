@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_ln_r_common_utils_8java" kind="file" language="Java">
+    <compoundname>LnRCommonUtils.java</compoundname>
+    <innerclass refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1utils_1_1_ln_r_common_utils" prot="public">com::sterlite::cal::lnr::utils::LnRCommonUtils</innerclass>
+    <innernamespace refid="namespacecom_1_1sterlite_1_1cal_1_1lnr_1_1utils">com::sterlite::cal::lnr::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.sterlite.cal.lnr.utils;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Map;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Map.Entry;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.stereotype.Component;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.hazelcast.core.IMap;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.cache.CALCacheManagerImp;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.core.cache.CacheConstant;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.sterlite.cal.lnr.constants.LnRConstants;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">@Component</highlight></codeline>
+<codeline lineno="14" refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1utils_1_1_ln_r_common_utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1utils_1_1_ln_r_common_utils" kindref="compound">LnRCommonUtils</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>getMinorAmount(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minorunit)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dblAmount<sp/>=<sp/>amount<sp/>*<sp/>(int)<sp/>Math.pow(10,<sp/>minorunit);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Math.round(dblAmount);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Integer<sp/>getMinorUnit()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Integer<sp/>minorUnit<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMap&lt;Object,<sp/>Object&gt;<sp/>obj<sp/>=<sp/>(IMap&lt;Object,<sp/>Object&gt;)<sp/><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_c_a_l_cache_manager_imp" kindref="compound">CALCacheManagerImp</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.getCacheValueByKey(<ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1cache_1_1_cache_constant" kindref="compound">CacheConstant</ref>.CURRENCY_CACHE_ID);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(Entry&lt;Object,<sp/>Object&gt;<sp/>entry<sp/>:<sp/>obj.entrySet())<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Map&lt;Object,<sp/>Object&gt;<sp/>intrimMap<sp/>=<sp/>(Map&lt;Object,<sp/>Object&gt;)<sp/>entry.getValue();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1constants_1_1_ln_r_constants" kindref="compound">LnRConstants</ref>.CURRENCY_ALIAS_ALL.equalsIgnoreCase((String)<sp/>intrimMap.get(<ref refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1constants_1_1_ln_r_constants" kindref="compound">LnRConstants</ref>.CURRENCY_ALIAS)))<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minorUnit<sp/>=<sp/>(Integer)<sp/>intrimMap.get(<ref refid="classcom_1_1sterlite_1_1cal_1_1lnr_1_1constants_1_1_ln_r_constants" kindref="compound">LnRConstants</ref>.MINORUNIT);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>minorUnit;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="repository/lnr-core/src/main/java/com/sterlite/cal/lnr/utils/LnRCommonUtils.java"/>
+  </compounddef>
+</doxygen>

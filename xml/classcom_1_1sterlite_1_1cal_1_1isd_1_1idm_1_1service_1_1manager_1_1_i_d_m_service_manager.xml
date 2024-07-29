@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a85c7597dfb956609b52062aa894bc269" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1_i_i_d_m_operation_service" kindref="compound">IIDMOperationService</ref></type>
+        <definition>IIDMOperationService com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.idmService</definition>
+        <argsstring></argsstring>
+        <name>idmService</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.idmService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="28" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a7051850ea21afcbd69ff25a4e606b4c9" prot="private" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(IDMServiceManager.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="29" column="30" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1aab9dfd0605485ff7fa7001a095498e4b" prot="package" static="no" mutable="no">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils" kindref="compound">JsonUtils</ref></type>
+        <definition>JsonUtils com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.jsonUtils</definition>
+        <argsstring></argsstring>
+        <name>jsonUtils</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.jsonUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="31" column="11" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a1bc3ed315024dddb219011c779807299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doPost</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPost</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doPost</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="33" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="33" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a542f4879ec428207314312144992de6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doGet</definition>
+        <argsstring>(String requestURI)</argsstring>
+        <name>doGet</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doGet</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="77" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="77" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1aba0d7205092dbb8339d6bf6143d0e1bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doDelete</definition>
+        <argsstring>(String requestURI)</argsstring>
+        <name>doDelete</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doDelete</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestURI</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="102" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="102" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a41088410694a4c0f420830cc8120f676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doPut</definition>
+        <argsstring>(String requestJson)</argsstring>
+        <name>doPut</name>
+        <qualifiedname>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager.doPut</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>requestJson</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="125" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="125" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.idm.service.manager.IDMServiceManager</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>jsonUtils</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.core.base.util.JsonUtils</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1util_1_1_json_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" line="25" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/idm/service/manager/IDMServiceManager.java" bodystart="25" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1aba0d7205092dbb8339d6bf6143d0e1bd" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>doDelete</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a542f4879ec428207314312144992de6b" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>doGet</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a1bc3ed315024dddb219011c779807299" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>doPost</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a41088410694a4c0f420830cc8120f676" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>doPut</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a85c7597dfb956609b52062aa894bc269" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>idmService</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1aab9dfd0605485ff7fa7001a095498e4b" prot="package" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>jsonUtils</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1idm_1_1service_1_1manager_1_1_i_d_m_service_manager_1a7051850ea21afcbd69ff25a4e606b4c9" prot="private" virt="non-virtual"><scope>com::sterlite::cal::isd::idm::service::manager::IDMServiceManager</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+\doxysection{com.\+sterlite.\+cal.\+core.\+base.\+config.\+Json\+Date\+Deserializer Class Reference}
+\hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer}{}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer}\index{com.sterlite.cal.core.base.config.JsonDateDeserializer@{com.sterlite.cal.core.base.config.JsonDateDeserializer}}
+
+
+Inheritance diagram for com.\+sterlite.\+cal.\+core.\+base.\+config.\+Json\+Date\+Deserializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+sterlite.\+cal.\+core.\+base.\+config.\+Json\+Date\+Deserializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_afd4342ae586d0246b0b3e907c1105ac6}{Json\+Date\+Deserializer}} (String brm\+Date\+Format, List$<$ Simple\+Date\+Format $>$ list\+Simple\+Date\+Formats)
+\item 
+Date \mbox{\hyperlink{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_a7a690c9e0c53eb8b4d57206f914ee620}{deserialize}} (Json\+Parser p, Deserialization\+Context ctxt)  throws IOException 
+\item 
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_a67fbc61544a11c5d7b38bff6f1eab03a}\label{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_a67fbc61544a11c5d7b38bff6f1eab03a} 
+Class$<$ Date $>$ {\bfseries handled\+Type} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Custom Date Deserializer. \begin{DoxyAuthor}{Author}
+milan.\+jadwani 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_afd4342ae586d0246b0b3e907c1105ac6}\index{com.sterlite.cal.core.base.config.JsonDateDeserializer@{com.sterlite.cal.core.base.config.JsonDateDeserializer}!JsonDateDeserializer@{JsonDateDeserializer}}
+\index{JsonDateDeserializer@{JsonDateDeserializer}!com.sterlite.cal.core.base.config.JsonDateDeserializer@{com.sterlite.cal.core.base.config.JsonDateDeserializer}}
+\doxysubsubsection{\texorpdfstring{JsonDateDeserializer()}{JsonDateDeserializer()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_afd4342ae586d0246b0b3e907c1105ac6} 
+com.\+sterlite.\+cal.\+core.\+base.\+config.\+Json\+Date\+Deserializer.\+Json\+Date\+Deserializer (\begin{DoxyParamCaption}\item[{String}]{brm\+Date\+Format}{, }\item[{List$<$ Simple\+Date\+Format $>$}]{list\+Simple\+Date\+Formats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for initialising Date Deserializer 
+\begin{DoxyParams}{Parameters}
+{\em brm\+Date\+Format} & -\/ default BRM date format \\
+\hline
+{\em list\+Simple\+Date\+Formats} & -\/ List of supported date formats \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_a7a690c9e0c53eb8b4d57206f914ee620}\index{com.sterlite.cal.core.base.config.JsonDateDeserializer@{com.sterlite.cal.core.base.config.JsonDateDeserializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!com.sterlite.cal.core.base.config.JsonDateDeserializer@{com.sterlite.cal.core.base.config.JsonDateDeserializer}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily \label{classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1config_1_1_json_date_deserializer_a7a690c9e0c53eb8b4d57206f914ee620} 
+Date com.\+sterlite.\+cal.\+core.\+base.\+config.\+Json\+Date\+Deserializer.\+deserialize (\begin{DoxyParamCaption}\item[{Json\+Parser}]{p}{, }\item[{Deserialization\+Context}]{ctxt}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method is used to deserialize Json representation a date to Java date 
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+repository/core/src/main/java/com/sterlite/cal/core/base/config/Json\+Date\+Deserializer.\+java\end{DoxyCompactItemize}

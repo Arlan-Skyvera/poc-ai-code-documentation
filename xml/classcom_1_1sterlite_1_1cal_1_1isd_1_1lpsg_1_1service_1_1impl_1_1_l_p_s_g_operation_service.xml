@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service" kind="class" language="Java" prot="public">
+    <compoundname>com::sterlite::cal::isd::lpsg::service::impl::LPSGOperationService</compoundname>
+    <basecompoundref refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1_i_l_p_s_g_operation_service" prot="public" virt="non-virtual">com.sterlite.cal.isd.lpsg.service.ILPSGOperationService</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1a5fa031df46a8a4e080bab068d9cc4175" prot="public" static="yes" mutable="no">
+        <type>final <ref refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>final ILogger com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.LOGGER</definition>
+        <argsstring></argsstring>
+        <name>LOGGER</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.LOGGER</qualifiedname>
+        <initializer>= ILogger.getInstant(LPSGOperationService.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" line="26" column="29" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1adcba0731495819a4b8f232b0da249ce4" prot="public" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.CA_AMOUNT</definition>
+        <argsstring></argsstring>
+        <name>CA_AMOUNT</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.CA_AMOUNT</qualifiedname>
+        <initializer>= 50000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" line="28" column="28" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1a9218eb99b5a56f0315a2326821caeafc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1base_1_1valueobject_1_1_cal_base_response" kindref="compound">CalBaseResponse</ref></type>
+        <definition>CalBaseResponse com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.calculateLPSG</definition>
+        <argsstring>(LPSGRequest lPSGRequest)</argsstring>
+        <name>calculateLPSG</name>
+        <qualifiedname>com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService.calculateLPSG</qualifiedname>
+        <reimplements refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1_i_l_p_s_g_operation_service_1a0ba82526b291a2366496677e6d42607f">calculateLPSG</reimplements>
+        <param>
+          <type><ref refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1valueobject_1_1_l_p_s_g_request" kindref="compound">LPSGRequest</ref></type>
+          <declname>lPSGRequest</declname>
+        </param>
+        <exceptions> throws <ref refid="classcom_1_1sterlite_1_1cal_1_1core_1_1exception_1_1_s_b_integration_exception" kindref="compound">SBIntegrationException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" line="32" column="24" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" bodystart="32" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.lpsg.service.ILPSGOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1_i_l_p_s_g_operation_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.sterlite.cal.isd.lpsg.service.impl.LPSGOperationService</label>
+        <link refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LOGGER</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>com.sterlite.cal.core.logger.ILogger</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1core_1_1logger_1_1_i_logger"/>
+      </node>
+      <node id="2">
+        <label>com.sterlite.cal.isd.lpsg.service.ILPSGOperationService</label>
+        <link refid="interfacecom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1_i_l_p_s_g_operation_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" line="24" column="7" bodyfile="repository/isd/src/main/java/com/sterlite/cal/isd/lpsg/service/impl/LPSGOperationService.java" bodystart="24" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1adcba0731495819a4b8f232b0da249ce4" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::impl::LPSGOperationService</scope><name>CA_AMOUNT</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1a9218eb99b5a56f0315a2326821caeafc" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::impl::LPSGOperationService</scope><name>calculateLPSG</name></member>
+      <member refid="classcom_1_1sterlite_1_1cal_1_1isd_1_1lpsg_1_1service_1_1impl_1_1_l_p_s_g_operation_service_1a5fa031df46a8a4e080bab068d9cc4175" prot="public" virt="non-virtual"><scope>com::sterlite::cal::isd::lpsg::service::impl::LPSGOperationService</scope><name>LOGGER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
